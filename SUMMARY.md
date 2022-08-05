@@ -1,0 +1,16 @@
+# Table of contents
+
+* [Introduction](README.md)
+  * [Abstract](introduction/abstract.md)
+  * [Origins](introduction/origins.md)
+* [Architecture](architecture/README.md)
+  * [MPC](architecture/mpc.md)
+  * [Fees](architecture/fees.md)
+  * [Relayers](architecture/relayers.md)
+  * [Security](architecture/security.md)
+* [Sygma SDK](sygma-sdk.md)
+* [Github Repositories](github-repositories.md)
+* [Smart Contract Addresses](smart-contract-addresses/README.md)
+  * [Devnet](smart-contract-addresses/devnet.md)
+  * [Testnet](smart-contract-addresses/testnet.md)
+  * [Mainnet](smart-contract-addresses/mainnet.md)
