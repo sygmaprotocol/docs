@@ -9,8 +9,6 @@ description: >-
 
 The Sygma SDK documentation can also be found in the [Sygma-SDK README](https://github.com/sygmaprotocol/sygma-sdk/blob/main/README.md).
 
-#### Disclaimer: The Sygma repo is currently closed as it is under audit. It will be made publicly available in August 2022 once the audit is complete.&#x20;
-
 ## Introduction
 
 **Sygma SDK** is an OpenSource (under GNU Lesser General Public License v3.0) library for developers to work with Sygma. The SDK consist of methods that enable bridging capabilities between Ethereum networks.
