@@ -7,13 +7,15 @@ description: >-
 
 # Sygma SDK
 
-The Sygma SDK documentation can also be found in the [Sygma-SDK README](https://github.com/sygmaprotocol/sygma-sdk/blob/main/README.md).
+The Sygma SDK documentation can also be found in the [Sygma-SDK README](https://github.com/ChainSafe/sygma-sdk/blob/main/README.md).
+
+#### Disclaimer: The Sygma repo is currently closed as it is under audit. It will be made publicly available in August 2022 once the audit is complete.&#x20;
 
 ## Introduction
 
 **Sygma SDK** is an OpenSource (under GNU Lesser General Public License v3.0) library for developers to work with Sygma. The SDK consist of methods that enable bridging capabilities between Ethereum networks.
 
-_**NOTE**_ the SDK is under an active development, as such you may experience inconsistencies until we have a stable release. We encourage you to [submit issues](https://github.com/sygmaprotocol/sygma-sdk/issues) should you discover any bugs.
+_**NOTE**_ the SDK is under an active development, as such you may experience inconsistencies until we have a stable release. We encourage you to [submit issues](https://github.com/ChainSafe/sygma-sdk/issues) should you discover any bugs.
 
 The current SDK has one package that comprises the whole bridging logic for transferring ERC20 tokens between Ethereum networks. Alongside this there are two folder examples that demonstrate the usage of our SDK. If you want to run the examples alongside our bridging infrastructure, please make sure you have Sygma in order for you to run `make local-setup` command.
 
