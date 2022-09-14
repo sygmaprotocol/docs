@@ -1,5 +1,5 @@
 ---
-description: The following provides the Sygma contarct audited by HACEHI AUDIT.
+description: The following provides the audit performed by HACEHI AUDIT.
 ---
 
 # HAECHI AUDIT: 9/6/22
