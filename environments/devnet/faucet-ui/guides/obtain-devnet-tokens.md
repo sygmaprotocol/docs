@@ -1,5 +1,5 @@
 ---
-description: The following presents guides for obtaining Devnet tokens from the Faucet UI.
+description: The following details how to obtain Devnet tokens from the Faucet UI.
 ---
 
 # Obtain Devnet Tokens

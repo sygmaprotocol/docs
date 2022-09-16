@@ -1,7 +1,5 @@
 ---
-description: >-
-  The following presents resources for adding Devnet (custom) tokens to
-  MetaMask.
+description: The following details how to add Devnet (custom) tokens to MetaMask.
 ---
 
 # Adding Tokens To MetaMask
