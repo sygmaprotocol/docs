@@ -182,7 +182,7 @@ const deposit = await sygma.deposit({
 const txReceipt = await deposit.wait(1)
 ```
 
-### How to Use in a Browser
+### How to Use In a Browser
 
 For usage in the browser with our local setup, provide the same bridge config that you used for the Node.js context:
 
