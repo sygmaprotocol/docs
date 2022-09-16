@@ -13,11 +13,11 @@ The Sygma SDK documentation can also be found in the [Sygma-SDK README](https://
 
 **Sygma SDK** is an OpenSource (under GNU Lesser General Public License v3.0) library for developers to work with Sygma. The SDK consist of methods that enable bridging capabilities between Ethereum networks.
 
-_**NOTE**_ the SDK is under an active development, as such you may experience inconsistencies until we have a stable release. We encourage you to [submit issues](https://github.com/sygmaprotocol/sygma-sdk/issues) should you discover any bugs.
+**NOTE:** the SDK is under an active development, as such you may experience inconsistencies until we have a stable release. We encourage you to [submit issues](https://github.com/sygmaprotocol/sygma-sdk/issues) should you discover any bugs.
 
-The current SDK has one package that comprises the whole bridging logic for transferring ERC20 tokens between Ethereum networks. Alongside this there are two folder examples that demonstrate the usage of our SDK. If you want to run the examples alongside our bridging infrastructure, please make sure you have Sygma in order for you to run `make local-setup` command.
+The current SDK has one package that comprises the whole bridging logic for transferring ERC20 tokens between Ethereum networks. Alongside this there are [examples](sygma-sdk.md#running-the-examples) that demonstrate the usage of our SDK. If you want to run the examples alongside our bridging infrastructure, please make sure you have the [sygma-relayer ](https://github.com/sygmaprotocol/sygma-relayer)software installed in order for you to run the `make local-setup` command.
 
-### Usefull commands.
+### Useful commands
 
 After cloning the repo, simply run:
 
@@ -27,13 +27,13 @@ npx lerna bootstrap
 
 ### Running the Examples
 
-For a React example, after you have run and deployed the contracts using [Sygma](https://github.com/ChainSafe/sygma), go to the `examples` folder and simply run:
+For a React example, after you have run and deployed the contracts using the [sygma-relayer](https://github.com/sygmaprotocol/sygma-relayer), drop into the `examples` directory and run:
 
 ```
 yarn start
 ```
 
-For a NodeJS example, simply run:
+For a Node.js example, simply run:
 
 ```
 yarn run:local-ex
@@ -43,7 +43,7 @@ yarn run:local-ex
 
 ### Environment
 
-In order for you to use our SDK, Sygma must be installed on your local machine. The main dependency to run `Sygma` is to have `go` installed on your machine. After that, follow the instructions to run the local example. It will take a couple of minutes for all the setup to be completed.&#x20;
+In order to use our SDK, the [sygma-relayer](https://github.com/sygmaprotocol/sygma-relayer) must be installed on your local machine. The main dependency to run the [sygma-relayer](https://github.com/sygmaprotocol/sygma-relayer) is to have [Go](https://go.dev/) installed on your machine. After that, follow the instructions to run the local example. It will take a couple of minutes for all the setup to be completed.&#x20;
 
 If you want to check the logs of the deployed contracts you can do the following:
 
@@ -94,11 +94,14 @@ After that, you can watch the logs and see your funds being transferred from one
 
 ### Checking the Examples folder
 
-There is a folder with examples ready to be used for the SDK. Currently we have two working examples with our current local setup. If you decide that is not for you, here is a little guide to get you started with our SDK.
+There is a directory with examples ready to be used for the SDK. We have two working examples to choose from for getting started locally:
 
-### How to Use From NodeJS
+1. [How to Use From Node.js](sygma-sdk.md#how-to-use-from-nodejs)
+2. [How to Use In a Browser](sygma-sdk.md#how-to-use-in-browser)
 
-Assuming you are going to use the local setup provider by Sygma, the setup that you need to pass to the `Sygma` class will have the following structure:
+### How to Use From Node.js
+
+Assuming you are going to use the local setup provider by the [sygma-relayer](https://github.com/sygmaprotocol/sygma-relayer), the setup that you need to pass to the `Sygma` class will have the following structure:
 
 ```
 import { Sygma } from "@chainsafe/sygma-sdk-core";
@@ -129,13 +132,13 @@ const bridgeSetup: BridgeData = {
 }
 ```
 
-We are going to use the SDK with `NodeJS` so you we are going to use one of the testing accounts from the local setup:
+We are going to use the SDK with `Node.js` alongside one of the testing accounts from the local setup:
 
 ```
  const testAcc = "0xF4314cb9046bECe6AA54bb9533155434d0c76909";
 ```
 
-Then we create a `setup` object to pass to the `Sygma` class:
+Then we create a `setup` object to pass into the `Sygma` class:
 
 ```
 const setup = { bridgeSetup }
@@ -179,9 +182,9 @@ const deposit = await sygma.deposit({
 const txReceipt = await deposit.wait(1)
 ```
 
-### How to Use in Browser
+### How to Use in a Browser
 
-For usage in the browser with our local setup, provide the same bridge config that you use for the NodeJS context:
+For usage in the browser with our local setup, provide the same bridge config that you used for the Node.js context:
 
 ```
 import { Sygma } from "@chainsafe/sygma-sdk-core";
@@ -220,7 +223,7 @@ const bridgeSetup: BridgeData = {
 }
 ```
 
-Then, inside your App, create some state variables and functions to get the account data from your wallet (in this example the wallet is `Metamask`)
+Then, inside your App, create some state variables and functions to get the account data from your wallet (in this example, the wallet is `Metamask`)
 
 ```
 function App(){
@@ -276,7 +279,7 @@ function App(){
 }
 ```
 
-If you are using `Metamask` you can create a function to trigger the connection to the extension and at the same time instantiate the `Sygma` SDK:
+If you are using `Metamask`, you can create a function to trigger the connection to the extension and at the same time instantiate the `Sygma` SDK:
 
 ```
 // in the App component, below the last useEffect
@@ -372,7 +375,7 @@ To remove the execution events listener:
 sygmaInstance.removeDestinationProposalExecutionEventListener()
 ```
 
-With this you can use our SDK and create the render logic to show your tokens and your networks of the bridge. For a more in depth review, check out the `react-example`.
+With this you can use our SDK and create the render logic to show your tokens and list which networks the bridge supports.&#x20;
 
 ### Support
 
