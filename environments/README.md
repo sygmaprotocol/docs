@@ -1,7 +1,7 @@
 ---
 description: >-
-  The following details information related to the various Sygma deployment
-  environments.
+  The following details a list of deployed smart contract addresses for a
+  variety of environments.
 ---
 
 # Environments

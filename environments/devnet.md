@@ -8,6 +8,27 @@ description: >-
 
 **Status:** Active
 
+## Transfer UI
+
+#### Sygma Transfer UI
+
+The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.\
+[https://transfer-ui-develop.buildwithsygma.com/transfer](https://transfer-ui-develop.buildwithsygma.com/transfer)
+
+## Faucet UI
+
+**Faucet UI**
+
+The faucet allows users with a visual interface to mint tokens.\
+[https://faucet-ui-stage.buildwithsygma.com](https://faucet-ui-stage.buildwithsygma.com)****
+
+**Faucet API**
+
+The faucet API allows users to programmatically interact with the faucet.\
+[https://faucet-api-stage.buildwithsygma.com/](https://faucet-api-stage.buildwithsygma.com/)
+
+
+
 ### Contract addresses
 
 | chainID | Network name    | Bridge                                     | ControlSegragator                          | FeeRouter                                  | FeeHandlerWithOracle                       | Erc20Hander                                | ERC721Handler                              | Generic Handler |
