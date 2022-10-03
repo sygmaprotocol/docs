@@ -14,7 +14,6 @@
   * [Devnet](environments/devnet.md)
   * [Testnet](environments/testnet.md)
   * [Mainnet](environments/mainnet.md)
-  * [Guides](environments/guides/README.md)
 * [Audits](audits/README.md)
   * [v1.0/v1.1](audits/v1.0-v1.1/README.md)
     * [HAECHI AUDIT: 9/6/22](audits/v1.0-v1.1/haechi-audit-9-6-22.md)

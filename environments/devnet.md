@@ -8,24 +8,29 @@ description: >-
 
 **Status:** Active
 
-## Transfer UI
 
-#### Sygma Transfer UI
+[//]: # (#### Sygma Transfer UI)
 
-The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.\
-[https://transfer-ui-develop.buildwithsygma.com/transfer](https://transfer-ui-develop.buildwithsygma.com/transfer)
+[//]: # ()
+[//]: # (The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.\)
 
-## Faucet UI
+[//]: # ([https://transfer-ui-develop.buildwithsygma.com/transfer]&#40;https://transfer-ui-develop.buildwithsygma.com/transfer&#41;)
 
-**Faucet UI**
+[//]: # ()
+[//]: # (**Faucet UI**)
 
-The faucet allows users with a visual interface to mint tokens.\
-[https://faucet-ui-stage.buildwithsygma.com](https://faucet-ui-stage.buildwithsygma.com)****
+[//]: # ()
+[//]: # (The faucet allows users with a visual interface to mint tokens.\)
 
-**Faucet API**
+[//]: # ([https://faucet-ui-stage.buildwithsygma.com]&#40;https://faucet-ui-stage.buildwithsygma.com&#41;****)
 
-The faucet API allows users to programmatically interact with the faucet.\
-[https://faucet-api-stage.buildwithsygma.com/](https://faucet-api-stage.buildwithsygma.com/)
+[//]: # ()
+[//]: # (**Faucet API**)
+
+[//]: # ()
+[//]: # (The faucet API allows users to programmatically interact with the faucet.\)
+
+[//]: # ([https://faucet-api-stage.buildwithsygma.com/]&#40;https://faucet-api-stage.buildwithsygma.com/&#41;)
 
 
 
