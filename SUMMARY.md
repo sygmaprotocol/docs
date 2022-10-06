@@ -8,7 +8,7 @@
   * [Fees](architecture/fees.md)
   * [Relayers](architecture/relayers.md)
   * [Security](architecture/security.md)
-  * [Generic message passing](architecture/mpc.md)
+  * [Generic message passing](architecture/generic.md)
 * [Sygma SDK](sygma-sdk.md)
 * [Github Repositories](github-repositories.md)
 * [Environments](environments/README.md)
