@@ -10,7 +10,7 @@ description: >-
 
 ### Contract Addresses
 
-| Domain ID | Network name    | Bridge                                     | Control Segragator                         | Fee Router                                 | Fee Handler With Oracle                    | ERC20 Handler                              | ERC721 Handler                             | Generic Handler                            |
+| Domain ID | Network Name    | Bridge                                     | Control Segregator                         | Fee Router                                 | Fee Handler With Oracle                    | ERC20 Handler                              | ERC721 Handler                             | Generic Handler                            |
 | --------- | --------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | 1         | Ethereum Goerli | 0x95ECF5ae000e0fe0e0dE63aDE9b7D82a372038b4 | 0x8893c9dC9fc3D10d99f2fD93e1f1295A49f98243 | 0xC3ea0Fbaa708D225BD2575dC4A57e0eaE8aFc77F | 0x7350e258Cb88a22572Edefe5d80BAD21b42Cc124 | 0xea24Bb5500fE670d1ce1B9EaEbA942a5ca85e5Ea | 0xC2aae1ac76eD2Bb37bF4AdD72A82165bD2bf99F3 | 0xd8681e9c2bA2fdfE6690F59bc726C657ed8B494D |
 | 2         | Moonbase Alpha  | 0xd8681e9c2bA2fdfE6690F59bc726C657ed8B494D | 0xea24Bb5500fE670d1ce1B9EaEbA942a5ca85e5Ea | 0x6593d8aF009d35d0BbB6eDe1dd29dF55b73F9A98 | 0x0693FeBE4766b85CcecB0C5168b39c81E0251366 | 0xC3ea0Fbaa708D225BD2575dC4A57e0eaE8aFc77F | 0x530Ca8291856c727cc6a33c2ACD50f79184AFA3d | 0x7350e258Cb88a22572Edefe5d80BAD21b42Cc124 |
@@ -18,7 +18,7 @@ description: >-
 
 ### Registered Resources
 
-| Type           | Resource name | Fee type             | Liquidity Type | Resource ID                                                        | Goerli Contract Address                    | Mumbai Contract Address                    | Moonbase Contract Address                  |
+| Type           | Resource Name | Fee Type             | Liquidity Type | Resource ID                                                        | Goerli Contract Address                    | Mumbai Contract Address                    | Moonbase Contract Address                  |
 | -------------- | ------------- | -------------------- | -------------- | ------------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | ERC20          | ERC20LRTest   | BasicFeeHandler      | Lock/Release   | 0x0000000000000000000000000000000000000000000000000000000000000300 | 0x3F9A68fF29B3d86a6928C44dF171A984F6180009 | 0xFC072Aa8ABB5646aFD0c22994bdE30dB57B1BF1C | 0x3690601896C289be2d894c3d1213405310D0a25C |
 | ERC20          | ERC20TST      | FeeHandlerWithOracle | Mint/Burn      | 0x0000000000000000000000000000000000000000000000000000000000000000 | 0x3D151A97A446C9ea6893038e7C0db73466f3f3af | 0x2465c8F84bDB7130ACDf31d694bc9c820F70ac06 | 0xAc693E44E1EDe5f66A4e1406F65b904450932fB3 |
@@ -27,7 +27,7 @@ description: >-
 
 ### Fee Schemas
 
-| ResourceID | Fee type   | Fee percent\amount |
-| ---------- | ---------- | ------------------ |
-|            | Fee oracle |                    |
-|            | Base fee   |                    |
+| Resource ID | Fee Type   | Fee Percent\Amount |
+| ----------- | ---------- | ------------------ |
+|             | Fee oracle |                    |
+|             | Base fee   |                    |
