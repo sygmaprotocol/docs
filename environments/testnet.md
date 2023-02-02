@@ -1,7 +1,5 @@
 ---
-description: >-
-  The following details a list of deployed smart contract addresses for our
-  Testnet environment.
+description: The following details a list of resources to support the Testnet environment.
 ---
 
 # Testnet
