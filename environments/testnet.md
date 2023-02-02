@@ -13,7 +13,7 @@ description: >-
 
 The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.
 
-[https://transfer-ui-develop.buildwithsygma.com/transfer](https://transfer-ui-develop.buildwithsygma.com/transfer)
+[https://ui.test.buildwithsygma.com](https://transfer-ui-develop.buildwithsygma.com/transfer)
 
 **Faucet UI**
 
@@ -25,7 +25,7 @@ The faucet allows users with a visual interface to mint tokens.
 
 The faucet API allows users to programmatically interact with the faucet.
 
-[https://faucet-api-stage.buildwithsygma.com/](https://faucet-api-stage.buildwithsygma.com/)\
+[https://faucet-api-stage.buildwithsygma.com](https://faucet-api-stage.buildwithsygma.com/)\
 
 
 ### Contract Addresses
@@ -47,7 +47,9 @@ The faucet API allows users to programmatically interact with the faucet.
 
 ### Fee Schemas
 
-| Resource ID | Fee Type   | Fee Percent\Amount |
-| ----------- | ---------- | ------------------ |
-|             | Fee oracle |                    |
-|             | Base fee   |                    |
+| Resource ID                                                        | Fee Type   | Fee Percent/Amount |
+| ------------------------------------------------------------------ | ---------- | ------------------ |
+| 0x0000000000000000000000000000000000000000000000000000000000000000 | Fee oracle | 3%                 |
+| 0x0000000000000000000000000000000000000000000000000000000000000300 | Base fee   | 0.0001 Base tokens |
+| 0x0000000000000000000000000000000000000000000000000000000000000200 | Base fee   | 0.0001 Base tokens |
+| 0x0000000000000000000000000000000000000000000000000000000000000500 | Base fee   | 0.0001 Base tokens |

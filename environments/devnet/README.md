@@ -10,7 +10,7 @@ description: The following details a list of resources to support the Devnet env
 
 The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.
 
-[https://transfer-ui-develop.buildwithsygma.com/transfer](https://transfer-ui-develop.buildwithsygma.com/transfer)
+[https://ui.develop.buildwithsygma.com](https://transfer-ui-develop.buildwithsygma.com/transfer)
 
 **Faucet UI**
 
@@ -22,7 +22,7 @@ The faucet allows users with a visual interface to mint tokens.
 
 The faucet API allows users to programmatically interact with the faucet.
 
-[https://faucet-api-stage.buildwithsygma.com/](https://faucet-api-stage.buildwithsygma.com/)
+[https://faucet-api-stage.buildwithsygma.com](https://faucet-api-stage.buildwithsygma.com/)
 
 ###
 
@@ -45,7 +45,7 @@ The faucet API allows users to programmatically interact with the faucet.
 
 ### Fee Schemas
 
-| Resource ID                                                        | Fee Type   | Fee Percent\Amount |
+| Resource ID                                                        | Fee Type   | Fee Percent/Amount |
 | ------------------------------------------------------------------ | ---------- | ------------------ |
 | 0x0000000000000000000000000000000000000000000000000000000000000000 | Fee oracle | 3%                 |
 | 0x0000000000000000000000000000000000000000000000000000000000000300 | Base fee   | 0.0001 Base tokens |
