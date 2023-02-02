@@ -1,16 +1,12 @@
 ---
-description: The following details a list of resources to support the Mainnet environment.
+description: >-
+  The following details a list of deployed smart contract addresses for our
+  Mainnet environment.
 ---
 
 # Mainnet
 
 **Status:** Inactive
-
-#### Sygma Transfer UI
-
-The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.
-
-[https://transfer-ui.buildwithsygma.com](https://transfer-ui-develop.buildwithsygma.com/transfer)
 
 ### Contract Addresses
 
@@ -28,7 +24,7 @@ The transfer UI allows users with a visual interface to connect their wallets an
 
 ### Fee Schemas
 
-| Resource ID | Fee Type   | Fee Percent/Amount |
+| Resource ID | Fee Type   | Fee Percent\Amount |
 | ----------- | ---------- | ------------------ |
 |             | Fee oracle |                    |
 |             | Base fee   |                    |
