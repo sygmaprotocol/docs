@@ -8,12 +8,6 @@ description: >-
 
 **Status:** Inactive
 
-#### Sygma Transfer UI
-
-The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.
-
-[https://transfer-ui.buildwithsygma.com](https://transfer-ui-develop.buildwithsygma.com/transfer)
-
 ### Contract Addresses
 
 | Domain ID | Network Name | Bridge | Control Segregator | Fee Router | Fee Handler With Oracle | ERC20 Handler | ERC721 Handler | Generic Handler |
@@ -30,7 +24,7 @@ The transfer UI allows users with a visual interface to connect their wallets an
 
 ### Fee Schemas
 
-| Resource ID | Fee Type   | Fee Percent/Amount |
+| Resource ID | Fee Type   | Fee Percent\Amount |
 | ----------- | ---------- | ------------------ |
 |             | Fee oracle |                    |
 |             | Base fee   |                    |
