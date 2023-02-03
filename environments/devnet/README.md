@@ -4,7 +4,7 @@ description: The following details a list of resources to support the Devnet env
 
 # Devnet
 
-**Status:** Active
+**Status:** Unstable environment
 
 #### Sygma Transfer UI
 
