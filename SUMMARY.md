@@ -14,7 +14,7 @@
 * [Environments](environments/README.md)
   * [Devnet](environments/devnet/README.md)
   * [Testnet](environments/testnet/README.md)
-    * [Obtain Devnet Tokens](environments/testnet/obtain-devnet-tokens.md)
+    * [Obtain Testnet Tokens](environments/testnet/obtain-testnet-tokens.md)
     * [Adding Tokens To MetaMask](environments/testnet/adding-tokens-to-metamask.md)
   * [Mainnet](environments/mainnet.md)
 * [Audits](audits/README.md)
