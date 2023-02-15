@@ -1,18 +1,15 @@
 ---
 description: The following details a list of resources to support the Testnet environment.
 ---
-
 # Testnet
 
-**Status:** Active
-
-
+**Status:** Inactive\
 
 **Sygma Transfer UI**
 
 The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.
 
-[https://transfer-ui.test.buildwithsygma.com](https://transfer-ui.test.buildwithsygma.com)
+[https://transfer-ui.test.buildwithsygma.com](https://transfer-ui-develop.buildwithsygma.com/transfer)
 
 **Faucet UI**
 
@@ -20,9 +17,14 @@ The faucet allows users with a visual interface to mint tokens.
 
 [https://faucet-ui-stage.buildwithsygma.com](https://faucet-ui-stage.buildwithsygma.com)
 
-###
+**Faucet API**
+
+The faucet API allows users to programmatically interact with the faucet.
+
+[https://faucet-api-stage.buildwithsygma.com](https://faucet-api-stage.buildwithsygma.com/)\
 
 ### Contract Addresses
+
 
 | Domain ID | Network Name    | Bridge                                     | Control Segregator                         | Fee Router                                 | Fee Handler With Oracle                    | ERC20 Handler                              | ERC721 Handler                             | Generic Handler                            |
 | --------- | --------------- | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
@@ -32,6 +34,7 @@ The faucet allows users with a visual interface to mint tokens.
 
 ### Registered Resources
 
+
 | Type           | Resource Name | Fee Type             | Liquidity Type | Resource ID                                                        | Goerli Contract Address                    | Mumbai Contract Address                    | Moonbase Contract Address                  |
 | -------------- | ------------- | -------------------- | -------------- | ------------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
 | ERC20          | ERC20LRTest   | BasicFeeHandler      | Lock/Release   | 0x0000000000000000000000000000000000000000000000000000000000000300 | 0x3F9A68fF29B3d86a6928C44dF171A984F6180009 | 0xFC072Aa8ABB5646aFD0c22994bdE30dB57B1BF1C | 0x3690601896C289be2d894c3d1213405310D0a25C |
@@ -40,6 +43,7 @@ The faucet allows users with a visual interface to mint tokens.
 | GenericMessage | N/A           | BasicFeeHandler      | Message        | 0x0000000000000000000000000000000000000000000000000000000000000500 | 0x530Ca8291856c727cc6a33c2ACD50f79184AFA3d | 0xe255cA458925c26d3E05004e247579A64b020cEF | 0xe7Ed7AAd072ACd23bA36F906C2515DF8eD43d482 |
 
 ### Fee Schemas
+
 
 | Resource ID                                                        | Fee Type   | Fee Percent/Amount |
 | ------------------------------------------------------------------ | ---------- | ------------------ |

@@ -8,14 +8,6 @@ description: The following details a list of resources to support the Mainnet en
 
 
 
-#### Sygma Transfer UI
-
-The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.
-
-[https://transfer-ui.buildwithsygma.com](https://transfer-ui.buildwithsygma.com)
-
-###
-
 ### Contract Addresses
 
 | Domain ID | Network Name | Bridge | Control Segregator | Fee Router | Fee Handler With Oracle | ERC20 Handler | ERC721 Handler | Generic Handler |
