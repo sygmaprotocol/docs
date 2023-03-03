@@ -1,0 +1,26 @@
+{
+  "unversionedId": "architecture/relayers",
+  "id": "architecture/relayers",
+  "title": "Relayers",
+  "description": "The following details how relayers are defined and managed by Sygma.",
+  "source": "@site/docs/architecture/relayers.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/relayers",
+  "permalink": "/docs/architecture/relayers",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/architecture/relayers.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The following details how relayers are defined and managed by Sygma."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "MPC",
+    "permalink": "/docs/architecture/mpc"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/docs/architecture/security"
+  }
+}

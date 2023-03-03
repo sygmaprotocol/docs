@@ -1,0 +1,28 @@
+{
+  "unversionedId": "sygma-sdk",
+  "id": "sygma-sdk",
+  "title": "Sygma SDK",
+  "description": "A JS SDK that allows users to inject the Sygma UI functionality into an existing application. Designed to help developers build their own solutions in the Sygma ecosystem.",
+  "source": "@site/docs/sygma-sdk.md",
+  "sourceDirName": ".",
+  "slug": "/sygma-sdk",
+  "permalink": "/docs/sygma-sdk",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/sygma-sdk.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "description": "A JS SDK that allows users to inject the Sygma UI functionality into an existing application. Designed to help developers build their own solutions in the Sygma ecosystem."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Security",
+    "permalink": "/docs/architecture/security"
+  },
+  "next": {
+    "title": "Github Repositories",
+    "permalink": "/docs/github-repositories"
+  }
+}

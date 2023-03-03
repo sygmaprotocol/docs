@@ -1,0 +1,26 @@
+{
+  "unversionedId": "environments/mainnet",
+  "id": "environments/mainnet",
+  "title": "Mainnet",
+  "description": "The following details a list of deployed smart contract addresses for our Mainnet environment.",
+  "source": "@site/docs/environments/mainnet.md",
+  "sourceDirName": "environments",
+  "slug": "/environments/mainnet",
+  "permalink": "/docs/environments/mainnet",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/environments/mainnet.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The following details a list of deployed smart contract addresses for our Mainnet environment."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Obtain Devnet Tokens",
+    "permalink": "/docs/environments/devnet/obtain-devnet-tokens"
+  },
+  "next": {
+    "title": "Testnet",
+    "permalink": "/docs/environments/testnet"
+  }
+}

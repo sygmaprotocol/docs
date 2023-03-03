@@ -1,15 +1,41 @@
----
-description: The following describes an introduction of Sygma.
----
+# Website
 
-# Introduction
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-_Sygma, like the Greek letter sigma (Σ), alludes to summation, the adding up of many things._
+### Installation
 
-Sygma is a multi-purpose interoperability layer that supports developers in building cross-chain dApps.
+```
+$ yarn
+```
 
-Since its inception, Sygma has advanced with its end-users in mind. This means ensuring optimal UX for every dApp, no-vendor lock-ins, and greater extensibility between disparate ecosystems.
+### Local Development
 
-At its core, Sygma is committed to operating transparently, ethically, and sustainably for the betterment of the decentralized web. To this end, Sygma focuses on areas of high unmet value exchange. It leverages its team of diverse experts to build the critical infrastructure needed to power cross-chain communication — efficiently, securely, and reliably.
+```
+$ yarn start
+```
 
-You can learn more from our [official announcement blog post](https://medium.com/buildwithsygma/sygma-next-generation-interoperability-1b89bfc671a4), our [website](https://buildwithsygma.com/), and our [Sygma Discord](https://discord.com/invite/7zmy3J3as5).
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

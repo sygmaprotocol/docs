@@ -1,0 +1,10 @@
+{
+  "type": "mdx",
+  "permalink": "/sygma-sdk",
+  "source": "@site/src/pages/sygma-sdk.md",
+  "title": "Sygma SDK",
+  "description": "A JS SDK that allows users to inject the Sygma UI functionality into an existing application. Designed to help developers build their own solutions in the Sygma ecosystem.",
+  "frontMatter": {
+    "description": "A JS SDK that allows users to inject the Sygma UI functionality into an existing application. Designed to help developers build their own solutions in the Sygma ecosystem."
+  }
+}

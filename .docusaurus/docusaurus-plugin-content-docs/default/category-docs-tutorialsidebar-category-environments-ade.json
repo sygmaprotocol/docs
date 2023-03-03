@@ -1,0 +1,15 @@
+{
+  "title": "Environments",
+  "slug": "/category/environments",
+  "permalink": "/docs/category/environments",
+  "navigation": {
+    "previous": {
+      "title": "Github Repositories",
+      "permalink": "/docs/github-repositories"
+    },
+    "next": {
+      "title": "Environments",
+      "permalink": "/docs/environments/"
+    }
+  }
+}

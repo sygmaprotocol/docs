@@ -1,0 +1,11 @@
+{
+  "title": "Introduction",
+  "slug": "/category/introduction",
+  "permalink": "/docs/category/introduction",
+  "navigation": {
+    "next": {
+      "title": "Abstract",
+      "permalink": "/docs/"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "architecture/security",
+  "id": "architecture/security",
+  "title": "Security",
+  "description": "The following details how Sygma addresses security concerns relating to various signature schemes.",
+  "source": "@site/docs/architecture/security.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/security",
+  "permalink": "/docs/architecture/security",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/architecture/security.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The following details how Sygma addresses security concerns relating to various signature schemes."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Relayers",
+    "permalink": "/docs/architecture/relayers"
+  },
+  "next": {
+    "title": "Sygma SDK",
+    "permalink": "/docs/sygma-sdk"
+  }
+}

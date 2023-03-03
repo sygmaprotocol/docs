@@ -1,0 +1,28 @@
+{
+  "unversionedId": "introduction/origins",
+  "id": "introduction/origins",
+  "title": "Origins",
+  "description": "The following describes the origins of Sygma.",
+  "source": "@site/docs/introduction/origins.md",
+  "sourceDirName": "introduction",
+  "slug": "/introduction/origins",
+  "permalink": "/docs/introduction/origins",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/introduction/origins.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "description": "The following describes the origins of Sygma."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Abstract",
+    "permalink": "/docs/"
+  },
+  "next": {
+    "title": "Architecture",
+    "permalink": "/docs/category/architecture"
+  }
+}

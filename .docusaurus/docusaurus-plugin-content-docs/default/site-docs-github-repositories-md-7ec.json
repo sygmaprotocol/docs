@@ -1,0 +1,28 @@
+{
+  "unversionedId": "github-repositories",
+  "id": "github-repositories",
+  "title": "Github Repositories",
+  "description": "The following details a list of relevant Sygma repositories.",
+  "source": "@site/docs/github-repositories.md",
+  "sourceDirName": ".",
+  "slug": "/github-repositories",
+  "permalink": "/docs/github-repositories",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/github-repositories.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "description": "The following details a list of relevant Sygma repositories."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sygma SDK",
+    "permalink": "/docs/sygma-sdk"
+  },
+  "next": {
+    "title": "Environments",
+    "permalink": "/docs/category/environments"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Architecture",
+  "slug": "/category/architecture",
+  "permalink": "/docs/category/architecture",
+  "navigation": {
+    "previous": {
+      "title": "Origins",
+      "permalink": "/docs/introduction/origins"
+    },
+    "next": {
+      "title": "Architecture",
+      "permalink": "/docs/architecture/"
+    }
+  }
+}

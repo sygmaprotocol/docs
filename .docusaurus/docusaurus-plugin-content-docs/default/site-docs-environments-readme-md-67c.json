@@ -1,0 +1,26 @@
+{
+  "unversionedId": "environments/README",
+  "id": "environments/README",
+  "title": "Environments",
+  "description": "The following details a list of deployed smart contract addresses for a variety of environments.",
+  "source": "@site/docs/environments/README.md",
+  "sourceDirName": "environments",
+  "slug": "/environments/",
+  "permalink": "/docs/environments/",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/environments/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The following details a list of deployed smart contract addresses for a variety of environments."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Environments",
+    "permalink": "/docs/category/environments"
+  },
+  "next": {
+    "title": "Devnet",
+    "permalink": "/docs/environments/devnet/"
+  }
+}

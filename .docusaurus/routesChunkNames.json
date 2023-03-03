@@ -1,0 +1,328 @@
+{
+  "/__docusaurus/debug-4da": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-76-c-ba8"
+    }
+  },
+  "/__docusaurus/debug/config-6c4": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-76-c-ba8"
+    }
+  },
+  "/__docusaurus/debug/content-17e": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-76-c-ba8"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-13d": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-76-c-ba8"
+    }
+  },
+  "/__docusaurus/debug/metadata-198": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-76-c-ba8"
+    }
+  },
+  "/__docusaurus/debug/registry-ec0": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-76-c-ba8"
+    }
+  },
+  "/__docusaurus/debug/routes-213": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-76-c-ba8"
+    }
+  },
+  "/blog-f6c": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "metadata": "metadata---blogb-2-b-df1"
+  },
+  "/blog/archive-82b": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "archive": "archive---blog-archiveb-2-f-393"
+  },
+  "/blog/first-blog-post-006": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-first-blog-poste-27-4a1"
+  },
+  "/blog/long-blog-post-0bc": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-long-blog-post-736-bc7"
+  },
+  "/blog/mdx-blog-post-273": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-mdx-blog-post-593-37b"
+  },
+  "/blog/tags-ad3": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/docusaurus-eed": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "tag": "tag---blog-tags-docusaurusa-80-728",
+    "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
+  },
+  "/blog/tags/facebook-ab7": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      }
+    ],
+    "tag": "tag---blog-tags-facebook-031-c52",
+    "listMetadata": "listMetadata---blog-tags-facebook-096-d31"
+  },
+  "/blog/tags/hello-82d": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blog-871-381"
+      }
+    ],
+    "tag": "tag---blog-tags-hello-30-a-bed",
+    "listMetadata": "listMetadata---blog-tags-hello-664-70a"
+  },
+  "/blog/tags/hola-001": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "tag": "tag---blog-tags-holae-16-18a",
+    "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
+  },
+  "/blog/welcome-446": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---bloge-95-c47"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-welcomed-9-f-ffb"
+  },
+  "/docs-93b": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__context": {
+      "plugin": "plugin---docs-6-b-9-bf0"
+    },
+    "versionMetadata": "versionMetadata---docs-935-398"
+  },
+  "/docs/-993": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-526-3fb"
+  },
+  "/docs/architecture/-677": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-architecture-4-b-7-668"
+  },
+  "/docs/architecture/fees-d31": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-architecture-fees-344-f3c"
+  },
+  "/docs/architecture/generic-a8f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-architecture-generic-0-da-955"
+  },
+  "/docs/architecture/mpc-d0c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-architecture-mpce-18-447"
+  },
+  "/docs/architecture/relayers-696": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-architecture-relayers-037-51b"
+  },
+  "/docs/architecture/security-3b5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-architecture-securitye-7-b-758"
+  },
+  "/docs/audits/-2fd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-audits-aa-1-3ab"
+  },
+  "/docs/audits/v1.0-v1.1/-25e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-audits-v-1-0-v-1-1-1-d-2-d2f"
+  },
+  "/docs/audits/v1.0-v1.1/haechi-audit-9-6-22-f14": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-audits-v-1-0-v-1-1-haechi-audit-9-6-228-a-9-a00"
+  },
+  "/docs/category/architecture-1bb": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-architecture-59-c-c52"
+  },
+  "/docs/category/audits-48c": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-auditsccb-1a0"
+  },
+  "/docs/category/environments-72a": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-environmentsf-25-922"
+  },
+  "/docs/category/introduction-d40": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-introduction-205-e9d"
+  },
+  "/docs/category/tutorial---basics-d44": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-basicsea-8-8c8"
+  },
+  "/docs/category/tutorial---extras-f09": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-extrasc-84-abc"
+  },
+  "/docs/environments/-ab4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-environments-67-c-2f3"
+  },
+  "/docs/environments/devnet/-e59": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-environments-devnet-168-e94"
+  },
+  "/docs/environments/devnet/adding-tokens-to-metamask-789": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-environments-devnet-adding-tokens-to-metamask-0-d-2-92e"
+  },
+  "/docs/environments/devnet/obtain-devnet-tokens-9c9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-environments-devnet-obtain-devnet-tokens-757-239"
+  },
+  "/docs/environments/mainnet-f5d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-environments-mainnet-7-c-8-066"
+  },
+  "/docs/environments/testnet-1cb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-environments-testnet-005-296"
+  },
+  "/docs/github-repositories-795": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-github-repositories-7-ec-2bc"
+  },
+  "/docs/introduction/origins-05b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-introduction-origins-3-dd-7a5"
+  },
+  "/docs/sygma-sdk-0ca": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-sygma-sdkbaf-fef"
+  },
+  "/docs/tutorial-basics/congratulations-793": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-congratulations-822-958"
+  },
+  "/docs/tutorial-basics/create-a-blog-post-68e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-create-a-blog-post-533-e85"
+  },
+  "/docs/tutorial-basics/create-a-document-c2d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-create-a-document-1-e-4-078"
+  },
+  "/docs/tutorial-basics/create-a-page-f44": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-create-a-page-5-c-8-e19"
+  },
+  "/docs/tutorial-basics/deploy-your-site-e46": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-deploy-your-sitef-55-a3f"
+  },
+  "/docs/tutorial-basics/markdown-features-4b7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-basics-markdown-features-18-c-a79"
+  },
+  "/docs/tutorial-extras/manage-docs-versions-fdd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-extras-manage-docs-versionsdff-6d4"
+  },
+  "/docs/tutorial-extras/translate-your-site-2d7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-extras-translate-your-sitee-44-ddf"
+  },
+  "/-db6": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---b-41-75e"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}
