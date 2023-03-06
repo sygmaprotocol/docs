@@ -1,0 +1,4 @@
+Sygma
+Testnet
+Devnet
+Mainnet

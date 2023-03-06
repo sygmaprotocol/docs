@@ -1,4 +1,5 @@
 ---
+slug: /environments
 title: Environments
 id: environemnts-index
 ---
