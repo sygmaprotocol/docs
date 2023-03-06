@@ -12,6 +12,5 @@ description: The following details how to add Devnet (custom) tokens to MetaMask
 
 #### Resources
 
-{% embed url="https://consensys.net/blog/metamask/how-to-add-your-custom-tokens-in-metamask/" %}
-
-{% embed url="https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask" %}
+#### [How to Add Your Custom Tokens in MetaMask](https://consensys.net/blog/metamask/how-to-add-your-custom-tokens-in-metamask/)
+#### [ How to display tokens in MetaMask](https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-add-unlisted-tokens-custom-tokens-in-MetaMask)

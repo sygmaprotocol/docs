@@ -17,10 +17,8 @@ This information is used to determine the cost of transactions on the destinatio
 
 ![Sygma Fees](../../static/assets/Fee.png)
 
-{% hint style="info" %}
+:::info
 The Fee Oracle service will be _centralized_ in the beginning.&#x20;
 
-
-
 The current architecture implies a future update of the Fee Oracle to a more decentralized or trustless solution. However, since the calculated fee is visible and approved by the user, the current Fee Oracle does not pose a [security](./security) threat to the entire system.
-{% endhint %}
+:::
