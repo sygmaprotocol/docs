@@ -2,7 +2,7 @@ name: Check and Publish
 on: 
   push:
     branches:
-      - main
+      - develop
   pull_request:
     branches:
       - '**'
