@@ -26,9 +26,9 @@ When calling deposit on source network, `depositData` is necessary execution inf
 
 ![Sygma GMP message format](../../static/assets/gmp-message-format.png)
 
-On the source network Bridge contract sets **msg.sender** as **executionDataDepositor**, hence this allows destination network contract to authorise the call.
+On the source network Bridge contract sets **msg.sender** as **executionDataDepositor**, hence this allows destination network contract to authorize the call.
 
-The only interface that  developers should follow is the signature of **receiving function** it should always has first param to be an address of metadataDepositor
+The only interface that  developers should follow is the signature of **receiving function** it should always has first parameter to be an address of metadataDepositor
 
 ```solidity
 function recieveExecutionFromSygma(bytes32 metadataDepositor, arg2, arg3)

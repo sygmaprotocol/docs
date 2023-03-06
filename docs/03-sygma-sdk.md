@@ -27,7 +27,7 @@ The current SDK has one package that comprises the whole bridging logic for tran
 
 ### Useful commands
 
-After cloning the repo, simply run:
+After cloning the repository, simply run:
 
 ```
 npx lerna bootstrap

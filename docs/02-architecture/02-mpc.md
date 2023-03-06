@@ -14,4 +14,4 @@ MPC was introduced as a solution for the **Two Billionaires Problem** (Bob and A
 The multi-party computation (MPC) model that Sygma employs includes a number of trusted [relayer](./relayers) nodes. These trusted [relayer](./relayers) nodes will be run by reputable entities in the web3 space.
 
 
-For more on how MPC is used by Syma, see [Security](./security).
+For more on how MPC is used by Sygma, see [Security](./security).

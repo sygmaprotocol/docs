@@ -49,7 +49,7 @@ The faucet API allows users to programmatically interact with the faucet.
 | ERC721  | ERC721TST     | BasicFee      | Mint/Burn      | 0x0000000000000000000000000000000000000000000000000000000000000200 | 0xe9d3b1433bACDfC26ee097629D238A41BF6dA3aE | 0x4beD477d1f5D338855A521ABa2A88c9a15e2eA5d | 0x3D151A97A446C9ea6893038e7C0db73466f3f3af |
 | Generic | Generic       | Basic Fee     | n/a            | 0x0000000000000000000000000000000000000000000000000000000000000500 | n/a                                        | n/a                                        | n/a                                        |
 
-### Fee Schemas
+### Fee Schemes
 
 | Resource ID                                                        | Fee Type   | Fee Percent/Amount |
 | ------------------------------------------------------------------ | ---------- | ------------------ |

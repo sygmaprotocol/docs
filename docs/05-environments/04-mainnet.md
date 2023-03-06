@@ -26,7 +26,7 @@ The following details a list of resources to support the Mainnet environment.
 | ERC20 |               | ERC20    | Lock/Release   |             |                         |                         |                           |
 | ERC20 |               | ERC20    | Mint/Burn      |             |                         |                         |                           |
 
-### Fee Schemas
+### Fee Schemes
 
 | Resource ID | Fee Type   | Fee Percent/Amount |
 | ----------- | ---------- | ------------------ |
