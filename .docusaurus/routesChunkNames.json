@@ -42,287 +42,95 @@
       "plugin": "plugin---docusaurus-debug-76-c-ba8"
     }
   },
-  "/blog-f6c": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
-      },
-      {
-        "content": "content---blogf-4-f-cd7"
-      },
-      {
-        "content": "content---blog-871-381"
-      },
-      {
-        "content": "content---blog-925-e00"
-      }
-    ],
-    "metadata": "metadata---blogb-2-b-df1"
-  },
-  "/blog/archive-82b": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "archive": "archive---blog-archiveb-2-f-393"
-  },
-  "/blog/first-blog-post-006": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-first-blog-poste-27-4a1"
-  },
-  "/blog/long-blog-post-0bc": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-long-blog-post-736-bc7"
-  },
-  "/blog/mdx-blog-post-273": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-mdx-blog-post-593-37b"
-  },
-  "/blog/tags-ad3": {
-    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "tags": "tags---blog-tagsa-70-da2"
-  },
-  "/blog/tags/docusaurus-eed": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
-      },
-      {
-        "content": "content---blogf-4-f-cd7"
-      },
-      {
-        "content": "content---blog-871-381"
-      },
-      {
-        "content": "content---blog-925-e00"
-      }
-    ],
-    "tag": "tag---blog-tags-docusaurusa-80-728",
-    "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
-  },
-  "/blog/tags/facebook-ab7": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
-      }
-    ],
-    "tag": "tag---blog-tags-facebook-031-c52",
-    "listMetadata": "listMetadata---blog-tags-facebook-096-d31"
-  },
-  "/blog/tags/hello-82d": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-766-e3c"
-      },
-      {
-        "content": "content---blog-871-381"
-      }
-    ],
-    "tag": "tag---blog-tags-hello-30-a-bed",
-    "listMetadata": "listMetadata---blog-tags-hello-664-70a"
-  },
-  "/blog/tags/hola-001": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "items": [
-      {
-        "content": "content---blog-925-e00"
-      }
-    ],
-    "tag": "tag---blog-tags-holae-16-18a",
-    "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
-  },
-  "/blog/welcome-446": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
-    "__context": {
-      "plugin": "plugin---bloge-95-c47"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-welcomed-9-f-ffb"
-  },
-  "/docs-93b": {
+  "/docs-0c3": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-6-b-9-bf0"
     },
     "versionMetadata": "versionMetadata---docs-935-398"
   },
-  "/docs/-993": {
+  "/docs/-88f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-526-3fb"
+    "content": "content---docs-a-3-d-ad1"
   },
-  "/docs/architecture/-677": {
+  "/docs/architecture-747": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-architecture-4-b-7-668"
+    "content": "content---docs-architecturef-78-b79"
   },
-  "/docs/architecture/fees-d31": {
+  "/docs/architecture/fees-af0": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-architecture-fees-344-f3c"
+    "content": "content---docs-architecture-fees-57-a-627"
   },
-  "/docs/architecture/generic-a8f": {
+  "/docs/architecture/generic-8fc": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-architecture-generic-0-da-955"
+    "content": "content---docs-architecture-generic-6-b-5-f79"
   },
-  "/docs/architecture/mpc-d0c": {
+  "/docs/architecture/mpc-840": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-architecture-mpce-18-447"
+    "content": "content---docs-architecture-mpc-421-0be"
   },
-  "/docs/architecture/relayers-696": {
+  "/docs/architecture/relayers-d4b": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-architecture-relayers-037-51b"
+    "content": "content---docs-architecture-relayers-8-d-6-11b"
   },
-  "/docs/architecture/security-3b5": {
+  "/docs/architecture/security-b39": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-architecture-securitye-7-b-758"
+    "content": "content---docs-architecture-security-9-dd-238"
   },
-  "/docs/audits/-2fd": {
+  "/docs/audits/-6e7": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-audits-aa-1-3ab"
+    "content": "content---docs-audits-d-64-e3e"
   },
-  "/docs/audits/v1.0-v1.1/-25e": {
+  "/docs/audits/v1.0-v1.1/-d6b": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-audits-v-1-0-v-1-1-1-d-2-d2f"
+    "content": "content---docs-audits-v-1-0-v-1-1-142-b12"
   },
-  "/docs/audits/v1.0-v1.1/haechi-audit-9-6-22-f14": {
+  "/docs/environments/devnet/-d0b": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-audits-v-1-0-v-1-1-haechi-audit-9-6-228-a-9-a00"
+    "content": "content---docs-environments-devnet-8-a-6-f88"
   },
-  "/docs/category/architecture-1bb": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-architecture-59-c-c52"
-  },
-  "/docs/category/audits-48c": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-auditsccb-1a0"
-  },
-  "/docs/category/environments-72a": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-environmentsf-25-922"
-  },
-  "/docs/category/introduction-d40": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-introduction-205-e9d"
-  },
-  "/docs/category/tutorial---basics-d44": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-basicsea-8-8c8"
-  },
-  "/docs/category/tutorial---extras-f09": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-tutorial-extrasc-84-abc"
-  },
-  "/docs/environments/-ab4": {
+  "/docs/environments/devnet/adding-tokens-to-metamask-e35": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-environments-67-c-2f3"
+    "content": "content---docs-environments-devnet-adding-tokens-to-metamask-8-da-5b9"
   },
-  "/docs/environments/devnet/-e59": {
+  "/docs/environments/devnet/obtain-devnet-tokens-590": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-environments-devnet-168-e94"
+    "content": "content---docs-environments-devnet-obtain-devnet-tokens-16-f-cf2"
   },
-  "/docs/environments/devnet/adding-tokens-to-metamask-789": {
+  "/docs/environments/environemnts-index-7ac": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-environments-devnet-adding-tokens-to-metamask-0-d-2-92e"
+    "content": "content---docs-environments-indexbb-3-1a3"
   },
-  "/docs/environments/devnet/obtain-devnet-tokens-9c9": {
+  "/docs/environments/mainnet-186": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-environments-devnet-obtain-devnet-tokens-757-239"
+    "content": "content---docs-environments-mainneta-39-9d2"
   },
-  "/docs/environments/mainnet-f5d": {
+  "/docs/environments/testnet/-480": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-environments-mainnet-7-c-8-066"
+    "content": "content---docs-environments-testnet-005-fac"
   },
-  "/docs/environments/testnet-1cb": {
+  "/docs/environments/testnet/adding-tokens-to-metamask-054": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-environments-testnet-005-296"
+    "content": "content---docs-environments-testnet-adding-tokens-to-metamaskef-4-658"
   },
-  "/docs/github-repositories-795": {
+  "/docs/environments/testnet/obtain-testnet-tokens-b58": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-github-repositories-7-ec-2bc"
+    "content": "content---docs-environments-testnet-obtain-testnet-tokensa-86-82b"
   },
-  "/docs/introduction/origins-05b": {
+  "/docs/github-repositories-6a4": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-introduction-origins-3-dd-7a5"
+    "content": "content---docs-github-repositories-739-c21"
   },
-  "/docs/sygma-sdk-0ca": {
+  "/docs/readme/abstract-e55": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-sygma-sdkbaf-fef"
+    "content": "content---docs-readme-abstract-10-c-ddb"
   },
-  "/docs/tutorial-basics/congratulations-793": {
+  "/docs/readme/origins-b2f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-congratulations-822-958"
+    "content": "content---docs-readme-originsf-80-ad3"
   },
-  "/docs/tutorial-basics/create-a-blog-post-68e": {
+  "/docs/sygma-sdk-ce4": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-blog-post-533-e85"
-  },
-  "/docs/tutorial-basics/create-a-document-c2d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-document-1-e-4-078"
-  },
-  "/docs/tutorial-basics/create-a-page-f44": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-create-a-page-5-c-8-e19"
-  },
-  "/docs/tutorial-basics/deploy-your-site-e46": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-deploy-your-sitef-55-a3f"
-  },
-  "/docs/tutorial-basics/markdown-features-4b7": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-basics-markdown-features-18-c-a79"
-  },
-  "/docs/tutorial-extras/manage-docs-versions-fdd": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-manage-docs-versionsdff-6d4"
-  },
-  "/docs/tutorial-extras/translate-your-site-2d7": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-extras-translate-your-sitee-44-ddf"
-  },
-  "/-db6": {
-    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
-    "__context": {
-      "plugin": "plugin---b-41-75e"
-    },
-    "config": "config---5-e-9-4f3"
+    "content": "content---docs-sygma-sdkd-51-adc"
   }
 }

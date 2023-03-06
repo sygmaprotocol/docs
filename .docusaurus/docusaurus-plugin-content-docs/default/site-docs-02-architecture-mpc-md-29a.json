@@ -1,0 +1,26 @@
+{
+  "unversionedId": "architecture/mpc",
+  "id": "architecture/mpc",
+  "title": "MPC",
+  "description": "The following details how MPC is utilized by Sygma.",
+  "source": "@site/docs/02-architecture/mpc.md",
+  "sourceDirName": "02-architecture",
+  "slug": "/architecture/mpc",
+  "permalink": "/docs/architecture/mpc",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/02-architecture/mpc.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The following details how MPC is utilized by Sygma."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Generic message passing",
+    "permalink": "/docs/architecture/generic"
+  },
+  "next": {
+    "title": "Relayers",
+    "permalink": "/docs/architecture/relayers"
+  }
+}

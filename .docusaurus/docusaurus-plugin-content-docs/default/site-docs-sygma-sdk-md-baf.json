@@ -8,7 +8,7 @@
   "slug": "/sygma-sdk",
   "permalink": "/docs/sygma-sdk",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/sygma-sdk.md",
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/sygma-sdk.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 3,
@@ -16,7 +16,7 @@
     "sidebar_position": 3,
     "description": "A JS SDK that allows users to inject the Sygma UI functionality into an existing application. Designed to help developers build their own solutions in the Sygma ecosystem."
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Security",
     "permalink": "/docs/architecture/security"

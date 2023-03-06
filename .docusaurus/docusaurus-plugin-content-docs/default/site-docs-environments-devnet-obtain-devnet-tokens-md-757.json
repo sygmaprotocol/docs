@@ -8,13 +8,13 @@
   "slug": "/environments/devnet/obtain-devnet-tokens",
   "permalink": "/docs/environments/devnet/obtain-devnet-tokens",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/environments/devnet/obtain-devnet-tokens.md",
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/environments/devnet/obtain-devnet-tokens.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "description": "The following details how to obtain Devnet tokens from the Faucet UI."
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Adding Tokens To MetaMask",
     "permalink": "/docs/environments/devnet/adding-tokens-to-metamask"

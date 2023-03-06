@@ -1,0 +1,24 @@
+{
+  "unversionedId": "environments/testnet/obtain-testnet-tokens",
+  "id": "environments/testnet/obtain-testnet-tokens",
+  "title": "Obtain Testnet Tokens",
+  "description": "",
+  "source": "@site/docs/05-environments/03-testnet/obtain-testnet-tokens.md",
+  "sourceDirName": "05-environments/03-testnet",
+  "slug": "/environments/testnet/obtain-testnet-tokens",
+  "permalink": "/docs/environments/testnet/obtain-testnet-tokens",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/05-environments/03-testnet/obtain-testnet-tokens.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Adding Tokens To MetaMask",
+    "permalink": "/docs/environments/testnet/adding-tokens-to-metamask"
+  },
+  "next": {
+    "title": "Mainnet",
+    "permalink": "/docs/environments/mainnet"
+  }
+}

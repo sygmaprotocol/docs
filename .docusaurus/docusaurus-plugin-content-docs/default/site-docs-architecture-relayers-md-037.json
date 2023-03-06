@@ -8,13 +8,13 @@
   "slug": "/architecture/relayers",
   "permalink": "/docs/architecture/relayers",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/architecture/relayers.md",
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/architecture/relayers.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "description": "The following details how relayers are defined and managed by Sygma."
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "MPC",
     "permalink": "/docs/architecture/mpc"

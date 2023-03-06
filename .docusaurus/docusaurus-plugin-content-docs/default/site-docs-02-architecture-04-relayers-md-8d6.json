@@ -1,0 +1,28 @@
+{
+  "unversionedId": "architecture/relayers",
+  "id": "architecture/relayers",
+  "title": "Relayers",
+  "description": "The following details how relayers are defined and managed by Sygma.",
+  "source": "@site/docs/02-architecture/04-relayers.md",
+  "sourceDirName": "02-architecture",
+  "slug": "/architecture/relayers",
+  "permalink": "/docs/architecture/relayers",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/02-architecture/04-relayers.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Relayers",
+    "description": "The following details how relayers are defined and managed by Sygma."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Fees",
+    "permalink": "/docs/architecture/fees"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/docs/architecture/security"
+  }
+}

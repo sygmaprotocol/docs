@@ -38,268 +38,136 @@ export default [
     exact: true
   },
   {
-    path: '/blog',
-    component: ComponentCreator('/blog', 'f6c'),
-    exact: true
-  },
-  {
-    path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '82b'),
-    exact: true
-  },
-  {
-    path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '006'),
-    exact: true
-  },
-  {
-    path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '0bc'),
-    exact: true
-  },
-  {
-    path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', '273'),
-    exact: true
-  },
-  {
-    path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', 'ad3'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', 'eed'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', 'ab7'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '82d'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '001'),
-    exact: true
-  },
-  {
-    path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', '446'),
-    exact: true
-  },
-  {
     path: '/docs',
-    component: ComponentCreator('/docs', '93b'),
+    component: ComponentCreator('/docs', '0c3'),
     routes: [
       {
         path: '/docs/',
-        component: ComponentCreator('/docs/', '993'),
+        component: ComponentCreator('/docs/', '88f'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
-        path: '/docs/architecture/',
-        component: ComponentCreator('/docs/architecture/', '677'),
+        path: '/docs/architecture',
+        component: ComponentCreator('/docs/architecture', '747'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/architecture/fees',
-        component: ComponentCreator('/docs/architecture/fees', 'd31'),
+        component: ComponentCreator('/docs/architecture/fees', 'af0'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/architecture/generic',
-        component: ComponentCreator('/docs/architecture/generic', 'a8f'),
+        component: ComponentCreator('/docs/architecture/generic', '8fc'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/architecture/mpc',
-        component: ComponentCreator('/docs/architecture/mpc', 'd0c'),
+        component: ComponentCreator('/docs/architecture/mpc', '840'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/architecture/relayers',
-        component: ComponentCreator('/docs/architecture/relayers', '696'),
+        component: ComponentCreator('/docs/architecture/relayers', 'd4b'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/architecture/security',
-        component: ComponentCreator('/docs/architecture/security', '3b5'),
+        component: ComponentCreator('/docs/architecture/security', 'b39'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/audits/',
-        component: ComponentCreator('/docs/audits/', '2fd'),
+        component: ComponentCreator('/docs/audits/', '6e7'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/audits/v1.0-v1.1/',
-        component: ComponentCreator('/docs/audits/v1.0-v1.1/', '25e'),
+        component: ComponentCreator('/docs/audits/v1.0-v1.1/', 'd6b'),
         exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/audits/v1.0-v1.1/haechi-audit-9-6-22',
-        component: ComponentCreator('/docs/audits/v1.0-v1.1/haechi-audit-9-6-22', 'f14'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/category/architecture',
-        component: ComponentCreator('/docs/category/architecture', '1bb'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/category/audits',
-        component: ComponentCreator('/docs/category/audits', '48c'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/category/environments',
-        component: ComponentCreator('/docs/category/environments', '72a'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/category/introduction',
-        component: ComponentCreator('/docs/category/introduction', 'd40'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/category/tutorial---basics',
-        component: ComponentCreator('/docs/category/tutorial---basics', 'd44'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/category/tutorial---extras',
-        component: ComponentCreator('/docs/category/tutorial---extras', 'f09'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/environments/',
-        component: ComponentCreator('/docs/environments/', 'ab4'),
-        exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/environments/devnet/',
-        component: ComponentCreator('/docs/environments/devnet/', 'e59'),
+        component: ComponentCreator('/docs/environments/devnet/', 'd0b'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/environments/devnet/adding-tokens-to-metamask',
-        component: ComponentCreator('/docs/environments/devnet/adding-tokens-to-metamask', '789'),
+        component: ComponentCreator('/docs/environments/devnet/adding-tokens-to-metamask', 'e35'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
         path: '/docs/environments/devnet/obtain-devnet-tokens',
-        component: ComponentCreator('/docs/environments/devnet/obtain-devnet-tokens', '9c9'),
+        component: ComponentCreator('/docs/environments/devnet/obtain-devnet-tokens', '590'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
+      },
+      {
+        path: '/docs/environments/environemnts-index',
+        component: ComponentCreator('/docs/environments/environemnts-index', '7ac'),
+        exact: true,
+        sidebar: "docs"
       },
       {
         path: '/docs/environments/mainnet',
-        component: ComponentCreator('/docs/environments/mainnet', 'f5d'),
+        component: ComponentCreator('/docs/environments/mainnet', '186'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
-        path: '/docs/environments/testnet',
-        component: ComponentCreator('/docs/environments/testnet', '1cb'),
+        path: '/docs/environments/testnet/',
+        component: ComponentCreator('/docs/environments/testnet/', '480'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
+      },
+      {
+        path: '/docs/environments/testnet/adding-tokens-to-metamask',
+        component: ComponentCreator('/docs/environments/testnet/adding-tokens-to-metamask', '054'),
+        exact: true,
+        sidebar: "docs"
+      },
+      {
+        path: '/docs/environments/testnet/obtain-testnet-tokens',
+        component: ComponentCreator('/docs/environments/testnet/obtain-testnet-tokens', 'b58'),
+        exact: true,
+        sidebar: "docs"
       },
       {
         path: '/docs/github-repositories',
-        component: ComponentCreator('/docs/github-repositories', '795'),
+        component: ComponentCreator('/docs/github-repositories', '6a4'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       },
       {
-        path: '/docs/introduction/origins',
-        component: ComponentCreator('/docs/introduction/origins', '05b'),
+        path: '/docs/readme/abstract',
+        component: ComponentCreator('/docs/readme/abstract', 'e55'),
         exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
+      },
+      {
+        path: '/docs/readme/origins',
+        component: ComponentCreator('/docs/readme/origins', 'b2f'),
+        exact: true,
+        sidebar: "docs"
       },
       {
         path: '/docs/sygma-sdk',
-        component: ComponentCreator('/docs/sygma-sdk', '0ca'),
+        component: ComponentCreator('/docs/sygma-sdk', 'ce4'),
         exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/congratulations',
-        component: ComponentCreator('/docs/tutorial-basics/congratulations', '793'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/create-a-blog-post',
-        component: ComponentCreator('/docs/tutorial-basics/create-a-blog-post', '68e'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/create-a-document',
-        component: ComponentCreator('/docs/tutorial-basics/create-a-document', 'c2d'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/create-a-page',
-        component: ComponentCreator('/docs/tutorial-basics/create-a-page', 'f44'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/deploy-your-site',
-        component: ComponentCreator('/docs/tutorial-basics/deploy-your-site', 'e46'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-basics/markdown-features',
-        component: ComponentCreator('/docs/tutorial-basics/markdown-features', '4b7'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-extras/manage-docs-versions',
-        component: ComponentCreator('/docs/tutorial-extras/manage-docs-versions', 'fdd'),
-        exact: true,
-        sidebar: "tutorialSidebar"
-      },
-      {
-        path: '/docs/tutorial-extras/translate-your-site',
-        component: ComponentCreator('/docs/tutorial-extras/translate-your-site', '2d7'),
-        exact: true,
-        sidebar: "tutorialSidebar"
+        sidebar: "docs"
       }
     ]
-  },
-  {
-    path: '/',
-    component: ComponentCreator('/', 'db6'),
-    exact: true
   },
   {
     path: '*',

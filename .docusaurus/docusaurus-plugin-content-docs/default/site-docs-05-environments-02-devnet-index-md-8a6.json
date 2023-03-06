@@ -1,0 +1,28 @@
+{
+  "unversionedId": "environments/devnet/devnet-index",
+  "id": "environments/devnet/devnet-index",
+  "title": "Devnet",
+  "description": "The following details a list of resources to support the Devnet environment.",
+  "source": "@site/docs/05-environments/02-devnet/index.md",
+  "sourceDirName": "05-environments/02-devnet",
+  "slug": "/environments/devnet/",
+  "permalink": "/docs/environments/devnet/",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/05-environments/02-devnet/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Devnet",
+    "id": "devnet-index",
+    "description": "The following details a list of resources to support the Devnet environment."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Environments",
+    "permalink": "/docs/environments/environemnts-index"
+  },
+  "next": {
+    "title": "Obtain Devnet Tokens",
+    "permalink": "/docs/environments/devnet/obtain-devnet-tokens"
+  }
+}

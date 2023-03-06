@@ -1,0 +1,28 @@
+{
+  "unversionedId": "environments/testnet/testnet-index",
+  "id": "environments/testnet/testnet-index",
+  "title": "Testnet",
+  "description": "The following details a list of resources to support the Testnet environment.",
+  "source": "@site/docs/05-environments/03-testnet/index.md",
+  "sourceDirName": "05-environments/03-testnet",
+  "slug": "/environments/testnet/",
+  "permalink": "/docs/environments/testnet/",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/05-environments/03-testnet/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Testnet",
+    "id": "testnet-index",
+    "description": "The following details a list of resources to support the Testnet environment."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Adding Tokens To MetaMask",
+    "permalink": "/docs/environments/devnet/adding-tokens-to-metamask"
+  },
+  "next": {
+    "title": "Obtain Testnet Tokens",
+    "permalink": "/docs/environments/testnet/obtain-testnet-tokens"
+  }
+}

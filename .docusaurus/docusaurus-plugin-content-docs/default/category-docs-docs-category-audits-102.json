@@ -1,0 +1,15 @@
+{
+  "title": "Audits",
+  "slug": "/category/audits",
+  "permalink": "/docs/category/audits",
+  "navigation": {
+    "previous": {
+      "title": "Mainnet",
+      "permalink": "/docs/environments/mainnet"
+    },
+    "next": {
+      "title": "audit-v1",
+      "permalink": "/docs/audits/v1.0-v1.1/"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "introduction/origins",
+  "id": "introduction/origins",
+  "title": "Origins",
+  "description": "The following describes the origins of Sygma.",
+  "source": "@site/docs/01-introduction/origins.md",
+  "sourceDirName": "01-introduction",
+  "slug": "/readme/origins",
+  "permalink": "/docs/readme/origins",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/01-introduction/origins.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The following describes the origins of Sygma.",
+    "slug": "/readme/origins"
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Abstract",
+    "permalink": "/docs/readme/abstract"
+  },
+  "next": {
+    "title": "Architecture",
+    "permalink": "/docs/category/architecture"
+  }
+}

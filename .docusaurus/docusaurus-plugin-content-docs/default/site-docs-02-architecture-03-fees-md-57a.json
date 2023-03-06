@@ -1,0 +1,28 @@
+{
+  "unversionedId": "architecture/fees",
+  "id": "architecture/fees",
+  "title": "Fees",
+  "description": "The following details how fees are handled by Sygma.",
+  "source": "@site/docs/02-architecture/03-fees.md",
+  "sourceDirName": "02-architecture",
+  "slug": "/architecture/fees",
+  "permalink": "/docs/architecture/fees",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/02-architecture/03-fees.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "title": "Fees",
+    "description": "The following details how fees are handled by Sygma."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "MPC",
+    "permalink": "/docs/architecture/mpc"
+  },
+  "next": {
+    "title": "Relayers",
+    "permalink": "/docs/architecture/relayers"
+  }
+}

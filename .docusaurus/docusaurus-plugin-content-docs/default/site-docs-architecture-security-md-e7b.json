@@ -8,13 +8,13 @@
   "slug": "/architecture/security",
   "permalink": "/docs/architecture/security",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/architecture/security.md",
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/architecture/security.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "description": "The following details how Sygma addresses security concerns relating to various signature schemes."
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Relayers",
     "permalink": "/docs/architecture/relayers"

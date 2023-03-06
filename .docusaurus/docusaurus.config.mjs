@@ -4,15 +4,15 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "url": "https://your-docusaurus-test-site.com",
+  "title": "Sygma",
+  "tagline": "",
+  "url": "https://docs.buildwithsygma.com",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/favicon.ico",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "organizationName": "sygmaprotocol",
+  "projectName": "docs",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -27,8 +27,10 @@ export default {
       {
         "docs": {
           "sidebarPath": "/Users/peter/Developer/src/github.com/sygmaprotocol/docs/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+          "editUrl": "https://github.com/sygmaprotocol/docs/tree/main"
         },
+        "blog": false,
+        "debug": true,
         "theme": {
           "customCss": "/Users/peter/Developer/src/github.com/sygmaprotocol/docs/src/css/custom.css"
         }
@@ -37,25 +39,14 @@ export default {
   ],
   "themeConfig": {
     "navbar": {
-      "title": "My Site",
+      "title": "Sygma",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "alt": "Sygma Logo",
+        "src": "img/logo.png"
       },
       "items": [
         {
-          "type": "doc",
-          "docId": "intro",
-          "position": "left",
-          "label": "Tutorial"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/sygmaprotocol/docs",
           "label": "GitHub",
           "position": "right"
         }
@@ -64,48 +55,8 @@ export default {
     },
     "footer": {
       "style": "dark",
-      "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
-            }
-          ]
-        }
-      ],
-      "copyright": "Copyright © 2022 My Project, Inc. Built with Docusaurus."
+      "links": [],
+      "copyright": "Copyright © 2023 Sygma. Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -329,13 +280,22 @@ export default {
       "maxHeadingLevel": 3
     }
   },
+  "plugins": [
+    [
+      "/Users/peter/Developer/src/github.com/sygmaprotocol/docs/node_modules/@cmfcmf/docusaurus-search-local/lib/server/index.js",
+      {
+        "indexBlog": false,
+        "indexPages": false,
+        "indexDocs": true
+      }
+    ]
+  ],
   "baseUrlIssueBanner": true,
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
     "static"
   ],
   "customFields": {},
-  "plugins": [],
   "themes": [],
   "scripts": [],
   "headTags": [],

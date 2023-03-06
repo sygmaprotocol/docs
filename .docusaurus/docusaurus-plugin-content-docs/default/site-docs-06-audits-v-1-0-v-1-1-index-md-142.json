@@ -1,0 +1,24 @@
+{
+  "unversionedId": "audits/v1.0-v1.1/audit-v1",
+  "id": "audits/v1.0-v1.1/audit-v1",
+  "title": "v1.0/v1.1",
+  "description": "The following details audit reports related to the Sygma versions 1.0 and 1.1.",
+  "source": "@site/docs/06-audits/v1.0-v1.1/index.md",
+  "sourceDirName": "06-audits/v1.0-v1.1",
+  "slug": "/audits/v1.0-v1.1/",
+  "permalink": "/docs/audits/v1.0-v1.1/",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/06-audits/v1.0-v1.1/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "audit-v1",
+    "title": "v1.0/v1.1",
+    "description": "The following details audit reports related to the Sygma versions 1.0 and 1.1."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Audits",
+    "permalink": "/docs/audits/"
+  }
+}

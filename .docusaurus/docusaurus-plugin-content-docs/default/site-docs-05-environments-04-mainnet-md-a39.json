@@ -1,0 +1,28 @@
+{
+  "unversionedId": "environments/mainnet",
+  "id": "environments/mainnet",
+  "title": "Mainnet",
+  "description": "The following details a list of resources to support the Mainnet environment.",
+  "source": "@site/docs/05-environments/04-mainnet.md",
+  "sourceDirName": "05-environments",
+  "slug": "/environments/mainnet",
+  "permalink": "/docs/environments/mainnet",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/05-environments/04-mainnet.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "title": "Mainnet",
+    "description": "The following details a list of resources to support the Mainnet environment."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Adding Tokens To MetaMask",
+    "permalink": "/docs/environments/testnet/adding-tokens-to-metamask"
+  },
+  "next": {
+    "title": "Audits",
+    "permalink": "/docs/audits/"
+  }
+}

@@ -8,13 +8,13 @@
   "slug": "/environments/devnet/adding-tokens-to-metamask",
   "permalink": "/docs/environments/devnet/adding-tokens-to-metamask",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/environments/devnet/adding-tokens-to-metamask.md",
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/environments/devnet/adding-tokens-to-metamask.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "description": "The following details how to add Devnet (custom) tokens to MetaMask."
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Devnet",
     "permalink": "/docs/environments/devnet/"

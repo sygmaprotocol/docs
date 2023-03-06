@@ -1,0 +1,26 @@
+{
+  "unversionedId": "audits/index.md",
+  "id": "audits/index.md",
+  "title": "Audits",
+  "description": "The following details audit reports related to the various Sygma repositories.",
+  "source": "@site/docs/06-audits/index.md.md",
+  "sourceDirName": "06-audits",
+  "slug": "/audits/index.md",
+  "permalink": "/docs/audits/index.md",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/06-audits/index.md.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The following details audit reports related to the various Sygma repositories."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Audits",
+    "permalink": "/docs/category/audits"
+  },
+  "next": {
+    "title": "v1.0/v1.1",
+    "permalink": "/docs/audits/v1.0-v1.1/"
+  }
+}

@@ -1,4 +1,14 @@
 {
+  "@cmfcmf/docusaurus-search-local": {
+    "default": {
+      "titleBoost": 5,
+      "contentBoost": 1,
+      "tagsBoost": 3,
+      "parentCategoriesBoost": 2,
+      "indexDocSidebarParentCategories": 0,
+      "maxSearchResults": 8
+    }
+  },
   "docusaurus-plugin-content-docs": {
     "default": {
       "path": "/docs",
@@ -8,179 +18,119 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "introduction/abstract",
+          "mainDocId": "introduction/intro",
           "docs": [
+            {
+              "id": "architecture/architecture-index",
+              "path": "/docs/architecture",
+              "sidebar": "docs"
+            },
             {
               "id": "architecture/fees",
               "path": "/docs/architecture/fees",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "architecture/generic",
               "path": "/docs/architecture/generic",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "architecture/mpc",
               "path": "/docs/architecture/mpc",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "architecture/README",
-              "path": "/docs/architecture/",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "architecture/relayers",
               "path": "/docs/architecture/relayers",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "architecture/security",
               "path": "/docs/architecture/security",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
-              "id": "audits/README",
+              "id": "audits/audits-index",
               "path": "/docs/audits/",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
-              "id": "audits/v1.0-v1.1/haechi-audit-9-6-22",
-              "path": "/docs/audits/v1.0-v1.1/haechi-audit-9-6-22",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "audits/v1.0-v1.1/README",
+              "id": "audits/v1.0-v1.1/audit-v1",
               "path": "/docs/audits/v1.0-v1.1/",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "environments/devnet/adding-tokens-to-metamask",
               "path": "/docs/environments/devnet/adding-tokens-to-metamask",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
+            },
+            {
+              "id": "environments/devnet/devnet-index",
+              "path": "/docs/environments/devnet/",
+              "sidebar": "docs"
             },
             {
               "id": "environments/devnet/obtain-devnet-tokens",
               "path": "/docs/environments/devnet/obtain-devnet-tokens",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
-              "id": "environments/devnet/README",
-              "path": "/docs/environments/devnet/",
-              "sidebar": "tutorialSidebar"
+              "id": "environments/environemnts-index",
+              "path": "/docs/environments/environemnts-index",
+              "sidebar": "docs"
             },
             {
               "id": "environments/mainnet",
               "path": "/docs/environments/mainnet",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
-              "id": "environments/README",
-              "path": "/docs/environments/",
-              "sidebar": "tutorialSidebar"
+              "id": "environments/testnet/adding-tokens-to-metamask",
+              "path": "/docs/environments/testnet/adding-tokens-to-metamask",
+              "sidebar": "docs"
             },
             {
-              "id": "environments/testnet",
-              "path": "/docs/environments/testnet",
-              "sidebar": "tutorialSidebar"
+              "id": "environments/testnet/obtain-testnet-tokens",
+              "path": "/docs/environments/testnet/obtain-testnet-tokens",
+              "sidebar": "docs"
+            },
+            {
+              "id": "environments/testnet/testnet-index",
+              "path": "/docs/environments/testnet/",
+              "sidebar": "docs"
             },
             {
               "id": "github-repositories",
               "path": "/docs/github-repositories",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "introduction/abstract",
+              "path": "/docs/readme/abstract",
+              "sidebar": "docs"
+            },
+            {
+              "id": "introduction/intro",
               "path": "/docs/",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             },
             {
               "id": "introduction/origins",
-              "path": "/docs/introduction/origins",
-              "sidebar": "tutorialSidebar"
+              "path": "/docs/readme/origins",
+              "sidebar": "docs"
             },
             {
               "id": "sygma-sdk",
               "path": "/docs/sygma-sdk",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/congratulations",
-              "path": "/docs/tutorial-basics/congratulations",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorial-basics/create-a-blog-post",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/docs/tutorial-basics/create-a-document",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/docs/tutorial-basics/create-a-page",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorial-basics/deploy-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/docs/tutorial-basics/markdown-features",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorial-extras/manage-docs-versions",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/docs/tutorial-extras/translate-your-site",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/introduction",
-              "path": "/docs/category/introduction",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/architecture",
-              "path": "/docs/category/architecture",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/environments",
-              "path": "/docs/category/environments",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/audits",
-              "path": "/docs/category/audits",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---basics",
-              "path": "/docs/category/tutorial---basics",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
-              "sidebar": "tutorialSidebar"
+              "sidebar": "docs"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "tutorialSidebar": {
+            "docs": {
               "link": {
-                "path": "/docs/category/introduction",
+                "path": "/docs/",
                 "label": "Introduction"
               }
             }

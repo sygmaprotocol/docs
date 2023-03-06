@@ -1,0 +1,26 @@
+{
+  "unversionedId": "environments/devnet/README",
+  "id": "environments/devnet/README",
+  "title": "Devnet",
+  "description": "The following details a list of resources to support the Devnet environment.",
+  "source": "@site/docs/05-environments/devnet/README.md",
+  "sourceDirName": "05-environments/devnet",
+  "slug": "/environments/devnet/",
+  "permalink": "/docs/environments/devnet/",
+  "draft": false,
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/05-environments/devnet/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "description": "The following details a list of resources to support the Devnet environment."
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Environments",
+    "permalink": "/docs/environments/"
+  },
+  "next": {
+    "title": "Adding Tokens To MetaMask",
+    "permalink": "/docs/environments/devnet/adding-tokens-to-metamask"
+  }
+}

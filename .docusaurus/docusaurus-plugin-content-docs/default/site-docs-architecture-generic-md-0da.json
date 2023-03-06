@@ -8,13 +8,13 @@
   "slug": "/architecture/generic",
   "permalink": "/docs/architecture/generic",
   "draft": false,
-  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/architecture/generic.md",
+  "editUrl": "https://github.com/sygmaprotocol/docs/tree/main/docs/architecture/generic.md",
   "tags": [],
   "version": "current",
   "frontMatter": {
     "description": "The following details how Generic message passing is handled by Sygma."
   },
-  "sidebar": "tutorialSidebar",
+  "sidebar": "docs",
   "previous": {
     "title": "Fees",
     "permalink": "/docs/architecture/fees"
