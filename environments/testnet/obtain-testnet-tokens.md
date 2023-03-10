@@ -1,2 +1,0 @@
-# Obtain Testnet Tokens
-
