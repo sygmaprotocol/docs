@@ -70,3 +70,8 @@ UX
 v3.0
 web3
 Web3
+TransferUI
+explorer-ui
+ExplorerUI
+sygma-substrate-pallets
+repo
