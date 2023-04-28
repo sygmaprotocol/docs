@@ -16,7 +16,7 @@ The following details a list of resources to support the Testnet environment.
 
 The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.
 
-[https://transfer-ui.test.buildwithsygma.com](https://transfer-ui.test.buildwithsygma.com/)
+[https://transfer-ui.test.buildwithsygma.com](https://transfer-ui.test.buildwithsygma.com/transfer)
 
 **Faucet UI**
 
