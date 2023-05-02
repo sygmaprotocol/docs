@@ -54,6 +54,7 @@ relayers
 Relayers
 SDK
 Segregator
+Sepolia
 Sygma
 sygma-relayer
 sygma-sdk

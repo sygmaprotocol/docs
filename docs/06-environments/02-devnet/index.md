@@ -24,14 +24,6 @@ The faucet allows users with a visual interface to mint tokens.
 
 [https://faucet-ui-stage.buildwithsygma.com](https://faucet-ui-stage.buildwithsygma.com)
 
-**Faucet API**
-
-The faucet API allows users to programmatically interact with the faucet.
-
-[https://faucet-api-stage.buildwithsygma.com](https://faucet-api-stage.buildwithsygma.com/)
-
-###
-
 ### Contract Addresses
 
 | Domain ID | Network Name    | Bridge                                     | Control Segregator                         | Fee Router                                 | Fee Handler With Oracle                    | ERC20 Handler                              | ERC721 Handler                             | Generic Handler                            |
