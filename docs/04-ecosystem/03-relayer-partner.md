@@ -22,8 +22,6 @@ An SLA is put in place with all relaying partners to align expectations on the o
 
 ## List of current relaying partners:
 
-- [Omitted #1]
-- [Omitted #2]
-- [Omitted #3]
+- Our list of relayer partners will be announced soon
 
 New relaying partners will continue to be added over the next months. If you have experience running validators and/or relayers in a professional environment and want to support the decentralization of the Sygma network, please contact us at: [requests@buildwithsygma.com](mailto:requests@buildwithsygma.com)
