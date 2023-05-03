@@ -11,7 +11,7 @@ The following section details the process for becoming a relayer partner.
 
 # How To Become A Relaying Partner
 
-Currently, Sygma utilizes a permissioned process in order to add new relaying partners. As there is not yet an economic security model that enables trustless participation in the relaying network, this process is required to ensure the security of the network. As the Sygma protocol undergoes decentralization over time, this process will become more and more permissionless. 
+Currently, Sygma utilizes a permissioned process in order to add new relaying partners. These relayers operate under a [trusted federation model](https://blog.chainsafe.io/bridges-in-crypto-space-12e158f5fd1e). As there is not yet an economic security model that enables trustless participation in the relaying network, this process is required to ensure the security of the network. As the Sygma protocol undergoes decentralization over time, this process will become more and more permissionless. 
 
 For now, relaying partners are selected and on-boarded by the Sygma team. For more on relayer deployment, please check out the [related documentation](https://github.com/sygmaprotocol/sygma-relayer-deployment). Sygma is currently looking for credible entities that:
 
