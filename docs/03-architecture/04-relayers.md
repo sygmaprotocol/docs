@@ -1,4 +1,6 @@
 ---
+slug: /architecture/relayers
+id: architecture-relayers
 title: Relayers
 description: The following details how relayers are defined and managed by Sygma.
 ---
@@ -13,6 +15,6 @@ At the core of Sygma exists a **set of relayers** that are distributed among sev
 
 Each relayer within the set listens to both the source and destination chains that are being bridged by Sygma. Based on events that are emitted, these relayers then execute relevant actions.
 
-This multi-relayer set is responsible for relaying messages from a source network to a destination network. Relayers are operating with private key share and execution happens on the destination network with [MPC](./mpc) private key.&#x20;
+This multi-relayer set is responsible for relaying messages from a source network to a destination network. Relayers are operating with private key share and execution happens on the destination network with [MPC](/docs/03-architecture/02-mpc.md) private key.&#x20;
 
-Communication between relayer parties happens in a [p2p](https://en.wikipedia.org/wiki/Peer-to-peer) manner; and participants of [p2p](https://en.wikipedia.org/wiki/Peer-to-peer) and [MPC](./mpc) communication are strictly defined by a configuration file this allows us to prevent [Sybil Attacks](https://en.wikipedia.org/wiki/Sybil\_attack).
+Communication between relayer parties happens in a [p2p](https://en.wikipedia.org/wiki/Peer-to-peer) manner; and participants of [p2p](https://en.wikipedia.org/wiki/Peer-to-peer) and MPC communication are strictly defined by a configuration file this allows us to prevent [Sybil Attacks](https://en.wikipedia.org/wiki/Sybil\_attack).
