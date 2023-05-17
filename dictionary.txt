@@ -103,9 +103,8 @@ quickstart-install
 transfertoken
 quickstart-transfertoken
 gmp
+GMP.
 quickstart-gmp
-xCall
-xCall.
 txstatus
 quickstart-txstatus
 quickstart-widget
