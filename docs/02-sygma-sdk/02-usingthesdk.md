@@ -1,6 +1,8 @@
 ---
-title: Sygma SDK
-sidebar_position: 3
+slug: /sdk/usingthesdk
+id: sdk-usingthesdk
+title: Using The SDK
+sidebar_position: 2
 description: >-
   A JS SDK that allows users to inject the Sygma UI functionality into an
   existing application. Designed to help developers build their own solutions in
@@ -16,14 +18,6 @@ description: >-
 :::tip
 The Sygma SDK documentation can also be found in the [Sygma-SDK README](https://github.com/sygmaprotocol/sygma-sdk/blob/main/README.md).
 :::
-
-## Introduction
-
-**Sygma SDK** is an OpenSource (under GNU Lesser General Public License v3.0) library for developers to work with Sygma. The SDK consist of methods that enable bridging capabilities between Ethereum networks.
-
-**NOTE:** the SDK is under an active development, as such you may experience inconsistencies until we have a stable release. We encourage you to [submit issues](https://github.com/sygmaprotocol/sygma-sdk/issues) should you discover any bugs.
-
-The current SDK has one package that comprises the whole bridging logic for transferring ERC20 tokens between Ethereum networks. Alongside this there are [examples](#running-the-examples) that demonstrate the usage of our SDK. If you want to run the examples alongside our bridging infrastructure, please make sure you have the [sygma-relayer ](https://github.com/sygmaprotocol/sygma-relayer)software installed in order for you to run the `make local-setup` command.
 
 ### Useful commands
 
@@ -104,8 +98,13 @@ After that, you can watch the logs and see your funds being transferred from one
 
 There is a directory with examples ready to be used for the SDK. We have two working examples to choose from for getting started locally:
 
-1. [How to Use From Node.js](#how-to-use-from-nodejs)
-2. [How to Use In a Browser](#how-to-use-in-browser)
+- [How to Use](#how-to-use)
+  - [Environment](#environment)
+  - [Checking the Examples folder](#checking-the-examples-folder)
+  - [How to Use From Node.js](#how-to-use-from-nodejs)
+  - [How to Use In a Browser](#how-to-use-in-a-browser)
+  - [Support](#support)
+  - [License](#license)
 
 ### How to Use From Node.js
 

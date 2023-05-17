@@ -1,4 +1,6 @@
 ---
+slug: /architecture/generic
+id: architecture-generic
 title: Generic message passing
 description: The following details how Generic message passing is handled by Sygma.
 ---
