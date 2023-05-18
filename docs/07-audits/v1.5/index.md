@@ -1,5 +1,5 @@
 ---
-id: audit-v1.5
+id: audit-2
 title: v1.5 Audit Reports
 sidebar_label: v1.5
 description: The audit reports related to the Sygma versions 1.5
