@@ -135,3 +135,7 @@ ChainID
 u32
 AssetId
 parachain
+Sygma.
+ETH
+MATIC
+USDC
