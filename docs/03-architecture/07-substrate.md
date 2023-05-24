@@ -9,15 +9,15 @@ description: The following details Substrate support on Sygma.
 The following section details Sygma's compatibility with Polkadot and Kusama parachains via its Substrate pallet support. 
 :::
 
-### Substrate Support
-
 A unique feature of the Sygma protocol is its ability to provide interoperability between EVM-based and Substrate-based blockchains. This includes those [parachains](https://wiki.polkadot.network/docs/learn-parachains) deployed under Polkadot and Kusama's [shared security model](https://wiki.polkadot.network/docs/learn-architecture).
 
 Similar to how Sygma enables EVM support by invoking various smart contracts, Sygma provides Substrate support via interactions with [custom Sygma pallets](https://github.com/sygmaprotocol/sygma-substrate-pallets). 
 
-:::info
+:::note
 Substrate pallets provide a modular approach to building Substrate-based blockchains and contain runtime logic which can be used, modified, and extended accordingly. 
 :::
+
+![](<../../static/assets/Substrate __ EVM.png>)
 
 ---
 
@@ -42,13 +42,5 @@ Practically speaking, the `MultiLocation` of an asset plays a key role in the re
 
 ---
 
-### Architecture Diagram
-
-Architecture diagram coming soon...
-
----
-
 For more on Substrate, please refer to their [docs](https://docs.substrate.io/quick-start/). For more on the Polkadot ecosystem, please refer to their [wiki](https://wiki.polkadot.network/docs/getting-started).
-
-
 
