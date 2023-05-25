@@ -1,7 +1,7 @@
 ---
 slug: /architecture/Fee-intro
 id: architecture-Fee-intro
-title: Fee Strategies
+title: Introduction To Fees
 description: The following details how fees are handled by Sygma.
 sidebar_position: 1
 ---
@@ -10,14 +10,25 @@ sidebar_position: 1
 The following section details how fees are handled by Sygma.
 :::
 
-Sygma allows granular control of handling fees for any resource (ERC-20, ERC-721, GMP) that can be bridged from one network to another. Even though specific implementations will differ based on chain architecture (e.g. EVM or Substrate), general functionality of fees will work the same across implementations. 
+Sygma collects a service fee for two purposes:
 
-Each resource is assigned a **fee strategy** for every potential destination network (i.e. domain), where the mapping between the fee strategy and the domain outlines all potential bridging routes for a given resource.
+1. Cover transaction costs (gas fees) 
+2. Protocol revenues
 
-The Sygma protocol allows for two fee strategies:
-- **Basic fee strategy**
-- **Dynamic fee strategy**
+While gas fees are required to execute transactions on the destination chains, protocol revenues guarantee that Sygma can sustain the operational costs of a public utility and remain contributor-owned.
 
-Fee strategy defines a set of rules on how fees should be charged when executing deposits on the source chain.
+### Fee Strategies
+
+The protocol gives developers granular control over the handling of fees for any resource (ERC-20, ERC-721, GMP) that can be bridged from one network to another. Even though the specific implementation of fees will differ based on chain architecture (e.g. EVM or Substrate), general functionality of fees will work the same across implementations. 
+
+Each resource is assigned a **fee strategy** for every potential destination network (i.e. domain), where the mapping between the fee strategy and the domain outlines all potential bridging routes for a given resource. The fee strategy defines the set of rules on how fees should be charged when executing deposits on the source chain. 
+
+The Sygma protocol allows for two fee strategies, implemented via **fee handlers** (contracts in EVM, pallets in Substrate):
+- [**Basic fee strategy**](/docs/03-architecture/03-Fees/02-basic-fee.md)
+- [**Dynamic fee strategy**](/docs/03-architecture/03-Fees/03-dynamic-fee.md)
 
 ![](../../../static/assets/fee-router-general.png)
+
+### Fee Collection
+
+Fees are usually collected in the source (i.e. native) token, but can be collected in any token provided a [dynamic fee strategy](/docs/03-architecture/03-Fees/03-dynamic-fee.md) is selected. If you are interested in a custom fee setup, please contact us at: [requests@buildwithsygma.com](mailto:requests@buildwithsygma.com).

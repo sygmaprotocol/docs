@@ -10,7 +10,7 @@ sidebar_position: 2
 The following section details how basic fee strategies work in Sygma.
 :::
 
-The Basic Fee strategy always requires a predefined static fee amount per deposit. It can only collect fees in the native currency (e.g. ETH, MATIC) of the source chain.
+The basic fee strategy always requires a predefined static fee amount per deposit. It can only collect fees in the native currency (e.g. ETH, MATIC) of the source chain.
 
 The diagram below shows the flow for basic fee strategies, beginning with the Sygma SDK, which initiates the interaction for all services:
 
