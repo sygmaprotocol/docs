@@ -10,7 +10,7 @@ sidebar_position: 3
 The following section details how dynamic fee strategies work in Sygma.
 :::
 
-This strategy utilizes Sygma's **fee oracle** service, which issues fee estimates based on the current gas price for the destination chain. In addition, the fee oracle can provide price information for different tokens, enabling payment of bridging fees in a non-native currency (e.g. USDC). Each issued gas estimate has a limited time of validity in which it may be executed on.
+This strategy utilizes Sygma's **fee oracle** service, which issues fee estimates based on the current gas price for the destination chain. In addition, the fee oracle can provide price information for different tokens, enabling payment of bridging fees in a non-native currency (e.g. USDC). Each issued gas estimate has a limited time of validity (`expiresAt`) in which it may be executed on.
 
 Check out the [Sygma fee oracle technical documentation](https://github.com/sygmaprotocol/sygma-fee-oracle/blob/main/docs/Home.md) for more details on the service and the format of the issued fee estimates.
 
