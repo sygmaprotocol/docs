@@ -28,37 +28,46 @@ Create a new directory for your project and navigate to it in your terminal. Ini
 
 ```bash
 yarn init -y
-yarn add -D typescript
-# or
-npm init -y
-npm install --save-dev typescript
+yarn add -D typescript dotenv ts-node
+yarn add ethers@5.7.2
 ```
 
 Create a tsconfig.json file in the root directory of your project with the following contents:
 
 ```json
 {
-  "compilerOptions": {
-    "target": "es6",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "strict": true,
-    "outDir": "dist"
-  },
-  "include": ["src/**/*"]
+	"compilerOptions": {
+		"composite": true,
+		"target": "ESNext",
+		"module": "CommonJS",
+		"allowJs": true,
+		"declaration": true,
+		"sourceMap": true,
+		"declarationMap": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"downlevelIteration": true,
+		"allowSyntheticDefaultImports": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node",
+        "outDir": "dist",
+        "baseUrl": "src"
+	},
+	"ts-node": {
+		"esm": true,
+		"experimentalSpecifierResolution": "node"
+	},
+	"include": [
+		"src"
+	]
 }
 ```
 
 This configuration sets the target to ES6, enables ES module loading, and sets the output directory to dist. Then, create a `src` folder in the root directory of your project, along with a `index.ts` file
 
-Install the dotenv package using npm or yarn to be able to retreive the environment variables that we are going to use:
-
-```bash
-npm install dotenv
-# or
-yarn add dotenv
-```
+Create also a `src/` folder inside the root directory of your project. In there were are going to place all our code.
 
 Create an `.env` file in the root directory of your project. Paste the following:
 
@@ -66,11 +75,15 @@ Create an `.env` file in the root directory of your project. Paste the following
 PROVIDER_API_KEY=your_provider_api_key_here
 PRIVATE_KEY=your_private_key_here
 ```
+:::info
+  Remember that your private key should no be exposed. Hence, don't commit `.env` files. This just for your usage following this example.
+:::
 
 ### Usage
-To use the Sygma SDK in your Node.js project, you can import the necessary classes and functions from the @buildwithsygma/sygma-sdk-core package and ethers package. Here's an example of how to transfer ERC20 tokens between two Ethereum networks:
+To use the Sygma SDK in your Node.js project, you can import the necessary classes and functions from the `@buildwithsygma/sygma-sdk-core` package and ethers package. Here's an example of how to transfer ERC20 tokens between two Ethereum networks:
 
 ```ts
+// transfer.ts
 import { Domain, EVMAssetTransfer, Environment, Fungible, Resource, Transfer } from "@buildwithsygma/sygma-sdk-core";
 import { Wallet, providers } from "ethers";
 import dotenv from "dotenv";
@@ -267,8 +280,6 @@ Alternatively you can transpile the above adding a build script into the `packag
 Then you can run it from the terminal:
 
 ```bash
-npm run build
-# or
 yarn build
 ```
 

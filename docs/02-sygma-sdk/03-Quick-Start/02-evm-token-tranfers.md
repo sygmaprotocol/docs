@@ -1,7 +1,7 @@
 ---
 slug: /sdk/quickstart/transfertoken
 id: quickstart-transfertoken
-title: Transferring A Token
+title: EVM token transfers
 description: The following section details how to perform a cross-chain token transfer.
 sidebar_position: 2
 draft: true
@@ -41,16 +41,19 @@ await assetTransfer.init(provider, Environment.DEVNET);
 const fee = await assetTransfer.getFee()
 ```
 
-Once you have this object ready, you can pass it to the `buildTransferTransaction` function alongside with the fee:
+You can check if approvals are required for your transfer. If this is the case and you already have the `fee`, you can sign the transaction and send it.
 
 ```ts
-const transferTransaction = await assetTransfer.buildTransferTransaction(
-  transfer,
-  fee
-);
-const response = await wallet.sendTransaction(
-  transferTx as providers.TransactionRequest
-);
+  const approvals = await assetTransfer.buildApprovals(transfer, fee);
+  if (approvals.len > 0) {
+    const transferTransaction = await assetTransfer.buildTransferTransaction(
+      transfer,
+      fee
+    );
+    const response = await wallet.sendTransaction(
+      transferTx as providers.TransactionRequest
+    );
+  }
 ```
 
 Thats it! Your `response` object will have the `hash` property that you can use to query a block explorer and check the transaction
