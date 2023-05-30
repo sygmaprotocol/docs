@@ -1,9 +1,9 @@
 ---
-slug: /sdk/quickstart/node-js-example
+slug: /sdk/examples/node-js-example
 id:  quickstart-nodejs-example
 title: Node.js example
 description: Section that describes how to transfer token using nodeJS.
-sidebar_position: 3
+sidebar_position: 1
 draft: true
 ---
 
