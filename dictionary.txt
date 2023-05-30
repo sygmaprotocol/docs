@@ -133,5 +133,5 @@ fungibility
 DomainID
 ChainID
 u32
-AssetId
+AssetID
 parachain
