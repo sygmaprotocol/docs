@@ -1,8 +1,8 @@
 ---
 slug: /sdk/quickstart/node-js-example
-id: quickstart-nodejs-example
+id:  quickstart-nodejs-example
 title: Node.js example
-description: Section that describes how to transfer token using NodeJS.
+description: Section that describes how to transfer token using nodeJS.
 sidebar_position: 3
 draft: true
 ---
@@ -65,7 +65,7 @@ Create a tsconfig.json file in the root directory of your project with the follo
 }
 ```
 
-This configuration sets the target to ES6, enables ES module loading, and sets the output directory to dist. Then, create a `src` folder in the root directory of your project, along with a `index.ts` file
+This configuration sets the target to ESNext, enables ES module loading, and sets the output directory to dist. Then, create a `src` folder in the root directory of your project, along with a `index.ts` file
 
 Create also a `src/` folder inside the root directory of your project. In there were are going to place all our code.
 
@@ -141,7 +141,7 @@ function findERC20Resource(assetTransfer: EVMAssetTransfer): Resource | null {
 }
 ```
 
-We are going to create a function that finds the domain id passing the `chain id` of the network. We must provide in this case the `asset transfer` as a argument to our function:
+We are going to create a function that finds the domain id passing the `chain id` of the network. We must provide in this case the `asset transfer` as an argument to our function:
 
 ```ts
 // transfer.ts

@@ -7,7 +7,7 @@ sidebar_position: 2
 draft: true
 ---
 
-Transferring a token with `Sygma SDK` is very straigthforward. You need to build the transfer object to pass it to your signer to send the transaction.
+Transferring a token with `Sygma SDK` is very straightforward. You need to build the transfer object to pass it to your signer to send the transaction.
 
 ```ts
 async function buildTransfer(
@@ -56,7 +56,7 @@ You can check if approvals are required for your transfer. If this is the case a
   }
 ```
 
-Thats it! Your `response` object will have the `hash` property that you can use to query a block explorer and check the transaction
+That's it! Your `response` object will have the `hash` property that you can use to query a block explorer and check the transaction
 
 ```ts
 console.log(`Transfer sent with hash: ${response.hash}`)
