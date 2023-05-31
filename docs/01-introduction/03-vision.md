@@ -2,7 +2,7 @@
 slug: /readme/vision
 title: Vision
 description: The following describes Sygma's vision.
-draft: true
+draft: false
 ---
 
 Sygma aims to create a low-effort way for developers to add cross-chain functionality, tap into new liquidity sources, and harness the benefits of multiple chains. By offering native communication that spans EVM, Substrate, and beyond, Sygma functions like connective tissue between blockchain ecosystems, resulting in not only better UX but use cases to fuel the next wave of web3 adoption. 
