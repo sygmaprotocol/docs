@@ -1,4 +1,6 @@
 ---
+slug: /architecture/fees
+id: architecture-fees
 title: Fees
 description: The following details how fees are handled by Sygma.
 ---
@@ -20,5 +22,5 @@ This information is used to determine the cost of transactions on the destinatio
 :::info
 The Fee Oracle service will be _centralized_ in the beginning.&#x20;
 
-The current architecture implies a future update of the Fee Oracle to a more decentralized or trustless solution. However, since the calculated fee is visible and approved by the user, the current Fee Oracle does not pose a [security](./security) threat to the entire system.
+The current architecture implies a future update of the Fee Oracle to a more decentralized or trustless solution. However, since the calculated fee is visible and approved by the user, the current Fee Oracle does not pose a [security](/docs/03-architecture/05-security.md) threat to the entire system.
 :::
