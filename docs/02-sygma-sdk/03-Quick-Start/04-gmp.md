@@ -4,7 +4,7 @@ id: quickstart-gmp
 title: Generic Message Passing (GMP)
 description: The following section details how to perform GMP.
 sidebar_position: 4
-draft: true
+draft: false
 ---
 
 To utilize the `generic message passing` capability of the `Sygma SDK`, you will need to employ the `executeDeposit` function. This function is housed within the `depositFns.ts` file.
