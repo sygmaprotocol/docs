@@ -123,7 +123,6 @@ v1.0
 v2.5
 v1.5
 v0.2
-<<<<<<< HEAD
 ethers
 ES6
 metamask
@@ -138,7 +137,6 @@ API
 quickstart-substrate-token-transfer
 nodeJS
 nodeJS.
-=======
 Polkadot
 Kusama
 parachains
@@ -151,4 +149,3 @@ ChainID
 u32
 AssetID
 parachain
->>>>>>> e334321ed954c27c3d148a06ebc066c32cf61a8a
