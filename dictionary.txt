@@ -71,3 +71,16 @@ UX
 v3.0
 web3
 Web3
+Gnosis
+ERC20Handler
+ERC721Handler
+Permissionless
+PermissionlessGenericHandler
+ERC-20
+ERC-721
+Permissioned
+PHA
+gPHA
+0x0
+ETH
+Rhala
