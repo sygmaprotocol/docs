@@ -4,7 +4,7 @@ id: quickstart-transfertoken
 title: EVM Token Transfers
 description: The following section details how to perform a cross-chain token transfer.
 sidebar_position: 2
-draft: true
+draft: false
 ---
 
 #### Build The Transfer Object
