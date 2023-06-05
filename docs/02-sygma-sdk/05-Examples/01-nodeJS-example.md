@@ -242,6 +242,16 @@ export async function erc20Transfer(): Promise<void> {
     const tx = await provider.sendTransaction(signedApproval);
     await tx.wait();
   }
+
+  const transferTx = await assetTransfer.buildTransferTransaction(
+    transfer,
+    fee,
+  );
+  
+  const response = await wallet.sendTransaction(
+    transferTx as providers.TransactionRequest,
+  );
+  console.log("Sent transfer with hash: " + response.hash);
 }
 ```
 
