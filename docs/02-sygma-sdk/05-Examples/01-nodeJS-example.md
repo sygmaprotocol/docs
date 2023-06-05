@@ -1,30 +1,36 @@
 ---
 slug: /sdk/examples/node-js-example
 id:  quickstart-nodejs-example
-title: Node.js example
+title: Node.js Token Transfer Example
 description: Section that describes how to transfer token using nodeJS.
 sidebar_position: 1
 draft: false
 ---
 
-### Sygma SDK Node.js Example
-This example demonstrates how to use the Sygma SDK to transfer ERC20 tokens between two Ethereum networks in a Node.js environment.
-
-### Prerequisites
-
-Before you can use the Sygma SDK, you'll need to have Node.js and npm or yarn installed on your project.
-
-Also you will need to provide an `API_KEY` to initialize the `JsonRpcProvider`. You can use `Infura` or `Alchemy` to get one of those api keys.
-
-Last but not least, export your `private key` from metamask.
-
-:::info
-  The following example is going to be written in `typescript`. You can use `CommonJS` with our SDK if you prefer to use standard `node.js` for the script.
+:::info 
+In the following example, we will setup and demonstrate a cross-chain ERC-20 token transfer between the same address from Goerli to Sepolia. This will be shown through the command line in a backend Node.js environment using the Sygma SDK.
 :::
 
-#### Initializing the project and installing needed dependencies
+#### Prerequisites
 
-Create a new directory for your project and navigate to it in your terminal. Initialize a new TypeScript project by running the following command:
+- Install a source-code editor such as [Visual Studio Code 2](https://code.visualstudio.com/).
+- Setup [Node.js](https://nodejs.org/en/about) for the backend JavaScript runtime environment. 
+- Install a package manager such as [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
+- Obtain an API key for the Ethereum `Goerli` testnet. An `API_KEY` will be required to initialize the `JsonRpcProvider` object with which blockchain interactions run through. You can sign up to obtain one for free with either [Infura](https://app.infura.io/) or [Alchemy](https://dashboard.alchemy.com/).
+- [MetaMask](https://metamask.io/) should be installed, and an account **used only for development purposes** should be created. [Export the `private key` from MetaMask](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key).
+- Obtain some `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/). You will also need [Goerli ETH](https://goerlifaucet.com/) for gas.
+
+:::info
+  The following example is written in `TypeScript`. You can use `CommonJS` with our SDK if you prefer to use standard `Node.js` for the script.
+:::
+
+#### Create folders for your project
+
+Create a new root directory for your project, e.g. `/sygma_test_project`. Using a code editor, navigate to the newly created folder in your terminal `cd sygma_test_project`. Install the Sygma SDK by following the instructions on [Installing The SDK](https://docs.buildwithsygma.com/sdk/quickstart/install). Once installed, ensure that the `package.json`, `package-lock.json`, and `node_modules` folders and files have been installed properly into the directory. 
+
+#### Initialize the project and install dependencies
+
+Initialize a new TypeScript project by running the following commands:
 
 ```bash
 yarn init -y
@@ -32,7 +38,7 @@ yarn add -D typescript dotenv ts-node
 yarn add ethers@5.7.2
 ```
 
-Create a tsconfig.json file in the root directory of your project with the following contents:
+Create a `tsconfig.json` file in the root directory of your project and paste in the following code. This configuration file specifies the root files and the compiler options needed to compile the project. Specifically for this example, we will configure the target to ESNext, enable ES module loading, and set the output directory to dist.
 
 ```json
 {
@@ -65,22 +71,27 @@ Create a tsconfig.json file in the root directory of your project with the follo
 }
 ```
 
-This configuration sets the target to ESNext, enables ES module loading, and sets the output directory to dist. Then, create a `src` folder in the root directory of your project, along with a `index.ts` file
+Next, create a `src` folder in the root directory of your project.
+Inside the `src` folder, create a `transfer.ts` file and an `index.ts` file. 
 
-Create also a `src/` folder inside the root directory of your project. In there were are going to place all our code.
-
-Create an `.env` file in the root directory of your project. Paste the following:
+Finally, because we are dealing with sensitive data such as a private key and an API key, we use environment variables to manage this data. Create a `.env` file in the root directory of your project. Paste in the following:
 
 ```
 PROVIDER_API_KEY=your_provider_api_key_here
 PRIVATE_KEY=your_private_key_here
 ```
-:::info
-  Remember that your private key should no be exposed. Hence, don't commit `.env` files. This just for your usage following this example.
+
+Copy and paste (in quotations) the `Goerli` API key obtained from Infura or Alchemy, as well as the exported private key from MetaMask.
+
+:::danger
+  Remember that your private key should **never** be exposed. Hence, **DO NOT** commit the `.env` file to GitHub. Exposing the private key could result in complete loss of your funds. **_For this example, please only paste in the exported private keys of a wallet that is designated for testing/development purposes_**.
 :::
 
 ### Usage
-To use the Sygma SDK in your Node.js project, you can import the necessary classes and functions from the `@buildwithsygma/sygma-sdk-core` package and ethers package. Here's an example of how to transfer ERC20 tokens between two Ethereum networks:
+
+#### Imports and environment variable checks
+
+We will begin by importing the necessary classes and functions from the `@buildwithsygma/sygma-sdk-core` and `ethers` packages. We also import the `dotenv` module, which loads the environment variables from the `.env` file created earlier. This snippet then checks whether the environment variables are properly configured. Paste in the following snippet into the `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -98,7 +109,9 @@ if (!providerApiKey || !privateKey) {
 }
 ```
 
-Provide the `chain ids` and the symbol of the asset to use
+#### Set up testnets and token symbol variables
+
+Next, we setup some variables used for the rest of the script, including the two Ethereum testnets this example will conduct the token transfer on (`Goerli` and `Sepolia`) and the symbol of the test token  (`ERC20LRTest`) we will be using. Paste in the following snippet into the `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -107,7 +120,9 @@ const SEPOLIA_CHAIN_ID = 11155111;
 const ERC20_TOKEN_SYMBOL = "ERC20LRTest";
 ```
 
-Now we create a function that will return an `assetTransfer` object. This is the object that we are going to use to make the transfer between `goerli` and `sepolia`
+#### Create `assetTransfer` object
+
+Now, we create a function that will return an `assetTransfer` object. This is the object that we are going to use to make the transfer between `Goerli` and `Sepolia`. Paste in the following snippet into the `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -118,12 +133,14 @@ Now we create a function that will return an `assetTransfer` object. This is the
  */
 async function initAssetTransfer(provider: providers.JsonRpcProvider): Promise<EVMAssetTransfer> {
   const assetTransfer = new EVMAssetTransfer();
-  await assetTransfer.init(provider, Environment.DEVNET);
+  await assetTransfer.init(provider, Environment.TESTNET);
   return assetTransfer;
 }
 ```
 
-Now create a function to find the ERC20 resource that we are going to use. This function will return the ERC20 resource definition.
+#### Define ERC-20 resource
+
+Next, we create a function that serves as a helper to find a specific ERC-20 resource (token) among the available resources in the `assetTransfer` instance. This is matched to the specified symbol declared earlier in the code (`ERC20LRTest`). The function then returns the ERC-20 resource definition. Paste in the following snippet into the `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -141,24 +158,28 @@ function findERC20Resource(assetTransfer: EVMAssetTransfer): Resource | null {
 }
 ```
 
-We are going to create a function that finds the domain id passing the `chain id` of the network. We must provide in this case the `asset transfer` as an argument to our function:
+#### Retrieve domain
+
+The next function serves as a helper to find a specific domain (representing a specific blockchain network) among the available domains in the `assetTransfer` instance. We identify the network by passing in the `chainID` of the network. Paste in the following snippet into the `transfer.ts` file:
 
 ```ts
 // transfer.ts
 /**
  * Finds the domain with the given chain ID.
  * @param assetTransfer The Sygma SDK asset transfer module.
- * @param chainId The chain ID to search for.
+ * @param chainID The chain ID to search for.
  * @returns The domain with the given chain ID, or null if it is not found.
  */
-function findDomainByChainId(assetTransfer: EVMAssetTransfer, chainId: number): Domain | null {
+function findDomainByChainID(assetTransfer: EVMAssetTransfer, chainID: number,): Domain | null {
   const domains: Array<Domain> = assetTransfer.config.getDomains();
-  const domain = domains.find((domain) => domain.chainId == chainId);
+  const domain = domains.find((domain) => domain.chainID == chainID);
   return domain || null;
 }
 ```
 
-To be able to use the SDK we need to build the `transfer` object. For that we create the following function. This function expect several parameters: `wallet`, `from` and `to` destinations, `resource` and `amount`.
+#### Build transfer object
+
+To be able to use the SDK, we need to build the `transfer` object. For that, we create the following `buildTransfer` function. This function expects several parameters: `wallet`, `from` and `to` destinations, `resource`, and `amount`. All of the parameters are defined in the comment below. Paste in the following snippet into the `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -193,7 +214,13 @@ async function buildTransfer(
 }
 ```
 
-Finally, we create our main function: `erc20Transfer` that will use all the other functions defined above:
+#### Create the main `erc20Transfer` function
+
+Now, we create the main `erc20Transfer` function. This function uses all of the functions defined above, along with the Sygma SDK to perform the cross-chain token transfer. Don't forget to type in the constant variables `providerApiKey` and `privateKey` where it prompts you in quotations. 
+
+You should have already obtained `ERC20LRTest` tokens from the faucet.
+
+Paste in the following snippet into the `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -203,10 +230,10 @@ Finally, we create our main function: `erc20Transfer` that will use all the othe
  */
 export async function erc20Transfer(): Promise<void> {
   const provider = new providers.JsonRpcProvider(
-    "<PROVIDER_API_KEY>"
+    "<PROVIDER_API_KEY>" // type in the const `providerApiKey` without the quotations
   );
   const wallet = new Wallet(
-    "<YOUR_PRIVATE_KEY>",
+    "<YOUR_PRIVATE_KEY>" as string, // type in the const `privateKey` without the quotations
     provider
   );
 
@@ -216,12 +243,12 @@ export async function erc20Transfer(): Promise<void> {
     throw new Error("Resource not found");
   }
 
-  const goerli = findDomainByChainId(assetTransfer, GOERLI_CHAIN_ID);
+  const goerli = findDomainByChainID(assetTransfer, GOERLI_CHAIN_ID);
   if (!goerli) {
     throw new Error("Network goerli not supported");
   }
 
-  const sepolia = findDomainByChainId(assetTransfer, SEPOLIA_CHAIN_ID);
+  const sepolia = findDomainByChainID(assetTransfer, SEPOLIA_CHAIN_ID);
   if (!sepolia) {
     throw new Error("Network sepolia not supported");
   }
@@ -232,16 +259,16 @@ export async function erc20Transfer(): Promise<void> {
     sepolia,
     erc20Resource,
     await wallet.getAddress(),
-    "50"
+    "50000000000000000000" // ERC20LRTest token uses 18 decimal places. To transfer 50 tokens, you would need to enter `50` followed by 18 zeroes, or `50000000000000000000`
   );
 
   const fee = await assetTransfer.getFee(transfer);
   const approvals = await assetTransfer.buildApprovals(transfer, fee);
-  for (const approval of approvals) {
-    const signedApproval = await wallet.signMessage(approval);
-    const tx = await provider.sendTransaction(signedApproval);
-    await tx.wait();
-  }
+ for (const approval of approvals) {
+      await wallet.sendTransaction( 
+        approval as providers.TransactionRequest 
+      );
+    }
 
   const transferTx = await assetTransfer.buildTransferTransaction(
     transfer,
@@ -255,7 +282,9 @@ export async function erc20Transfer(): Promise<void> {
 }
 ```
 
-Finally we can run our function:
+#### Setup `index.ts`
+
+Next, we setup the main entry point of the example. We import the `erc20Transfer` function from above and call it inside a try/catch block. Paste in the following snippet into the `index.ts` file:
 
 ```ts
 // index.ts
@@ -273,13 +302,21 @@ async function main(): Promise<void> {
 main();
 ```
 
-Run it with:
+#### Run the function
+
+Run this example in the command line with:
 
 ```bash
-npx ts-node index.ts
+npx ts-node ./src/index.ts
 ```
 
-Alternatively you can transpile the above adding a build script into the `package.json` file:
+If done correctly, the console log should return a `Transfer complete` message along with a transaction hash. The `Deposit` event for the `ERC20LRTest` token should appear shortly on `Goerli`, and the transferred tokens should appear shortly in the same address on `Sepolia`!
+
+Congratulations on successfully performing a cross-chain token transfer using the Sygma SDK!
+
+#### Another way to run the function
+
+Alternatively, you can transpile the above by adding a build script into the `package.json` file:
 
 ```json
 "scripts": {
@@ -287,13 +324,13 @@ Alternatively you can transpile the above adding a build script into the `packag
   },
 ```
 
-Then you can run it from the terminal:
+Then you can run it from the terminal by first running `yarn build`:
 
 ```bash
 yarn build
 ```
 
-For you to run it, just do:
+Then, enter the following into the command line:
 
 ```bash
 node ./dist/index.js
