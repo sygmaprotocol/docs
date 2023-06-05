@@ -4,7 +4,7 @@ id:  quickstart-nodejs-example
 title: Node.js example
 description: Section that describes how to transfer token using nodeJS.
 sidebar_position: 1
-draft: true
+draft: false
 ---
 
 ### Sygma SDK Node.js Example
