@@ -62,19 +62,24 @@ You can check if approvals are required for your transfer. If there are approval
 // Build approvals given the `transfer` and `fee` parameters
   const approvals = await assetTransfer.buildApprovals(transfer, fee);
 
-  // Check if approvals are needed
-  if (approvals.len > 0) {
-
-    // Build the transfer transaction
-    const transferTransaction = await assetTransfer.buildTransferTransaction(
-      transfer,
-      fee
-    );
-    // Send the transaction using the wallet
-    const response = await wallet.sendTransaction(
-      transferTx as providers.TransactionRequest
-    );
+// Check if approvals are needed
+if (approvals.length) {
+  for (const approval of approvals) {
+    const signedApproval = await wallet.signMessage(approval);
+    const tx = await provider.sendTransaction(signedApproval);
+    await tx.wait();
   }
+
+  // Build the transfer transaction
+  const transferTransaction = await assetTransfer.buildTransferTransaction(
+    transfer,
+    fee,
+  );
+  // Send the transaction using the wallet
+  const response = await wallet.sendTransaction(
+    transferTx as providers.TransactionRequest,
+  );
+}
 ```
 
 #### Check Transaction Hash
