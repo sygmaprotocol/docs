@@ -8,30 +8,32 @@ draft: true
 ---
 
 ### Substrate to EVM Asset Transfer
+
 Transferring assets from Substrate based chains to EVM Based chains can be achieved using the SDK. The initial transfer.
 
 To facilitate the transfer the following steps are required:
+
 1. Create an instance of the SubstrateAssetTransfer object and initialize it
 2. Determine the fee for the transfer, using the SubstrateAssetTransfer `getFee()` method
-3. 
+3.
 
 #### 1. Initialize the SubstrateAssetTransfer object
+
 To initialize the asset transfer object, The following parameters need to be supplied:
+
 - An instance of the PolkadotJS ApiPromise object
 - The Substrate Parachain ID of the Source chain
-- The Enviornment in which the bridge should function.
+- The Environment in which the bridge should function.
 
 ```ts
-// Initialize the instance with the desired PolkadotJS ApiPromise, the Source Parachain ID 
+// Initialize the instance with the desired PolkadotJS ApiPromise, the Source Parachain ID
 // and network environment. In this case, we're using the api variable and the TESTNET environment
 
 const assetTransfer = new SubstrateAssetTransfer();
 
-const wsProvider = new WsProvider(
-  "wss://URL-TO-YOUR-SUBSTRATE-INSTANCE"
-);
+const wsProvider = new WsProvider("wss://URL-TO-YOUR-SUBSTRATE-INSTANCE");
 
-// Create an instance of the PolkadotJS ApiPromise 
+// Create an instance of the PolkadotJS ApiPromise
 const api = await ApiPromise.create({ provider: wsProvider });
 
 await assetTransfer.init(
@@ -39,20 +41,20 @@ await assetTransfer.init(
   SubstrateParachain.ROCOCO_PHALA,
   Environment.TESTNET
 );
-
 ```
 
 #### 2. Get Fee
 
-To facilitate the transfer of tokens, there is a fee attached. This fee can be determined by utilizing the Asset Transfer `GetFee(transfer)` method. You will need to know the Source Parachain ID, Destination ChainId as well as the ResourceId that has been configured on the Bridge. These details can be determined by inspecting the configurations of the bridge.  
+To facilitate the transfer of tokens, there is a fee attached. This fee can be determined by utilizing the Asset Transfer `GetFee(transfer)` method. You will need to know the Source Parachain ID, Destination ChainId as well as the ResourceId that has been configured on the Bridge. These details can be determined by inspecting the configurations of the bridge.
 
 A helper function which will generate a correct Transfer object can be implemented as described below.
+
 ```ts
 const generateFungibleTransfer = (
-  assetTransfer: SubstrateAssetTransfer, 
+  assetTransfer: SubstrateAssetTransfer,
   account: KeyRingPair, // Substrate Keyring Pair that will be signing the transaction
-  resourceId: string, 
-  sourceParachainId: number, 
+  resourceId: string,
+  sourceParachainId: number,
   destinationChainId: number
   amount: number // Amount to be transferred
   recipient: string // Address of the recipient on the destination chain
@@ -91,10 +93,10 @@ await cryptoWaitReady();
 const account = keyring.addFromUri(MNEMONIC);
 
 const transfer = generateFungibleTransfer(
-  assetTransfer, 
-  account, 
-  "0x0000000000000000000000000000000000000000000000000000000000001000", 
-  SubstrateParachain.ROCOCO_PHALA.valueOf(), 
+  assetTransfer,
+  account,
+  "0x0000000000000000000000000000000000000000000000000000000000001000",
+  SubstrateParachain.ROCOCO_PHALA.valueOf(),
   5
   100
   "0x0000000000000000000000000000000000000000",
@@ -104,7 +106,8 @@ const fee = await assetTransfer.getFee(transfer);
 
 ```
 
-#### 3 - Prepare the transfer transaction 
+#### 3 - Prepare the transfer transaction
+
 Now that the fee has been determined, the transaction to deposit assets in to the bridge should be generated, signed and broadcast to the network.
 
 ```ts

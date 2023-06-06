@@ -162,3 +162,9 @@ ChainID
 u32
 AssetID
 parachain
+SubstrateAssetTransfer
+PolkadotJS
+ApiPromise
+Parachain
+ChainId
+ResourceId
