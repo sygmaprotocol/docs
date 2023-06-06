@@ -15,7 +15,7 @@ To facilitate the transfer the following steps are required:
 
 1. Create an instance of the SubstrateAssetTransfer object and initialize it
 2. Determine the fee for the transfer, using the SubstrateAssetTransfer `getFee()` method
-3.
+3. Prepare, sign and send the Transfer transaction to the Substrate node
 
 #### 1. Initialize the SubstrateAssetTransfer object
 
