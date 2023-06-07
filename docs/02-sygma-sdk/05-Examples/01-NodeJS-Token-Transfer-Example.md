@@ -43,8 +43,6 @@ yarn add -D typescript dotenv ts-node
 yarn add ethers@5.7.2
 ```
 
-Once initialized, ensure that the `package.json`, the lock files (`yarn.lock` or `package-lock.json`), and `node_modules` folders have been installed properly into the directory. 
-
 Create a `tsconfig.json` file in the root directory of your project and paste in the following code. This configuration file specifies the root files and the compiler options needed to compile the project. Specifically for this example, we will configure the target to ESNext, enable ES module loading, and set the output directory to dist.
 
 ```json
@@ -91,7 +89,7 @@ PRIVATE_KEY=your_private_key_here
 Copy and paste (in quotations) the `Goerli` API key obtained from Infura or Alchemy, as well as the exported private key from MetaMask.
 
 :::danger
-  Remember that your private key should **never** be exposed. Hence, **DO NOT** commit the `.env` file to GitHub. Exposing the private key could result in complete loss of your funds. **_For this example, please only paste in the exported private keys of a wallet that is designated for testing/development purposes_**.
+  Remember that your private key should **never** be exposed. Hence, **DO NOT** commit the `.env` file to any repository and add it to your `.gitignore` file. Exposing the private key could result in complete loss of your funds. **_For this example, please only paste in the exported private keys of a wallet that is designated for testing/development purposes_**.
 :::
 
 ### Usage
@@ -266,7 +264,7 @@ export async function erc20Transfer(): Promise<void> {
     sepolia,
     erc20Resource,
     await wallet.getAddress(),
-    "50000000000000000000" // ERC20LRTest token uses 18 decimal places. To transfer 50 tokens, you would need to enter `50` followed by 18 zeroes, or `50000000000000000000`
+    ethers.utils.parseEther("50").toString() 
   );
 
   const fee = await assetTransfer.getFee(transfer);
