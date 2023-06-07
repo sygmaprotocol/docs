@@ -168,3 +168,4 @@ ApiPromise
 Parachain
 ChainId
 ResourceId
+ResourceID
