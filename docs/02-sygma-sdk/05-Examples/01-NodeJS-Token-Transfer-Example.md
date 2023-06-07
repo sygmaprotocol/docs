@@ -26,17 +26,25 @@ In the following example, we will setup and demonstrate a cross-chain ERC-20 tok
 
 #### Create folders for your project
 
-Create a new root directory for your project, e.g. `/sygma_test_project`. Using a code editor, navigate to the newly created folder in your terminal `cd sygma_test_project`. Install the Sygma SDK by following the instructions on [Installing The SDK](https://docs.buildwithsygma.com/sdk/quickstart/install). Once installed, ensure that the `package.json`, `package-lock.json`, and `node_modules` folders and files have been installed properly into the directory. 
+Create a new root directory for your project, e.g. `/sygma_test_project`. Using a code editor, navigate to the newly created folder in your terminal `cd sygma_test_project`. Install the Sygma SDK by following the instructions on [Installing The SDK](https://docs.buildwithsygma.com/sdk/quickstart/install).
 
 #### Initialize the project and install dependencies
 
-Initialize a new TypeScript project by running the following commands:
+Initialize the project by running the following commands:
 
 ```bash
 yarn init -y
+```
+
+```bash
 yarn add -D typescript dotenv ts-node
+```
+
+```bash
 yarn add ethers@5.7.2
 ```
+
+Once initialized, ensure that the `package.json`, the lock files (`yarn.lock` or `package-lock.json`), and `node_modules` folders have been installed properly into the directory. 
 
 Create a `tsconfig.json` file in the root directory of your project and paste in the following code. This configuration file specifies the root files and the compiler options needed to compile the project. Specifically for this example, we will configure the target to ESNext, enable ES module loading, and set the output directory to dist.
 
@@ -172,7 +180,7 @@ The next function serves as a helper to find a specific domain (representing a s
  */
 function findDomainByChainID(assetTransfer: EVMAssetTransfer, chainID: number,): Domain | null {
   const domains: Array<Domain> = assetTransfer.config.getDomains();
-  const domain = domains.find((domain) => domain.chainID == chainID);
+  const domain = domains.find((domain) => domain.chainId == chainID);
   return domain || null;
 }
 ```
