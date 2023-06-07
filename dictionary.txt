@@ -162,6 +162,7 @@ ChainID
 u32
 AssetID
 parachain
+<<<<<<< HEAD
 ChainBridge
 intrachain
 IBC
@@ -173,3 +174,11 @@ backend
 testnet
 Infura
 testnets
+=======
+SubstrateAssetTransfer
+PolkadotJS
+ApiPromise
+Parachain
+ChainId
+ResourceId
+>>>>>>> develop
