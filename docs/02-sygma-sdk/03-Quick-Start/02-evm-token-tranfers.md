@@ -65,21 +65,21 @@ You can check if approvals are required for your transfer. If there are approval
 // Check if approvals are needed
 if (approvals.length) {
   for (const approval of approvals) {
-    const signedApproval = await wallet.signMessage(approval);
-    const tx = await provider.sendTransaction(signedApproval);
-    await tx.wait();
+    const approvalTx = await wallet.sendTransaction(approval as providers.TransactionRequest);
+    console.log(`Approval TX Hash: ${approvalTx.hash}`)
   }
-
-  // Build the transfer transaction
-  const transferTransaction = await assetTransfer.buildTransferTransaction(
-    transfer,
-    fee,
-  );
-  // Send the transaction using the wallet
-  const response = await wallet.sendTransaction(
-    transferTx as providers.TransactionRequest,
-  );
 }
+
+// Build the transfer transaction
+const transferTransaction = await assetTransfer.buildTransferTransaction(
+  transfer,
+  fee,
+);
+
+// Send the transaction using the wallet
+const transferTxResponse = await wallet.sendTransaction(
+  transferTx as providers.TransactionRequest,
+);
 ```
 
 #### Check Transaction Hash
@@ -88,7 +88,7 @@ The `response` object returned by the `sendTransaction` method contains a `hash`
 
 ```ts
 // Print the transaction hash
-console.log(`Transfer sent with hash: ${response.hash}`)
+console.log(`Transfer sent with hash: ${transferTxResponse.hash}`)
 ```
 
 For detailed examples, jump ahead to the next few sections to have a better grasp on how to use the SDK.
