@@ -13,8 +13,7 @@ In the following example, we will setup and demonstrate a cross-chain ERC-20 tok
 
 #### Prerequisites
 
-- Setup [Node.js](https://nodejs.org/en/about)(version 16 or above) for the backend JavaScript runtime environment.
-- Install a package manager such as [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable).
+- Install [Node.js](https://nodejs.org/en/about)(version 16 or above) for the backend JavaScript runtime environment.
 - Obtain an API key for the Ethereum `Goerli` testnet. An `API_KEY` will be required to initialize the `JsonRpcProvider` object with which blockchain interactions run through. You can sign up to obtain one for free with either [Infura](https://app.infura.io/) or [Alchemy](https://dashboard.alchemy.com/).
 - [MetaMask](https://metamask.io/) should be installed, and an account **used only for development purposes** should be created. [Export the `private key` from MetaMask](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key).
 - Obtain some `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/). You will also need [Goerli ETH](https://goerlifaucet.com/) for gas.
