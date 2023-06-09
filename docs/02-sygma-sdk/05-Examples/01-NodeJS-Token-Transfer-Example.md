@@ -100,7 +100,7 @@ We will begin by importing the necessary classes and functions from the `@buildw
 ```ts
 // transfer.ts
 import { Domain, EVMAssetTransfer, Environment, Fungible, Resource, Transfer } from "@buildwithsygma/sygma-sdk-core";
-import { Wallet, providers } from "ethers";
+import { Wallet, providers, ethers } from "ethers";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -115,7 +115,7 @@ if (!providerApiKey || !privateKey) {
 
 #### Set up testnets and token symbol variables
 
-Next, we setup some variables used for the rest of the script, including the two Ethereum testnets this example will conduct the token transfer on (`Goerli` and `Sepolia`) and the symbol of the test token  (`ERC20LRTest`) we will be using. Paste in the following snippet into the `transfer.ts` file:
+Next, we setup some variables used for the rest of the script, including the two Ethereum testnets this example will conduct the token transfer on (`Goerli` and `Sepolia`) and the symbol of the test token  (`ERC20LRTest`) we will be using. Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -126,7 +126,7 @@ const ERC20_TOKEN_SYMBOL = "ERC20LRTest";
 
 #### Create `assetTransfer` object
 
-Now, we create a function that will return an `assetTransfer` object. This is the object that we are going to use to make the transfer between `Goerli` and `Sepolia`. Paste in the following snippet into the `transfer.ts` file:
+Now, we create a function that will return an `assetTransfer` object. This is the object that we are going to use to make the transfer between `Goerli` and `Sepolia`. Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -144,7 +144,7 @@ async function initAssetTransfer(provider: providers.JsonRpcProvider): Promise<E
 
 #### Define ERC-20 resource
 
-Next, we create a function that serves as a helper to find a specific ERC-20 resource (token) among the available resources in the `assetTransfer` instance. This is matched to the specified symbol declared earlier in the code (`ERC20LRTest`). The function then returns the ERC-20 resource definition. Paste in the following snippet into the `transfer.ts` file:
+Next, we create a function that serves as a helper to find a specific ERC-20 resource (token) among the available resources in the `assetTransfer` instance. This is matched to the specified symbol declared earlier in the code (`ERC20LRTest`). The function then returns the ERC-20 resource definition. Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -164,7 +164,7 @@ function findERC20Resource(assetTransfer: EVMAssetTransfer): Resource | null {
 
 #### Retrieve domain
 
-The next function serves as a helper to find a specific domain (representing a specific blockchain network) among the available domains in the `assetTransfer` instance. We identify the network by passing in the `chainID` of the network. Paste in the following snippet into the `transfer.ts` file:
+The next function serves as a helper to find a specific domain (representing a specific blockchain network) among the available domains in the `assetTransfer` instance. We identify the network by passing in the `chainID` of the network. Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -183,7 +183,7 @@ function findDomainByChainID(assetTransfer: EVMAssetTransfer, chainID: number,):
 
 #### Build transfer object
 
-To be able to use the SDK, we need to build the `transfer` object. For that, we create the following `buildTransfer` function. This function expects several parameters: `wallet`, `from` and `to` destinations, `resource`, and `amount`. All of the parameters are defined in the comment below. Paste in the following snippet into the `transfer.ts` file:
+To be able to use the SDK, we need to build the `transfer` object. For that, we create the following `buildTransfer` function. This function expects several parameters: `wallet`, `from` and `to` destinations, `resource`, and `amount`. All of the parameters are defined in the comment below. Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -220,11 +220,11 @@ async function buildTransfer(
 
 #### Create the main `erc20Transfer` function
 
-Now, we create the main `erc20Transfer` function. This function uses all of the functions defined above, along with the Sygma SDK to perform the cross-chain token transfer. Don't forget to type in the constant variables `providerApiKey` and `privateKey` where it prompts you in quotations. 
+Now, we create the main `erc20Transfer` function. This function uses all of the functions defined above, along with the Sygma SDK to perform the cross-chain token transfer. 
 
-You should have already obtained `ERC20LRTest` tokens from the faucet.
+You should have already obtained `ERC20LRTest` tokens from the faucet for this example. The line `ethers.utils.parseEther("50").toString()` is hardcoded to send 50 `ERC20LRTest` tokens.
 
-Paste in the following snippet into the `transfer.ts` file:
+Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -234,10 +234,10 @@ Paste in the following snippet into the `transfer.ts` file:
  */
 export async function erc20Transfer(): Promise<void> {
   const provider = new providers.JsonRpcProvider(
-    "<PROVIDER_API_KEY>" // type in the const `providerApiKey` without the quotations
+    providerApiKey 
   );
   const wallet = new Wallet(
-    "<YOUR_PRIVATE_KEY>" as string, // type in the const `privateKey` without the quotations
+    privateKey as string, 
     provider
   );
 
@@ -263,7 +263,7 @@ export async function erc20Transfer(): Promise<void> {
     sepolia,
     erc20Resource,
     await wallet.getAddress(),
-    ethers.utils.parseEther("50").toString() 
+    ethers.utils.parseEther("50").toString() // instructions to send 50 tokens
   );
 
   const fee = await assetTransfer.getFee(transfer);

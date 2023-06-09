@@ -180,3 +180,4 @@ testnet
 Infura
 testnets
 test
+hardcoded
