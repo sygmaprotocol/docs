@@ -175,3 +175,8 @@ ApiPromise
 Parachain
 ChainId
 ResourceId
+backend
+Infura
+testnets
+test
+hardcoded
