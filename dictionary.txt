@@ -181,3 +181,4 @@ testnets
 test
 hardcoded
 vision
+testnet
