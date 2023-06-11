@@ -168,3 +168,6 @@ ApiPromise
 Parachain
 ChainId
 ResourceId
+dockerized
+RPC
+preconfigured

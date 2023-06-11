@@ -49,7 +49,7 @@ cd sygma-sdk/
 
 #### 4) Build the SDK
 
-If you haven't already done so, install dependecies with:
+If you haven't already done so, install dependencies with:
 
 ```
 yarn install
@@ -84,7 +84,7 @@ Similarly, this will use `@polkadot/api` together with the sygma-sdk to create a
 TODO - add information on all registered resources on local setup
 
 #### Make changes to on-chain Sygma setup
-Once you start local setup, it is possible to additionaly configure Sygma contracts or Sygma pallet as nodes RPC endpoints are exposed and you can interact with them as with any regular node.
+Once you start local setup, it is possible to additionally configure Sygma contracts or Sygma pallet as nodes RPC endpoints are exposed and you can interact with them as with any regular node.
 
 ##### EVM1 - http://127.0.0.1:8545 
 ##### EVM2 - http://127.0.0.1:8547
