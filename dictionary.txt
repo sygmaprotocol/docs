@@ -175,10 +175,10 @@ IBC
 roadmap
 DevEx
 DeFi
-Permissionless
 backend
-testnet
 Infura
 testnets
 test
 hardcoded
+vision
+testnet
