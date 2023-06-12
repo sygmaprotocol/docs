@@ -14,15 +14,11 @@ The following details a list of resources to support the Devnet environment.
 
 #### Sygma Transfer UI
 
-The transfer UI allows users with a visual interface to connect their wallets and bridge tokens.
-
-[https://transfer-ui.develop.buildwithsygma.com](https://transfer-ui-develop.buildwithsygma.com/transfer)
+The [transfer UI](https://transfer-ui-develop.buildwithsygma.com/transfer) provides users with a visual interface to connect their wallets and bridge tokens.
 
 **Faucet UI**
 
-The faucet allows users with a visual interface to mint tokens.
-
-[https://faucet-ui-stage.buildwithsygma.com](https://faucet-ui-stage.buildwithsygma.com)
+The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with a visual interface to mint tokens.
 
 ### Contract Addresses
 

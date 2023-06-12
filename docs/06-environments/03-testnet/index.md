@@ -14,15 +14,13 @@ The following details a list of resources that support the Testnet environment. 
 
 ## Sygma Transfer UI
 
-The transfer UI provides users with a visual interface to connect their wallets and bridge tokens.
-
-[Sygma Transfer UI](https://transfer-ui.test.buildwithsygma.com)
+The [transfer UI](https://transfer-ui.test.buildwithsygma.com) provides users with a visual interface to connect their wallets and bridge tokens.
 
 ## Faucet UI
 
-The faucet UI provides users with a visual interface to mint tokens.
+The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with a visual interface to mint tokens.
 
-[Faucet UI](https://faucet-ui-stage.buildwithsygma.com)
+
 
 ## Supported networks
 
