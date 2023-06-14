@@ -11,27 +11,62 @@ The following details a list of resources to support the Mainnet environment. EV
 **Inactive**
 :::
 
-## Supported networks
+## Supported Networks
 
 | Network Name     | Domain ID |
 | ---------------- | --------- |
-| Ethereum Mainnet | N/A       |
+| Ethereum Mainnet | 1         |
 | Phala            | N/A       |
 
 ### EVM Contract Addresses
 
-| Domain ID | Network Name     | Bridge | Fee Router | Dynamic ERC-20 Fee Handler | Dynamic Generic ERC20 Fee Handler | ERC-20 Handler | ERC-721 Handler | Permissionless Generic Handler |
-| --------- | ---------------- | ------ | ---------- | -------------------------- | --------------------------------- | -------------- | --------------- | ------------------------------ |
-| 1         | Ethereum Mainnet | 0x0    | 0x0        | 0x0                        | 0x0                               | 0x0            | 0x0             | 0x0                            |
-| 2         | Phala            | 0x0    | 0x0        | 0x0                        | 0x0                               | 0x0            | 0x0             | 0x0                            |
+**Ethereum Mainnet (Domain ID: 1)**
 
+| Contract                          | Address                                    |
+| --------------------------------- | ------------------------------------------ |
+| Bridge                            | 0x0 |
+| Fee Router                        | 0x0 |
+| Dynamic ERC-20 Fee Handler        | 0x0 |
+| Dynamic Generic ERC20 Fee Handler | 0x0 |
+| ERC-20 Handler                    | 0x0 |
+| ERC-721 Handler                   | 0x0 |
+| Permissionless Generic Handler    | 0x0 |
+
+**Phala (Domain ID: N/A)**
+
+| Contract                          | Address                                    |
+| --------------------------------- | ------------------------------------------ |
+| Bridge                            | 0x0 |
+| Fee Router                        | 0x0 |
+| Dynamic ERC-20 Fee Handler        | 0x0 |
+| Dynamic Generic ERC20 Fee Handler | 0x0 |
+| ERC-20 Handler                    | 0x0 |
+| ERC-721 Handler                   | 0x0 |
+| Permissionless Generic Handler    | 0x0 |
 
 ### Registered Resources
 
-| Name                           | Type    | Registered Fee Handler | Registered Handler           | Bridging Strategy | Resource ID                                                        | Mainnet Contract Address                   | 
-| ------------------------------ | ------- | ---------------------- | ---------------------------- | ----------------- | ------------------------------------------------------------------ | ------------------------------------------ | --- | --- |
-| Phala (Symbol: PHA)            | ERC-20  | BasicFeeHandler        | ERC20Handler                 | Lock/Release      | 0x0000000000000000000000000000000000000000000000000000000000000001 | 0x0 | 
-| Permissionless Generic Message | Generic | FeeHandlerWithOracle   | PermissionlessGenericHandler | GMP               | 0x0000000000000000000000000000000000000000000000000000000000000000 | N/A                                        |  
+**Phala**
+
+| Property                          | Value                                                              |
+| --------------------------------- | ------------------------------------------------------------------ |
+| Symbol                            | PHA                                                                |
+| Type                              | ERC-20                                                             |
+| Registered Fee Handler            | BasicFeeHandler                                                    |
+| Registered Handler                | ERC20Handler                                                       |
+| Bridging Strategy                 | Lock/Release                                                       |
+| Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000001 |
+| Ethereum Mainnet Contract Address | 0x6c5bA91642F10282b576d91922Ae6448C9d52f4E                         |
+
+**Permissionless Generic Message**
+
+| Details                  | Information                                                        |
+| ------------------------ | ------------------------------------------------------------------ |
+| Type                     | Generic                                                            |
+| Registered Fee Handler   | FeeHandlerWithOracle                                               |
+| Registered Handler       | PermissionlessGenericHandler                                       |
+| Bridging Strategy        | GMP                                                                |
+| Resource ID              | 0x0000000000000000000000000000000000000000000000000000000000000500 |
 
 ### Fee Schemes
 
