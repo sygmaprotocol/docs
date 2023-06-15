@@ -64,7 +64,7 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 
 | Property                 | Value                                                              |
 | ------------------------ | ------------------------------------------------------------------ |
-| Symbol                   | ERC20TST                                                           |
+| Symbol                   | ERC20LRTST                                                         |
 | Type                     | ERC-20                                                             |
 | Registered Fee Handler   | BasicFeeHandler                                                    |
 | Registered Handler       | ERC20Handler                                                       |
