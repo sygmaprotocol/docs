@@ -183,3 +183,4 @@ hardcoded
 vision
 testnet
 Phala
+ERC20LRTST
