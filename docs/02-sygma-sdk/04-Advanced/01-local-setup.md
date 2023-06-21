@@ -51,7 +51,7 @@ make example
 ```
 
 :::note Be aware
-The `make example` will requrie several GB's of space on your machine while it is running. You can follow this [documentation](https://docs.docker.com/engine/reference/commandline/system_prune/) to prune unused containers, networks, images, and volumes after you are done with the example in full.
+The `make example` will require several GB's of space on your machine while it is running. You can follow this [documentation](https://docs.docker.com/engine/reference/commandline/system_prune/) to prune unused containers, networks, images, and volumes after you are done with the example in full.
 :::
 
 #### 3) Clone the Sygma SDK repository
@@ -104,9 +104,12 @@ To easily verify the bridging transactions, we have added console logs that will
 <!-- #### Local configuration
 TODO - add information on all registered resources on local setup -->
 
-#### Make changes to on-chain Sygma setup
+### Make changes to on-chain Sygma setup
 Once you start the local setup, it is possible to configure the Sygma EVM contracts or Sygma Substrate pallets, since all node RPC endpoints are exposed and you can interact with them as with any regular node.
 
-##### EVM1 RPC endpoint: http://127.0.0.1:8545 
-##### EVM2 RPC endpoint http://127.0.0.1:8547
-##### Substrate WS endpoint: ws://127.0.0.1:9944
+| Network   | RPC endpoint               |
+| --------- | ---------------------------|
+| EVM1      | http://127.0.0.1:8545      |
+| EVM2      | http://127.0.0.1:8547      |
+| Substrate | ws://127.0.0.1:9944        |
+
