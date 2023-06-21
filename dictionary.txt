@@ -171,15 +171,14 @@ ResourceId
 dockerized
 RPC
 preconfigured
+ResourceID
 ChainBridge
 intrachain
 IBC
 roadmap
 DevEx
 DeFi
-Permissionless
 backend
-testnet
 Infura
 testnets
 test
@@ -192,3 +191,5 @@ Dotsama
 EVM1
 EVM2
 WS
+vision
+testnet
