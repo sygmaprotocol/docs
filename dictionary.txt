@@ -183,5 +183,13 @@ Infura
 testnets
 test
 hardcoded
+preconfigures
+Ganache
+EVM-to-Substrate
+Substrate-to-EVM
+Dotsama
+EVM1
+EVM2
+WS
 vision
 testnet
