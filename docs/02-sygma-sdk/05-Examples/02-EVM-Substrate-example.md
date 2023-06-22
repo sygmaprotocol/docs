@@ -12,7 +12,7 @@ In the following example, we will use the `TESTNET` environment to perform a cro
 :::
 
 :::danger
- We will make use of an example Ethereum wallet ("0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C"), whose private key is hardcoded into the example, as well as a Substrate address ("5CDQJk6kxvBcjauhrogUc9B8vhbdXhRscp1tGEUmniryF1Vt", which derives to "3zmVCqbvMRgtrt48zR8C5Kz3Ast6sVsdMXNJt2mAETj7s2z8" in Phala-Rococo). Please note that these are for example use only. **Never expose your private key, it could result in the complete loss of your funds.**
+ We will make use of an example Ethereum wallet ("0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C"), whose private key is hardcoded into the example, as well as a Substrate address ("5CDQJk6kxvBcjauhrogUc9B8vhbdXhRscp1tGEUmniryF1Vt", which derives to "3zmVCqbvMRgtrt48zR8C5Kz3Ast6sVsdMXNJt2mAETj7s2z8" in Rococo-Phala). Please note that these are for example use only. **Never expose your private key, it could result in the complete loss of your funds.**
 :::
 
 ### EVM-to-Substrate Token Transfer Example
@@ -66,7 +66,7 @@ cd examples/evm-to-substrate-fungible-transfer
 yarn run transfer
 ```
 
-The example will use `ethers` in conjuction with the sygma-sdk to create a transfer from Goerli to Rococo-Phala with a `gPHA` token. It will be received on Rococo-Phala as the native `PHA` token.
+The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Goerli to Rococo-Phala with a `gPHA` token. It will be received on Rococo-Phala as the native `PHA` token.
 
 Replace the placeholder values in the script with your own Ethereum wallet private key and provider URL.
 

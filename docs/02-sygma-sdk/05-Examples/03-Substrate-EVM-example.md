@@ -12,7 +12,7 @@ In the following example, we will use the `TESTNET` environment to perform a cro
 :::
 
 :::danger
-We will make use of an example Substrate wallet ("5FNHV5TZAQ1AofSPbP7agn5UesXSYDX9JycUSCJpNuwgoYTS", which derives to "43vNPAxiYuWSvxapizZJ9xtNu3out1xu3gxu3zbCpeoqRZRK" in Phala-Rococo), using a hardcoded 12-word seed (`MNEMONIC`), as well as an Ethereum address ("0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C"). Please note that these are for example use only. **Never expose your private key, it could result in the complete loss of your funds.**
+We will make use of an example Substrate wallet ("5FNHV5TZAQ1AofSPbP7agn5UesXSYDX9JycUSCJpNuwgoYTS", which derives to "43vNPAxiYuWSvxapizZJ9xtNu3out1xu3gxu3zbCpeoqRZRK" in Rococo-Phala), using a hardcoded 12-word seed (`MNEMONIC`), as well as an Ethereum address ("0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C"). Please note that these are for example use only. **Never expose your private key, it could result in the complete loss of your funds.**
 :::
 
 ### EVM-to-Substrate Token Transfer Example
@@ -64,7 +64,7 @@ cd examples/substrate-to-evm-fungible-transfer
 yarn run transfer
 ```
 
-The example will use `@polkadot/keyring` in conjuction with the sygma-sdk to create a transfer from Roccoco-Phala to Goerli with the `PHA` token. It will be received on Goerli as a `gPHA` token.
+The example will use `@polkadot/keyring` in conjunction with the sygma-sdk to create a transfer from Rococo-Phala to Goerli with the `PHA` token. It will be received on Goerli as a `gPHA` token.
 
 Replace the placeholder values in the script with your own Substrate wallet mnemonic and destination EVM address.
 
@@ -72,74 +72,10 @@ Replace the placeholder values in the script with your own Substrate wallet mnem
 
 This example script performs the following steps:
 
-- Initializes the SDK and establishes a connection to the Substrate node. ***************************************WORKING HERE
-- Initializes the SDK by importing the required packages and defining the constants for the script.
-
-```ts
-import { EVMAssetTransfer, Environment } from "@buildwithsygma/sygma-sdk-core";
-import { Wallet, providers } from "ethers";
-
-const ROCOCO_PHALA_CHAIN_ID = 5231;
-const DESTINATION_ADDRESS = "5CDQJk6kxvBcjauhrogUc9B8vhbdXhRscp1tGEUmniryF1Vt";
-const RESOURCE_ID =
-  "0x0000000000000000000000000000000000000000000000000000000000001000"; // This is the resource ID for gPHA token according to Sygma's test environment 
-```
-
-- Defines the ERC-20 transfer function.
-
-```ts
-export async function erc20Transfer(): Promise<void> {
-```
-- Set up the provider, wallet, and asset transfer objects using the TESTNET environment.
-
-```ts
-  const provider = new providers.JsonRpcProvider(
-    "https://rpc.goerli.eth.gateway.fm/"
-  );
-  const wallet = new Wallet(
-    "9574830b950b9ce5b66836e77ea18739258682ca08d4e65ca26b03dfe3742cf9",
-    provider
-  );
-  const assetTransfer = new EVMAssetTransfer();
-  await assetTransfer.init(provider, Environment.TESTNET);
-```
-
-- Constructs a `transfer` object that defines the details of the ERC-20 token transfer using the previously declared constants, as well as the amount to be transferred. 
-  
-```ts
-  const transfer = assetTransfer.createFungibleTransfer(
-    await wallet.getAddress(),
-    ROCOCO_PHALA_CHAIN_ID,
-    DESTINATION_ADDRESS,
-    RESOURCE_ID,
-    500000000 
-  );
-```
-
-- Retrieves the fee required to complete the transfer from the SDK.
-- Builds the necessary approval transactions for the transfer and sends them using the Ethereum wallet. The approval transactions are required to authorize the transfer of ERC-20 tokens.
-
-```ts
-  const fee = await assetTransfer.getFee(transfer);
-  const approvals = await assetTransfer.buildApprovals(transfer, fee);
-  for (const approval of approvals) {
-    const response = await wallet.sendTransaction(
-      approval as providers.TransactionRequest
-    );
-    console.log("Sent approval with hash: ", response.hash);
-  }
-```
-
-- Builds the final `transfer` transaction and sends it using the Ethereum wallet.
-  
-```ts
-  const transferTx = await assetTransfer.buildTransferTransaction(
-    transfer,
-    fee
-  );
-  const response = await wallet.sendTransaction(
-    transferTx as providers.TransactionRequest
-  );
-  console.log("Sent transfer with hash: ", response.hash);
-}
-```
+- Initializes the SDK and establishes a connection to the Substrate node.
+- Retrieves the list of supported domains and resources from the SDK configuration.
+- Searches for the Substrate asset resource with the specified ResourceId
+- Searches for the Goerli and Sepolia domains in the list of supported domains based on their chain IDs
+- Constructs a transfer object that defines the details of the Substrate asset transfer
+- Retrieves the fee required for the transfer from the SDK.
+- Builds the final transfer transaction and sends it using the Substrate account.
