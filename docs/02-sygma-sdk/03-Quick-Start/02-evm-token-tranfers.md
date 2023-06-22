@@ -7,7 +7,7 @@ sidebar_position: 2
 draft: false
 ---
 
-### Transferring an fungoible asset from Rococo to EVM
+### Transferring a fungible asset between EVM chains
 
 Transferring assets between EVM-based chains can be achieved using the Sygma SDK.
 
