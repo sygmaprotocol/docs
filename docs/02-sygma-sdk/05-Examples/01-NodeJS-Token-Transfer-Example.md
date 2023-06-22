@@ -1,11 +1,11 @@
-<!-- ---
+---
 slug: /sdk/examples/node-js-example
 id:  examples-nodejs-example
-title: Node.js EVM-to-EVM Token Transfer Example
-description: Section that describes how to transfer token using nodeJS.
+title: Node.js EVM To EVM Token Transfer Example
+description: Section that describes how to transfer a token between EVM chains using nodeJS.
 sidebar_position: 1
 draft: false
---- -->
+---
 
 :::info 
 In the following example, we will setup and demonstrate a cross-chain ERC-20 token transfer between the same address from Goerli to Sepolia. This will be shown through the command line in a backend Node.js environment using the Sygma SDK.
