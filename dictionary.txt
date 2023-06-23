@@ -184,3 +184,7 @@ vision
 testnet
 Phala
 ERC20LRTST
+EvmAssetTransfer
+Ethers
+EVM1
+EVM2
