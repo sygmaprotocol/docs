@@ -17,7 +17,7 @@ In the following example, we will use the `TESTNET` environment to perform a cro
 
 ### EVM-to-Substrate Token Transfer Example
 
-This is an example script that demonstrates the functionality of the SDK using the Sygma ecosystem. The script showcases an ERC-20 token transfer between two networks using the Sygma SDK. The complete example can be found in this [repo](
+This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of bridges, fee handlers, and relayers. The script showcases an ERC-20 token transfer between two networks using the Sygma SDK. The complete example can be found in this [repo](
 https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/evm-to-substrate-fungible-transfer#sygma-sdk-erc20-example).
 
 ### Prerequisites

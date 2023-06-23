@@ -17,7 +17,7 @@ We will make use of an example Substrate wallet ("5FNHV5TZAQ1AofSPbP7agn5UesXSYD
 
 ### EVM-to-Substrate Token Transfer Example
 
-This is an example script that demonstrates the functionality of the SDK using the Sygma ecosystem. The script showcases a Substrate asset transfer between Substrate and EVM using the Sygma SDK. The complete example can be found in this [repo](https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/substrate-to-evm-fungible-transfer).
+This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of bridges, fee handlers, and relayers. The script showcases a Substrate asset transfer between Substrate and EVM using the Sygma SDK. The complete example can be found in this [repo](https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/substrate-to-evm-fungible-transfer).
 
 ### Prerequisites
 
@@ -70,12 +70,64 @@ Replace the placeholder values in the script with your own Substrate wallet mnem
 
 ### Script Functionality
 
-This example script performs the following steps:
+This example script performs the following steps: <!-- TODO: UPDATE SCRIPTS AND STEPS AND ADD CODE SNIPPETS>
 
-- Initializes the SDK and establishes a connection to the Substrate node.
-- Retrieves the list of supported domains and resources from the SDK configuration.
-- Searches for the Substrate asset resource with the specified ResourceId
-- Searches for the Goerli and Sepolia domains in the list of supported domains based on their chain IDs
-- Constructs a transfer object that defines the details of the Substrate asset transfer
-- Retrieves the fee required for the transfer from the SDK.
-- Builds the final transfer transaction and sends it using the Substrate account.
+- Initializes the SDK by importing the required packages and defining the constants for the script. The 12-word seed `MNEMONIC` is also hardcoded into this snippet.
+
+```ts
+import { Keyring } from "@polkadot/keyring";
+import { ApiPromise, WsProvider } from "@polkadot/api";
+import { cryptoWaitReady } from "@polkadot/util-crypto";
+import { Environment, SubstrateAssetTransfer } from "@buildwithsygma/sygma-sdk-core";
+
+const GOERLI_CHAIN_ID = 5;
+const RESOURCE_ID = "0x0000000000000000000000000000000000000000000000000000000000001000";
+const MNEMONIC = "zoo slim stable violin scorpion enrich cancel bar shrug warm proof chimney";
+const recipient = "0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C";
+```
+
+- Defines the main Substrate transfer function, including the connection to the blockchain using a WebSocket provider, initializing the asset transfer instance, and setting up the keyring and account from the mnemonic phrase.
+
+```ts
+const substrateTransfer = async (): Promise<void> => {
+  const keyring = new Keyring({ type: "sr25519" });
+  await cryptoWaitReady();
+  const account = keyring.addFromUri(MNEMONIC);
+  const wsProvider = new WsProvider("wss://subbridge-test.phala.network/rhala/ws");
+  const api = await ApiPromise.create({ provider: wsProvider });
+  const assetTransfer = new SubstrateAssetTransfer();
+  await assetTransfer.init(api, Environment.TESTNET);
+  ...
+}
+```
+
+- Constructs a transfer object that calculates the fee, then builds, signs, and sends the transaction.
+
+```ts
+const transfer = assetTransfer.createFungibleTransfer(
+  account.address,
+  GOERLI_CHAIN_ID,
+  recipient,
+  RESOURCE_ID,
+  50
+);
+const fee = await assetTransfer.getFee(transfer);
+const transferTx = assetTransfer.buildTransferTransaction(transfer, fee);
+const unsub = await transferTx.signAndSend(account, ({ status }) => {
+  ...
+});
+```
+
+- Logs the current status of the transaction, and if it's included in a block or finalized, it outputs the respective block hash.
+
+```ts
+const unsub = await transferTx.signAndSend(account, ({ status }) => {
+  console.log(`Current status is ${status.toString()}`);
+  if (status.isInBlock) {
+    console.log(`Transaction included at blockHash ${status.asInBlock.toString()}`);
+  } else if (status.isFinalized) {
+    console.log(`Transaction finalized at blockHash ${status.asFinalized.toString()}`);
+    unsub();
+  }
+});
+```
