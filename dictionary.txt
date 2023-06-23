@@ -190,3 +190,7 @@ onboarded
 ChainSafe
 Phala
 MultiSigs
+EvmAssetTransfer
+Ethers
+EVM1
+EVM2
