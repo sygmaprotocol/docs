@@ -97,14 +97,7 @@ We will begin by importing the necessary classes and functions from the `@buildw
 
 ```ts
 // transfer.ts
-import {
-  Domain,
-  EVMAssetTransfer,
-  Environment,
-  Fungible,
-  Resource,
-  Transfer,
-} from "@buildwithsygma/sygma-sdk-core";
+import { EVMAssetTransfer, Environment } from "@buildwithsygma/sygma-sdk-core";
 import { Wallet, providers, ethers } from "ethers";
 import dotenv from "dotenv";
 
@@ -173,10 +166,10 @@ export async function erc20Transfer(): Promise<void> {
 
   const transfer = assetTransfer.createFungibleTransfer(
     await wallet.getAddress(),
-    RESOURCE_ID,
     SEPOLIA_CHAIN_ID,
     await wallet.getAddress(),
-    ethers.utils.parseEther("50").toNumber(), // instructions to send 50 tokens
+    RESOURCE_ID,
+    50, // instructions to send 50 tokens
   );
 
   const fee = await assetTransfer.getFee(transfer);
