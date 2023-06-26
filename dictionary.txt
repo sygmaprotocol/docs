@@ -217,3 +217,5 @@ EvmAssetTransfer
 Ethers
 EVM1
 EVM2
+WebSocket
+keyring
