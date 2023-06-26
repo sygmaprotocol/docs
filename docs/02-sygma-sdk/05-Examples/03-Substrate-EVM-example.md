@@ -70,7 +70,7 @@ Replace the placeholder values in the script with your own Substrate wallet mnem
 
 ### Script Functionality
 
-This example script performs the following steps: <!-- TODO: UPDATE SCRIPTS AND STEPS AND ADD CODE SNIPPETS>
+This example script performs the following steps:
 
 - Initializes the SDK by importing the required packages and defining the constants for the script. The 12-word seed `MNEMONIC` is also hardcoded into this snippet.
 
@@ -118,7 +118,7 @@ const unsub = await transferTx.signAndSend(account, ({ status }) => {
 });
 ```
 
-- Logs the current status of the transaction, and if it's included in a block or finalized, it outputs the respective block hash.
+- Logs the current status of the transaction, and if it's included in a block or finalized, outputs the respective block hash.
 
 ```ts
 const unsub = await transferTx.signAndSend(account, ({ status }) => {

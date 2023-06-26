@@ -68,7 +68,7 @@ yarn run transfer
 
 The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Goerli to Rococo-Phala with a `gPHA` token. It will be received on Rococo-Phala as the native `PHA` token.
 
-Replace the placeholder values in the script with your own Ethereum wallet private key and provider URL.
+<!--Replace the placeholder values in the script with your own Ethereum wallet private key and provider URL.-->
 
 ### Script Functionality
 
@@ -83,7 +83,7 @@ import { Wallet, providers } from "ethers";
 const ROCOCO_PHALA_CHAIN_ID = 5231;
 const DESTINATION_ADDRESS = "5CDQJk6kxvBcjauhrogUc9B8vhbdXhRscp1tGEUmniryF1Vt";
 const RESOURCE_ID =
-  "0x0000000000000000000000000000000000000000000000000000000000001000"; // This is the resource ID for gPHA token according to Sygma's test environment 
+  "0x0000000000000000000000000000000000000000000000000000000000001000"; // This is the resource ID for the gPHA token according to Sygma's testnet environment 
 ```
 
 - Defines the ERC-20 transfer function.
