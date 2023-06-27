@@ -222,3 +222,4 @@ EVM2
 WebSocket
 keyring
 Khala
+Bware
