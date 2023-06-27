@@ -28,17 +28,17 @@ Sygma's custom pallets contains a multitude of different identifiers with comple
 - **MultiLocation**: `MultiLocation` is a cross-consensus message format (XCM) concept used to identify any single entity location that exists within the world of Polkadot consensus. `MultiLocation` always expresses a relative location to the current location. Practically, `MultiLocations` are used to identify places to send XCM messages. In Sygma pallets, it is used to identify the destination when depositing.
 - **MultiAsset**: `MultiAsset` is a Substrate type that identifies whether assets are fungible or non-fungible, native or foreign, etc. It is used to handle multiple assets in the Polkadot world. In Sygma, `MultiAsset` is used to identify the asset despite its location and fungibility. 
 -  **DomainID & ChainID**: In the context of the Sygma pallets, a `DomainID` is a unique identifier for a particular domain, and a `ChainID` is a unique identifier for a specific blockchain. These IDs are registered together, so each `DomainID` is associated with a specific `ChainID`. This information is stored in the chain's storage, and you can look up which `ChainID` is associated with a particular `DomainID`.
--  **ResourceID**: This is a unique identifier for an asset in Sygma. It's linked with an XCM asset through a mapping defined in the runtime, which associates an `AssetId` with a `ResourceID`. This mapping is known as `ResourcePairs`, as defined later in this section.
--  **AssetId**: This can refer to two different types of `AssetIds`, one of u32 type and the other of XCM type.
+-  **ResourceID**: This is a unique identifier for an asset in Sygma. It's linked with an XCM asset through a mapping defined in the runtime, which associates an (XCM) `AssetID` with a `ResourceID`. This mapping is known as `ResourcePairs`, as defined later in this section.
+-  **AssetID**: This can refer to two different types of `AssetIDs`, one of u32 type and the other of XCM type.
 
-    - *AssetId of u32*: This is an identifier assigned to an asset in a Substrate blockchain. It's displayed in the assets page on the Polkadot JS App and is used when transferring the asset between accounts within the same parachain.
+    - *AssetID of u32*: This is an identifier assigned to an asset in a Substrate blockchain. It's displayed in the assets page on the Polkadot JS App and is used when transferring the asset between accounts within the same parachain.
 
-    - *AssetId of XCM*: This is a type of `AssetId` used in the context of XCM (Cross-Chain Message) communication. It's an alias for `XcmAssetId` in Sygma pallets and serves as the asset identifier within the entire Polkadot ecosystem. It's linked with the asset's `MultiLocation`, which is a data structure that describes where the asset is located.
-- **SimpleForeignAssetConverter**: This is a structure that binds the u32 `AssetId` with the Asset's `MultiLocation`, establishing a link between the two.
+    - *AssetID of XCM*: This is a type of `AssetID` used in the context of XCM (Cross-Chain Message) communication. It's an alias for `XcmAssetID` in Sygma pallets and serves as the asset identifier within the entire Polkadot ecosystem. It's linked with the asset's `MultiLocation`, which is a data structure that describes where the asset is located.
+- **SimpleForeignAssetConverter**: This is a structure that binds the u32 `AssetID` with the Asset's `MultiLocation`, establishing a link between the two.
 
-- **ResourcePairs**: This is a mapping defined in the runtime that links the `XcmAssetId` and the `ResourceID`.
+- **ResourcePairs**: This is a mapping defined in the runtime that links the `XcmAssetID` and the `ResourceID`.
 
-Practically speaking, the `MultiLocation` of an asset plays a key role in the relationship between the asset, its different IDs (u32 `AssetId` and `XcmAssetId`), the basic fee associated with the asset, and how the asset is linked with a `ResourceID`.
+Practically speaking, the `MultiLocation` of an asset plays a key role in the relationship between the asset, its different IDs (u32 `AssetID` and `XcmAssetID`), the basic fee associated with the asset, and how the asset is linked with a `ResourceID`.
 
 ---
 
