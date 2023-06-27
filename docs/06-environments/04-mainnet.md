@@ -16,7 +16,8 @@ The following details a list of resources to support the Mainnet environment. EV
 | Network Name     | Domain ID |
 | ---------------- | --------- |
 | Ethereum Mainnet | 1         |
-| Phala            | N/A       |
+| Khala            | 2         |
+| Phala            | 3         |
 
 ### EVM Contract Addresses
 
@@ -24,25 +25,12 @@ The following details a list of resources to support the Mainnet environment. EV
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0x0 |
-| Fee Router                        | 0x0 |
-| Dynamic ERC-20 Fee Handler        | 0x0 |
-| Dynamic Generic ERC20 Fee Handler | 0x0 |
-| ERC-20 Handler                    | 0x0 |
-| ERC-721 Handler                   | 0x0 |
-| Permissionless Generic Handler    | 0x0 |
-
-**Phala (Domain ID: N/A)**
-
-| Contract                          | Address                                    |
-| --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0x0 |
-| Fee Router                        | 0x0 |
-| Dynamic ERC-20 Fee Handler        | 0x0 |
-| Dynamic Generic ERC20 Fee Handler | 0x0 |
-| ERC-20 Handler                    | 0x0 |
-| ERC-721 Handler                   | 0x0 |
-| Permissionless Generic Handler    | 0x0 |
+| Bridge                            | 0x4D878E8Fb90178588Cda4cf1DCcdC9a6d2757089 |
+| Fee Router                        | 0xC47468aeae431f5D0B7DA50F9f5D8a6c0eca4789 |
+| Dynamic ERC-20 Fee Handler        | 0x5573Ae978A10B724705624C620E6a7977935c721 |
+| Dynamic Generic ERC20 Fee Handler | 0x4EE82A64Aa9535AE4aABe3B35a12c29a0430A951 |
+| ERC-20 Handler                    | 0xC832588193cd5ED2185daDA4A531e0B26eC5B830 |
+| Permissionless Generic Handler    | 0xa176F012b3bBD7D4824eB31E8707FcE64F64f29f |
 
 ### Registered Resources
 
@@ -51,8 +39,8 @@ The following details a list of resources to support the Mainnet environment. EV
 | Property                          | Value                                                              |
 | --------------------------------- | ------------------------------------------------------------------ |
 | Symbol                            | PHA                                                                |
-| Type                              | ERC-20                                                             |
-| Registered Fee Handler            | BasicFeeHandler                                                    |
+| Type                              | Fungible                                                           |
+| Fee strategy                      | Static Fee                                                         |
 | Registered Handler                | ERC20Handler                                                       |
 | Bridging Strategy                 | Lock/Release                                                       |
 | Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000001 |
@@ -60,21 +48,20 @@ The following details a list of resources to support the Mainnet environment. EV
 
 **Permissionless Generic Message**
 
-| Details                  | Information                                                        |
-| ------------------------ | ------------------------------------------------------------------ |
-| Type                     | Generic                                                            |
-| Registered Fee Handler   | FeeHandlerWithOracle                                               |
-| Registered Handler       | PermissionlessGenericHandler                                       |
-| Bridging Strategy        | GMP                                                                |
-| Resource ID              | 0x0000000000000000000000000000000000000000000000000000000000000500 |
+| Details            | Information                                                        |
+| ------------------ | ------------------------------------------------------------------ |
+| Type               | Generic                                                            |
+| Registered Handler | PermissionlessGenericHandler                                       |
+| Bridging Strategy  | GMP                                                                |
+| Resource ID        | 0x0000000000000000000000000000000000000000000000000000000000000500 |
 
-### Fee Schemes
+### Registered routes
 
-| Network Name             | Fee Oracle Address | Fee Type   | Fee Percent/Amount | Gas Amount |
-| ------------------------ | ------------------ | ---------- | ------------------ | ---------- |
-| Ethereum Mainnet Dynamic | 0x0                | Fee oracle | 3%                 | 100000     |
-| Ethereum Mainnet Basic   | 0x0                | Base fee   | 0.001 ETH          |            |
-| Phala Dynamic            | 0x0                | Fee oracle | 3%                 | 100000     |
-| Phala Basic              | 0x0                | Base fee   | 0.001 ETH          |            |
+| Source Network Name | Destination Network Name | Resource | Fee Percent/Amount | Resource ID |
+| ------------------- | ------------------------ | -------- | ------------------ | ---------- |
+| Ethereum Mainnet    | Phala                    | PHA      | 0.0001 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000001  |
+| Ethereum Mainnet    | Khala                    | PHA      | 0.0001 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000001 |
+| Khala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
+| Phala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 
 
