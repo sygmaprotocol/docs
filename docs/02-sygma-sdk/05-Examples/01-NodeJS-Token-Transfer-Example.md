@@ -1,8 +1,8 @@
 ---
 slug: /sdk/examples/node-js-example
-id: quickstart-nodejs-example
-title: Node.js Token Transfer Example
-description: Section that describes how to transfer token using nodeJS.
+id:  examples-nodejs-example
+title: Node.js EVM To EVM Token Transfer Example
+description: Section that describes how to transfer a token between EVM chains using nodeJS.
 sidebar_position: 1
 draft: false
 ---
