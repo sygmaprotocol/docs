@@ -195,6 +195,18 @@ vision
 testnet
 Phala
 ERC20LRTST
+EVM-to-EVM
+evm-substrate-example
+examples-evm-substrate-example
+Phala
+EVM-side
+Rococo-Phala
+EVM-to-Substrate
+TESTNET
+WSS
+substrate-evm-example
+examples-substrate-evm-example
+examples-nodejs-example
 suboptimal
 Cryptonetwork
 Uniswap
@@ -207,3 +219,5 @@ EvmAssetTransfer
 Ethers
 EVM1
 EVM2
+WebSocket
+keyring
