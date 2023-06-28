@@ -24,7 +24,7 @@ The protocol gives developers granular control over the handling of fees for any
 Each resource is assigned a **fee strategy** for every potential destination network (i.e. domain), where the mapping between the fee strategy and the domain outlines all potential bridging routes for a given resource. The fee strategy defines the set of rules on how fees should be charged when executing deposits on the source chain. 
 
 The Sygma protocol allows for two fee strategies, implemented via **fee handlers** (contracts in EVM, pallets in Substrate):
-- [**Basic fee strategy**](/docs/03-architecture/03-Fees/02-basic-fee.md)
+- [**Fixed fee strategy**](/docs/03-architecture/03-Fees/02-basic-fee.md)
 - [**Dynamic fee strategy**](/docs/03-architecture/03-Fees/03-dynamic-fee.md)
 
 ![](../../../static/assets/fee-router-general.png)
