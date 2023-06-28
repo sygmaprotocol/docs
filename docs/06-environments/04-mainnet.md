@@ -13,11 +13,11 @@ The following details a list of resources to support the Mainnet environment. EV
 
 ## Supported Networks
 
-| Network Name     | Domain ID |
-| ---------------- | --------- |
-| Ethereum Mainnet | 1         |
-| Khala            | 2         |
-| Phala            | 3         |
+| Network Name     | Domain ID | Chain ID |
+| ---------------- | --------- | -------- |
+| Ethereum Mainnet | 1         | 1        |
+| Khala            | 2         | 5232     |
+| Phala            | 3         | 5233     |
 
 ### EVM Contract Addresses
 
@@ -40,7 +40,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | --------------------------------- | ------------------------------------------------------------------ |
 | Symbol                            | PHA                                                                |
 | Type                              | Fungible                                                           |
-| Fee strategy                      | Static Fee                                                         |
+| Fee strategy                      | Fixed Fee                                                          |
 | Registered Handler                | ERC20Handler                                                       |
 | Bridging Strategy                 | Lock/Release                                                       |
 | Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000001 |
