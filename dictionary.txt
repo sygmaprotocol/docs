@@ -199,6 +199,8 @@ EVM2
 WS
 vision
 testnet
+Phala
+ERC20LRTST
 EVM-to-EVM
 evm-substrate-example
 examples-evm-substrate-example
@@ -225,3 +227,5 @@ EVM1
 EVM2
 WebSocket
 keyring
+Khala
+Bware
