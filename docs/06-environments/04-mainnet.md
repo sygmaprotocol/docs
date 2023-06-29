@@ -7,7 +7,7 @@ description: The following details a list of resources to support the Mainnet en
 The following details a list of resources to support the Mainnet environment. EVM and Substrate resources are listed in separate sections below.
 :::
 
-:::status Status
+:::tip Status
 **Active**
 :::
 
