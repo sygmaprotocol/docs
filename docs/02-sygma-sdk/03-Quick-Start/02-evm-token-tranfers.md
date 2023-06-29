@@ -4,77 +4,87 @@ id: quickstart-transfertoken
 title: EVM Token Transfers
 description: The following section details how to perform a cross-chain token transfer.
 sidebar_position: 2
-draft: true
+draft: false
 ---
 
-#### Build The Transfer Object
+### Transferring a fungible asset between EVM chains
 
-Transferring a token with the `Sygma SDK` is very straightforward. You will need to build the transfer object first, which is then passed onto the signer to send the transaction.
+Transferring assets between EVM-based chains can be achieved using the Sygma SDK.
 
-```ts
-// Declares the 'buildTransfer' function which accepts six parameters
-async function buildTransfer(
-  wallet: Wallet,
-  from: Domain,
-  to: Domain,
-  resource: Resource,
-  recipient: string,
-  amount: string
-): Promise<Transfer<Fungible>> {
-  
-  // Returns an object containing the details for the transfer
-  return {
-    sender: await wallet.getAddress(),
-    amount: {
-      amount,
-    },
-    from,
-    to,
-    resource,
-    recipient,
-  };
-};
-// Call 'buildTransfer' function with the appropriate parameters and stores the object in `transfer`
-const transfer = await buildTransfer(wallet, from ,to, resource, recipient, amount);
-```
+To facilitate the transfer, the following steps are required:
 
-#### Get Fee
+1. Create an instance of the EvmAssetTransfer object and initialize it.
+2. Determine the fee for the transfer, using the EvmAssetTransfer `getFee()` method
+3. Check for any approvals required, and if required sign and broadcast these transactions.
+4. Prepare, sign, and send the Transfer transaction to the Source network node
 
-You will need to obtain the current transaction `fee` through the `getFee` method.
+
+#### 1. Initialize the EvmAssetTransfer object
+
+To initialize the asset transfer object, the following parameters need to be supplied:
+
+- An instance of Ethers provider
+- The environment in which the bridge should function
 
 ```ts
-// Create a new instance of EVMAssetTransfer
-const assetTransfer = new EVMAssetTransfer();
+const assetTransfer = new EvmAssetTransfer();
 
-// Initialize the instance with the desired provider and network environment
-// In this case, we're using the provider variable and the DEVNET environment
-await assetTransfer.init(provider, Environment.DEVNET);
+const provider = new JsonRpcProvider("https://URL-TO-YOUR-RPC")
 
-// Call the getFee method on the instance to get the current fee
-const fee = await assetTransfer.getFee();
+await assetTransfer.init(
+  provider,
+  Environment.TESTNET
+);
 ```
 
-#### Check Approvals 
+#### 2. Get fee
+
+To facilitate the transfer of tokens, a fee must be attached. This fee can be determined by utilizing the asset transfer `GetFee(transfer)` method. You will need to know the destination ChainID as well as the ResourceID that has been configured on the bridge. These details can be determined by inspecting the configurations of the bridge (see [here](https://docs.buildwithsygma.com/environments))
+
+
+```ts
+const wallet = new Wallet(
+  "YOUR PRIVATE KEY",
+  provider
+);
+
+const transfer = assetTransfer.createFungibleTransfer(
+  await wallet.getAddress(),
+  DESTINATION_CHAINID,
+  DESTINATION_ADDRESS,
+  RESOURCE_ID,
+  AMOUNT
+)
+
+const fee = await assetTransfer.getFee(transfer);
+```
+
+#### 3. Check Approvals 
 
 You can check if approvals are required for your transfer. If there are approvals required for the transfer and the `fee` has been obtained, you can sign the transaction and send it.
 
 ```ts
 // Build approvals given the `transfer` and `fee` parameters
-  const approvals = await assetTransfer.buildApprovals(transfer, fee);
+const approvals = await assetTransfer.buildApprovals(transfer, fee);
 
-  // Check if approvals are needed
-  if (approvals.len > 0) {
-
-    // Build the transfer transaction
-    const transferTransaction = await assetTransfer.buildTransferTransaction(
-      transfer,
-      fee
-    );
-    // Send the transaction using the wallet
-    const response = await wallet.sendTransaction(
-      transferTx as providers.TransactionRequest
-    );
+// Check if approvals are needed
+if (approvals.length) {
+  for (const approval of approvals) {
+    const approvalTx = await wallet.sendTransaction(approval as providers.TransactionRequest);
+    console.log(`Approval TX Hash: ${approvalTx.hash}`)
   }
+}
+
+// Build the transfer transaction
+const transferTransaction = await assetTransfer.buildTransferTransaction(
+  transfer,
+  fee,
+);
+
+// Send the transaction using the wallet
+const transferTxResponse = await wallet.sendTransaction(
+  transferTx as providers.TransactionRequest,
+);
 ```
 
 #### Check Transaction Hash
@@ -83,7 +93,7 @@ The `response` object returned by the `sendTransaction` method contains a `hash`
 
 ```ts
 // Print the transaction hash
-console.log(`Transfer sent with hash: ${response.hash}`)
+console.log(`Transfer sent with hash: ${transferTxResponse.hash}`)
 ```
 
-For detailed examples, jump ahead to the next few sections to have a better grasp on how to use the SDK.
+A full example of the above can be found [here](https://github.com/sygmaprotocol/sygma-sdk/blob/main/examples/evm-to-evm-fungible-transfer/src/transfer.ts)
