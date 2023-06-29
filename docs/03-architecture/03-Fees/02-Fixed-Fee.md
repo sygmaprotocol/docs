@@ -10,7 +10,7 @@ sidebar_position: 2
 The following section details how fixed fee strategies work in Sygma.
 :::
 
-The fixed fee strategy always requires a predefined fixed fee amount per deposit. It can only collect fees in the native currency (e.g. ETH, MATIC) of the source chain.
+The fixed fee strategy requires a predefined fixed fee amount per deposit. It can only collect fees in the native currency (e.g. ETH, MATIC) of the source chain.
 
 The diagram below shows the flow for fixed fee strategies, beginning with the Sygma SDK, which initiates the interaction for all services:
 
