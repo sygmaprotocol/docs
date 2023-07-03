@@ -7,7 +7,7 @@ sidebar_position: 1
 draft: false
 ---
 
-:::info 
+:::info
 In the following example, we will setup and demonstrate a cross-chain ERC-20 token transfer between the same address from Goerli to Sepolia. This will be shown through the command line in a backend Node.js environment using the Sygma SDK.
 :::
 
@@ -19,7 +19,7 @@ In the following example, we will setup and demonstrate a cross-chain ERC-20 tok
 - Obtain some `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/). You will also need [Goerli ETH](https://goerlifaucet.com/) for gas.
 
 :::info
-  The following example is written in `TypeScript`. You can use `CommonJS` with our SDK if you prefer to use standard `Node.js` for the script.
+The following example is written in `TypeScript`. You can use `CommonJS` with our SDK if you prefer to use standard `Node.js` for the script.
 :::
 
 #### Create folders for your project
@@ -46,37 +46,35 @@ Create a `tsconfig.json` file in the root directory of your project and paste in
 
 ```json
 {
-	"compilerOptions": {
-		"composite": true,
-		"target": "ESNext",
-		"module": "CommonJS",
-		"allowJs": true,
-		"declaration": true,
-		"sourceMap": true,
-		"declarationMap": true,
-		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"strict": true,
-		"esModuleInterop": true,
-		"downlevelIteration": true,
-		"allowSyntheticDefaultImports": true,
-		"forceConsistentCasingInFileNames": true,
-		"moduleResolution": "node",
-        "outDir": "dist",
-        "baseUrl": "src"
-	},
-	"ts-node": {
-		"esm": true,
-		"experimentalSpecifierResolution": "node"
-	},
-	"include": [
-		"src"
-	]
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "module": "CommonJS",
+    "allowJs": true,
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "baseUrl": "src"
+  },
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "include": ["src"]
 }
 ```
 
 Next, create a `src` folder in the root directory of your project.
-Inside the `src` folder, create a `transfer.ts` file and an `index.ts` file. 
+Inside the `src` folder, create a `transfer.ts` file and an `index.ts` file.
 
 Finally, because we are dealing with sensitive data such as a private key and an API key, we use environment variables to manage this data. Create a `.env` file in the root directory of your project. Paste in the following:
 
@@ -88,7 +86,7 @@ PRIVATE_KEY=your_private_key_here
 Copy and paste (in quotations) the `Goerli` API key obtained from Infura or Alchemy, as well as the exported private key from MetaMask.
 
 :::danger
-  Remember that your private key should **never** be exposed. Hence, **DO NOT** commit the `.env` file to any repository and add it to your `.gitignore` file. Exposing the private key could result in complete loss of your funds. **_For this example, please only paste in the exported private keys of a wallet that is designated for testing/development purposes_**.
+Remember that your private key should **never** be exposed. Hence, **DO NOT** commit the `.env` file to any repository and add it to your `.gitignore` file. Exposing the private key could result in complete loss of your funds. **_For this example, please only paste in the exported private keys of a wallet that is designated for testing/development purposes_**.
 :::
 
 ### Usage
@@ -99,7 +97,7 @@ We will begin by importing the necessary classes and functions from the `@buildw
 
 ```ts
 // transfer.ts
-import { Domain, EVMAssetTransfer, Environment, Fungible, Resource, Transfer } from "@buildwithsygma/sygma-sdk-core";
+import { EVMAssetTransfer, Environment } from "@buildwithsygma/sygma-sdk-core";
 import { Wallet, providers, ethers } from "ethers";
 import dotenv from "dotenv";
 
@@ -115,13 +113,13 @@ if (!providerApiKey || !privateKey) {
 
 #### Set up testnets and token symbol variables
 
-Next, we setup some variables used for the rest of the script, including the two Ethereum testnets this example will conduct the token transfer on (`Goerli` and `Sepolia`) and the symbol of the test token  (`ERC20LRTest`) we will be using. Paste in the following snippet into the same `transfer.ts` file:
+Next, we setup some variables used for the rest of the script, including the two Ethereum testnets this example will conduct the token transfer on (`Goerli` and `Sepolia`) and the symbol of the test token (`ERC20LRTest`) we will be using. Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
-const GOERLI_CHAIN_ID = 5;
 const SEPOLIA_CHAIN_ID = 11155111;
-const ERC20_TOKEN_SYMBOL = "ERC20LRTest";
+const RESOURCE_ID =
+  "0x0000000000000000000000000000000000000000000000000000000000000300";
 ```
 
 #### Create `assetTransfer` object
@@ -135,94 +133,22 @@ Now, we create a function that will return an `assetTransfer` object. This is th
  * @param provider The Ethereum provider to use.
  * @returns A Promise that resolves when the module is initialized.
  */
-async function initAssetTransfer(provider: providers.JsonRpcProvider): Promise<EVMAssetTransfer> {
+async function initAssetTransfer(
+  provider: providers.JsonRpcProvider,
+): Promise<EVMAssetTransfer> {
   const assetTransfer = new EVMAssetTransfer();
   await assetTransfer.init(provider, Environment.TESTNET);
   return assetTransfer;
 }
 ```
 
-#### Define ERC-20 resource
-
-Next, we create a function that serves as a helper to find a specific ERC-20 resource (token) among the available resources in the `assetTransfer` instance. This is matched to the specified symbol declared earlier in the code (`ERC20LRTest`). The function then returns the ERC-20 resource definition. Paste in the following snippet into the same `transfer.ts` file:
-
-```ts
-// transfer.ts
-/**
- * Finds the ERC20 resource to transfer.
- * @param assetTransfer The Sygma SDK asset transfer module.
- * @returns The ERC20 resource, or null if it is not found.
- */
-function findERC20Resource(assetTransfer: EVMAssetTransfer): Resource | null {
-  const resources: Array<Resource> = assetTransfer.config.getDomainResources();
-  const erc20Resource = resources.find(
-    (resource) => resource.symbol == ERC20_TOKEN_SYMBOL
-  );
-  return erc20Resource || null;
-}
-```
-
-#### Retrieve domain
-
-The next function serves as a helper to find a specific domain (representing a specific blockchain network) among the available domains in the `assetTransfer` instance. We identify the network by passing in the `chainID` of the network. Paste in the following snippet into the same `transfer.ts` file:
-
-```ts
-// transfer.ts
-/**
- * Finds the domain with the given chain ID.
- * @param assetTransfer The Sygma SDK asset transfer module.
- * @param chainID The chain ID to search for.
- * @returns The domain with the given chain ID, or null if it is not found.
- */
-function findDomainByChainID(assetTransfer: EVMAssetTransfer, chainID: number,): Domain | null {
-  const domains: Array<Domain> = assetTransfer.config.getDomains();
-  const domain = domains.find((domain) => domain.chainId == chainID);
-  return domain || null;
-}
-```
-
-#### Build transfer object
-
-To be able to use the SDK, we need to build the `transfer` object. For that, we create the following `buildTransfer` function. This function expects several parameters: `wallet`, `from` and `to` destinations, `resource`, and `amount`. All of the parameters are defined in the comment below. Paste in the following snippet into the same `transfer.ts` file:
-
-```ts
-// transfer.ts
-/**
- * Builds a transfer object with the necessary parameters.
- * @param wallet The Ethereum wallet to use for the transfer.
- * @param from The domain to transfer from.
- * @param to The domain to transfer to.
- * @param resource The resource to transfer.
- * @param recipient The recipient of the transfer.
- * @param amount The amount to transfer, in wei.
- * @returns The transfer object.
- */
-async function buildTransfer(
-  wallet: Wallet,
-  from: Domain,
-  to: Domain,
-  resource: Resource,
-  recipient: string,
-  amount: string
-): Promise<Transfer<Fungible>> {
-  return {
-    sender: await wallet.getAddress(),
-    amount: {
-      amount,
-    },
-    from,
-    to,
-    resource,
-    recipient,
-  };
-}
-```
-
 #### Create the main `erc20Transfer` function
 
-Now, we create the main `erc20Transfer` function. This function uses all of the functions defined above, along with the Sygma SDK to perform the cross-chain token transfer. 
+Now, we create the main `erc20Transfer` function. This function uses all of the functions defined above, along with the Sygma SDK to perform the cross-chain token transfer.
 
 You should have already obtained `ERC20LRTest` tokens from the faucet for this example. The line `ethers.utils.parseEther("50").toString()` is hardcoded to send 50 `ERC20LRTest` tokens.
+
+Note that to send funds from network to another, we use this utility method called `createFungibleTransfer` to create the `transfer` object that we are going to use to bridge our tokens.
 
 Paste in the following snippet into the same `transfer.ts` file:
 
@@ -233,52 +159,30 @@ Paste in the following snippet into the same `transfer.ts` file:
  * @returns A Promise that resolves when the transfer is complete.
  */
 export async function erc20Transfer(): Promise<void> {
-  const provider = new providers.JsonRpcProvider(
-    providerApiKey 
-  );
-  const wallet = new Wallet(
-    privateKey as string, 
-    provider
-  );
+  const provider = new providers.JsonRpcProvider(providerApiKey);
+  const wallet = new Wallet(privateKey as string, provider);
 
   const assetTransfer = await initAssetTransfer(provider);
-  const erc20Resource = findERC20Resource(assetTransfer);
-  if (!erc20Resource) {
-    throw new Error("Resource not found");
-  }
 
-  const goerli = findDomainByChainID(assetTransfer, GOERLI_CHAIN_ID);
-  if (!goerli) {
-    throw new Error("Network goerli not supported");
-  }
-
-  const sepolia = findDomainByChainID(assetTransfer, SEPOLIA_CHAIN_ID);
-  if (!sepolia) {
-    throw new Error("Network sepolia not supported");
-  }
-
-  const transfer = await buildTransfer(
-    wallet,
-    goerli,
-    sepolia,
-    erc20Resource,
+  const transfer = assetTransfer.createFungibleTransfer(
     await wallet.getAddress(),
-    ethers.utils.parseEther("50").toString() // instructions to send 50 tokens
+    SEPOLIA_CHAIN_ID,
+    await wallet.getAddress(),
+    RESOURCE_ID,
+    50, // instructions to send 50 tokens
   );
 
   const fee = await assetTransfer.getFee(transfer);
   const approvals = await assetTransfer.buildApprovals(transfer, fee);
- for (const approval of approvals) {
-      await wallet.sendTransaction( 
-        approval as providers.TransactionRequest 
-      );
-    }
+  for (const approval of approvals) {
+    await wallet.sendTransaction(approval as providers.TransactionRequest);
+  }
 
   const transferTx = await assetTransfer.buildTransferTransaction(
     transfer,
     fee,
   );
-  
+
   const response = await wallet.sendTransaction(
     transferTx as providers.TransactionRequest,
   );
