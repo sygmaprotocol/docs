@@ -160,6 +160,12 @@ fungibility
 DomainID
 ChainID
 u32
+AssetId
+parachain
+Sygma.
+ETH
+MATIC
+USDC
 AssetID
 parachain
 SubstrateAssetTransfer

@@ -3,6 +3,7 @@ slug: /architecture/fees
 id: architecture-fees
 title: Fees
 description: The following details how fees are handled by Sygma.
+draft: true
 ---
 
 :::info
