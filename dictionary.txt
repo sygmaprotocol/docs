@@ -229,3 +229,5 @@ WebSocket
 keyring
 Khala
 Bware
+evm-example
+examples-evm-example
