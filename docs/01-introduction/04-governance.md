@@ -15,7 +15,38 @@ We are very mindful about the current tendency in the space to allow large finan
 See [Cryptonetwork Governance As Capital](https://www.placeholder.vc/blog/2019/2/19/cryptonetwork-governance-as-capital) for an introduction on Governance-as-Capital and [this Uniswap governance vote](https://www.coindesk.com/tech/2023/02/08/contentious-uniswap-vote-highlights-the-opaqueness-of-decentralized-governance/) for an example on what can go wrong.
 :::
 
-Our vision is that Sygma becomes the ‘Builders Bridge’. In order to deliver on that vision, we plan to follow a path of gradual decentralization of the protocol. We plan to decentralize in two steps:
+### Protocol Administration
+
+Administration of the Sygma protocol is currently handled by a consortium of early contributors, and will be extended to other network operators over the coming weeks. The Sygma protocol is currently administered by the following set of multi-signature accounts (Multisigs):
+
+#### Administrative Multisigs 
+
+The admin multisig is a 3-of-5 and includes actions such as adding new tokens and application handlers, changing fee structures, withdrawing fees, or changing access permissions. As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation and review and on-chain review and signing. The admin multisig also covers a set of super administrative privileges, such as pausing the bridge, that is required in order to be able to reduce the impact of security incidents.
+
+#### Community Multisigs
+
+The community multisig is a 4-of-6 and include actions such as adding liquidity, withdrawals of said liquidity from handlers, or migrating fee handlers. Under normal circumstances, the community multisig simply acts as an observer. However, in incidents of high security impact, the community multisig is able to provide a rapid response. The community multisig is listed at the following Gnosis Safe Proxy contract address [0xc4d8b2F5501C765dE0C5E12550118F397B197D05](https://etherscan.io/address/0xc4d8b2F5501C765dE0C5E12550118F397B197D05), and is currently made up of members from **ChainSafe Systems** and **Phala Network**:
+
+| Name            | Organization      |  
+|-----------------|-------------------|
+| David Ansermino | ChainSafe Systems |  
+| Greg Markou     | ChainSafe Systems |  
+| Hatcher Lipton  | ChainSafe Systems |  
+| Marvin Tong     | Phala Network     |   
+| Wengfeng Wang   | Phala Network     |  
+| Hang Yin        | Phala Network     | 
+
+#### Maintenance Key 
+
+In addition to the above listed multisig accounts, administration of the protocol also encompasses a Maintenance Key. This key holds limited privileges related to pausing and restarting the bridge, as well as retrying specific failed bridge requests. These privileges can be accessed by all on-call engineers, and would only be needed during maintenance or in emergency scenarios.
+
+### Relayer Network Administration
+
+Becoming a relayer in the Sygma network is currently a permissioned process. You can find more information around the current relaying partners as well as how to become a partner in [Becoming A Relayer Partner](../04-ecosystem/03-relayer-partner.md).
+
+### Decentralizing Sygma's Governance
+
+Our vision is that Sygma becomes the ‘Builders' Bridge’. In order to deliver on that vision, we plan to follow a path of gradual decentralization of the protocol. We plan to decentralize in two steps:
 
 1. Governance by Network Operators (Q3/2023)
 The goal of this phase is to enable all parties that operate a relayer for Sygma to participate in protocol governance. Every relaying partner that is onboarded to Sygma will participate in the protocol administration as outlined in [Protocol Administration](#protocol-administration) below.
@@ -24,15 +55,3 @@ The goal of this phase is to enable all parties that operate a relayer for Sygma
 In this phase, we will extend Sygma governance to other contributors such as builders, community members, and projects that have integrated Sygma and contributed to its usage. Furthermore, we aim to make ‘Becoming a Relayer’ a permissionless process enabling anybody to participate in protocol operation and governance.
 
 We are extremely excited about starting conversations around governance with our community soon. Based on those discussions, we plan to announce our roadmap for decentralizing the protocol governance in Q3/2023. 
-
-### Protocol Administration
-
-Administration of the Sygma protocol is currently handled by a consortium of early contributors from **ChainSafe Systems** & **Phala Network**, and will be extended to other network operators over the coming weeks. The Sygma protocol is currently administered by a set of multi-signature accounts (MultiSigs):
-
-- Administrative MultiSigs - This includes actions such as adding new tokens and application handlers, changing fee structures, or changing access permissions. This also covers a set of super administrative privileges, such as pausing the bridge, that are required in order to be able to reduce the impact of security incidents.
-
-- Liquidity MultiSigs - This includes actions such as adding liquidity or withdrawals.
-
-### Relayer Network Administration
-
-Becoming a relayer in the Sygma network is currently a permissioned process. You can find more information around the current relaying partners as well as how to become a partner in [Becoming A Relayer Partner](../04-ecosystem/03-relayer-partner.md).

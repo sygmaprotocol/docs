@@ -220,7 +220,7 @@ Q3
 onboarded
 ChainSafe
 Phala
-MultiSigs
+multisig
 EvmAssetTransfer
 Ethers
 EVM1
@@ -231,3 +231,7 @@ Khala
 Bware
 evm-example
 examples-evm-example
+Ansermino
+Markou
+Hatcher
+Wengfeng
