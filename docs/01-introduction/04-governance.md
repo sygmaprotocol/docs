@@ -36,6 +36,8 @@ The community multisig is a 4-of-6 and include actions such as adding liquidity,
 | Wengfeng Wang   | Phala Network     |  
 | Hang Yin        | Phala Network     | 
 
+To maintain transparency of the community multisig governance process, all proposals are expected to be defined as a PR inside the Sygma [community multisig execution](https://github.com/sygmaprotocol/community-executions) repo. These proposals, consisting of one (or more) transactions/extrinsics, are expected to be prepared in a predefined format and created as separate files inside the repo.
+
 #### Maintenance Key 
 
 In addition to the above listed multisig accounts, administration of the protocol also encompasses a Maintenance Key. This key holds limited privileges related to pausing and restarting the bridge, as well as retrying specific failed bridge requests. These privileges can be accessed by all on-call engineers, and would only be needed during maintenance or in emergency scenarios.
