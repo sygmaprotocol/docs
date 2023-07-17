@@ -21,11 +21,20 @@ Administration of the Sygma protocol is currently handled by a consortium of ear
 
 #### Administrative Multisigs 
 
-The admin multisig is a 3-of-5 and includes actions such as adding new tokens and application handlers, changing fee structures, withdrawing fees, or changing access permissions. As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation and review and on-chain review and signing. The admin multisig also covers a set of super administrative privileges, such as pausing the bridge, that is required in order to be able to reduce the impact of security incidents.
+The admin multisig is a 3-of-5 and includes actions such as:
+- Registering resources and routes 
+- Withdrawing fees
+- Changing fees
+- Changing a fee handler
+
+As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation and review and on-chain review and signing. The admin multisig also covers a set of super administrative privileges, such as pausing the bridge, that is required in order to be able to reduce the impact of security incidents.
 
 #### Community Multisigs
 
-The community multisig is a 4-of-6 and include actions such as adding liquidity, withdrawals of said liquidity from handlers, or migrating fee handlers. Under normal circumstances, the community multisig simply acts as an observer. However, in incidents of high security impact, the community multisig is able to provide a rapid response. The community multisig is listed at the following Gnosis Safe Proxy contract address [0xc4d8b2F5501C765dE0C5E12550118F397B197D05](https://etherscan.io/address/0xc4d8b2F5501C765dE0C5E12550118F397B197D05), and is currently made up of members from **ChainSafe Systems** and **Phala Network**:
+The community multisig is a 4-of-6 and includes one action:
+- *adminWithdraw* (withdraw liquidity from the handler)
+ 
+The community multisig is listed at the following Gnosis Safe Proxy contract address [0xc4d8b2F5501C765dE0C5E12550118F397B197D05](https://etherscan.io/address/0xc4d8b2F5501C765dE0C5E12550118F397B197D05), and is currently made up of members from **ChainSafe Systems** and **Phala Network**:
 
 | Name            | Organization      |  
 |-----------------|-------------------|
