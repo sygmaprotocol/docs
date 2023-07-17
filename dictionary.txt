@@ -231,3 +231,7 @@ Khala
 Bware
 evm-example
 examples-evm-example
+mainnet
+sygma-explorer
+Etherscan
+liveness
