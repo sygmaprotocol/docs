@@ -235,3 +235,5 @@ mainnet
 sygma-explorer
 Etherscan
 liveness
+dotenv
+.env
