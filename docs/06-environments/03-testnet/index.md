@@ -9,7 +9,7 @@ The following details a list of resources that support the Testnet environment. 
 :::
 
 :::tip Status
-**Active**
+**🟢 Active**
 :::
 
 ## Sygma Transfer UI
@@ -19,6 +19,10 @@ The [transfer UI](https://transfer-ui.test.buildwithsygma.com) provides users wi
 ## Faucet UI
 
 The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with a visual interface to mint tokens.
+
+## Sygma Explorer
+
+The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a cross-chain block explorer that scans for testnet transactions through the Sygma protocol. 
 
 ## Supported Networks
 

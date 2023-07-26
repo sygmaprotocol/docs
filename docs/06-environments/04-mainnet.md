@@ -8,7 +8,7 @@ The following details a list of resources to support the Mainnet environment. EV
 :::
 
 :::tip Status
-**Active**
+**🟢 Active**
 :::
 
 ## Supported Networks
@@ -64,4 +64,6 @@ The following details a list of resources to support the Mainnet environment. EV
 | Khala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 | Phala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 
+## Sygma Explorer
 
+The [explorer UI](https://scan.buildwithsygma.com/) provides users with a cross-chain block explorer that scans for mainnet transactions through the Sygma protocol. 
