@@ -242,3 +242,16 @@ mainnet
 sygma-explorer
 Etherscan
 liveness
+adminSetResource
+transferFee
+adminChangeFeeHandler
+changeFee
+setFeeOracle
+adminPauseTransfers
+adminUnpauseTransfers
+unpause
+Multisig
+Kalambet
+Mak
+Muftic
+Müller

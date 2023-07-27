@@ -22,12 +22,22 @@ Administration of the Sygma protocol is currently handled by a consortium of ear
 #### Administrative Multisigs 
 
 The admin multisig is a 3-of-5 and includes actions such as:
-- Registering resources and routes 
-- Withdrawing fees
-- Changing fees
-- Changing a fee handler
+- *adminSetResource* (registering resources and routes)
+- *transferFee* (withdrawing fees from the handler)
+- *adminChangeFeeHandler* (changing the fee logic for a bridge)
+- *changeFee* (changing fee percentage on a static fee handler)
+- *setFeeOracle* (set the address of the fee oracle which provides gas price and effective rates)
+- *adminPauseTransfers, adminUnpauseTransfers* (pause and unpause the bridge)
 
-As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation and review and on-chain review and signing. The admin multisig also covers a set of super administrative privileges, such as pausing the bridge, that is required in order to be able to reduce the impact of security incidents.
+The admin multisig covers a set of super administrative privileges, such as pausing the bridge, that may be required in order to be able to reduce the impact of security incidents. As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation/review and on-chain review/signing. 
+
+| Name            | Organization      | Multisig Address                                                                                                      |
+| --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
+| David Ansermino | ChainSafe Systems | [0x86a73a594f74C76a6eB8F9E728d992D03252f60f](https://etherscan.io/address/0x86a73a594f74C76a6eB8F9E728d992D03252f60f) |
+| Peter Kalambet  | ChainSafe Systems | [0x5a288b42dC222190D8cF5014A330c978ee42A5df](https://etherscan.io/address/0x5a288b42dC222190D8cF5014A330c978ee42A5df) |
+| Greg Markou     | ChainSafe Systems | [0xe845B1d31CaA16Bf6c6Bf5E97a28D086bd46FD49](https://etherscan.io/address/0xe845B1d31CaA16Bf6c6Bf5E97a28D086bd46FD49) |
+| Mak Muftic      | ChainSafe Systems | [0xacc0268a75280192897a78C706C9FBA2d2b851C4](https://etherscan.io/address/0xacc0268a75280192897a78C706C9FBA2d2b851C4) |
+| Alex Müller     | ChainSafe Systems | [0x197C57440A30cB28103ab27CB1b0dC86E5907ADA](https://etherscan.io/address/0x197C57440A30cB28103ab27CB1b0dC86E5907ADA) |
 
 #### Community Multisigs
 
@@ -36,14 +46,14 @@ The community multisig is a 4-of-6 and includes one action:
  
 The community multisig is listed at the following Gnosis Safe Proxy contract address [0xc4d8b2F5501C765dE0C5E12550118F397B197D05](https://etherscan.io/address/0xc4d8b2F5501C765dE0C5E12550118F397B197D05), and is currently made up of members from **ChainSafe Systems** and **Phala Network**:
 
-| Name            | Organization      |  
-|-----------------|-------------------|
-| David Ansermino | ChainSafe Systems |  
-| Greg Markou     | ChainSafe Systems |  
-| Hatcher Lipton  | ChainSafe Systems |  
-| Marvin Tong     | Phala Network     |   
-| Wengfeng Wang   | Phala Network     |  
-| Hang Yin        | Phala Network     | 
+| Name            | Organization      |  Multisig Address 
+|-----------------|-------------------| --------------------------------------------------------------------------------------------------------------------- |
+| David Ansermino | ChainSafe Systems |  |
+| Hatcher Lipton  | ChainSafe Systems |  |
+| Greg Markou     | ChainSafe Systems |  |
+| Marvin Tong     | Phala Network     |  | 
+| Wengfeng Wang   | Phala Network     |  |
+| Hang Yin        | Phala Network     |  |
 
 To maintain transparency of the community multisig governance process, all proposals are expected to be defined as a PR inside the Sygma [community multisig execution](https://github.com/sygmaprotocol/community-executions) repo. These proposals, consisting of one (or more) transactions/extrinsics, are expected to be prepared in a predefined format and created as separate files inside the repo.
 
