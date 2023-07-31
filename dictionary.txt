@@ -271,3 +271,5 @@ Multix
 AdminAccount
 futurestate
 governance-futurestate
+dotenv
+.env
