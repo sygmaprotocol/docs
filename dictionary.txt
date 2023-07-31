@@ -272,3 +272,5 @@ AdminAccount
 futurestate
 governance-futurestate
 govintroduction
+dotenv
+.env
