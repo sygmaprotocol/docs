@@ -48,12 +48,12 @@ The community multisig is listed at the following Gnosis Safe Proxy contract add
 
 | Name            | Organization      |  Multisig Address 
 |-----------------|-------------------| --------------------------------------------------------------------------------------------------------------------- |
-| David Ansermino | ChainSafe Systems |  |
-| Hatcher Lipton  | ChainSafe Systems |  |
-| Greg Markou     | ChainSafe Systems |  |
-| Marvin Tong     | Phala Network     |  | 
-| Wengfeng Wang   | Phala Network     |  |
-| Hang Yin        | Phala Network     |  |
+| David Ansermino | ChainSafe Systems | [0x86a73a594f74C76a6eB8F9E728d992D03252f60f](https://etherscan.io/address/0x86a73a594f74C76a6eB8F9E728d992D03252f60f) |
+| Hatcher Lipton  | ChainSafe Systems | [0xC6458dedf35231F524ED9d7E0DF77A60b9E08676](https://etherscan.io/address/0xC6458dedf35231F524ED9d7E0DF77A60b9E08676) |
+| Greg Markou     | ChainSafe Systems | [0xe845B1d31CaA16Bf6c6Bf5E97a28D086bd46FD49](https://etherscan.io/address/0xe845B1d31CaA16Bf6c6Bf5E97a28D086bd46FD49) |
+| Marvin Tong     | Phala Network     | [0xa399460Ce767b06297457178D2F9F8f144017E77](https://etherscan.io/address/0xa399460Ce767b06297457178D2F9F8f144017E77) | 
+| Wengfeng Wang   | Phala Network     | [0x0c1db86328E6CFCD4f530401131Dc9a26DefA12a](https://etherscan.io/address/0x0c1db86328E6CFCD4f530401131Dc9a26DefA12a) |
+| Hang Yin        | Phala Network     | [0xd85b34B2Fe1eC7815B6dF659372382A8FA229677](https://etherscan.io/address/0xd85b34B2Fe1eC7815B6dF659372382A8FA229677) |
 
 To maintain transparency of the community multisig governance process, all proposals are expected to be defined as a PR inside the Sygma [community multisig execution](https://github.com/sygmaprotocol/community-executions) repo. These proposals, consisting of one (or more) transactions/extrinsics, are expected to be prepared in a predefined format and created as separate files inside the repo.
 
