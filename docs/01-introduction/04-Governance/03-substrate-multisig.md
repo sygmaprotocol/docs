@@ -25,9 +25,9 @@ The Substrate admin multisig is listed at this address <---xxxxx--->, and is cur
 
 | Name            | Organization      | Multisig Address                                                                                                      |
 | --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
-| David Ansermino | ChainSafe Systems |  |
-| Hatcher Lipton  | ChainSafe Systems |  |
-| Greg Markou     | ChainSafe Systems |  |
+| David Ansermino | ChainSafe Systems | (42V4JXDnFURLyLxvzFiuBPMCc2toBsrFVWUksG3B3T2vQRca)[https://phala.subscan.io/account/42V4JXDnFURLyLxvzFiuBPMCc2toBsrFVWUksG3B3T2vQRca] |
+| Hatcher Lipton  | ChainSafe Systems | (469h6rDAJBVdJLqLY87at3heZXUYvj5ZyxANz1wyKW1RcUTx)[https://phala.subscan.io/account/469h6rDAJBVdJLqLY87at3heZXUYvj5ZyxANz1wyKW1RcUTx] |
+| Greg Markou     | ChainSafe Systems | (44WynSrkzJLNo8FBMCuGh1QptKLQHGSJ5YYqEx7RhHaFQJLj)[https://phala.subscan.io/account/44WynSrkzJLNo8FBMCuGh1QptKLQHGSJ5YYqEx7RhHaFQJLj] |
 
 ### Substrate Multisigs And Proxy Addresses
 
