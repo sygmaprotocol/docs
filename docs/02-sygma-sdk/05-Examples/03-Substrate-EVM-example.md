@@ -11,10 +11,6 @@ draft: false
 In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with the Goerli Phala `gPHA` token. The transfer will be initiated on the Substrate-side via the Rococo-Phala testnet and received on the EVM-side via the Goerli Ethereum testnet.
 :::
 
-:::danger
-We will make use of an example Substrate wallet ("5FNHV5TZAQ1AofSPbP7agn5UesXSYDX9JycUSCJpNuwgoYTS", which derives to "43vNPAxiYuWSvxapizZJ9xtNu3out1xu3gxu3zbCpeoqRZRK" in Rococo-Phala), using a hardcoded 12-word seed (`MNEMONIC`), as well as an Ethereum address ("0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C"). Please note that these are for example use only. **Never expose your private key, it could result in the complete loss of your funds.**
-:::
-
 ### EVM-to-Substrate Token Transfer Example
 
 This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of bridges, fee handlers, and relayers. The script showcases a Substrate asset transfer between Substrate and EVM using the Sygma SDK. The complete example can be found in this [repo](https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/substrate-to-evm-fungible-transfer).
@@ -27,6 +23,10 @@ Before running the script, ensure that you have the following:
 - Yarn (version 3.4.1 or higher)
 - Access to a custom Substrate WSS endpoint
 - A wallet funded with `gPHA` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/) (our example provides both Substrate and EVM wallets)
+
+:::danger
+We make use of the dotenv module to manage Substrate's private mnemonics with environment variables. Please note that accidentally committing a .env file containing private mnemonics to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
+:::
 
 ### Getting Started
 
@@ -72,7 +72,7 @@ Replace the placeholder values in the script with your own Substrate wallet mnem
 
 This example script performs the following steps:
 
-- Initializes the SDK by importing the required packages and defining the constants for the script. The 12-word seed `MNEMONIC` is also hardcoded into this snippet.
+- Initializes the SDK by importing the required packages and defining the constants for the script.
 
 ```ts
 import { Keyring } from "@polkadot/keyring";
@@ -82,8 +82,21 @@ import { Environment, SubstrateAssetTransfer } from "@buildwithsygma/sygma-sdk-c
 
 const GOERLI_CHAIN_ID = 5;
 const RESOURCE_ID = "0x0000000000000000000000000000000000000000000000000000000000001000";
-const MNEMONIC = "zoo slim stable violin scorpion enrich cancel bar shrug warm proof chimney";
 const recipient = "0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C";
+```
+
+- Configures the dotenv module and sets the `MNEMONIC` as a value to be pulled from the `.env` file.
+
+```ts
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const MNEMONIC = process.env.PRIVATE_MNEMONIC;
+
+if (!MNEMONIC) {
+  throw new Error("Missing environment variable: PRIVATE_MNEMONIC");
+}
 ```
 
 - Defines the main Substrate transfer function, including the connection to the blockchain using a WebSocket provider, initializing the asset transfer instance, and setting up the keyring and account from the mnemonic phrase.
@@ -92,7 +105,7 @@ const recipient = "0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C";
 const substrateTransfer = async (): Promise<void> => {
   const keyring = new Keyring({ type: "sr25519" });
   await cryptoWaitReady();
-  const account = keyring.addFromUri(MNEMONIC);
+  const account = keyring.addFromUri(MNEMONIC as string);
   const wsProvider = new WsProvider("wss://subbridge-test.phala.network/rhala/ws");
   const api = await ApiPromise.create({ provider: wsProvider });
   const assetTransfer = new SubstrateAssetTransfer();
