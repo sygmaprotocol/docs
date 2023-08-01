@@ -25,9 +25,9 @@ The Substrate admin multisig is listed at this proxy addresses: Phala (`44NmbpHj
 
 | Name            | Organization      | Multisig Address Phala  | Multisig Address Khala |
 | --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------- | --- |
-| David Ansermino | ChainSafe Systems | [42V4JXDnFURLyLxvzFiuBPMCc2toBsrFVWUksG3B3T2vQRca](https://phala.subscan.io/account/42V4JXDnFURLyLxvzFiuBPMCc2toBsrFVWUksG3B3T2vQRca) | [463z1zM2pADFN8MtUaKc3V1L3djcET5GjkKG2yTsJqu48GvZ](https://phala.subscan.io/account/463z1zM2pADFN8MtUaKc3V1L3djcET5GjkKG2yTsJqu48GvZ) |
-| Hatcher Lipton  | ChainSafe Systems | [469h6rDAJBVdJLqLY87at3heZXUYvj5ZyxANz1wyKW1RcUTx](https://phala.subscan.io/account/469h6rDAJBVdJLqLY87at3heZXUYvj5ZyxANz1wyKW1RcUTx) | [45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ](https://phala.subscan.io/account/45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ) |
-| Greg Markou     | ChainSafe Systems | [44WynSrkzJLNo8FBMCuGh1QptKLQHGSJ5YYqEx7RhHaFQJLj](https://phala.subscan.io/account/41Dd2cFGSV7i4Qtdn7GQMmbQ5BwUohNAaHQdcry12Tdx5X58) | [41Dd2cFGSV7i4Qtdn7GQMmbQ5BwUohNAaHQdcry12Tdx5X58](https://phala.subscan.io/account/45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ) |
+| David Ansermino | ChainSafe Systems | [42V4JXDnFURLyLxvzFiuBPMCc2toBsrFVWUksG3B3T2vQRca](https://phala.subscan.io/account/42V4JXDnFURLyLxvzFiuBPMCc2toBsrFVWUksG3B3T2vQRca) | [463z1zM2pADFN8MtUaKc3V1L3djcET5GjkKG2yTsJqu48GvZ](https://khala.subscan.io/account/463z1zM2pADFN8MtUaKc3V1L3djcET5GjkKG2yTsJqu48GvZ) |
+| Hatcher Lipton  | ChainSafe Systems | [469h6rDAJBVdJLqLY87at3heZXUYvj5ZyxANz1wyKW1RcUTx](https://phala.subscan.io/account/469h6rDAJBVdJLqLY87at3heZXUYvj5ZyxANz1wyKW1RcUTx) | [45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ](https://khala.subscan.io/account/45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ) |
+| Greg Markou     | ChainSafe Systems | [44WynSrkzJLNo8FBMCuGh1QptKLQHGSJ5YYqEx7RhHaFQJLj](https://phala.subscan.io/account/41Dd2cFGSV7i4Qtdn7GQMmbQ5BwUohNAaHQdcry12Tdx5X58) | [41Dd2cFGSV7i4Qtdn7GQMmbQ5BwUohNAaHQdcry12Tdx5X58](https://khala.subscan.io/account/45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ) |
 
 ### Substrate Multisigs And Proxy Addresses
 
