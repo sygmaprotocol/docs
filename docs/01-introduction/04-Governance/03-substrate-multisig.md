@@ -9,7 +9,7 @@ draft: true
 
 ## Substrate Protocol Administration
 
-Administration of the Sygma protocol on Substrate is currently handled by a consortium of early contributors, and will be extended to other network operators over the coming weeks. The Sygma protocol on Substrate is currently administered by the following set of multi-signature accounts (Multisigs):
+Administration of the Sygma protocol on Substrate is currently handled by a consortium of early contributors, and will be extended to other network operators over the coming weeks. The Sygma protocol on Substrate is currently administered on two networks, Phala and Khala, by the following set of multi-signature accounts (Multisigs):
 
 ### Administrative Multisigs 
 
@@ -21,10 +21,12 @@ The admin multisig is a 2-of-3 and includes actions such as:
 
 The admin multisig covers a set of super administrative privileges, such as pausing the bridge, that may be required in order to be able to reduce the impact of security incidents. As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation/review and on-chain review/signing. 
 
-The Substrate admin multisig is listed at this proxy addresses: Phala (`44NmbpHjqbz9FcXfVzFUbMFJh5q7qsKAcSTJvFAdYPqQ62Qv`) and Khala (`44bdQyeqk5oJzxbZH9xMcovmj3oAxqzSjKujaVhHaZxZuTBH`), and is currently made up of members from **ChainSafe Systems**.
+The Substrate admin multisig is listed at the following proxy addresses: 
+- Phala (`44NmbpHjqbz9FcXfVzFUbMFJh5q7qsKAcSTJvFAdYPqQ62Qv`) 
+- Khala (`44bdQyeqk5oJzxbZH9xMcovmj3oAxqzSjKujaVhHaZxZuTBH`)
 
-| Name            | Organization      | Multisig Address Phala  | Multisig Address Khala |
-| --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------- | --- |
+| Name            | Organization      | Multisig Address Phala                                                                                                                | Multisig Address Khala                                                                                                                |
+| --------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | David Ansermino | ChainSafe Systems | [42V4JXDnFURLyLxvzFiuBPMCc2toBsrFVWUksG3B3T2vQRca](https://phala.subscan.io/account/42V4JXDnFURLyLxvzFiuBPMCc2toBsrFVWUksG3B3T2vQRca) | [463z1zM2pADFN8MtUaKc3V1L3djcET5GjkKG2yTsJqu48GvZ](https://khala.subscan.io/account/463z1zM2pADFN8MtUaKc3V1L3djcET5GjkKG2yTsJqu48GvZ) |
 | Hatcher Lipton  | ChainSafe Systems | [469h6rDAJBVdJLqLY87at3heZXUYvj5ZyxANz1wyKW1RcUTx](https://phala.subscan.io/account/469h6rDAJBVdJLqLY87at3heZXUYvj5ZyxANz1wyKW1RcUTx) | [45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ](https://khala.subscan.io/account/45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ) |
 | Greg Markou     | ChainSafe Systems | [44WynSrkzJLNo8FBMCuGh1QptKLQHGSJ5YYqEx7RhHaFQJLj](https://phala.subscan.io/account/41Dd2cFGSV7i4Qtdn7GQMmbQ5BwUohNAaHQdcry12Tdx5X58) | [41Dd2cFGSV7i4Qtdn7GQMmbQ5BwUohNAaHQdcry12Tdx5X58](https://khala.subscan.io/account/45jwfY6R8FMJpJwxHyRmmCrh6vZkBSa5C3kBvhQ5d3rB6HhZ) |
