@@ -22,7 +22,9 @@ An SLA is put in place with all relaying partners to align expectations on the o
 
 ## List of current relaying partners:
 
+- [ChainSafe Systems](https://chainsafe.io)
 - [Bware Labs](https://bwarelabs.com/)
-- [Phala](https://phala.network/) (Coming soon!)
+- [Phala Network](https://phala.network/) (Coming soon!)
+- [Astar Network](https://astar.network/) (Coming soon!)
 
 New relaying partners will continue to be added over the next months. If you have experience running validators and/or relayers in a professional environment and want to support the decentralization of the Sygma network, please contact us at: [requests@buildwithsygma.com](mailto:requests@buildwithsygma.com)
