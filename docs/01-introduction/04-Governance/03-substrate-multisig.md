@@ -4,7 +4,7 @@ id: governance-substrate-multisig
 title: Substrate Governance & Multisigs
 description: The following section describes the Substrate multisigs administrating the Sygma protocol.
 sidebar_position: 3
-draft: true
+draft: false
 ---
 
 ## Substrate Protocol Administration
