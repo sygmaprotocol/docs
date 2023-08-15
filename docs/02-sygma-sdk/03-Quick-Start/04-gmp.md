@@ -2,55 +2,78 @@
 slug: /sdk/quickstart/gmp
 id: quickstart-gmp
 title: Generic Message Passing (GMP)
-description: The following section details how to perform GMP.
+description: The following section details how to perform GMP transfers.
 sidebar_position: 4
 draft: false
 ---
 
-To utilize the `generic message passing` capability of the `Sygma SDK`, you will need to employ the `executeDeposit` function. This function is housed within the `depositFns.ts` file.
+### Transferring a message between EVM chains
+
+Generic messages can be transferred between EVM chains, using the Sygma SDK.
+
+To facilitate the transfer, the following steps are required:
+
+1. Create an instance of the `EVMGenericMessageTransfer` object and initialize it.
+2. Determine the fee for the transfer, using the  `EVMGenericMessageTransfer.getFee()` method
+3. Prepare, sign, and send the Transfer transaction to the Source network node
 
 The `executeDeposit` function prepares and populates a deposit transaction. The key parameter is `depositData`, which is a string requiring a specific format. Refer to the [Generic Message Passing](../../03-architecture/06-generic.md) documentation for instructions on how to format the `depositData` string correctly.
 
+There are a few requirements for the Destination chain contract function that gets called. Refer to the [Generic Message Passing](../../03-architecture/06-generic.md) documentation for details.
+
+#### 1. Initialize the EvmAssetTransfer object
+
+To initialize the generic message transfer object, the following parameters need to be supplied:
+
+- An instance of Ethers provider
+- The environment in which the bridge should function
+
 ```ts
-// Prepares a deposit transaction which accepts the six parameters
-export const executeDeposit = async (
-  // domainID refers to the specific blockchain or network
-  domainID: string,
-  // resourceID is a unique identifier for the specific type of asset or token
-  resourceID: string,
-  // depositData holds the specially-formatted data necessary for the deposit transaction
-  depositData: string,
-  // feeData contains information about the transaction fee
-  feeData: EvmFee,
-  // bridgeInstance is an instance of the Bridge class providing methods for interacting with the Sygma bridge
-  bridgeInstance: Bridge,
-  // overrides is an optional parameter that can contain any optional overrides for the transaction
-  overrides?: ethers.PayableOverrides,
-): Promise<PopulatedTransaction> => {
-  // Define the settings for the transaction
-  // If the fee type is BASIC, use the fee data as the value; otherwise, don't set a value
-  // Set a gas limit for the asset transfer
-  const transactionSettings = {
-    value: feeData.type === FeeHandlerType.BASIC ? feeData.fee : undefined,
-    gasLimit: ASSET_TRANSFER_GAS_LIMIT,
-  };
+const genericMessageTransfer = new EVMGenericMessageTransfer();
 
-// Combine the transaction settings and any overrides into a single object
-  const payableOverrides = {
-    ...transactionSettings,
-    ...overrides,
-  };
+const provider = new JsonRpcProvider("https://URL-TO-YOUR-RPC")
 
-  // Prepare a transaction with the deposit method of the bridge instance, passing in the parameters
-  const tx = await bridgeInstance.populateTransaction.deposit(
-    domainID,
-    resourceID,
-    depositData,
-    feeData.feeData ? feeData.feeData : '0x0',
-    payableOverrides,
-  );
-
-   // Return the prepared transaction, ready to be signed and broadcasted to the network
-  return tx;
-};
+await gmpTransfer.init(
+  provider,
+  Environment.TESTNET
+);
 ```
+
+#### 2. Get fee
+
+To facilitate the transfer of a generic message, a fee must be paid. This fee can be determined by utilizing the `genericMessageTransfer.GetFee(transfer)` method. You will need to know the destination ChainID as well as the ResourceID that has been configured on the bridge. These details can be determined by inspecting the configurations of the bridge (see [here](https://docs.buildwithsygma.com/environments))
+
+
+```ts
+const wallet = new Wallet(
+  "YOUR PRIVATE KEY",
+  provider
+);
+
+const transfer = gmpTransfer.createGenericMessageTransfer(
+  await wallet.getAddress(),
+  DESTINATION_CHAINID,
+  RESOURCE_ID,
+  DESTINATION_CONTRACT_ADDRESS,
+  DESTINATION_FUNCTION_SIGNATURE,
+  EXECUTION_DATA,
+  MAX_FEE
+)
+
+const fee = await assetTransfer.getFee(transfer);
+```
+### 3. Prepare, sign, and send the Transfer transaction to the Source network node
+
+```ts
+const transferTransaction = await assetTransfer.buildTransferTransaction(
+  transfer,
+  fee,
+);
+
+// Send the transaction using the wallet
+const transferTxResponse = await wallet.sendTransaction(
+  transferTx as providers.TransactionRequest,
+);
+```
+
+A full example of the above can be found [here](https://github.com/sygmaprotocol/sygma-sdk/blob/main/examples/evm-to-evm-generic-mesage-passing/src/transfer.ts)
