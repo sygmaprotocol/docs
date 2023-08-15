@@ -9,10 +9,9 @@ description: The following details the architecture of Sygma.
 The following details the architecture of Sygma.
 :::
 
-The Sygma messaging protocol is able to transfer arbitrary data. This allows us to transfer not only ERC20 tokens but also ERC721 (e.g., NFTs) in additional to something else we refer to as: **Generic data.** Generic data could be used to bridge governance proposals or voting actions, for example, or any other contract call by transferring [calldata](https://ethereum.stackexchange.com/questions/52989/what-is-calldata).
+The Sygma messaging protocol is able to transfer arbitrary data. This allows us to transfer not only ERC-20 tokens, but also ERC-721 (e.g. NFTs), in addition to something else we refer to as: **Generic data.** Generic data can be used to bridge governance proposals or voting actions, for example, or any other contract call by transferring [calldata](https://ethereum.stackexchange.com/questions/52989/what-is-calldata).
 
-Currently, the Sygma protocol is compatible with EVM networks but is proven to be easily extended to other networks such as Substrate-based chains or Cosmos-based chains (Tendermint) as well.
-
+Currently, the Sygma protocol is compatible with EVM and Substrate-based networks, but is proven to be easily extended to other networks such as Cosmos-based chains (Tendermint) as well.
 
 Sygma Bridging Flow Diagram&#x20;
 
