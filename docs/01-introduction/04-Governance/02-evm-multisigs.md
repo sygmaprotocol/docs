@@ -11,7 +11,7 @@ draft: false
 
 Administration of the Sygma protocol on EVM is currently handled by a consortium of early contributors, and will be extended to other network operators over the coming weeks. The Sygma protocol on EVM is currently administered by the following set of multi-signature accounts (Multisigs):
 
-### Administrative Multisigs 
+### Administrative Multisig 
 
 The admin multisig is a 3-of-5 and includes actions such as:
 - *adminSetResource* (registering resources and routes)
@@ -25,7 +25,7 @@ The admin multisig covers a set of super administrative privileges, such as paus
 
 The admin multisig is listed at the following Gnosis Safe Proxy contract address [0xde79695d5cefF7c324552B3ecbe6165f77FCdF53](https://etherscan.io/address/0xde79695d5cefF7c324552B3ecbe6165f77FCdF53), and is currently made up of members from **ChainSafe Systems**.
 
-| Name            | Organization      | Multisig Address                                                                                                      |
+| Name            | Organization      | Address                                                                                                      |
 | --------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------- |
 | David Ansermino | ChainSafe Systems | [0x86a73a594f74C76a6eB8F9E728d992D03252f60f](https://etherscan.io/address/0x86a73a594f74C76a6eB8F9E728d992D03252f60f) |
 | Peter Kalambet  | ChainSafe Systems | [0x5a288b42dC222190D8cF5014A330c978ee42A5df](https://etherscan.io/address/0x5a288b42dC222190D8cF5014A330c978ee42A5df) |
@@ -33,7 +33,7 @@ The admin multisig is listed at the following Gnosis Safe Proxy contract address
 | Mak Muftic      | ChainSafe Systems | [0xacc0268a75280192897a78C706C9FBA2d2b851C4](https://etherscan.io/address/0xacc0268a75280192897a78C706C9FBA2d2b851C4) |
 | Alex Müller     | ChainSafe Systems | [0x197C57440A30cB28103ab27CB1b0dC86E5907ADA](https://etherscan.io/address/0x197C57440A30cB28103ab27CB1b0dC86E5907ADA) |
 
-### Community Multisigs
+### Community Multisig
 
 The community multisig is a 4-of-6 and includes one action:
 - *adminWithdraw* (withdraw liquidity from the handler)
@@ -42,7 +42,7 @@ As described by its sole action, the community multisig is used to manage the fe
  
 The community multisig is listed at the following Gnosis Safe Proxy contract address [0xc4d8b2F5501C765dE0C5E12550118F397B197D05](https://etherscan.io/address/0xc4d8b2F5501C765dE0C5E12550118F397B197D05), and is currently made up of members from **ChainSafe Systems** and **Phala Network**:
 
-| Name            | Organization      |  Multisig Address 
+| Name            | Organization      |  Address 
 |-----------------|-------------------| --------------------------------------------------------------------------------------------------------------------- |
 | David Ansermino | ChainSafe Systems | [0x86a73a594f74C76a6eB8F9E728d992D03252f60f](https://etherscan.io/address/0x86a73a594f74C76a6eB8F9E728d992D03252f60f) |
 | Hatcher Lipton  | ChainSafe Systems | [0xC6458dedf35231F524ED9d7E0DF77A60b9E08676](https://etherscan.io/address/0xC6458dedf35231F524ED9d7E0DF77A60b9E08676) |
