@@ -9,7 +9,7 @@ description: The following details how Generic message passing is handled by Syg
 The following details how Generic message passing is handled by Sygma.
 :::
 
- Sygma allows developers to exchange arbitrary data between networks, we call this Generic Message Passing or GMP. Sygma allows developers to use GMP in permissionless manner and call any smart contract as well as initiate call from any contract. 
+Sygma allows developers to exchange arbitrary data between networks, we call this Generic Message Passing or GMP. Sygma allows developers to use GMP in permissionless manner and call any smart contract as well as initiate call from any contract.
 
 ![Sygma GMP](../../static/assets/gmp.png)
 
@@ -22,7 +22,7 @@ The following details how Generic message passing is handled by Sygma.
 
 ## Usage guide
 
-On the source network EOA or contract can call [deposit function](https://github.com/sygmaprotocol/sygma-solidity/blob/master/contracts/Bridge.sol#L235).
+On the source network EOA or contract can call [deposit function](https://github.com/sygmaprotocol/sygma-solidity/blob/master/contracts/Bridge.sol#L258).
 
 When calling deposit on source network, `depositData` is necessary execution information on destination chain and should follow next format:
 
@@ -30,12 +30,12 @@ When calling deposit on source network, `depositData` is necessary execution inf
 
 On the source network Bridge contract sets **msg.sender** as **executionDataDepositor**, hence this allows destination network contract to authorize the call.
 
-The only interface that  developers should follow is the signature of **receiving function** it should always has first parameter to be an address of metadataDepositor
+The only interface that developers should follow is the signature of **receiving function** it should always has first parameter to be an address of metadataDepositor
 
 ```solidity
 function recieveExecutionFromSygma(bytes32 metadataDepositor, arg2, arg3)
 ```
 
 ## Fees
-Currently we support only **BasicFeeHandler** for GMP, which means that you would need to transfer specified amount of base currency along with deposit request. 
- 
+
+Currently we support only **BasicFeeHandler** for GMP, which means that you would need to transfer specified amount of base currency along with deposit request.
