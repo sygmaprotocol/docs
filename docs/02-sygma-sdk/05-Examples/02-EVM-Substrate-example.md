@@ -24,7 +24,7 @@ Before running the script, ensure that you have the following:
 - Yarn (version 3.4.1 or higher)
 - Access to an Ethereum provider
 - A wallet funded with `ERC20LRTest` or `gPHA` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
-- [Goerli ETH](https://goerlifaucet.com/) for gas (our example provides both EVM and Substrate wallets)
+- [Goerli ETH](https://goerlifaucet.com/) for gas 
 
 :::danger
 We make use of the dotenv module to manage exported private keys with environment variables. Please note that accidentally committing a .env file containing private keys to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
