@@ -283,3 +283,17 @@ dotenv
 Crypto
 sk
 ECDSA
+integrations
+Phala's
+SubBridge
+Ethereum's
+Polkadot's
+L2
+Tendermint
+Zipline
+ZK-based
+reshare
+Reshare
+onboarding
+recalibrating
+selectable
