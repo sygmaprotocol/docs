@@ -13,12 +13,17 @@ The following section details the process for becoming a relayer partner.
 
 Currently, Sygma utilizes a permissioned process in order to add new relaying partners. These relayers operate under a trusted federation model. As there is not yet an economic security model that enables trustless participation in the relaying network, this process is required to ensure the security of the network. As the Sygma protocol undergoes decentralization over time, this process will become more and more permissionless. 
 
-For now, relaying partners are selected and on-boarded by the Sygma team. For more on relayer deployment, please check out the [related documentation](https://github.com/sygmaprotocol/sygma-relayer-deployment). Sygma is currently looking for credible entities that:
+For now, relaying partners are selected and onboarded by the Sygma team. For more on relayer deployment, please check out the [related documentation](https://github.com/sygmaprotocol/sygma-relayer-deployment).
 
+## Acceptance Criteria
+Credible entities that wish to participate as a relayer on the Sygma relaying network must meet the following criteria: 
 - Operate commercial validator services
-- Have a vested interest in the success of Sygma (e.g. blockchain networks and projects that have integrated with Sygma to provide value to their users)
-
-An SLA is put in place with all relaying partners to align expectations on the operational service to be provided as well as related service KPIs.
+- Have proven experience in operating protocol infrastructure for high-security applications
+- Are value-aligned and have a vested interest in the success of Sygma (e.g. blockchain networks and projects that have integrated with Sygma to provide value to their users)
+- Must be able to trial run a minimum period of 2 weeks while operating as a relayer on the Sygma testnet 
+- Must listen (participate) on all networks that Sygma is part of
+- Must operate on all active mainnet Sygma token routes
+- Ability & commitment to fulfill service level agreements (SLA) for operating Sygma's relayers as well as meet expectations on service KPI's
 
 ## List of current relaying partners:
 
