@@ -3,7 +3,7 @@ slug: /readme/architecture/security/keygen
 id: security-keygen
 title: Key Generation
 description: The following details the key generation process for all relayers.
-sidebar_position: 2
+sidebar_position: 3
 draft: false
 ---
 

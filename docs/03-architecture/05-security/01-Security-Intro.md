@@ -22,7 +22,7 @@ In other words, it enables a set of parties to perform certain cryptographic ope
 
 ### An Example
 
-Imagine you have a secret key sk and a special algorithm that can divide this key into *n* pieces such that *[sk_i] = share_key(pk, n, t)*. Imagine now you want to sign a transaction *m*, so you apply a similar algorithm to get partial signatures *[s_i] = sign(m, [sk_i])*. Now, to reconstruct a valid signature, you would simply sum all partial signatures together *s = s_0 + s_1 + … + s_i* and call it a day.
+Imagine you have a secret key sk and [a special algorithm](02-keygen.md) that can divide this key into *n* pieces such that *[sk_i] = share_key(pk, n, t)*. Imagine now you want to [sign a transaction](03-signing.md) *m*, so you apply a similar algorithm to get partial signatures *[s_i] = sign(m, [sk_i])*. Now, to reconstruct a valid signature, you would simply sum all partial signatures together *s = s_0 + s_1 + … + s_i* and call it a day.
 
 You might’ve also noticed a third argument *t* when we shared our key. Although the key is shared between *n* parties, we only need a threshold number of them to actually sign something. This is akin to a multisig scheme, which interestingly is just an emulation of threshold signatures using a high-level smart contract language like Solidity.
 
