@@ -21,7 +21,7 @@ Formally these knowledge requirements include:
 - Trusted dealer address (if exists)
 - Rendezvous-point (“meet me here” location)
 
-Relayer nodes are deployed with a configuration in order to serve the above required information. To support the dynamic nature of relayer sets, the `Bridge.sol` contract on-chain contains operational parameters that are publicly available with changes that can be actively listened and reacted to. 
+Relayer nodes are deployed with a configuration in order to serve the above required information. To support the dynamic nature of relayer sets, the `Bridge.sol` contract onchain contains operational parameters that are publicly available with changes that can be actively listened and reacted to. 
 
 ## Flow
 

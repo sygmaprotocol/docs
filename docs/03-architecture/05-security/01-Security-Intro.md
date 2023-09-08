@@ -7,8 +7,6 @@ sidebar_position: 1
 draft: false
 ---
 
-<!--05-security.md-->
-
 :::info
   The following details how Sygma addresses security concerns relating to
   various signature schemes.
@@ -26,7 +24,7 @@ Imagine you have a secret key sk and [a special algorithm](02-keygen.md) that ca
 
 You might’ve also noticed a third argument *t* when we shared our key. Although the key is shared between *n* parties, we only need a threshold number of them to actually sign something. This is akin to a multisig scheme, which interestingly is just an emulation of threshold signatures using a high-level smart contract language like Solidity.
 
-Of course, multisigs come with a cost where one would pay miners to process each call to the multisig contract. Conversely, threshold signatures are processed off-chain, and only a single compact ECDSA signature needs to be transacted on-chain once. Furthermore, such a signature won’t leak anything about its signers, which secures them from targeted attacks and is great for privacy.
+Of course, multisigs come with a cost where one would pay miners to process each call to the multisig contract. Conversely, threshold signatures are processed off-chain, and only a single compact ECDSA signature needs to be transacted onchain once. Furthermore, such a signature won’t leak anything about its signers, which secures them from targeted attacks and is great for privacy.
 
 When discussing security, MPC algorithms generally provide guarantees based on the threshold number of corrupted parties a system can tolerate. This places TSS in a unique position, as such schemes present the control of their robustness directly in the developer’s hands. Furthermore, this allows it to withstand even the dishonest majority — an extreme state where adversaries can corrupt all but one participant.
 

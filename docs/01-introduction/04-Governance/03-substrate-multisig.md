@@ -19,7 +19,7 @@ The admin multisig is a 2-of-3 and includes actions such as:
 - *setFeeHandler* (set Fee handler type for a domain and an asset)
 - *pauseBridge, unpauseBridge* (sygmaBridge) - (pause/unpause the bridge of given destination domain)
 
-The admin multisig covers a set of super administrative privileges, such as pausing the bridge, that may be required in order to be able to reduce the impact of security incidents. As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation/review and on-chain review/signing. 
+The admin multisig covers a set of super administrative privileges, such as pausing the bridge, that may be required in order to be able to reduce the impact of security incidents. As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation/review and onchain review/signing. 
 
 The Substrate admin multisig is listed at the following proxy addresses: 
 - Phala (`44NmbpHjqbz9FcXfVzFUbMFJh5q7qsKAcSTJvFAdYPqQ62Qv`) 
