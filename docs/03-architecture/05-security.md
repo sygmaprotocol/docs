@@ -7,8 +7,7 @@ draft: true
 ---
 
 :::info
-  The following details how Sygma addresses security concerns relating to
-  various signature schemes.
+The following details how Sygma addresses security concerns relating to various signature schemes.
 :::
 
 ## Threshold Signature Schemes (TSS)
