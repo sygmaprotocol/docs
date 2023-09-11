@@ -64,7 +64,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-721 Handler                   | 0x76A4557Bd3bc6088Cc94f8aCb6a8006f1F592B3f |
 | Permissionless Generic Handler    | 0x023aE1Eeb892983a26F77D83D8fFf1447dD311aa |
 
-**Base Goerli (Domain ID: 4)**
+**Base-Goerli (Domain ID: 4)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
@@ -136,11 +136,17 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 
 ### Fee Schemes
 
-| Network Name    | Fee Oracle Address                         | Fee Type    | Fee Percent/Amount | Gas Amount |
-| --------------- | ------------------------------------------ | ----------- | ------------------ | ---------- |
-| Goerli Dynamic  | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle  | 3%                 | 100000     |
-| Goerli Fixed    | 0xe6CE0ea4eC6ECbdC23eEF9f4fB165aCc979C56b5 | Fixed fee   | 0.001 ETH          |            |
-| Sepolia Dynamic | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle  | 3%                 | 100000     |
-| Sepolia Fixed   | 0x2278A65a0EaAA664F4491d5bc2EE0F1f6F5052F5 | Fixed fee   | 0.001 ETH          |            |
-
+| Network Name                    | Fee Oracle Address                         | Fee Type    | Fee Percent/Amount | Gas Amount |
+| --------------------------------| ------------------------------------------ | ----------- | ------------------ | ---------- |
+| Goerli Dynamic                  | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle  | 3%                 | 100000     |
+| Goerli Fixed                    | N/A                                        | Fixed fee   | 0.001 ETH          |            |
+| Sepolia Dynamic                 | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle  | 3%                 | 100000     |
+| Sepolia Fixed                   | N/A                                        | Fixed fee   | 0.001 ETH          |            |
+| Sepolia Percentage-based        | 0x2e77dEa116117eCF44a427064260D16D488ccff2 | Percentage  | 10 BPS (or 0.1%)   |            |
+| Base-Goerli Dynamic             | N/A                                        | Fee oracle  | N/A                |            |
+| Base-Goerli Fixed               | 0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479 | Fixed fee   | 0.001 ETH          |            |
+| Base-Goerli Percentage-based    | 0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A | Percentage  | 1 BPS (or 0.01%)   |            |
+| Cronos-Testnet Dynamic          | N/A                                        | Fee oracle  | N/A                |            |
+| Cronos-Testnet Fixed            | 0x8eDab7563C618a3F1e5021677640565468C706d8 | Fixed fee   | 0.001 ETH          |            |
+| Cronos-Testnet Percentage-based | 0x26545905a3a63B9ffB37926e909a827bDd088512 | Percentage  | 1 BPS (or 0.01%)   |            |
 
