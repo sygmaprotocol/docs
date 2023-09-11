@@ -26,15 +26,13 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 
 ## Supported Networks
 
-<!-- <img src="https://avatars.githubusercontent.com/u/43071041?s=280&v=4" width="100" height="100" />
-<img src="https://sepolia.dev/wp-content/uploads/elementor/thumbs/the-dolphin-po0q7ezlhqqzvrfmzw0atih2l0vqelut73w4eh5qtc.png" width="100" height="100" />
-<img src="https://phala.network/logo.svg" width="100" height="100" /> -->
-
-| Network Name | Domain ID |
-| ------------ | --------- |
-| Goerli       | 1         |
-| Sepolia      | 2         |
-| Rhala        | 3         |
+| Network Name | Framework   | Domain ID |
+| ------------ | ----------- | --------- | 
+| Goerli       | EVM         | 1         |
+| Sepolia      | EVM         | 2         |
+| Rhala        | Substrate   | 3         |
+| Base         | EVM         | x         |
+| Cronos       | EVM         | x         |
 
 ### EVM Contract Addresses
 
@@ -61,6 +59,30 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-20 Handler                    | 0xa5b71C034a8370AAF0326a5B646A36A9d7C821E7 |
 | ERC-721 Handler                   | 0x76A4557Bd3bc6088Cc94f8aCb6a8006f1F592B3f |
 | Permissionless Generic Handler    | 0x023aE1Eeb892983a26F77D83D8fFf1447dD311aa |
+
+**Base (Domain ID: x)**
+
+| Contract                          | Address                                    |
+| --------------------------------- | ------------------------------------------ |
+| Bridge                            |  |
+| Fee Router                        |  |
+| Dynamic ERC-20 Fee Handler        |  |
+| Dynamic Generic ERC20 Fee Handler |  |
+| ERC-20 Handler                    |  |
+| ERC-721 Handler                   |  |
+| Permissionless Generic Handler    |  |
+
+**Cronos (Domain ID: x)**
+
+| Contract                          | Address                                    |
+| --------------------------------- | ------------------------------------------ |
+| Bridge                            |  |
+| Fee Router                        |  |
+| Dynamic ERC-20 Fee Handler        |  |
+| Dynamic Generic ERC20 Fee Handler |  |
+| ERC-20 Handler                    |  |
+| ERC-721 Handler                   |  |
+| Permissionless Generic Handler    |  |
 
 ### Registered Resources
 
@@ -104,11 +126,11 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 
 ### Fee Schemes
 
-| Network Name    | Fee Oracle Address                         | Fee Type   | Fee Percent/Amount | Gas Amount |
-| --------------- | ------------------------------------------ | ---------- | ------------------ | ---------- |
-| Goerli Dynamic  | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle | 3%                 | 100000     |
-| Goerli Basic    | 0xe6CE0ea4eC6ECbdC23eEF9f4fB165aCc979C56b5 | Base fee   | 0.001 ETH          |            |
-| Sepolia Dynamic | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle | 3%                 | 100000     |
-| Sepolia Basic   | 0x2278A65a0EaAA664F4491d5bc2EE0F1f6F5052F5 | Base fee   | 0.001 ETH          |            |
+| Network Name    | Fee Oracle Address                         | Fee Type    | Fee Percent/Amount | Gas Amount |
+| --------------- | ------------------------------------------ | ----------- | ------------------ | ---------- |
+| Goerli Dynamic  | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle  | 3%                 | 100000     |
+| Goerli Fixed    | 0xe6CE0ea4eC6ECbdC23eEF9f4fB165aCc979C56b5 | Fixed fee   | 0.001 ETH          |            |
+| Sepolia Dynamic | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle  | 3%                 | 100000     |
+| Sepolia Fixed   | 0x2278A65a0EaAA664F4491d5bc2EE0F1f6F5052F5 | Fixed fee   | 0.001 ETH          |            |
 
 
