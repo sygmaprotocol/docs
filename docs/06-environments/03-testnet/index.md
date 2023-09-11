@@ -65,12 +65,14 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
 | Bridge                            | 0x5e2bed941Ed40251ffb8F7B3B7ab3459464A2aad |
-| Fee Router                        |  |
-| Dynamic ERC-20 Fee Handler        |  |
-| Dynamic Generic ERC20 Fee Handler |  |
-| ERC-20 Handler                    |  |
-| ERC-721 Handler                   |  |
-| Permissionless Generic Handler    |  |
+| Fee Router                        | 0xad3961FF8a445FF9EF4A85f450DcE1690c51Ce98 |
+| Fixed Fee Handler                 | 0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479 |
+| Dynamic ERC-20 Fee Handler        | 0xF97F5A81c77310C36EF042cf21CE8F43809B4334 |
+| Dynamic Generic ERC20 Fee Handler | 0xA30Ad3e57b33149cd31EE2E9Dd37e327ad1e65C3 |
+| Percentage Fee Handler            | 0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A |
+| ERC-20 Handler                    | 0x2C0ae7Fb251ec0772793d480d31B4bc8E3b498a7 |
+| ERC-721 Handler                   | 0x38218916813A0f6ca32AcA1324381C0A810b728a |
+| Permissionless Generic Handler    | 0x14d1cA88277E13B5615C2C727415a1B94E90264F |
 
 **Cronos Testnet (Domain ID: x)**
 
