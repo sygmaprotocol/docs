@@ -31,8 +31,8 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Goerli         | EVM       | 1         |
 | Sepolia        | EVM       | 2         |
 | Rhala          | Substrate | 3         |
-| Base-Goerli    | EVM       | x         |
-| Cronos-Testnet | EVM       | x         |
+| Base-Goerli    | EVM       | 4         |
+| Cronos-Testnet | EVM       | 5         |
 
 ### EVM Contract Addresses
 
