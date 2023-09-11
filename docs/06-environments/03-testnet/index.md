@@ -136,7 +136,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 
 ### Fee Schemes
 
-| Network Name                    | Fee Oracle Address                         | Fee Type    | Fee Percent/Amount | Gas Amount |
+| Network Name                    | Handler Address                            | Fee Type    | Fee Percent/Amount | Gas Amount |
 | --------------------------------| ------------------------------------------ | ----------- | ------------------ | ---------- |
 | Goerli Dynamic                  | 0x0c3d905C909eB5e3243b65b905c96B309266d7BB | Fee oracle  | 3%                 | 100000     |
 | Goerli Fixed                    | N/A                                        | Fixed fee   | 0.001 ETH          |            |
