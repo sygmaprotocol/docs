@@ -26,13 +26,13 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 
 ## Supported Networks
 
-| Network Name | Framework   | Domain ID |
-| ------------ | ----------- | --------- | 
-| Goerli       | EVM         | 1         |
-| Sepolia      | EVM         | 2         |
-| Rhala        | Substrate   | 3         |
-| Base         | EVM         | x         |
-| Cronos       | EVM         | x         |
+| Network Name   | Framework | Domain ID |
+| -------------- | --------- | --------- |
+| Goerli         | EVM       | 1         |
+| Sepolia        | EVM       | 2         |
+| Rhala          | Substrate | 3         |
+| Base-Goerli    | EVM       | x         |
+| Cronos-Testnet | EVM       | x         |
 
 ### EVM Contract Addresses
 
@@ -60,11 +60,11 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-721 Handler                   | 0x76A4557Bd3bc6088Cc94f8aCb6a8006f1F592B3f |
 | Permissionless Generic Handler    | 0x023aE1Eeb892983a26F77D83D8fFf1447dD311aa |
 
-**Base (Domain ID: x)**
+**Base Goerli (Domain ID: x)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            |  |
+| Bridge                            | 0x5e2bed941Ed40251ffb8F7B3B7ab3459464A2aad |
 | Fee Router                        |  |
 | Dynamic ERC-20 Fee Handler        |  |
 | Dynamic Generic ERC20 Fee Handler |  |
@@ -72,7 +72,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-721 Handler                   |  |
 | Permissionless Generic Handler    |  |
 
-**Cronos (Domain ID: x)**
+**Cronos Testnet (Domain ID: x)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
