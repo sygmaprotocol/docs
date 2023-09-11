@@ -60,7 +60,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-721 Handler                   | 0x76A4557Bd3bc6088Cc94f8aCb6a8006f1F592B3f |
 | Permissionless Generic Handler    | 0x023aE1Eeb892983a26F77D83D8fFf1447dD311aa |
 
-**Base Goerli (Domain ID: x)**
+**Base Goerli (Domain ID: 4)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
@@ -74,17 +74,19 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-721 Handler                   | 0x38218916813A0f6ca32AcA1324381C0A810b728a |
 | Permissionless Generic Handler    | 0x14d1cA88277E13B5615C2C727415a1B94E90264F |
 
-**Cronos Testnet (Domain ID: x)**
+**Cronos Testnet (Domain ID: 5)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            |  |
-| Fee Router                        |  |
-| Dynamic ERC-20 Fee Handler        |  |
-| Dynamic Generic ERC20 Fee Handler |  |
-| ERC-20 Handler                    |  |
-| ERC-721 Handler                   |  |
-| Permissionless Generic Handler    |  |
+| Bridge                            | 0x816bb9E810b6b97840F6818bF21Fa25DD7364132 |
+| Fee Router                        | 0x8b8F51bB26Eb521ac33dD6DcAA97f5d052977746 |
+| Fixed Fee Handler                 | 0x8eDab7563C618a3F1e5021677640565468C706d8 |
+| Dynamic ERC-20 Fee Handler        | 0xa128fAd3Ea89BCdea67053164fC8D10d29f18c81 |
+| Dynamic Generic ERC20 Fee Handler | 0x055CEe6D441f0c913D863776356C12FfA2FCDc47 |
+| Percentage Fee Handler            | 0x26545905a3a63B9ffB37926e909a827bDd088512 |
+| ERC-20 Handler                    | 0x39D1Aea5F01138940F19A15049E2073D4df1dc9E |
+| ERC-721 Handler                   | 0x52757D9c1a8f8b496cf1e688bbB8055f9F3DfC8a |
+| Permissionless Generic Handler    | 0x3CBbC542d10CD037cafb1632B29B5B0F59B08A48 |
 
 ### Registered Resources
 
