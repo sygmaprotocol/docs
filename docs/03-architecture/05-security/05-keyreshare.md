@@ -31,7 +31,7 @@ Similar to the initial keygen operation, resharing can also be triggered by the 
 
 The resharing protocol requires, before the interactive protocol, current committee members to be aware of new peers and vice versa. Given the number of security limitations of DHT-based peer discovery protocols and the overhead of running it in a small-scale network - we opted to use a static configuration that is shared securely and in advance.
 
-Also note that during this procedure, the entire set of new relayers must be active, but only a threshold number of old relayers are required to participate. The interaction flow of the resharing scheme leaves all control in the hands of old committee (relayer) participants. It is this committee that decides with whom they are gonna interact with in order to send cryptographic materials needed to eventually generate key shares. Old committee relayers must identify relayers from the new committee as prescribed by the governance contract state. For this, communication channels are required to be authenticated by the public keys that constitutes to the address stored onchain.
+Also note that during this procedure, the entire set of new relayers must be active, but only a threshold number of old relayers are required to participate. The interaction flow of the resharing scheme leaves all control in the hands of old committee (relayer) participants. This committee decides with whom they will interact to send cryptographic materials needed to generate key shares. Old committee relayers must identify relayers from the new committee as observed from the `Bridge.sol` contract. For this, communication channels are required to be authenticated by the public keys that constitute the address stored onchain.
 
 ## Flow
 
