@@ -20,7 +20,7 @@ This operation allows for both:
 This is done without the need to change the underlying private key, which is a delicate and expensive procedure.
 
 :::warning
-Our observations in the blockchain bridging space reveal that a big portion of vulnerabilities found are exploits of the key resharing mechanism. We presume that these vulnerabilities are as a result of sensitive key material as well as the operation needing to be repeated regularly.
+Our observations in the blockchain bridging space reveal that a big portion of vulnerabilities found are exploits of the key resharing mechanism and the lack of well-defined protocols at their implementation. For ECDSA, the well studied resharing protocol was only introduced in the latest revision - [CGGMP21](https://eprint.iacr.org/2021/060). We presume that these vulnerabilities are a result of sharing sensitive key material as well as the operation needing to be repeated regularly.
 :::
 
 :::info
