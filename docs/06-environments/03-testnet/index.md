@@ -9,7 +9,7 @@ The following details a list of resources that support the Testnet environment. 
 :::
 
 :::danger Status
-**🔴 Temporary Down**
+**🟢 Active**
 :::
 
 ## Sygma Transfer UI
