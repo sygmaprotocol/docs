@@ -297,3 +297,7 @@ Reshare
 onboarding
 recalibrating
 selectable
+Base-Goerli
+Cronos-Testnet
+0x
+Cronos
