@@ -21,7 +21,7 @@ The admin multisig is a 3-of-5 and includes actions such as:
 - *setFeeOracle* (set the address of the fee oracle which provides gas price and effective rates)
 - *adminPauseTransfers, adminUnpauseTransfers* (pause and unpause the bridge)
 
-The admin multisig covers a set of super administrative privileges, such as pausing the bridge, that may be required in order to be able to reduce the impact of security incidents. As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation/review and on-chain review/signing. 
+The admin multisig covers a set of super administrative privileges, such as pausing the bridge, that may be required in order to be able to reduce the impact of security incidents. As these actions may have significant financial impact, the admin governance process follows a strict off-chain preparation/review and onchain review/signing. 
 
 The admin multisig is listed at the following Gnosis Safe Proxy contract address [0xde79695d5cefF7c324552B3ecbe6165f77FCdF53](https://etherscan.io/address/0xde79695d5cefF7c324552B3ecbe6165f77FCdF53), and is currently made up of members from **ChainSafe Systems**.
 

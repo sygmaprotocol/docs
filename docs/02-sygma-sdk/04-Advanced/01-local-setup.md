@@ -104,7 +104,7 @@ To easily verify the bridging transactions, we have added console logs that will
 <!-- #### Local configuration
 TODO - add information on all registered resources on local setup -->
 
-### Make changes to on-chain Sygma setup
+### Make changes to onchain Sygma setup
 Once you start the local setup, it is possible to configure the Sygma EVM contracts or Sygma Substrate pallets, since all node RPC endpoints are exposed and you can interact with them as with any regular node.
 
 | Network   | RPC endpoint               |

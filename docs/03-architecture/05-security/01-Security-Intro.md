@@ -1,24 +1,26 @@
 ---
-slug: /architecture/security
-id: architecture-security
+slug: /readme/architecture/security/intro
+id: security-introduction
 title: Security
-description:   The following details how Sygma addresses security concerns relating to various signature schemes.
-draft: true
+description: The following details how Sygma addresses security concerns relating to various signature schemes.
+sidebar_position: 1
+draft: false
 ---
 
 :::info
-The following details how Sygma addresses security concerns relating to various signature schemes.
+  The following details how Sygma addresses security concerns relating to
+  various signature schemes.
 :::
 
 ## Threshold Signature Schemes (TSS)
 
 **Threshold Signature Schemes (TSS)** is an area of [MPC](/docs/03-architecture/02-mpc.md) that is particularly useful for the crypto domain as it facilitates the distribution of a private key to multiple parties, introducing redundancy for assets management security.&#x20;
 
-In other words, it enables a set of parties to perform certain cryptographic operations, like signing transactions, while none of them hold a full private key. Instead, the key is split across the parties, and it can only be used only when a subset of those parties — the size of which is larger than a certain threshold — combine their key shares.
+In other words, it enables a set of parties to perform certain cryptographic operations, like signing transactions, while none of them hold a full private key. Instead, the key is split across the parties, and it can only be used when a subset of those parties — the size of which is larger than a certain threshold — combine their key shares.
 
 ### An Example
 
-Imagine you have a secret key sk and a special algorithm that can divide this key into *n* pieces such that *[sk_i] = share_key(pk, n, t)*. Imagine now you want to sign a transaction *m*, so you apply a similar algorithm to get partial signatures *[s_i] = sign(m, [sk_i])*. Now, to reconstruct a valid signature, you would simply sum all partial signatures together *s = s_0 + s_1 + … + s_i* and call it a day.
+Imagine you have a secret key sk and [a special algorithm](03-keygen.md) that can divide this key into *n* pieces such that *[sk_i] = share_key(pk, n, t)*. Imagine now you want to [sign a transaction](04-signing.md) *m*, so you apply a similar algorithm to get partial signatures *[s_i] = sign(m, [sk_i])*. Now, to reconstruct a valid signature, you would simply sum all partial signatures together *s = s_0 + s_1 + … + s_i* and call it a day.
 
 You might’ve also noticed a third argument *t* when we shared our key. Although the key is shared between *n* parties, we only need a threshold number of them to actually sign something. This is akin to a multisig scheme, which interestingly is just an emulation of threshold signatures using a high-level smart contract language like Solidity.
 
