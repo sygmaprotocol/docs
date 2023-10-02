@@ -7,7 +7,7 @@ sidebar_position: 3
 draft: false
 ---
 
-### Transferring a fungible asset from EVM1 to EVM2
+### Transferring a fungible asset from Substrate to EVM
 
 Transferring assets from Substrate-based chains to EVM-based chains can be achieved using the Sygma SDK.
 
@@ -48,7 +48,7 @@ To facilitate the transfer of tokens, a fee must be attached. This fee can be de
 const keyring = new Keyring({ type: "sr25519" });
 await cryptoWaitReady();
 const account = keyring.addFromUri(MNEMONIC);
-const transfer = assetTransfer.createFungibleTransfer(
+const transfer = await assetTransfer.createFungibleTransfer(
   account.address,
   DESTINATION_CHAINID,
   DESTINATION_ADDRESS,

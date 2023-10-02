@@ -7,6 +7,10 @@ sidebar_position: 2
 draft: false
 ---
 
+:::info
+In the examples below `Ethers` v5 was used. If you were to use v6, keep in mind the differences between versions.
+:::
+
 ### Transferring a fungible asset between EVM chains
 
 Transferring assets between EVM-based chains can be achieved using the Sygma SDK.
@@ -48,7 +52,7 @@ const wallet = new Wallet(
   provider
 );
 
-const transfer = assetTransfer.createFungibleTransfer(
+const transfer = await assetTransfer.createFungibleTransfer(
   await wallet.getAddress(),
   DESTINATION_CHAINID,
   DESTINATION_ADDRESS,
@@ -83,7 +87,7 @@ const transferTransaction = await assetTransfer.buildTransferTransaction(
 
 // Send the transaction using the wallet
 const transferTxResponse = await wallet.sendTransaction(
-  transferTx as providers.TransactionRequest,
+  transferTransaction as providers.TransactionRequest,
 );
 ```
 

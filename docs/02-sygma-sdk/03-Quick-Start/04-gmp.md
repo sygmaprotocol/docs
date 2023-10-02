@@ -7,6 +7,10 @@ sidebar_position: 4
 draft: false
 ---
 
+:::info
+In the examples below `Ethers` v5 was used. If you were to use v6, keep in mind the differences between versions.
+:::
+
 ### Transferring a message between EVM chains
 
 Generic messages can be transferred between EVM chains, using the Sygma SDK.
@@ -33,7 +37,7 @@ const genericMessageTransfer = new EVMGenericMessageTransfer();
 
 const provider = new JsonRpcProvider("https://URL-TO-YOUR-RPC")
 
-await gmpTransfer.init(
+await genericMessageTransfer.init(
   provider,
   Environment.TESTNET
 );
@@ -50,7 +54,7 @@ const wallet = new Wallet(
   provider
 );
 
-const transfer = gmpTransfer.createGenericMessageTransfer(
+const transfer = genericMessageTransfer.createGenericMessageTransfer(
   await wallet.getAddress(),
   DESTINATION_CHAINID,
   RESOURCE_ID,
@@ -60,19 +64,19 @@ const transfer = gmpTransfer.createGenericMessageTransfer(
   MAX_FEE
 )
 
-const fee = await assetTransfer.getFee(transfer);
+const fee = await genericMessageTransfer.getFee(transfer);
 ```
 ### 3. Prepare, sign, and send the Transfer transaction to the Source network node
 
 ```ts
-const transferTransaction = await assetTransfer.buildTransferTransaction(
+const transferTransaction = await genericMessageTransfer.buildTransferTransaction(
   transfer,
   fee,
 );
 
 // Send the transaction using the wallet
 const transferTxResponse = await wallet.sendTransaction(
-  transferTx as providers.TransactionRequest,
+  transferTransaction as providers.TransactionRequest,
 );
 ```
 
