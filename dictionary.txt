@@ -136,6 +136,8 @@ v1.0
 v2.5
 v1.5
 v0.2
+v5
+v6
 ethers
 ES6
 metamask

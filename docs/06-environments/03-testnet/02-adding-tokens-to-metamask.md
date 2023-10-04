@@ -7,7 +7,7 @@ description: The following details how to add Devnet (custom) tokens to MetaMask
 ### Steps
 
 1. Choose `Import Token` at the bottom of MetaMask's asset tab
-2. Paste in: `0x28a15fab77a4Dd74023DfB782Fbd52f541d270E6` for the contract address; the rest of the fields will auto-populate
+2. Paste in: `0x3D151A97A446C9ea6893038e7C0db73466f3f3af` for the contract address; the rest of the fields will auto-populate
 3. `Add Custom Token`
 
 #### Resources
