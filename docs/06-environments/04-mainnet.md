@@ -94,10 +94,10 @@ The following details a list of resources to support the Mainnet environment. EV
 | Phala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 | Ethereum            | Base                     | GMP      | 0.0008 ETH         |                                                                    |
 | Ethereum            | Cronos                   | GMP      | 0.0004 ETH         |                                                                    |
-| Base                | Ethereum                 | GMP      | 0.007 ETH          |                                                                    |
-| Base                | Cronos                   | GMP      | 0.0004 ETH         |                                                                    |
 | Cronos              | Ethereum                 | GMP      | 200 CRO            |                                                                    |
 | Cronos              | Base                     | GMP      | 25 CRO             |                                                                    |
+| Base                | Ethereum                 | GMP      | 0.007 ETH          |                                                                    |
+| Base                | Cronos                   | GMP      | 0.0004 ETH         |                                                                    |
 
 
 ## Sygma Explorer
