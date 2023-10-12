@@ -85,12 +85,19 @@ The following details a list of resources to support the Mainnet environment. EV
 
 ### Registered routes
 
-| Source Network Name | Destination Network Name | Resource | Fee Percent/Amount | Resource ID |
-| ------------------- | ------------------------ | -------- | ------------------ | ---------- |
-| Ethereum Mainnet    | Phala                    | PHA      | 0.0001 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000001  |
+| Source Network Name | Destination Network Name | Resource | Fee Percent/Amount | Resource ID                                                        |
+| ------------------- | ------------------------ | -------- | ------------------ | ------------------------------------------------------------------ |
+| Ethereum Mainnet    | Phala                    | PHA      | 0.0001 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 | Ethereum Mainnet    | Khala                    | PHA      | 0.0001 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 | Khala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 | Phala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
+| Ethereum            | Base                     | GMP      | 0.0008 ETH         |                                                                    |
+| Ethereum            | Cronos                   | GMP      | 0.0004 ETH         |                                                                    |
+| Base                | Ethereum                 | GMP      | 0.007 ETH          |                                                                    |
+| Base                | Cronos                   | GMP      | 0.0004 ETH         |                                                                    |
+| Cronos              | Ethereum                 | GMP      | 200 CRO            |                                                                    |
+| Cronos              | Base                     | GMP      | 25 CRO             |                                                                    |
+
 
 ## Sygma Explorer
 
