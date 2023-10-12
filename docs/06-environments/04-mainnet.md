@@ -52,13 +52,14 @@ The following details a list of resources to support the Mainnet environment. EV
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0x4D878E8Fb90178588Cda4cf1DCcdC9a6d2757089 |
-| Fee Router                        | 0xC47468aeae431f5D0B7DA50F9f5D8a6c0eca4789 |
-| Fixed Fee Handler                 | 0xe43F8245249d7fAF46408723Ab36D071dD85D7BB |
-| Dynamic ERC-20 Fee Handler        | 0x5573Ae978A10B724705624C620E6a7977935c721 |
-| Dynamic Generic ERC20 Fee Handler | 0x4EE82A64Aa9535AE4aABe3B35a12c29a0430A951 |
-| ERC-20 Handler                    | 0xC832588193cd5ED2185daDA4A531e0B26eC5B830 |
-| Permissionless Generic Handler    | 0xa176F012b3bBD7D4824eB31E8707FcE64F64f29f |
+| Bridge                            | 0xC47468aeae431f5D0B7DA50F9f5D8a6c0eca4789 |
+| Fee Router                        | 0x5573Ae978A10B724705624C620E6a7977935c721 |
+| Fixed Fee Handler (Base->ETH )    | 0x4EE82A64Aa9535AE4aABe3B35a12c29a0430A951 |
+| Fixed Fee Handler (Base->Cronos ) | 0x73aB792E6AdF236879a0A2AB1597fa221E736a0d |
+| Dynamic ERC-20 Fee Handler        |                                            |
+| Dynamic Generic ERC20 Fee Handler |                                            |
+| ERC-20 Handler                    | 0xe43F8245249d7fAF46408723Ab36D071dD85D7BB |
+| Permissionless Generic Handler    | 0x2e1eE4153ad2F763ab8C612415AcF0DEe02Bc79B |
 
 ### Registered Resources
 
