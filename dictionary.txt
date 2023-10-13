@@ -320,3 +320,4 @@ Cronos-Testnet
 Cronos
 Cronos-
 CRO
+ETH-
