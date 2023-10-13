@@ -25,41 +25,43 @@ The following details a list of resources to support the Mainnet environment. EV
 
 **Ethereum Mainnet (Domain ID: 1)**
 
-| Contract                          | Address                                    |
-| --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0x4D878E8Fb90178588Cda4cf1DCcdC9a6d2757089 |
-| Fee Router                        | 0xC47468aeae431f5D0B7DA50F9f5D8a6c0eca4789 |
-| Fixed Fee Handler                 | 0xe43F8245249d7fAF46408723Ab36D071dD85D7BB |
-| Dynamic ERC-20 Fee Handler        | 0x5573Ae978A10B724705624C620E6a7977935c721 |
-| Dynamic Generic ERC20 Fee Handler | 0x4EE82A64Aa9535AE4aABe3B35a12c29a0430A951 |
-| ERC-20 Handler                    | 0xC832588193cd5ED2185daDA4A531e0B26eC5B830 |
-| Permissionless Generic Handler    | 0xa176F012b3bBD7D4824eB31E8707FcE64F64f29f |
+| Contract                           | Address                                    |
+| ---------------------------------- | ------------------------------------------ |
+| Bridge                             | 0x4D878E8Fb90178588Cda4cf1DCcdC9a6d2757089 |
+| Fee Router                         | 0xC47468aeae431f5D0B7DA50F9f5D8a6c0eca4789 |
+| Fixed Fee Handler (ETH->Phala)     | 0xe43F8245249d7fAF46408723Ab36D071dD85D7BB |
+| Fixed Fee Handler (ETH->Cronos)    | 0x0018e0b9062f1A40c1db29652A271cB94354d572 |
+| Fixed Fee Handler (ETH->Base)      | 0xcEAB549fdf0Fc263a8DE594e72d9FE38147aFca3 |
+| Dynamic ERC-20 Fee Handler         | 0x5573Ae978A10B724705624C620E6a7977935c721 |
+| Dynamic Generic ERC-20 Fee Handler | 0x4EE82A64Aa9535AE4aABe3B35a12c29a0430A951 |
+| ERC-20 Handler                     | 0xC832588193cd5ED2185daDA4A531e0B26eC5B830 |
+| Permissionless Generic Handler     | 0x31282123E7bcd947e2c1Bc364d564839574fAdCD |
 
 **Cronos (Domain ID: 4)**
 
-| Contract                          | Address                                    |
-| --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0x44d1Ae962945c5B168282D5002705dE7A9B84657 |
-| Fee Router                        | 0xb18fEa28C8C9557aB65b2808c7b323A586687740 |
-| Fixed Fee Handler (Cronos->ETH )  | 0x8cb45Fa8B8eAC078f901498886a7655605a3d15a |
-| Fixed Fee Handler (Cronos->Base ) | 0x1dac945C9E418D9D07278F2d36e310194BaaB24c |
-| Dynamic ERC-20 Fee Handler        |                                            |
-| Dynamic Generic ERC20 Fee Handler |                                            |
-| ERC-20 Handler                    | 0x13572649779c8e88bcbbF46E38d6AddaFa6Ba4f1 |
-| Permissionless Generic Handler    | 0xB86bAe6A570a52cBc38Cf6Ac6557F169422cDf30 |
-
+| Contract                           | Address                                    |
+| ---------------------------------- | ------------------------------------------ |
+| Bridge                             | 0x44d1Ae962945c5B168282D5002705dE7A9B84657 |
+| Fee Router                         | 0xb18fEa28C8C9557aB65b2808c7b323A586687740 |
+| Fixed Fee Handler (Cronos->ETH )   | 0x8cb45Fa8B8eAC078f901498886a7655605a3d15a |
+| Fixed Fee Handler (Cronos->Base )  | 0x1dac945C9E418D9D07278F2d36e310194BaaB24c |
+| Dynamic ERC-20 Fee Handler         |                                            |
+| Dynamic Generic ERC-20 Fee Handler |                                            |
+| ERC-20 Handler                     | 0x13572649779c8e88bcbbF46E38d6AddaFa6Ba4f1 |
+| Permissionless Generic Handler     | 0xB86bAe6A570a52cBc38Cf6Ac6557F169422cDf30 |
+ 
 **Base (Domain ID: 5)**
 
-| Contract                          | Address                                    |
-| --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0xC47468aeae431f5D0B7DA50F9f5D8a6c0eca4789 |
-| Fee Router                        | 0x5573Ae978A10B724705624C620E6a7977935c721 |
-| Fixed Fee Handler (Base->ETH )    | 0x4EE82A64Aa9535AE4aABe3B35a12c29a0430A951 |
-| Fixed Fee Handler (Base->Cronos ) | 0x73aB792E6AdF236879a0A2AB1597fa221E736a0d |
-| Dynamic ERC-20 Fee Handler        |                                            |
-| Dynamic Generic ERC20 Fee Handler |                                            |
-| ERC-20 Handler                    | 0xe43F8245249d7fAF46408723Ab36D071dD85D7BB |
-| Permissionless Generic Handler    | 0x2e1eE4153ad2F763ab8C612415AcF0DEe02Bc79B |
+| Contract                           | Address                                    |
+| ---------------------------------- | ------------------------------------------ |
+| Bridge                             | 0xC47468aeae431f5D0B7DA50F9f5D8a6c0eca4789 |
+| Fee Router                         | 0x5573Ae978A10B724705624C620E6a7977935c721 |
+| Fixed Fee Handler (Base->ETH )     | 0x4EE82A64Aa9535AE4aABe3B35a12c29a0430A951 |
+| Fixed Fee Handler (Base->Cronos )  | 0x73aB792E6AdF236879a0A2AB1597fa221E736a0d |
+| Dynamic ERC-20 Fee Handler         |                                            |
+| Dynamic Generic ERC-20 Fee Handler |                                            |
+| ERC-20 Handler                     | 0xe43F8245249d7fAF46408723Ab36D071dD85D7BB |
+| Permissionless Generic Handler     | 0x2e1eE4153ad2F763ab8C612415AcF0DEe02Bc79B |
 
 ### Registered Resources
 
