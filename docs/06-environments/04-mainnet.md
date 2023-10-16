@@ -84,7 +84,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | Type               | Generic                                                            |
 | Registered Handler | PermissionlessGenericHandler                                       |
 | Bridging Strategy  | GMP                                                                |
-| Resource ID        | 0x0000000000000000000000000000000000000000000000000000000000000500 |
+| Resource ID        | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 
 ### Registered routes
 
@@ -94,12 +94,12 @@ The following details a list of resources to support the Mainnet environment. EV
 | Ethereum Mainnet    | Khala                    | PHA      | 0.0001 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 | Khala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 | Phala               | Ethereum Mainnet         | PHA      | 50 PHA             | 0x0000000000000000000000000000000000000000000000000000000000000001 |
-| Ethereum            | Base                     | GMP      | 0.0008 ETH         |                                                                    |
-| Ethereum            | Cronos                   | GMP      | 0.0004 ETH         |                                                                    |
-| Cronos              | Ethereum                 | GMP      | 200 CRO            |                                                                    |
-| Cronos              | Base                     | GMP      | 25 CRO             |                                                                    |
-| Base                | Ethereum                 | GMP      | 0.007 ETH          |                                                                    |
-| Base                | Cronos                   | GMP      | 0.0004 ETH         |                                                                    |
+| Ethereum            | Base                     | GMP      | 0.0008 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Ethereum            | Cronos                   | GMP      | 0.0004 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Cronos              | Ethereum                 | GMP      | 200 CRO            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Cronos              | Base                     | GMP      | 25 CRO             | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Base                | Ethereum                 | GMP      | 0.007 ETH          | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Base                | Cronos                   | GMP      | 0.0004 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 
 
 ## Sygma Explorer
