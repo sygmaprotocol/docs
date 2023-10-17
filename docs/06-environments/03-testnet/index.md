@@ -8,7 +8,7 @@ description: The following details a list of resources that support the Testnet 
 The following details a list of resources that support the Testnet environment. EVM and Substrate resources are listed in separate sections below.
 :::
 
-:::danger Status
+:::tip Status
 **🟢 Active**
 :::
 

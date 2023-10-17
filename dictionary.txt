@@ -318,3 +318,6 @@ Base-Goerli
 Cronos-Testnet
 0x
 Cronos
+Cronos-
+CRO
+ETH-
