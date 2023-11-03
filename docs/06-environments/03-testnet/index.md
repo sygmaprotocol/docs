@@ -8,6 +8,10 @@ description: The following details a list of resources that support the Testnet 
 The following details a list of resources that support the Testnet environment. EVM and Substrate resources are listed in separate sections below.
 :::
 
+:::caution Network Downtime
+**Rhala (Substrate) is currently inactive on the Testnet.** All routes to and from this network are unavailable until further notice.
+:::
+
 :::tip Status
 **🟢 Active**
 :::
