@@ -37,6 +37,8 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Rhala          | Substrate | 3         |
 | Base-Goerli    | EVM       | 4         |
 | Cronos-Testnet | EVM       | 5         |
+| Holesky        | EVM       | 6         |
+| Mumbai         | EVM       | 7         |
 
 ### EVM Contract Addresses
 
@@ -95,6 +97,34 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-20 Handler                    | 0x39D1Aea5F01138940F19A15049E2073D4df1dc9E |
 | ERC-721 Handler                   | 0x52757D9c1a8f8b496cf1e688bbB8055f9F3DfC8a |
 | Permissionless Generic Handler    | 0x3CBbC542d10CD037cafb1632B29B5B0F59B08A48 |
+
+**Holesky (Domain ID: 6)**
+
+| Contract                          | Address                                    |
+| --------------------------------- | ------------------------------------------ |
+| Bridge                            |  |
+| Fee Router                        |  |
+| Fixed Fee Handler                 |  |
+| Dynamic ERC-20 Fee Handler        |  |
+| Dynamic Generic ERC20 Fee Handler |  |
+| Percentage Fee Handler            |  |
+| ERC-20 Handler                    |  |
+| ERC-721 Handler                   |  |
+| Permissionless Generic Handler    |  |
+
+**Mumbai (Domain ID: 7)**
+
+| Contract                          | Address                                    |
+| --------------------------------- | ------------------------------------------ |
+| Bridge                            |  |
+| Fee Router                        |  |
+| Fixed Fee Handler                 |  |
+| Dynamic ERC-20 Fee Handler        |  |
+| Dynamic Generic ERC20 Fee Handler |  |
+| Percentage Fee Handler            |  |
+| ERC-20 Handler                    |  |
+| ERC-721 Handler                   |  |
+| Permissionless Generic Handler    |  |
 
 ### Registered Resources
 
