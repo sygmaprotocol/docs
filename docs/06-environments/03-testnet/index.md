@@ -51,7 +51,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Fixed Fee Handler                 | 0xe6CE0ea4eC6ECbdC23eEF9f4fB165aCc979C56b5 |
 | Dynamic ERC-20 Fee Handler        | 0xFFe695A0CBB0492942323d8164C9d923c11d087A |
 | Dynamic Generic ERC20 Fee Handler | 0x307ac28Be1c7225A09D4d93937828Fd7C550CB51 |
-| Percentage Fee Handler            | 0x                                         |
+| Percentage Fee Handler            | 0x2CCD04E702E8Fa321876268E763a2e579F27188B |
 | ERC-20 Handler                    | 0x7Ed4B14a82B2F2C4DfB13DC4Eac00205EDEff6C2 |
 | ERC-721 Handler                   | 0xf6477020C0881879Bb8140089a63122c561a151F |
 | Permissionless Generic Handler    | 0x56826b015911E2E14AE64fc5d7996cbDDea906cd |
@@ -102,29 +102,29 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            |  |
-| Fee Router                        |  |
-| Fixed Fee Handler                 |  |
-| Dynamic ERC-20 Fee Handler        |  |
-| Dynamic Generic ERC20 Fee Handler |  |
-| Percentage Fee Handler            |  |
-| ERC-20 Handler                    |  |
-| ERC-721 Handler                   |  |
-| Permissionless Generic Handler    |  |
+| Bridge                            | 0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78 |
+| Fee Router                        | 0x5626A5a7b65E3d851c693AC583068e75853fE0C8 |
+| Fixed Fee Handler                 | 0xEE7946aE5f7287a39Bc67207868EDD4a95f96795 |
+| Dynamic ERC-20 Fee Handler        |                                            |
+| Dynamic Generic ERC20 Fee Handler |                                            |
+| Percentage Fee Handler            | 0x9535484111383531BB9D6922B309Bf316Cec9A19 |
+| ERC-20 Handler                    | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
+| ERC-721 Handler                   |                                            |
+| Permissionless Generic Handler    | 0xc1154781Fa12a845aCaf276Bf2030040Ba9DAec8 |
 
 **Mumbai (Domain ID: 7)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            |  |
-| Fee Router                        |  |
-| Fixed Fee Handler                 |  |
-| Dynamic ERC-20 Fee Handler        |  |
-| Dynamic Generic ERC20 Fee Handler |  |
-| Percentage Fee Handler            |  |
-| ERC-20 Handler                    |  |
-| ERC-721 Handler                   |  |
-| Permissionless Generic Handler    |  |
+| Bridge                            | 0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78 |
+| Fee Router                        | 0x5626A5a7b65E3d851c693AC583068e75853fE0C8 |
+| Fixed Fee Handler                 | 0xEE7946aE5f7287a39Bc67207868EDD4a95f96795 |
+| Dynamic ERC-20 Fee Handler        |                                            |
+| Dynamic Generic ERC20 Fee Handler |                                            |
+| Percentage Fee Handler            | 0x9535484111383531BB9D6922B309Bf316Cec9A19 |
+| ERC-20 Handler                    | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
+| ERC-721 Handler                   |                                            |
+| Permissionless Generic Handler    | 0x2f2a45CF84D67F22f4925C70612B2506De7a4efB |
 
 ### Registered Resources
 
