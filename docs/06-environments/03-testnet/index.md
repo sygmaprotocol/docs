@@ -46,15 +46,15 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0xc26335a9f16398b5fDA4bC05b62C1429D8a4d755 |
-| Fee Router                        | 0xBcE136Ec4510BA4D748994d057637A5B4FaDb614 |
-| Fixed Fee Handler                 | 0xe6CE0ea4eC6ECbdC23eEF9f4fB165aCc979C56b5 |
-| Dynamic ERC-20 Fee Handler        | 0xFFe695A0CBB0492942323d8164C9d923c11d087A |
-| Dynamic Generic ERC20 Fee Handler | 0x307ac28Be1c7225A09D4d93937828Fd7C550CB51 |
+| Bridge                            | 0xf9a3618bC7Dd11d715cC45D6038F821F13290d8E |
+| Fee Router                        | 0xB6F9764Ee1d6B6b3211785C3EAFBAd3F8358D205 |
+| Fixed Fee Handler                 | 0x4e4Ef31C98f1C2Cf581098Abc0b2d0e456426aE7 |
+| Dynamic ERC-20 Fee Handler        | 0xD9bE8cDA9A46954Ddb2B902da12538B98F1D85d4 |
+| Dynamic Generic Fee Handler       | 0x66eB349d5750957f68Fe43c01f82019fCe278293 |
 | Percentage Fee Handler            | 0x2CCD04E702E8Fa321876268E763a2e579F27188B |
-| ERC-20 Handler                    | 0x7Ed4B14a82B2F2C4DfB13DC4Eac00205EDEff6C2 |
-| ERC-721 Handler                   | 0xf6477020C0881879Bb8140089a63122c561a151F |
-| Permissionless Generic Handler    | 0x56826b015911E2E14AE64fc5d7996cbDDea906cd |
+| ERC-20 Handler                    | 0x41c105C70ABF590d67dc8fD7708F9E52BB44CeF2 |
+| ERC-721 Handler                   | 0x042291E023a35eB7dFD4c21aD199BF2968bE252D |
+| Permissionless Generic Handler    | 0x318EFd751B60730786D29376A6785bb02C923733 |
 
 **Sepolia (Domain ID: 2)**
 
@@ -64,7 +64,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Fee Router                        | 0xa7bE76F57329207Ed886281d20DD7DC3804f3d51 |
 | Fixed Fee Handler                 | 0xDcBA3f691eF406415556C802163C265Db56208cF |
 | Dynamic ERC-20 Fee Handler        | 0x9efbd1BA6F0ed4a6E1f30296e7f231d200906129 |
-| Dynamic Generic ERC20 Fee Handler | 0xD61bC4532F9E8146922E25b8137D25662feE3f9F |
+| Dynamic Generic Fee Handler       | 0xD61bC4532F9E8146922E25b8137D25662feE3f9F |
 | Percentage Fee Handler            | 0x2e77dEa116117eCF44a427064260D16D488ccff2 |
 | ERC-20 Handler                    | 0xa5b71C034a8370AAF0326a5B646A36A9d7C821E7 |
 | ERC-721 Handler                   | 0x76A4557Bd3bc6088Cc94f8aCb6a8006f1F592B3f |
@@ -78,7 +78,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Fee Router                        | 0xad3961FF8a445FF9EF4A85f450DcE1690c51Ce98 |
 | Fixed Fee Handler                 | 0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479 |
 | Dynamic ERC-20 Fee Handler        | 0xF97F5A81c77310C36EF042cf21CE8F43809B4334 |
-| Dynamic Generic ERC20 Fee Handler | 0xA30Ad3e57b33149cd31EE2E9Dd37e327ad1e65C3 |
+| Dynamic Generic Fee Handler       | 0xA30Ad3e57b33149cd31EE2E9Dd37e327ad1e65C3 |
 | Percentage Fee Handler            | 0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A |
 | ERC-20 Handler                    | 0x2C0ae7Fb251ec0772793d480d31B4bc8E3b498a7 |
 | ERC-721 Handler                   | 0x38218916813A0f6ca32AcA1324381C0A810b728a |
@@ -92,7 +92,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Fee Router                        | 0x8b8F51bB26Eb521ac33dD6DcAA97f5d052977746 |
 | Fixed Fee Handler                 | 0x8eDab7563C618a3F1e5021677640565468C706d8 |
 | Dynamic ERC-20 Fee Handler        | 0xa128fAd3Ea89BCdea67053164fC8D10d29f18c81 |
-| Dynamic Generic ERC20 Fee Handler | 0x055CEe6D441f0c913D863776356C12FfA2FCDc47 |
+| Dynamic Generic Fee Handler       | 0x055CEe6D441f0c913D863776356C12FfA2FCDc47 |
 | Percentage Fee Handler            | 0x26545905a3a63B9ffB37926e909a827bDd088512 |
 | ERC-20 Handler                    | 0x39D1Aea5F01138940F19A15049E2073D4df1dc9E |
 | ERC-721 Handler                   | 0x52757D9c1a8f8b496cf1e688bbB8055f9F3DfC8a |
@@ -106,7 +106,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Fee Router                        | 0x5626A5a7b65E3d851c693AC583068e75853fE0C8 |
 | Fixed Fee Handler                 | 0xEE7946aE5f7287a39Bc67207868EDD4a95f96795 |
 | Dynamic ERC-20 Fee Handler        |                                            |
-| Dynamic Generic ERC20 Fee Handler |                                            |
+| Dynamic Generic Fee Handler       |                                            |
 | Percentage Fee Handler            | 0x9535484111383531BB9D6922B309Bf316Cec9A19 |
 | ERC-20 Handler                    | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
 | ERC-721 Handler                   |                                            |
@@ -120,7 +120,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Fee Router                        | 0x5626A5a7b65E3d851c693AC583068e75853fE0C8 |
 | Fixed Fee Handler                 | 0xEE7946aE5f7287a39Bc67207868EDD4a95f96795 |
 | Dynamic ERC-20 Fee Handler        |                                            |
-| Dynamic Generic ERC20 Fee Handler |                                            |
+| Dynamic Generic Fee Handler       |                                            |
 | Percentage Fee Handler            | 0x9535484111383531BB9D6922B309Bf316Cec9A19 |
 | ERC-20 Handler                    | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
 | ERC-721 Handler                   |                                            |
