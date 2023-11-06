@@ -197,4 +197,9 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Cronos-Testnet Dynamic          | N/A                                        | Fee oracle  | N/A                |            |
 | Cronos-Testnet Fixed            | 0x8eDab7563C618a3F1e5021677640565468C706d8 | Fixed fee   | 0.001 ETH          |            |
 | Cronos-Testnet Percentage-based | 0x26545905a3a63B9ffB37926e909a827bDd088512 | Percentage  | 1 BPS (or 0.01%)   |            |
-
+| Holesky Dynamic                 | N/A                                        | Fee oracle  | N/A                |            |
+| Holesky Fixed                   | 0xEE7946aE5f7287a39Bc67207868EDD4a95f96795 | Fixed fee   | 0.001 ETH          |            |
+| Holesky Percentage-based        | 0x9535484111383531BB9D6922B309Bf316Cec9A19 | Percentage  | 1 BPS (or 0.01%)   |            |
+| Mumbai Dynamic                  | N/A                                        | Fee oracle  | N/A                |            |
+| Mumbai Fixed                    | 0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD | Fixed fee   | 0.001 ETH          |            |
+| Mumbai Percentage-based         | 0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4 | Percentage  | 1 BPS (or 0.01%)   |            |
