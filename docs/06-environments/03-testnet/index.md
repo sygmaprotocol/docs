@@ -168,6 +168,19 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Goerli Contract Address  | N/A                                                                |
 | Sepolia Contract Address | N/A                                                                |
 
+**SygmaUSD**
+
+| Details                  | Information                                                        |
+| ------------------------ | ------------------------------------------------------------------ |
+| Symbol                   | sygUSD                                                             |
+| Type                     | ERC-20                                                             |
+| Registered Fee Handler   | PercentageFeeHandler                                               |
+| Registered Handler       | ERC20Handler                                                       |
+| Bridging Strategy        | Lock/Release                                                       |
+| Resource ID              | 0x0000000000000000000000000000000000000000000000000000000000001100 |
+| Goerli Contract Address  | 0xc00621087a20484DFB0F892ed1cE37fC2ABf72c8                         |
+| Sepolia Contract Address | 0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36                         |
+
 ### Fee Schemes
 
 | Network Name                    | Handler Address                            | Fee Type    | Fee Percent/Amount | Gas Amount |
