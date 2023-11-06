@@ -60,15 +60,15 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0xBcE812D24255d94BBb5f5C51e384640a492ac178 |
-| Fee Router                        | 0xa7bE76F57329207Ed886281d20DD7DC3804f3d51 |
+| Bridge                            | 0x4CF326d3817558038D1DEF9e76b727202c3E8492 |
+| Fee Router                        | 0x9D45e9bE1E70735Ee78052717107d5dc59C1EaCE |
 | Fixed Fee Handler                 | 0xDcBA3f691eF406415556C802163C265Db56208cF |
-| Dynamic ERC-20 Fee Handler        | 0x9efbd1BA6F0ed4a6E1f30296e7f231d200906129 |
-| Dynamic Generic Fee Handler       | 0xD61bC4532F9E8146922E25b8137D25662feE3f9F |
+| Dynamic ERC-20 Fee Handler        | 0x90bF74Ef3ec6F747B949Cb3fC1c3Aa5cf1014583 |
+| Dynamic Generic Fee Handler       | 0xF97F5A81c77310C36EF042cf21CE8F43809B4334 |
 | Percentage Fee Handler            | 0x2e77dEa116117eCF44a427064260D16D488ccff2 |
-| ERC-20 Handler                    | 0xa5b71C034a8370AAF0326a5B646A36A9d7C821E7 |
-| ERC-721 Handler                   | 0x76A4557Bd3bc6088Cc94f8aCb6a8006f1F592B3f |
-| Permissionless Generic Handler    | 0x023aE1Eeb892983a26F77D83D8fFf1447dD311aa |
+| ERC-20 Handler                    | 0xa65387feCb172ffF8A0aabA323A10c63757BBFA6 |
+| ERC-721 Handler                   | 0x669F52487ffA6f9aBf722082f735537A98Ec0E4b |
+| Permissionless Generic Handler    | 0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479 |
 
 **Base-Goerli (Domain ID: 4)**
 
