@@ -321,3 +321,7 @@ Cronos
 Cronos-
 CRO
 ETH-
+Holesky
+SygmaUSD
+sygUSD
+PercentageFeeHandler
