@@ -141,7 +141,8 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Goerli Contract Address  | 0x3F9A68fF29B3d86a6928C44dF171A984F6180009                         |
 | Sepolia Contract Address | 0x7d58589b6C1Ba455c4060a3563b9a0d447Bef9af                         |       
 | Base Contract Address    | 0xA5278861d2352fd8eD59b985a29ad46E40930F12                         |
-| Cronos Contract Address  | 0x                                                                 |
+| Cronos Contract Address  | 0x2938ed97ef9d897dac7b21c48e045f34a3a02846                         |
+| Mumbai Contract Address  | 0x75811b960c7acB255f9091bBAC401700E407CDB6                         |
 
 **Phala**
 
