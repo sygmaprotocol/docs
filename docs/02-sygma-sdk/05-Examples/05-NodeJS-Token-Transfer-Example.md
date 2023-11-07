@@ -3,7 +3,7 @@ slug: /sdk/examples/node-js-example
 id:  examples-nodejs-example
 title: Node.js EVM To EVM Token Transfer Example
 description: Section that describes how to transfer a token between EVM chains using nodeJS.
-sidebar_position: 4
+sidebar_position: 5
 draft: true
 ---
 
