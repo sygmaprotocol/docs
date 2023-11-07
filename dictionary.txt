@@ -325,3 +325,5 @@ Holesky
 SygmaUSD
 sygUSD
 PercentageFeeHandler
+evm-example-gmp
+examples-evm-example-gmp
