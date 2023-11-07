@@ -65,7 +65,7 @@ cd examples/evm-to-evm-generic-mesage-passing
 yarn run transfer
 ```
 
-The example will use `ethers` in conjuction with the sygma-sdk to call a function on a smart contract on Goerli by calling the `Deposit` method on Sepolia and passing the details of the function to be called.
+The example will use `ethers` in conjunction with the sygma-sdk to call a function on a smart contract on Goerli by calling the `Deposit` method on Sepolia and passing the details of the function to be called.
 
 Replace the placeholder values in the `.env` file with your own Ethereum wallet private key and provider URL.
 

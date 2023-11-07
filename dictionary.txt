@@ -321,3 +321,5 @@ Cronos
 Cronos-
 CRO
 ETH-
+evm-example-gmp
+examples-evm-example-gmp
