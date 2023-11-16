@@ -55,6 +55,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-20 Handler                    | 0x41c105C70ABF590d67dc8fD7708F9E52BB44CeF2 |
 | ERC-721 Handler                   | 0x042291E023a35eB7dFD4c21aD199BF2968bE252D |
 | Permissionless Generic Handler    | 0x318EFd751B60730786D29376A6785bb02C923733 |
+| Storage (GMP testing contract)    | 0xdFA5621F95675D37248bAc9e536Aab4D86766663 |
 
 **Sepolia (Domain ID: 2)**
 
@@ -69,6 +70,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-20 Handler                    | 0xa65387feCb172ffF8A0aabA323A10c63757BBFA6 |
 | ERC-721 Handler                   | 0x669F52487ffA6f9aBf722082f735537A98Ec0E4b |
 | Permissionless Generic Handler    | 0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479 |
+| Storage (GMP testing contract)    | 0x0e963aEe445EDC19034e9938570E5E7BE4Ee19Cd |
 
 **Base-Goerli (Domain ID: 4)**
 
@@ -83,6 +85,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-20 Handler                    | 0x2C0ae7Fb251ec0772793d480d31B4bc8E3b498a7 |
 | ERC-721 Handler                   | 0x38218916813A0f6ca32AcA1324381C0A810b728a |
 | Permissionless Generic Handler    | 0x14d1cA88277E13B5615C2C727415a1B94E90264F |
+| Storage (GMP testing contract)    | 0xde600d7e927528491ef77a3f1d361e6a8a1df233 |
 
 **Cronos Testnet (Domain ID: 5)**
 
@@ -97,6 +100,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-20 Handler                    | 0x39D1Aea5F01138940F19A15049E2073D4df1dc9E |
 | ERC-721 Handler                   | 0x52757D9c1a8f8b496cf1e688bbB8055f9F3DfC8a |
 | Permissionless Generic Handler    | 0x3CBbC542d10CD037cafb1632B29B5B0F59B08A48 |
+| Storage (GMP testing contract)    | 0xcb9eb2b2abbd51945a82f77e789c26720b3835bf |
 
 **Holesky (Domain ID: 6)**
 
@@ -111,20 +115,22 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | ERC-20 Handler                    | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
 | ERC-721 Handler                   |                                            |
 | Permissionless Generic Handler    | 0xc1154781Fa12a845aCaf276Bf2030040Ba9DAec8 |
+| Storage (GMP testing contract)    | 0x58476c75b48c86c05ccad9ae82ac76145bc9119d |
 
 **Mumbai (Domain ID: 7)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78 |
-| Fee Router                        | 0x5626A5a7b65E3d851c693AC583068e75853fE0C8 |
-| Fixed Fee Handler                 | 0xEE7946aE5f7287a39Bc67207868EDD4a95f96795 |
+| Bridge                            | 0xeAEffbadF776Da90D8e0a94D918E1CB83c12242d |
+| Fee Router                        | 0xa5007DF9379b88d62108b061702c1408459FFF3b |
+| Fixed Fee Handler                 | 0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD |
 | Dynamic ERC-20 Fee Handler        |                                            |
 | Dynamic Generic Fee Handler       |                                            |
-| Percentage Fee Handler            | 0x9535484111383531BB9D6922B309Bf316Cec9A19 |
-| ERC-20 Handler                    | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
+| Percentage Fee Handler            | 0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4 |
+| ERC-20 Handler                    | 0x49780Df8982ADeC1989c50c3d2A7f96037f0E937 |
 | ERC-721 Handler                   |                                            |
 | Permissionless Generic Handler    | 0x2f2a45CF84D67F22f4925C70612B2506De7a4efB |
+| Storage (GMP testing contract)    | 0x6f250a12f9a2d6f72b6e8ef5b93484da04cdb69e |
 
 ### Registered Resources
 
