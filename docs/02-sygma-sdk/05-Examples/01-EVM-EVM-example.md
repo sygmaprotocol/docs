@@ -126,7 +126,7 @@ export async function erc20Transfer(): Promise<void> {
     SEPOLIA_CHAIN_ID,
     await wallet.getAddress(), // Sending to the same address on a different chain
     RESOURCE_ID,
-    "50000000000000000000" // 18 decimal places, so in this case, 50 tokens would be sent
+    "5000000000000000000" // 18 decimal places, so in this case, 5 tokens would be sent
   );
 ```
 
