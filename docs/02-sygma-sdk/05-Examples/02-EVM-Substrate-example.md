@@ -127,7 +127,7 @@ export async function erc20Transfer(): Promise<void> {
     ROCOCO_PHALA_CHAIN_ID,
     DESTINATION_ADDRESS,
     RESOURCE_ID,
-    5000000000000000000 // 18 decimal places, so in this case, 5 gPHA tokens
+    500000000000000000 // 18 decimal places, so in this case, 0.5 gPHA tokens
   );
 ```
 
