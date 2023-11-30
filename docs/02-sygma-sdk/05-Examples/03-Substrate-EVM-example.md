@@ -13,7 +13,7 @@ In the following example, we will use the `TESTNET` environment to perform a cro
 
 ### EVM-to-Substrate Token Transfer Example
 
-This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of bridges, fee handlers, and relayers. The script showcases a Substrate asset transfer between Substrate and EVM using the Sygma SDK. The complete example can be found in this [repo](https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/substrate-to-evm-fungible-transfer).
+This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of bridges, fee handlers, and relayers. The script showcases a Substrate asset transfer between a Substrate network and an EVM network using the Sygma SDK. The complete example can be found in this [repo](https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/substrate-to-evm-fungible-transfer).
 
 ### Prerequisites
 
@@ -21,7 +21,6 @@ Before running the script, ensure that you have the following:
 
 - Node.js installed on your machine
 - Yarn (version 3.4.1 or higher)
-- Access to a custom Substrate WSS endpoint
 - A wallet funded with `gPHA` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
 
 :::danger
@@ -56,8 +55,25 @@ yarn sdk:build
 ```
 
 4. Usage
+
+This example uses the `dotenv` module to import the Substrate 12-word private mnemonic. To run the example, you will need to configure your environment variable to include your Substrate test development account's [12-word seed](https://support.polkadot.network/support/solutions/articles/65000169731-polkadot-extension-how-can-i-view-my-mnemonic-phrase-). A `.env.sample` is provided as a template.
+
+**DO NOT COMMIT YOUR MENOMONIC WITH REAL FUNDS TO GITHUB. DOING SO COULD RESULT IN COMPLETE LOSS OF YOUR FUNDS.**
+
+Create a `.env` file in the substrate-to-evm example folder:
+
+```bash
+cd examples/substrate-to-evm-fungible-transfer
+touch .env
+```
+
+Replace between the quotation marks your 12-word mnemonic:
+
+`PRIVATE_MNEMONIC="YOUR TWELVE WORD MNEMONIC HERE WITH SPACES"`
+
+Replace the placeholder value in the script for `recipient` with your preferred destination EVM address.
    
-To send an ERC-20 example transfer from EVM to Substrate, `cd` into the example folder `examples/substrate-to-evm-fungible-transfer` and run:
+To send a Substrate token transfer from Substrate to EVM, run:
 
 ```bash
 cd examples/substrate-to-evm-fungible-transfer
@@ -65,8 +81,6 @@ yarn run transfer
 ```
 
 The example will use `@polkadot/keyring` in conjunction with the sygma-sdk to create a transfer from Rococo-Phala to Goerli with the `PHA` token. It will be received on Goerli as a `gPHA` token.
-
-Replace the placeholder values in the script with your own Substrate wallet mnemonic and destination EVM address.
 
 ### Script Functionality
 

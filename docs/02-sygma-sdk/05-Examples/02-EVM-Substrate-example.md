@@ -13,7 +13,7 @@ In the following example, we will use the `TESTNET` environment to perform a cro
 
 ### EVM-to-Substrate Token Transfer Example
 
-This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of bridges, fee handlers, and relayers. The script showcases an ERC-20 token transfer between two networks using the Sygma SDK. The complete example can be found in this [repo](
+This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of bridges, fee handlers, and relayers. The script showcases an ERC-20 token transfer between an EVM network and a Substrate network using the Sygma SDK. The complete example can be found in this [repo](
 https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/evm-to-substrate-fungible-transfer#sygma-sdk-erc20-example).
 
 ### Prerequisites
@@ -22,8 +22,7 @@ Before running the script, ensure that you have the following:
 
 - Node.js installed on your machine
 - Yarn (version 3.4.1 or higher)
-- Access to an Ethereum provider
-- A wallet funded with `ERC20LRTest` or `gPHA` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
+- A wallet funded with `gPHA` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
 - [Goerli ETH](https://goerlifaucet.com/) for gas 
 
 :::danger
@@ -58,8 +57,23 @@ yarn sdk:build
 ```
 
 4. Usage
+
+This example uses the `dotenv` module to manage private keys. To run the example, you will need to configure your environment variable to include your test development account's [exported private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key). A `.env.sample` is provided as a template.
+
+**DO NOT COMMIT PRIVATE KEYS WITH REAL FUNDS TO GITHUB. DOING SO COULD RESULT IN COMPLETE LOSS OF YOUR FUNDS.**
+
+Create a `.env` file in the evm-to-substrate example folder:
+
+```bash
+cd examples/evm-to-substrate-fungible-transfer
+touch .env
+```
+
+Replace between the quotation marks your exported private key:
+
+`PRIVATE_KEY="YOUR_PRIVATE_KEY_HERE"`
    
-To send an ERC-20 example transfer from EVM to Substrate, `cd` into the example folder `examples/evm-to-substrate-fungible-transfer` and run:
+To send an ERC-20 example transfer from EVM to Substrate, run:
 
 ```bash
 cd examples/evm-to-substrate-fungible-transfer
@@ -67,8 +81,6 @@ yarn run transfer
 ```
 
 The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Goerli to Rococo-Phala with a `gPHA` token. It will be received on Rococo-Phala as the native `PHA` token.
-
-<!--Replace the placeholder values in the script with your own Ethereum wallet private key and provider URL.-->
 
 ### Script Functionality
 
