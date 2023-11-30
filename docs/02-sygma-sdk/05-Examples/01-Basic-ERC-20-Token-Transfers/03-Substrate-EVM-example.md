@@ -92,12 +92,12 @@ This example script performs the following steps:
 import { Keyring } from "@polkadot/keyring";
 import { ApiPromise, WsProvider } from "@polkadot/api";
 import { cryptoWaitReady } from "@polkadot/util-crypto";
-import { Environment, Substrate } from "@buildwithsygma/sygma-sdk-core";
+import { Environment, Substrate, getTransferStatusData } from "@buildwithsygma/sygma-sdk-core";
 
 const { SubstrateAssetTransfer } = Substrate;
 const GOERLI_CHAIN_ID = 5;
-const RESOURCE_ID = "0x0000000000000000000000000000000000000000000000000000000000001000";
-const recipient = "0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C";
+const RESOURCE_ID = "0x0000000000000000000000000000000000000000000000000000000000001000"; // This is the resource ID for the gPHA token according to Sygma's testnet environment 
+const recipient = "0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C"; // replace this value for your preferred EVM address 
 ```
 
 - Configures the dotenv module and sets the `MNEMONIC` as a value to be pulled from the `.env` file.

@@ -89,7 +89,7 @@ This example script performs the following steps:
 - Initializes the SDK by importing the required packages and defining the constants for the script.
 
 ```ts
-import { EVMAssetTransfer, Environment } from "@buildwithsygma/sygma-sdk-core";
+import { EVMAssetTransfer, Environment, getTransferStatusData } from "@buildwithsygma/sygma-sdk-core";
 import { Wallet, providers } from "ethers";
 
 const SEPOLIA_CHAIN_ID = 11155111;

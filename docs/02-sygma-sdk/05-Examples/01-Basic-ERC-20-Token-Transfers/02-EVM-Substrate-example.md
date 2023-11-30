@@ -72,6 +72,8 @@ touch .env
 Replace between the quotation marks your exported private key:
 
 `PRIVATE_KEY="YOUR_PRIVATE_KEY_HERE"`
+
+Replace the placeholder value in the script for `DESTINATION_ADDRESS` with your preferred destination Substrate address.
    
 To send an ERC-20 example transfer from EVM to Substrate, run:
 
@@ -89,11 +91,11 @@ This example script performs the following steps:
 - Initializes the SDK by importing the required packages and defining the constants for the script.
 
 ```ts
-import { EVMAssetTransfer, Environment } from "@buildwithsygma/sygma-sdk-core";
+import { EVMAssetTransfer, Environment, getTransferStatusData } from "@buildwithsygma/sygma-sdk-core";
 import { Wallet, providers } from "ethers";
 
 const ROCOCO_PHALA_CHAIN_ID = 5231;
-const DESTINATION_ADDRESS = "5CDQJk6kxvBcjauhrogUc9B8vhbdXhRscp1tGEUmniryF1Vt";
+const DESTINATION_ADDRESS = "5CDQJk6kxvBcjauhrogUc9B8vhbdXhRscp1tGEUmniryF1Vt"; // replace this value for your preferred Substrate address
 const RESOURCE_ID =
   "0x0000000000000000000000000000000000000000000000000000000000001000"; // This is the resource ID for the gPHA token according to Sygma's testnet environment 
 ```
