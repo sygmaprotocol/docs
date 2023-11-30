@@ -13,7 +13,7 @@ In the examples below `Ethers` v5 was used. If you were to use v6, keep in mind 
 
 ### Transferring a message between EVM chains
 
-Generic messages can be transferred between EVM chains, using the Sygma SDK.
+Generic messages can be transferred between EVM chains using the Sygma SDK.
 
 To facilitate the transfer, the following steps are required:
 
@@ -33,51 +33,57 @@ To initialize the generic message transfer object, the following parameters need
 - The environment in which the bridge should function
 
 ```ts
-const genericMessageTransfer = new EVMGenericMessageTransfer();
+const messageTransfer = new EVMGenericMessageTransfer();
 
-const provider = new JsonRpcProvider("https://URL-TO-YOUR-RPC")
-
-await genericMessageTransfer.init(
-  provider,
-  Environment.TESTNET
+const sourceProvider = new providers.JsonRpcProvider(
+  "https://URL-TO-YOUR-RPC"
 );
+const destinationProvider = new providers.JsonRpcProvider(
+  "https://URL-TO-YOUR-RPC"
+);
+
+ await messageTransfer.init(
+  sourceProvider, 
+  Environment.TESTNET  // (i.e. DEVNET, TESTNET, MAINNET)
+  );
 ```
 
 #### 2. Get fee
 
-To facilitate the transfer of a generic message, a fee must be paid. This fee can be determined by utilizing the `genericMessageTransfer.GetFee(transfer)` method. You will need to know the destination ChainID as well as the ResourceID that has been configured on the bridge. These details can be determined by inspecting the configurations of the bridge (see [here](https://docs.buildwithsygma.com/environments))
+To facilitate the transfer of a generic message, a fee must be paid. This fee can be determined by utilizing the `messageTransfer.getFee(transfer)` method. You will need to know the destination ChainID as well as the ResourceID that has been configured on the bridge. These details can be determined by inspecting the configurations of the bridge (see [here](https://docs.buildwithsygma.com/environments))
 
 
 ```ts
 const wallet = new Wallet(
-  "YOUR PRIVATE KEY",
-  provider
-);
+  privateKey ?? "", // use the dotenv module to pull in a private key from a .env file
+  sourceProvider
+  );
 
-const transfer = genericMessageTransfer.createGenericMessageTransfer(
+const transfer = messageTransfer.createGenericMessageTransfer(
   await wallet.getAddress(),
   DESTINATION_CHAINID,
   RESOURCE_ID,
-  DESTINATION_CONTRACT_ADDRESS,
-  DESTINATION_FUNCTION_SIGNATURE,
-  EXECUTION_DATA,
+  DESTINATION_CONTRACT_ADDRESS, // contract address you are calling to
+  DESTINATION_FUNCTION_SIGNATURE, // function signature you are invoking cross-chain
+  EXECUTION_DATA, // the actual data payload that the smart contract function is expecting 
   MAX_FEE
 )
 
-const fee = await genericMessageTransfer.getFee(transfer);
+const fee = await messageTransfer.getFee(transfer);
 ```
 ### 3. Prepare, sign, and send the Transfer transaction to the Source network node
 
 ```ts
-const transferTransaction = await genericMessageTransfer.buildTransferTransaction(
-  transfer,
-  fee,
-);
+const transferTx = await messageTransfer.buildTransferTransaction(
+    transfer,
+    fee
+  );
 
 // Send the transaction using the wallet
-const transferTxResponse = await wallet.sendTransaction(
-  transferTransaction as providers.TransactionRequest,
-);
+ const response = await wallet.sendTransaction(
+    transferTx as providers.TransactionRequest
+  );
+  console.log("Sent transfer with hash: ", response.hash);
 ```
 
 A full example of the above can be found [here](https://github.com/sygmaprotocol/sygma-sdk/blob/main/examples/evm-to-evm-generic-mesage-passing/src/transfer.ts)
