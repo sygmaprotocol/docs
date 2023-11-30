@@ -1,9 +1,9 @@
 ---
-slug: /sdk/examples/evm-example-gmp
-id:  examples-evm-example-gmp
+slug: /sdk/examples/gmp/evm-example-gmp
+id:  examples-gmp-evm-example-gmp
 title: GMP Example With A Simple Storage Contract
 description: An EVM to EVM example of GMP
-sidebar_position: 4
+sidebar_position: 1
 draft: false
 ---
 
