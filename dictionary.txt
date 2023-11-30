@@ -335,3 +335,4 @@ examples-erc20-evm-substrate-example
 evm-to-substrate
 examples-erc20-substrate-evm-example
 substrate-to-evm
+examples-gmp-evm-example-gmp
