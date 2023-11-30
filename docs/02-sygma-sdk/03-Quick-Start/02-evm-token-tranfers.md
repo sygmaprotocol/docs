@@ -17,10 +17,10 @@ Transferring assets between EVM-based chains can be achieved using the Sygma SDK
 
 To facilitate the transfer, the following steps are required:
 
-1. Create an instance of the EvmAssetTransfer object and initialize it.
+1. Create an instance of the `EvmAssetTransfer` object and initialize it.
 2. Determine the fee for the transfer, using the EvmAssetTransfer `getFee()` method
 3. Check for any approvals required, and if required sign and broadcast these transactions.
-4. Prepare, sign, and send the Transfer transaction to the Source network node
+4. Prepare, sign, and send the `Transfer` transaction to the Source network node
 
 
 #### 1. Initialize the EvmAssetTransfer object

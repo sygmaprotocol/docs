@@ -13,9 +13,9 @@ Transferring assets from Substrate-based chains to EVM-based chains can be achie
 
 To facilitate the transfer, the following steps are required:
 
-1. Create an instance of the SubstrateAssetTransfer object and initialize it
+1. Create an instance of the `SubstrateAssetTransfer` object and initialize it
 2. Determine the fee for the transfer, using the SubstrateAssetTransfer `getFee()` method
-3. Prepare, sign, and send the Transfer transaction to the Substrate node
+3. Prepare, sign, and send the `Transfer` transaction to the Substrate node
 
 #### 1. Initialize the SubstrateAssetTransfer object
 
@@ -34,7 +34,7 @@ const api = await ApiPromise.create({ provider: wsProvider });
 
 await assetTransfer.init(
   api,
-  Environment.TESTNET
+  Environment.TESTNET  // (i.e. DEVNET, TESTNET, MAINNET)
 );
 ```
 
@@ -47,13 +47,13 @@ To facilitate the transfer of tokens, a fee must be attached. This fee can be de
 
 const keyring = new Keyring({ type: "sr25519" });
 await cryptoWaitReady();
-const account = keyring.addFromUri(MNEMONIC);
+const account = keyring.addFromUri(MNEMONIC); // use the dotenv module to pull in a mnemonic from a .env file
 const transfer = await assetTransfer.createFungibleTransfer(
   account.address,
   DESTINATION_CHAINID,
   DESTINATION_ADDRESS,
   RESOURCE_ID,
-  AMOUNT
+  "AMOUNT" // use appropriate decimal places based on the token and/or ecosystem you are operating in
 )
 
 const fee = await assetTransfer.getFee(transfer);
@@ -66,14 +66,15 @@ Now that the fee has been determined, the transaction to deposit assets into the
 
 ```ts
 // Build the transfer transaction
-const transferTransaction = await assetTransfer.buildTransferTransaction(
-  transfer,
+ const transferTx = assetTransfer.buildTransferTransaction(
+  transfer, 
   fee
-);
+  );
 
 // Sign and broadcast the transfer transaction
-const unsub = await transferTransaction.signAndSend(account, ({ status }) => {
-  console.log(`Current status is ${status.toString()}`);
+const unsub = await transferTx.signAndSend(account, ({ status }) => {
+    console.log(`Current status is ${status.toString()}`);
+    
   if (status.isInBlock) {
     console.log(
       `Transaction included at blockHash ${status.asInBlock.toString()}`
