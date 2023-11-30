@@ -8,7 +8,7 @@ draft: false
 ---
 
 :::info 
-In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with an `ERC20LRTST` token. The transfer will be initiated on the EVM-side via the Goerli Ethereum testnet and received on the EVM-side via the Sepolia Ethereum testnet.
+In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 5 `ERC20LRTST` tokens. The transfer will be initiated on the EVM-side via the Goerli Ethereum testnet and received on the EVM-side via the Sepolia Ethereum testnet.
 :::
 
 ### EVM-to-EVM Token Transfer Example
@@ -94,7 +94,7 @@ import { Wallet, providers } from "ethers";
 
 const SEPOLIA_CHAIN_ID = 11155111;
 const RESOURCE_ID =
-  "0x0000000000000000000000000000000000000000000000000000000000000300";
+  "0x0000000000000000000000000000000000000000000000000000000000000300"; // This is the resource ID for the ERC20LRTEST token according to Sygma's testnet environment 
 ```
 
 - Configures the dotenv module and sets the `privateKey` as a value to be pulled from the `.env` file.

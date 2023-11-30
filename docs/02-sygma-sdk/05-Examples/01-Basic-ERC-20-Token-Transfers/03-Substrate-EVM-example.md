@@ -8,7 +8,7 @@ draft: false
 ---
 
 :::info 
-In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with the Goerli Phala `gPHA` token. The transfer will be initiated on the Substrate-side via the Rococo-Phala testnet and received on the EVM-side via the Goerli Ethereum testnet.
+In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 0.5 Goerli Phala `gPHA` tokens. The transfer will be initiated on the Substrate-side via the Rococo-Phala testnet and received on the EVM-side via the Goerli Ethereum testnet.
 :::
 
 ### EVM-to-Substrate Token Transfer Example
@@ -137,7 +137,7 @@ const transfer = assetTransfer.createFungibleTransfer(
   GOERLI_CHAIN_ID,
   recipient,
   RESOURCE_ID,
-  50
+   "500000000000" // 12 decimal places, so in this case 0.5 gPHA tokens
 );
 const fee = await assetTransfer.getFee(transfer);
 const transferTx = assetTransfer.buildTransferTransaction(transfer, fee);
