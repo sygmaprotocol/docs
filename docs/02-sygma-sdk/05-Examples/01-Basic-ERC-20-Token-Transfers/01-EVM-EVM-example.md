@@ -7,7 +7,7 @@ sidebar_position: 1
 draft: false
 ---
 
-### EVM-to-EVM Token Transfer Example
+### EVM-to-EVM token transfer example
 
 In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 5 `ERC20LRTST` tokens. The transfer will be initiated on the EVM-side via the Goerli Ethereum testnet and received on the EVM-side via the Sepolia Ethereum testnet.
 
@@ -27,7 +27,7 @@ Before running the script, ensure that you have the following:
 We make use of the dotenv module to manage exported private keys with environment variables. Please note that accidentally committing a .env file containing private keys to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
 :::
 
-### Getting Started
+### Getting started
 
 1. Clone the repository 
 
@@ -80,7 +80,7 @@ yarn run transfer
 
 The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Goerli to Sepolia with the `ERC20LRTST` token. It will be received on Sepolia as the `ERC20LRTST` token.
 
-### Script Functionality
+### Script functionality
 
 This example script performs the following steps:
 
@@ -152,6 +152,43 @@ export async function erc20Transfer(): Promise<void> {
     );
     console.log("Sent approval with hash: ", response.hash);
   }
+```
+- Invokes the `getTransferStatusData` and `getStatus` functions by taking the transaction hash as an input to periodically check the status of the cross-chain transaction.
+
+```ts
+const getStatus = async (
+  txHash: string
+): Promise<{ status: string; explorerUrl: string } | void> => {
+  try {
+    const data = await getTransferStatusData(Environment.TESTNET, txHash);
+    return data as { status: string; explorerUrl: string };
+  } catch (e) {
+    console.log("error:", e);
+  }
+};
+
+  let dataResponse: undefined | { status: string; explorerUrl: string };
+
+  const id = setInterval(() => {
+    getStatus(response.hash)
+      .then((data) => {
+        if (data) {
+          dataResponse = data;
+          console.log("Status of the transfer", data.status);
+        }
+      })
+      .catch((e) => {
+        console.log("error:", e);
+        console.log("Transfer still not indexed, retrying...");
+      });
+
+    if (dataResponse && dataResponse.status === "executed") {
+      console.log("Transfer executed successfully");
+      clearInterval(id);
+      process.exit(0);
+    }
+  }, 5000);
+}
 ```
 
 - Builds the final `transfer` transaction and sends it using the Ethereum wallet.

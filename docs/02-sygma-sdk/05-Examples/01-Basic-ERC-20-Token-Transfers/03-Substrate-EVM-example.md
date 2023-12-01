@@ -7,7 +7,7 @@ sidebar_position: 3
 draft: false
 ---
 
-### EVM-to-Substrate Token Transfer Example
+### EVM-to-Substrate token transfer example
 
 In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 0.5 Goerli Phala `gPHA` tokens. The transfer will be initiated on the Substrate-side via the Rococo-Phala testnet and received on the EVM-side via the Goerli Ethereum testnet.
 
@@ -25,7 +25,7 @@ Before running the script, ensure that you have the following:
 We make use of the dotenv module to manage Substrate's private mnemonics with environment variables. Please note that accidentally committing a .env file containing private mnemonics to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
 :::
 
-### Getting Started
+### Getting started
 
 1. Clone the repository 
 
@@ -80,7 +80,7 @@ yarn run transfer
 
 The example will use `@polkadot/keyring` in conjunction with the sygma-sdk to create a transfer from Rococo-Phala to Goerli with the `PHA` token. It will be received on Goerli as a `gPHA` token.
 
-### Script Functionality
+### Script functionality
 
 This example script performs the following steps:
 
@@ -125,6 +125,45 @@ const substrateTransfer = async (): Promise<void> => {
   await assetTransfer.init(api, Environment.TESTNET);
   ...
 }
+```
+
+- Invokes the `getTransferStatusData` and `getStatus` functions by taking the transaction hash as an input to periodically check the status of the cross-chain transaction.
+
+```ts
+const getStatus = async (
+  txHash: string
+): Promise<{ status: string; explorerUrl: string } | void> => {
+  try {
+    const data = await getTransferStatusData(Environment.TESTNET, txHash);
+
+    return data as { status: string; explorerUrl: string };
+  } catch (e) {
+    console.log("error: ", e);
+  }
+};
+
+  let dataResponse: undefined | { status: string; explorerUrl: string };
+
+    const id = setInterval(() => {
+      getStatus(status.asInBlock.toString())
+        .then((data) => {
+          if (data) {
+            dataResponse = data;
+            console.log(data);
+          }
+        })
+        .catch(() => {
+          console.log("Transfer still not indexed, retrying...");
+        });
+    }, 5000);
+
+    if (dataResponse && dataResponse.status === "executed") {
+      console.log("Transfer executed successfully");
+      clearInterval(id);
+      process.exit(0);
+    }
+  });
+};
 ```
 
 - Constructs a transfer object that calculates the fee, then builds, signs, and sends the transaction.
