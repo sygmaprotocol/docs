@@ -4,7 +4,6 @@ id: architecture-percentage
 title: Percentage-based Fee Strategy
 description: The following section details how percentage-based fee strategies work in Sygma.
 sidebar_position: 4
-draft: true
 ---
 
 :::info
@@ -13,7 +12,7 @@ The following section details how percentage-based fee strategies work in Sygma.
 
 The percentage-based fee strategy calculates a fee amount using basis points (BPS) based on the amount of tokens being transferred. Fees are collected in the token that is being transferred. In this sense, this strategy is only appropriate for fungible token routes. 
 
-To set fees as 1 BPS, the value 100000 would be passed in to account for precision loss on Solidity. Upper and/or lower bounds can also be set. For example, if the calculated fee is less than the lower bound, the lower bound token amount will be charged. If the calculated fee is greater than the upper bound, the upper bound token amount will be charged. If no bounds are set, the BPS value will be charged regardless of the fee calculation amount. 
+To set fees as 1 BPS, the value 10000 would be passed in to account for precision loss on Solidity. Upper and/or lower bounds can also be set. For example, if the calculated fee is less than the lower bound, the lower bound token amount will be charged. If the calculated fee is greater than the upper bound, the upper bound token amount will be charged. If no bounds are set, the BPS value will be charged regardless of the fee calculation amount. 
 
 ![](../../../static/assets/percentage-formula-general.png)
 
