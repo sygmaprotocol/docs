@@ -7,13 +7,11 @@ sidebar_position: 1
 draft: false
 ---
 
-:::info 
-In the following example, we will use the `TESTNET` environment to pass a generic message from Ethereum Sepolia to Ethereum Goerli using a simple storage contract. Specifically, the `deposit` method will be called on Sepolia, passing the details of the function to be called (the `store` function, or function signature `0xa271ced2`) on a smart contract deployed on Goerli "[0xdFA5621F95675D37248bAc9e536Aab4D86766663](https://goerli.etherscan.io/address/0xdFA5621F95675D37248bAc9e536Aab4D86766663)". The method will store the current UNIX timestamp in the destination chain and can be read by calling the `retrieve` function by querying the depositor address (derived from the private key).
-:::
-
 ### GMP Example With A Simple Storage Contract
 
-This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of bridges, fee handlers, and relayers. The script showcases a GMP example between two EVM networks using the Sygma SDK. The complete example can be found in this [repo](
+In the following example, we will use the `TESTNET` environment to pass a generic message from Ethereum Sepolia to Ethereum Goerli using a simple storage contract. Specifically, the `deposit` method will be called on Sepolia, passing the details of the function to be called (the `store` function, or function signature `0xa271ced2`) on a smart contract deployed on Goerli "[0xdFA5621F95675D37248bAc9e536Aab4D86766663](https://goerli.etherscan.io/address/0xdFA5621F95675D37248bAc9e536Aab4D86766663)". The method will encode the current UNIX timestamp as the payload to be passed and stored in the destination chain contract. The data can be read by calling the `retrieve` function on the destination chain contract by querying the depositor address derived from the private key.
+
+This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of relayers and bridge and handler contracts. The complete example can be found in this [repo](
 https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/evm-to-evm-generic-mesage-passing).
 
 ### Prerequisites
