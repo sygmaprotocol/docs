@@ -20,7 +20,8 @@ Before running the script, ensure that you have the following:
 
 - Node.js installed on your machine
 - Yarn (version 3.4.1 or higher)
-- A wallet funded with `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
+- A development wallet funded with `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
+- The [exported private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key) of your development wallet
 - [Goerli ETH](https://goerlifaucet.com/) for gas 
 
 :::danger

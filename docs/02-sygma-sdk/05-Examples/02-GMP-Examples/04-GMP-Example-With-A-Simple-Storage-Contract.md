@@ -20,7 +20,8 @@ Before running the script, ensure that you have the following:
 
 - Node.js installed on your machine
 - Yarn (version 3.4.1 or higher)
-- [Sepolia ETH](https://sepolia-faucet.pk910.de/) for gas 
+- A development wallet funded with [Sepolia ETH](https://sepolia-faucet.pk910.de/) for gas 
+- The [exported private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key) of your development wallet
 
 :::danger
 We make use of the dotenv module to manage exported private keys with environment variables. Please note that accidentally committing a .env file containing private keys to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
