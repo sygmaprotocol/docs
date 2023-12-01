@@ -25,10 +25,10 @@ Each resource is assigned a **fee strategy** for every potential destination net
 
 The Sygma protocol allows for two fee strategies, implemented via **fee handlers** (contracts in EVM, pallets in Substrate):
 - [**Fixed fee strategy**](02-Fixed-Fee.md)
-- [**Dynamic fee strategy**](03-dynamic-fee.md)
+- [**Percentage-based fee strategy**](04-Percentage-Based-Fee.md)
 
 ![](../../../static/assets/fee-router-general.png)
 
 ### Fee Collection
 
-Fees are usually collected in the source (i.e. native) token, but can be collected in any token provided a [dynamic fee strategy](/docs/03-architecture/03-Fees/03-dynamic-fee.md) is selected. If you are interested in a custom fee setup, please contact us on [Discord](https://discord.gg/Qdf6GyNB5J) or fill out [this form](https://share.hsforms.com/1K4-T_yaKSp6F06FGk4wsSgnmy2x).
+Fees are usually collected in the source (i.e. native) token, but can be collected in any token provided a [percentage-based fee strategy](/docs/03-architecture/03-Fees/04-percentage-based-fee.md) is selected. If you are interested in a custom fee setup, please contact us on [Discord](https://discord.gg/Qdf6GyNB5J) or fill out [this form](https://share.hsforms.com/1K4-T_yaKSp6F06FGk4wsSgnmy2x).
