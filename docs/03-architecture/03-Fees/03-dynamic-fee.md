@@ -4,6 +4,7 @@ id: architecture-dynamic
 title: Dynamic Fee Strategy
 description: The following section details how dynamic fee strategies work in Sygma.
 sidebar_position: 3
+draft: true
 ---
 
 :::info
