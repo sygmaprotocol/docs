@@ -1,5 +1,6 @@
 ---
 description: The following details how to add Devnet (custom) tokens to MetaMask.
+draft: true
 ---
 
 # Adding Tokens To MetaMask

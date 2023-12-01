@@ -2,6 +2,7 @@
 title: Devnet
 id: devnet-index
 description: The following details a list of resources to support the Devnet environment.
+draft: true
 ---
 
 :::info
