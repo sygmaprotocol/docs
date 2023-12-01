@@ -1,5 +1,5 @@
 ---
-slug: /architecture/Fee-intro
+slug: /architecture/fees/Fee-intro
 id: architecture-Fee-intro
 title: Introduction To Fees
 description: The following details how fees are handled by Sygma.

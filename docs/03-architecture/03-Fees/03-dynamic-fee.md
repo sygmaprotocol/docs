@@ -1,5 +1,5 @@
 ---
-slug: /architecture/dynamic
+slug: /architecture/fees/dynamic
 id: architecture-dynamic
 title: Dynamic Fee Strategy
 description: The following section details how dynamic fee strategies work in Sygma.

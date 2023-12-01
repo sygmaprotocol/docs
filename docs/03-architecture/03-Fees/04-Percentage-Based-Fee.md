@@ -1,5 +1,5 @@
 ---
-slug: /architecture/percentage
+slug: /architecture/fees/percentage
 id: architecture-percentage
 title: Percentage-based Fee Strategy
 description: The following section details how percentage-based fee strategies work in Sygma.
