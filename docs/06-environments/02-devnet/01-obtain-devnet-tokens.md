@@ -1,5 +1,6 @@
 ---
 description: The following details how to obtain Devnet tokens from the Faucet UI.
+draft: true
 ---
 
 # Obtain Devnet Tokens

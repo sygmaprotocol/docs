@@ -16,6 +16,5 @@ Sygma supports EVM and Substrate-based networks natively. The currently supporte
 - [Testnet Network Support](https://docs.buildwithsygma.com/environments/testnet/#contract-addresses)
 - [Mainnet Network Support](https://docs.buildwithsygma.com/environments/mainnet#contract-addresses)
 
-
-If there is a network that is not yet supported and you would like Sygma to add support, please contact us at [requests@buildwithsygma.com](mailto:requests@buildwithsygma.com).
+If there is a network that is not yet supported and you would like Sygma to add support, please contact us on [Discord](https://discord.gg/Qdf6GyNB5J) or fill out [this form](https://share.hsforms.com/1K4-T_yaKSp6F06FGk4wsSgnmy2x).
 ​

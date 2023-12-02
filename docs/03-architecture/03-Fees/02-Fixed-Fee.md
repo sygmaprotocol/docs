@@ -1,5 +1,5 @@
 ---
-slug: /architecture/fixed
+slug: /architecture/fees/fixed
 id: architecture-fixed
 title: Fixed Fee Strategy
 description: The following section details how fixed fee strategies work in Sygma.

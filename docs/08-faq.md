@@ -26,13 +26,13 @@ description: The following section contains frequently asked questions about Syg
 5. **Is my ecosystem/blockchain/token supported?**  
   Sygma is currently built to support EVM and Substrate-based chains. The [Solidity contracts](https://github.com/sygmaprotocol/sygma-solidity) and [custom-built pallets](https://github.com/sygmaprotocol/sygma-substrate-pallets) can be adapted to most ecosystems built in these environments, whether that's mainnet Ethereum, an EVM L2, a Polkadot/Kusama parachain, or a standalone Substrate chain.
 
-  If your ecosystem/blockchain/token is not supported (e.g. Tendermint), support could be provided in the near-future. It depends on engineering resources and network demand. If you would like to move ahead with an engineering/product consultation, please reach out to [requests@buildwithsygma.com](mailto:requests@buildwithsygma.com).
+  If your ecosystem/blockchain/token is not supported (e.g. Tendermint), support could be provided in the near-future. It depends on engineering resources and network demand. If you would like to move ahead with an engineering/product consultation, please contact Sygma on [Discord](https://discord.gg/Qdf6GyNB5J) or fill out [this form](https://share.hsforms.com/1K4-T_yaKSp6F06FGk4wsSgnmy2x).
 
 6. **Can I add my own networks/tokens?**  
-  The addition of new networks and tokens to the Sygma protocol is currently a permissioned process that must go through [requests@buildwithsygma.com](mailto:requests@buildwithsygma.com). Engineering is already well underway to enable permissionless additions of networks and tokens by the end of 2023.
+  The addition of new networks and tokens to the Sygma protocol is currently a permissioned process that must go through the Sygma team. Engineering is already well underway to enable permissionless additions of networks and tokens by the end of 2023. For further inquiries, please contact Sygma on [Discord](https://discord.gg/Qdf6GyNB5J) or fill out [this form](https://share.hsforms.com/1K4-T_yaKSp6F06FGk4wsSgnmy2x).
 
 7. **Can you build an integration for my project?**  
-  It depends. Please take a look at the documentation for [Adding A New Token](04-ecosystem/01-new-token.md) and [Adding A New Network](04-ecosystem/02-new-network.md) and reach out to [requests@buildwithsygma.com](mailto:requests@buildwithsygma.com) when you or your team is ready.
+  It depends. Please take a look at the documentation for [Adding A New Token](04-ecosystem/01-new-token.md) and [Adding A New Network](04-ecosystem/02-new-network.md). When you are ready, please contact Sygma on [Discord](https://discord.gg/Qdf6GyNB5J) or fill out [this form](https://share.hsforms.com/1K4-T_yaKSp6F06FGk4wsSgnmy2x).
 
 <!-- 9. Is it expensive to bridge with Sygma?
 WIP-->

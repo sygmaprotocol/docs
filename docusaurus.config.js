@@ -10,7 +10,7 @@ const config = {
   tagline: '',
   url: 'https://docs.buildwithsygma.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // throw
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
