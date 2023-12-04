@@ -24,6 +24,7 @@ Before running the script, ensure that you have the following:
 - The [exported private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key) of your development wallet
 - A Substrate wallet to receive tokens into (the example presets an existing wallet address already)
 - [Goerli ETH](https://goerlifaucet.com/) for gas 
+- An Ethereum [provider](https://www.infura.io/) (in case the hardcoded RPC within the script does not work)
 
 :::danger
 We make use of the dotenv module to manage exported private keys with environment variables. Please note that accidentally committing a .env file containing private keys to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
@@ -123,7 +124,7 @@ export async function erc20Transfer(): Promise<void> {
 
 ```ts
   const provider = new providers.JsonRpcProvider(
-    "https://rpc.goerli.eth.gateway.fm/"
+    "https://rpc.goerli.eth.gateway.fm/" // use your own provider in case this does not work
   );
   const wallet = new Wallet(
     privateKey as string,
