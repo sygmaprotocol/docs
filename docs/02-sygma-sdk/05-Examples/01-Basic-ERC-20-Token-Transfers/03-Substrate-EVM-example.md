@@ -17,7 +17,7 @@ This is an example script that demonstrates the functionality of the Sygma SDK a
 
 Before running the script, ensure that you have the following:
 
-- Node.js installed on your machine
+- Node.js v18
 - Yarn (version 3.4.1 or higher)
 - A Substrate development wallet funded with `PHA` tokens; you may wish to run the [EVM-to-Substrate example](02-EVM-Substrate-example.md) first to preload `PHA` tokens into a Substrate wallet
 - The 12-word mnemonic for your Substrate development wallet
