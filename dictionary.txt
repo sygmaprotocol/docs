@@ -340,3 +340,5 @@ SDK-based
 preload
 UI.
 MetaMask.
+Gnosis-
+xDAI
