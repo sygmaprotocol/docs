@@ -20,7 +20,7 @@ description: The following section contains frequently asked questions about Syg
   
   Sygma is eager for developers to jump into the [GitHub](https://github.com/sygmaprotocol) and help test the code and submit issues. 
   
-  Sygma invites engaged participants with high initiative to begin making smaller contributions, whether that's to the [Discord](https://discord.gg/Qdf6GyNB5J), to the [documentation](https://docs.buildwithsygma.com) or by creating content. Make sure to check out the [Contribute](09-contribute.md) page for contributions related to Sygma's documentation.
+  Sygma invites engaged participants with high initiative to begin making smaller contributions, whether that's to the [Discord](https://discord.gg/Qdf6GyNB5J), to the [documentation](https://docs.buildwithsygma.com) or by creating content. Make sure to check out the [Contribute](10-contribute.md) page for contributions related to Sygma's documentation.
 
 ### Support
 5. **Is my ecosystem/blockchain/token supported?**  
