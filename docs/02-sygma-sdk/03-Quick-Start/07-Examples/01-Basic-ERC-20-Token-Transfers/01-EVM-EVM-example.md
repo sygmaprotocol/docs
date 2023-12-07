@@ -1,5 +1,5 @@
 ---
-slug: /sdk/examples/erc20/evm-example
+slug: /sdk/quickstart/examples/erc20/evm-example
 id:  examples-erc20-evm-example
 title: EVM To EVM Token Transfer
 description: Section that describes how to perform an EVM to EVM token transfer.

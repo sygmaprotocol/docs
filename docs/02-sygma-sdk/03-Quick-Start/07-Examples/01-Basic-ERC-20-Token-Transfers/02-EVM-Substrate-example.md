@@ -1,5 +1,5 @@
 ---
-slug: /sdk/examples/erc20/evm-substrate-example
+slug: /sdk/quickstart/examples/erc20/evm-substrate-example
 id:  examples-erc20-evm-substrate-example
 title: EVM To Substrate Token Transfer
 description: Section that describes how to perform an EVM to Substrate token transfer.
