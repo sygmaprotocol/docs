@@ -21,6 +21,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | Cronos           | 4         | 25       |
 | Base             | 5         | 8453     |
 | Gnosis           | 6         | 100      |
+| Polygon          | 7         | 137      |
 
 ### EVM Contract Addresses
 
@@ -70,9 +71,19 @@ The following details a list of resources to support the Mainnet environment. EV
 | ---------------------------------- | ------------------------------------------ |
 | Bridge                             | 0x5FdC38c9b32909CcfF4629ffBFe5394852584C59 |
 | Fee Router                         | 0xbb2bf03eD554571EFe9BEE2b46dFdc7e44c157e4 |
-| Fixed Fee Handler (Gnosis->ETH )   | 0xDAC861f54368cD917f6dbEb93FF90727B2c37cB2 |
+| Fixed Fee Handler (Gnosis->ETH)    | 0xDAC861f54368cD917f6dbEb93FF90727B2c37cB2 |
 | ERC-20 Handler                     | 0x89b835B4b01E29C9464860189a394297913fD65B |
 | Permissionless Generic Handler     | 0xde57DEfEe28F0F59C5Ad3B7116B3E98d257f6f27 |
+
+**Polygon (Domain ID: 7)**
+
+| Contract                           | Address                                    |
+| ---------------------------------- | ------------------------------------------ |
+| Bridge                             | 0x73aB792E6AdF236879a0A2AB1597fa221E736a0d |
+| Fee Router                         | 0x11947a868b304898e51E50371b84a34D278026e5 |
+| Fixed Fee Handler (All routes)     | 0x823055b65894203e41EA35BaAC0E1862a9C07E6D |
+| ERC-20 Handler                     | 0x3eE20f17BC7D07bf3e06a7342C13A29823C22Ad5 |
+| Permissionless Generic Handler     | 0x96eb8544Dd96aF28EeBa9b86a1De6357DAb519F6 |
 
 ### Registered Resources
 
@@ -112,6 +123,10 @@ The following details a list of resources to support the Mainnet environment. EV
 | Base                | Ethereum                 | GMP      | 0.007 ETH          | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Base                | Cronos                   | GMP      | 0.0004 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Gnosis              | Ethereum                 | GMP      | 15 xDAI            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Polygon             | Ethereum                 | GMP      | 20 MATIC           | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Polygon             | Base                     | GMP      | 2 MATIC            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Polygon             | Cronos                   | GMP      | 1 MATIC            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Polygon             | Gnosis                   | GMP      | 1 MATIC            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 
 
 ## Sygma Explorer
