@@ -3,15 +3,20 @@ title: Mainnet
 description: The following details a list of resources to support the Mainnet environment.
 ---
 
-:::info
-The following details a list of resources to support the Mainnet environment. EVM and Substrate resources are listed in separate sections below.
-:::
-
 :::tip Status
 **🟢 Active**
 :::
 
-## Supported Networks
+The following section details Sygma's mainnet deployment, including the protocol's:
+- [Supported networks](#supported-networks)
+- [EVM contract addresses](#evm-contract-addresses)
+- [Registered resources](#registered-resources)
+- [Registered routes \& associated fee schemes](#registered-routes--associated-fee-schemes)
+- [Sygma Explorer](#sygma-explorer)
+
+All of the below values will be important if you are building with the [Sygma SDK](../02-sygma-sdk/01-sdkintroduction.md).
+
+## Supported networks
 
 | Network Name     | Domain ID | Chain ID |
 | ---------------- | --------- | -------- |
@@ -23,9 +28,9 @@ The following details a list of resources to support the Mainnet environment. EV
 | Gnosis           | 6         | 100      |
 | Polygon          | 7         | 137      |
 
-### EVM Contract Addresses
+## EVM contract addresses
 
-**Ethereum Mainnet (Domain ID: 1)**
+**Ethereum mainnet (Domain ID: 1)**
 
 | Contract                           | Address                                    |
 | ---------------------------------- | ------------------------------------------ |
@@ -77,7 +82,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | ERC-20 Handler                     | 0x3eE20f17BC7D07bf3e06a7342C13A29823C22Ad5 |
 | Permissionless Generic Handler     | 0x96eb8544Dd96aF28EeBa9b86a1De6357DAb519F6 |
 
-### Registered Resources
+## Registered resources
 
 **Phala**
 
@@ -91,7 +96,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000001 |
 | Ethereum Mainnet Contract Address | 0x6c5bA91642F10282b576d91922Ae6448C9d52f4E                         |
 
-**Permissionless Generic Message**
+**Permissionless generic message**
 
 | Details            | Information                                                        |
 | ------------------ | ------------------------------------------------------------------ |
@@ -100,7 +105,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | Bridging Strategy  | GMP                                                                |
 | Resource ID        | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 
-### Registered routes
+## Registered routes & associated fee schemes
 
 | Source Network Name | Destination Network Name | Resource | Fee Percent/Amount | Resource ID                                                        |
 | ------------------- | ------------------------ | -------- | ------------------ | ------------------------------------------------------------------ |
@@ -114,6 +119,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | Cronos              | Base                     | GMP      | 25 CRO             | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Base                | Ethereum                 | GMP      | 0.007 ETH          | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Base                | Cronos                   | GMP      | 0.0004 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Ethereum            | Gnosis                   | GMP      | 0.0004 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Gnosis              | Ethereum                 | GMP      | 15 xDAI            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Polygon             | Ethereum                 | GMP      | 20 MATIC           | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Polygon             | Base                     | GMP      | 2 MATIC            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
