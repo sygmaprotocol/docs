@@ -30,10 +30,8 @@ The following details a list of resources to support the Mainnet environment. EV
 | Contract                           | Address                                    |
 | ---------------------------------- | ------------------------------------------ |
 | Bridge                             | 0x4D878E8Fb90178588Cda4cf1DCcdC9a6d2757089 |
-| Fee Router                         | 0xC47468aeae431f5D0B7DA50F9f5D8a6c0eca4789 |
-| Fixed Fee Handler (ETH->Phala)     | 0xe43F8245249d7fAF46408723Ab36D071dD85D7BB |
-| Fixed Fee Handler (ETH->Cronos)    | 0x0018e0b9062f1A40c1db29652A271cB94354d572 |
-| Fixed Fee Handler (ETH->Base)      | 0xcEAB549fdf0Fc263a8DE594e72d9FE38147aFca3 |
+| Fee Router                         | 0x1d34808907607FA82Fa1b51F5fBA5Ff5a3Fa90cF |
+| Fixed Fee Handler (All routes)     | 0x9f9778DA7c1D0AbE148314d6C1EA6E0A93C151C7 |
 | ERC-20 Handler                     | 0xC832588193cd5ED2185daDA4A531e0B26eC5B830 |
 | Permissionless Generic Handler     | 0x31282123E7bcd947e2c1Bc364d564839574fAdCD |
 
