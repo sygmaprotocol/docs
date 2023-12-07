@@ -20,6 +20,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | Phala            | 3         | 5233     |
 | Cronos           | 4         | 25       |
 | Base             | 5         | 8453     |
+| Gnosis           | 6         | 100      |
 
 ### EVM Contract Addresses
 
@@ -63,6 +64,16 @@ The following details a list of resources to support the Mainnet environment. EV
 | ERC-20 Handler                     | 0xe43F8245249d7fAF46408723Ab36D071dD85D7BB |
 | Permissionless Generic Handler     | 0x2e1eE4153ad2F763ab8C612415AcF0DEe02Bc79B |
 
+**Gnosis (Domain ID: 6)**
+
+| Contract                           | Address                                    |
+| ---------------------------------- | ------------------------------------------ |
+| Bridge                             | 0x5FdC38c9b32909CcfF4629ffBFe5394852584C59 |
+| Fee Router                         | 0xbb2bf03eD554571EFe9BEE2b46dFdc7e44c157e4 |
+| Fixed Fee Handler (Gnosis->ETH )   | 0xDAC861f54368cD917f6dbEb93FF90727B2c37cB2 |
+| ERC-20 Handler                     | 0x89b835B4b01E29C9464860189a394297913fD65B |
+| Permissionless Generic Handler     | 0xde57DEfEe28F0F59C5Ad3B7116B3E98d257f6f27 |
+
 ### Registered Resources
 
 **Phala**
@@ -100,6 +111,7 @@ The following details a list of resources to support the Mainnet environment. EV
 | Cronos              | Base                     | GMP      | 25 CRO             | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Base                | Ethereum                 | GMP      | 0.007 ETH          | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Base                | Cronos                   | GMP      | 0.0004 ETH         | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Gnosis              | Ethereum                 | GMP      | 15 xDAI            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 
 
 ## Sygma Explorer
