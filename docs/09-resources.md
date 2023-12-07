@@ -17,7 +17,8 @@ The following page lists out additional resources that may be of assistance in y
 #### Workshop 2: Creating Cross-chain Fungible Transfers And Generic Message Passing With The Sygma SDK  
 <iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/F_PVqzQlBBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### [Cross-chain Conversations](https://www.youtube.com/playlist?list=PLikKftZCkO6BmRaG_JJ4fwUgwp_aatD98)
+#### Cross-chain Conversations
+<iframe width="800" height="450" src="https://www.youtube.com/embed/videoseries?si=5uQ9nSQFJbVodVCT&amp;list=PLikKftZCkO6BmRaG_JJ4fwUgwp_aatD98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Official Resources
 
