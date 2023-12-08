@@ -1,6 +1,6 @@
 ---
-slug: /readme/architecture/security/peerdisc
-id: security-peerdisc
+slug: /readme/architecture/Security/peerdisc
+id: Security-peerdisc
 title: Peer Discovery
 description: The following details the peer discovery process for all relayers.
 sidebar_position: 2

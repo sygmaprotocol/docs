@@ -11,7 +11,7 @@ The following section details Sygma's mainnet deployment, including the protocol
 - [Supported networks](#supported-networks)
 - [EVM contract addresses](#evm-contract-addresses)
 - [Registered resources](#registered-resources)
-- [Registered routes \& associated fee schemes](#registered-routes--associated-fee-schemes)
+- [Registered routes and associated fee schemes](#registered-routes-and-associated-fee-schemes)
 - [Sygma Explorer](#sygma-explorer)
 
 Many of the values found below will be important if you are a developer working with the [Sygma SDK](../02-sygma-sdk/01-sdkintroduction.md).
@@ -105,7 +105,7 @@ Many of the values found below will be important if you are a developer working 
 | Bridging Strategy  | GMP                                                                |
 | Resource ID        | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 
-## Registered routes & associated fee schemes
+## Registered routes and associated fee schemes
 
 | Source Network Name | Destination Network Name | Resource | Fee Percent/Amount | Resource ID                                                        |
 | ------------------- | ------------------------ | -------- | ------------------ | ------------------------------------------------------------------ |
