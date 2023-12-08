@@ -4,31 +4,30 @@ id: testnet-index
 description: The following details a list of resources that support the Testnet environment.
 ---
 
-:::info
-The following details a list of resources that support the Testnet environment. EVM and Substrate resources are listed in separate sections below.
-:::
-
-:::caution Network Downtime
-**Rhala (Substrate) is currently inactive on the Testnet.** All routes to and from this network are unavailable until further notice.
-:::
-
 :::tip Status
 **🟢 Active**
 :::
 
-## Sygma Transfer UI
+The following section details Sygma's testnet deployment, including the protocol's:
+- [Testnet transfer UI](#testnet-transfer-ui)
+- [Testnet faucet](#testnet-faucet)
+- [Supported networks](#supported-networks)
+- [EVM contract addresses](#evm-contract-addresses)
+- [Registered resources](#registered-resources)
+- [Fee schemes](#fee-schemes)
+- [Sygma Explorer](#sygma-explorer)
+
+Many of the values found below will be important if you are a developer working with the [Sygma SDK](../../02-sygma-sdk/01-sdkintroduction.md)
+
+## Testnet transfer UI
 
 The [transfer UI](https://transfer-ui.test.buildwithsygma.com) provides users with a visual interface to connect their wallets and bridge tokens.
 
-## Faucet UI
+## Testnet faucet
 
 The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with a visual interface to mint tokens.
 
-## Sygma Explorer
-
-The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a cross-chain block explorer that scans for testnet transactions through the Sygma protocol. 
-
-## Supported Networks
+## Supported networks
 
 | Network Name   | Framework | Domain ID |
 | -------------- | --------- | --------- |
@@ -40,7 +39,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Holesky        | EVM       | 6         |
 | Mumbai         | EVM       | 7         |
 
-### EVM Contract Addresses
+## EVM contract addresses
 
 **Goerli (Domain ID: 1)**
 
@@ -132,7 +131,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Permissionless Generic Handler    | 0x2f2a45CF84D67F22f4925C70612B2506De7a4efB |
 | Storage (GMP testing contract)    | 0x6f250a12f9a2d6f72b6e8ef5b93484da04cdb69e |
 
-### Registered Resources
+## Registered resources
 
 **ERC20LRTest**
 
@@ -163,7 +162,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Goerli Contract Address  | 0xB376b0Ee6d8202721838e76376e81eEc0e2FE864                         |
 | Sepolia Contract Address | N/A                                                                |
 
-**Permissionless Generic Message**
+**Permissionless generic message**
 
 | Details                  | Information                                                        |
 | ------------------------ | ------------------------------------------------------------------ |
@@ -188,7 +187,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Goerli Contract Address  | 0xc00621087a20484DFB0F892ed1cE37fC2ABf72c8                         |
 | Sepolia Contract Address | 0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36                         |
 
-### Fee Schemes
+## Fee schemes
 
 | Network Name                    | Handler Address                            | Fee Type    | Fee Percent/Amount | Gas Amount |
 | --------------------------------| ------------------------------------------ | ----------- | ------------------ | ---------- |
@@ -209,3 +208,7 @@ The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a c
 | Mumbai Dynamic                  | N/A                                        | Fee oracle  | N/A                |            |
 | Mumbai Fixed                    | 0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD | Fixed fee   | 0.001 ETH          |            |
 | Mumbai Percentage-based         | 0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4 | Percentage  | 1 BPS (or 0.01%)   |            |
+
+## Sygma Explorer
+
+The [explorer UI](https://scan.test.buildwithsygma.com/) provides users with a cross-chain block explorer that scans for testnet transactions through the Sygma protocol. 

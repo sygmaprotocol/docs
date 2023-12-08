@@ -1,5 +1,5 @@
 ---
-slug: /sdk/examples/erc20/substrate-evm-example
+slug: /sdk/quickstart/examples/erc20/substrate-evm-example
 id:  examples-erc20-substrate-evm-example
 title: Substrate To EVM Token Transfer
 description: Section that describes how to perform a Substrate to EVM token transfer.
@@ -17,11 +17,12 @@ This is an example script that demonstrates the functionality of the Sygma SDK a
 
 Before running the script, ensure that you have the following:
 
-- Node.js installed on your machine
+- Node.js v18
 - Yarn (version 3.4.1 or higher)
 - A Substrate development wallet funded with `PHA` tokens; you may wish to run the [EVM-to-Substrate example](02-EVM-Substrate-example.md) first to preload `PHA` tokens into a Substrate wallet
 - The 12-word mnemonic for your Substrate development wallet
 - An Ethereum wallet to receive tokens into (the example presets an existing wallet address already)
+- A Substrate provider (in case the hardcoded WSS within the script does not work)
 
 :::danger
 We make use of the dotenv module to manage Substrate's private mnemonics with environment variables. Please note that accidentally committing a .env file containing private mnemonics to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
