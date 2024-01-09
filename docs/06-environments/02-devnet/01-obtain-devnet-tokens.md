@@ -18,5 +18,5 @@ draft: true
 ### Video
 
 <video controls="controls" width="800" height="600" name="Göreli Faucet">
-  <source src={require('/assets/faucet_erc20_goerli.mov').default}/>
+  <source src={require('/assets/faucet_erc20_goerli.webm').default}/>
 </video>
