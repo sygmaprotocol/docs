@@ -86,15 +86,15 @@ Many of the values found below will be important if you are a developer working 
 
 **Phala**
 
-| Property                          | Value                                                                                                                                |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Symbol                            | PHA                                                                                                                                  |
-| Type                              | Fungible                                                                                                                             |
-| Fee strategy                      | Fixed Fee                                                                                                                            |
-| Registered Handler                | ERC20Handler                                                                                                                         |
-| Bridging Strategy                 | Lock/Release                                                                                                                         |
-| Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000001                                                                   |
-| Ethereum Mainnet Contract Address | [0x6c5bA91642F10282b576d91922Ae6448C9d52f4E](https://etherscan.io/address/0x6c5bA91642F10282b576d91922Ae6448C9d52f4E)                |
+| Property                          | Value                                                                                                                 |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Symbol                            | PHA                                                                                                                   |
+| Type                              | Fungible                                                                                                              |
+| Fee strategy                      | Fixed Fee                                                                                                             |
+| Registered Handler                | ERC20Handler                                                                                                          |
+| Bridging Strategy                 | Lock/Release                                                                                                          |
+| Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000001                                                    |
+| Ethereum Mainnet Contract Address | [0x6c5bA91642F10282b576d91922Ae6448C9d52f4E](https://etherscan.io/address/0x6c5bA91642F10282b576d91922Ae6448C9d52f4E) |
 
 **Permissionless generic message**
 
