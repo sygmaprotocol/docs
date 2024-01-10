@@ -28,6 +28,12 @@ The following page lists out additional resources that may be of assistance in y
 
 #### [Twitter](https://twitter.com/buildwithsygma)
 
+#### [Mainnet Explorer](https://scan.buildwithsygma.com)
+
+#### [Testnet Explorer](https://scan.test.buildwithsygma.com)
+
+#### [Testnet Faucet](https://faucet-ui-stage.buildwithsygma.com/)
+
 ## Community
 
 #### [Discord](https://discord.gg/Qdf6GyNB5Jt)
