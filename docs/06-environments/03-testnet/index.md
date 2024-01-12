@@ -29,15 +29,16 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 
 ## Supported networks
 
-| Network Name   | Framework | Domain ID |
-| -------------- | --------- | --------- |
-| Goerli         | EVM       | 1         |
-| Sepolia        | EVM       | 2         |
-| Rhala          | Substrate | 3         |
-| Base-Goerli    | EVM       | 4         |
-| Cronos-Testnet | EVM       | 5         |
-| Holesky        | EVM       | 6         |
-| Mumbai         | EVM       | 7         |
+| Network Name     | Framework | Domain ID |
+| ---------------- | --------- | --------- |
+| Goerli           | EVM       | 1         |
+| Sepolia          | EVM       | 2         |
+| Rhala            | Substrate | 3         |
+| Base-Goerli      | EVM       | 4         |
+| Cronos-Testnet   | EVM       | 5         |
+| Holesky          | EVM       | 6         |
+| Mumbai           | EVM       | 7         |
+| Arbitrum-sepolia | EVM       | 8         |
 
 ## EVM contract addresses
 
@@ -131,6 +132,21 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Permissionless Generic Handler    | 0x2f2a45CF84D67F22f4925C70612B2506De7a4efB |
 | Storage (GMP testing contract)    | 0x6f250a12f9a2d6f72b6e8ef5b93484da04cdb69e |
 
+**Arbitrum Sepolia (Domain ID: 8)**
+
+| Contract                          | Address                                    |
+| --------------------------------- | ------------------------------------------ |
+| Bridge                            | 0xFB2530Fb3f5801aD35ccd6fdA29715D9330b7F9f |
+| Fee Router                        | 0x723366b1Cfff44ebddCB1E1FE569a439363E3B80 |
+| Fixed Fee Handler                 | 0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78 |
+| Dynamic ERC-20 Fee Handler        |                                            |
+| Dynamic Generic Fee Handler       |                                            |
+| Percentage Fee Handler            | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
+| ERC-20 Handler                    | 0x5AF405550De00b38cAC1ED7276d0A09114831bCB |
+| ERC-721 Handler                   |                                            |
+| Permissionless Generic Handler    | 0x5ffB6Dc54221371CcBDb9850A283488e12aDf97D |
+| Storage (GMP testing contract)    | 0xd2973aca263e088bb3c9c0daf80ae2afebec1386 |
+
 ## Registered resources
 
 **ERC20LRTest**
@@ -208,6 +224,7 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Mumbai Dynamic                  | N/A                                        | Fee oracle  | N/A                |            |
 | Mumbai Fixed                    | 0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD | Fixed fee   | 0.001 ETH          |            |
 | Mumbai Percentage-based         | 0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4 | Percentage  | 1 BPS (or 0.01%)   |            |
+| Arbitrum-Sepolia Fixed          | 0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78 | Fixed fee   | 0.001 ETH          |            |
 
 ## Sygma Explorer
 
