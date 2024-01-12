@@ -38,7 +38,7 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Cronos-Testnet   | EVM       | 5         |
 | Holesky          | EVM       | 6         |
 | Mumbai           | EVM       | 7         |
-| Arbitrum-sepolia | EVM       | 8         |
+| Arbitrum-Sepolia | EVM       | 8         |
 
 ## EVM contract addresses
 
