@@ -1,6 +1,8 @@
 {
     "label": "Sygma SDK",
-    "position": 2
-   
+    "position": 2,
+    "link": {
+      "type": "doc", 
+      "id": "sdk-index" 
+    }
   }
-  
