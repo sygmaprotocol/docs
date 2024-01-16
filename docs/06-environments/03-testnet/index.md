@@ -105,8 +105,6 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 
 **Holesky (Domain ID: 6)**
 
-**Holesky (Domain ID: 6)**
-
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
 | Bridge                            | [0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78](https://holesky.etherscan.io/address/0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78) |
