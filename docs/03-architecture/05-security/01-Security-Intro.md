@@ -1,6 +1,6 @@
 ---
-slug: /readme/architecture/security/intro
-id: security-introduction
+slug: /readme/architecture/Security/intro
+id: Security-introduction
 title: Security
 description: The following details how Sygma addresses security concerns relating to various signature schemes.
 sidebar_position: 1

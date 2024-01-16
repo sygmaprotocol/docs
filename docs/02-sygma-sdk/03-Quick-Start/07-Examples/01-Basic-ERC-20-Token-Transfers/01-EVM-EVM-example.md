@@ -20,10 +20,17 @@ Before running the script, ensure that you have the following:
 
 - Node.js v18
 - Yarn (version 3.4.1 or higher)
-- A development wallet funded with `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
 - The [exported private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key) of your development wallet
 - [Goerli ETH](https://goerlifaucet.com/) for gas 
 - An Ethereum [provider](https://www.infura.io/) (in case the hardcoded RPC within the script does not work)
+- A development wallet funded with `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/) (you can use the UI below; please allow some time for minting as testnet may be congested)
+
+<div style={{ textAlign: 'center' }}>
+    <iframe 
+        src="https://faucet-ui-stage.buildwithsygma.com/" 
+        style={{ width: '50%', height: '500px', margin: 'auto', display: 'block' }}
+    ></iframe>
+</div>
 
 :::danger
 We make use of the dotenv module to manage exported private keys with environment variables. Please note that accidentally committing a .env file containing private keys to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**

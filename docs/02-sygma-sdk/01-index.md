@@ -1,6 +1,6 @@
 ---
-slug: /sdk/introduction
-id: sdk-introduction
+slug: /sdk
+id: sdk-index
 title: Introduction
 description: The following section introduces the Sygma SDK.
 sidebar_position: 1
