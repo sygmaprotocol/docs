@@ -246,7 +246,7 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Mumbai Fixed                    | [0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD](https://mumbai.polygonscan.com/address/0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD)      | Fixed fee  | 0.001 ETH          |            |
 | Mumbai Percentage-based         | [0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4](https://mumbai.polygonscan.com/address/0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4)      | Percentage | 1 BPS (or 0.01%)   |            |
 | Arbitrum-Sepolia Fixed          | [0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78](https://sepolia.arbiscan.io/address/0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78)         | Fixed fee  | 0.001 ETH          |            |
-| Gnosis-Chiado Fixed             | [0x9F5efb442d6F24704dB85569876D9c0CA65aed40](https://gnosis-chiado.blockscout.com/address/0x9F5efb442d6F24704dB85569876D9c0CA65aed40)| Fixed fee  | 0.001 XDAI         |            |
+| Gnosis-Chiado Fixed             | [0x9F5efb442d6F24704dB85569876D9c0CA65aed40](https://gnosis-chiado.blockscout.com/address/0x9F5efb442d6F24704dB85569876D9c0CA65aed40)| Fixed fee  | 0.001 xDAI         |            |
 
 ## Sygma Explorer
 

@@ -354,5 +354,4 @@ sdk-index
 Arbitrum-Sepolia
 Arbitrum
 Gnosis-Chiado
-Gnosis
 Chiado
