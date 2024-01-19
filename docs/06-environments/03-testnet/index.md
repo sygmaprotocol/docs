@@ -127,26 +127,26 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0xFB2530Fb3f5801aD35ccd6fdA29715D9330b7F9f |
-| Fee Router                        | 0x723366b1Cfff44ebddCB1E1FE569a439363E3B80 |
-| Fixed Fee Handler                 | 0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78 |
-| Percentage Fee Handler            | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
-| ERC-20 Handler                    | 0x5AF405550De00b38cAC1ED7276d0A09114831bCB |
-| ERC-721 Handler                   |                                            |
-| Permissionless Generic Handler    | 0x5ffB6Dc54221371CcBDb9850A283488e12aDf97D |
-| Storage (GMP testing contract)    | 0xd2973aca263e088bb3c9c0daf80ae2afebec1386 |
+| Bridge                            | [0xFB2530Fb3f5801aD35ccd6fdA29715D9330b7F9f](https://sepolia.arbiscan.io/address/0xFB2530Fb3f5801aD35ccd6fdA29715D9330b7F9f) |
+| Fee Router                        | [0x723366b1Cfff44ebddCB1E1FE569a439363E3B80](https://sepolia.arbiscan.io/address/0x723366b1Cfff44ebddCB1E1FE569a439363E3B80) |
+| Fixed Fee Handler                 | [0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78](https://sepolia.arbiscan.io/address/0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78) |
+| Percentage Fee Handler            | [0xEeFBd08769Ab1e369a04a17180E91E4549938d4c](https://sepolia.arbiscan.io/address/0xEeFBd08769Ab1e369a04a17180E91E4549938d4c) |
+| ERC-20 Handler                    | [0x5AF405550De00b38cAC1ED7276d0A09114831bCB](https://sepolia.arbiscan.io/address/0x5AF405550De00b38cAC1ED7276d0A09114831bCB) |
+| ERC-721 Handler                   |  |
+| Permissionless Generic Handler    | [0x5ffB6Dc54221371CcBDb9850A283488e12aDf97D](https://sepolia.arbiscan.io/address/0x5ffB6Dc54221371CcBDb9850A283488e12aDf97D) |
+| Storage (GMP testing contract)    | [0xd2973aca263e088bb3c9c0daf80ae2afebec1386](https://sepolia.arbiscan.io/address/0xd2973aca263e088bb3c9c0daf80ae2afebec1386) |
 
 **Gnosis Chiado (Domain ID: 9)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0x668fad90DeAd0F8f04346A735875b62eF9c65f0B |
-| Fee Router                        | 0x3F22ae1e689561Fb36013e40b464482EFA8ec465 |
-| Fixed Fee Handler                 | 0x9F5efb442d6F24704dB85569876D9c0CA65aed40 |
-| Percentage Fee Handler            | 0x95735f49808502C31375F49583c4DFc26cccF0e5 |
-| ERC-20 Handler                    | 0xb947F89269F0cF54CC721BcDE298a46930f3418b |
-| Permissionless Generic Handler    | 0xe4B86b1B07bBdB0C47940b9B3bD4954A0deAdaBE |
-| Storage (GMP testing contract)    | 0x38ee9a4590035fc9506600f4d5c3f75fc8d15406 |
+| Bridge                            | [0x668fad90DeAd0F8f04346A735875b62eF9c65f0B](https://gnosis-chiado.blockscout.com/address/0x668fad90DeAd0F8f04346A735875b62eF9c65f0B) |
+| Fee Router                        | [0x3F22ae1e689561Fb36013e40b464482EFA8ec465](https://gnosis-chiado.blockscout.com/address/0x3F22ae1e689561Fb36013e40b464482EFA8ec465) |
+| Fixed Fee Handler                 | [0x9F5efb442d6F24704dB85569876D9c0CA65aed40](https://gnosis-chiado.blockscout.com/address/0x9F5efb442d6F24704dB85569876D9c0CA65aed40) |
+| Percentage Fee Handler            | [0x95735f49808502C31375F49583c4DFc26cccF0e5](https://gnosis-chiado.blockscout.com/address/0x95735f49808502C31375F49583c4DFc26cccF0e5) |
+| ERC-20 Handler                    | [0xb947F89269F0cF54CC721BcDE298a46930f3418b](https://gnosis-chiado.blockscout.com/address/0xb947F89269F0cF54CC721BcDE298a46930f3418b) |
+| Permissionless Generic Handler    | [0xe4B86b1B07bBdB0C47940b9B3bD4954A0deAdaBE](https://gnosis-chiado.blockscout.com/address/0xe4B86b1B07bBdB0C47940b9B3bD4954A0deAdaBE) |
+| Storage (GMP testing contract)    | [0x38ee9a4590035fc9506600f4d5c3f75fc8d15406](https://gnosis-chiado.blockscout.com/address/0x38ee9a4590035fc9506600f4d5c3f75fc8d15406) |
 
 ## Registered resources
 
