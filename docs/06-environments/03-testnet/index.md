@@ -51,8 +51,6 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Bridge                            | [0xf9a3618bC7Dd11d715cC45D6038F821F13290d8E](https://goerli.etherscan.io/address/0xf9a3618bC7Dd11d715cC45D6038F821F13290d8E) |
 | Fee Router                        | [0xB6F9764Ee1d6B6b3211785C3EAFBAd3F8358D205](https://goerli.etherscan.io/address/0xB6F9764Ee1d6B6b3211785C3EAFBAd3F8358D205) |
 | Fixed Fee Handler                 | [0x4e4Ef31C98f1C2Cf581098Abc0b2d0e456426aE7](https://goerli.etherscan.io/address/0x4e4Ef31C98f1C2Cf581098Abc0b2d0e456426aE7) |
-| Dynamic ERC-20 Fee Handler        | [0xD9bE8cDA9A46954Ddb2B902da12538B98F1D85d4](https://goerli.etherscan.io/address/0xD9bE8cDA9A46954Ddb2B902da12538B98F1D85d4) |
-| Dynamic Generic Fee Handler       | [0x66eB349d5750957f68Fe43c01f82019fCe278293](https://goerli.etherscan.io/address/0x66eB349d5750957f68Fe43c01f82019fCe278293) |
 | Percentage Fee Handler            | [0x2CCD04E702E8Fa321876268E763a2e579F27188B](https://goerli.etherscan.io/address/0x2CCD04E702E8Fa321876268E763a2e579F27188B) |
 | ERC-20 Handler                    | [0x41c105C70ABF590d67dc8fD7708F9E52BB44CeF2](https://goerli.etherscan.io/address/0x41c105C70ABF590d67dc8fD7708F9E52BB44CeF2) |
 | ERC-721 Handler                   | [0x042291E023a35eB7dFD4c21aD199BF2968bE252D](https://goerli.etherscan.io/address/0x042291E023a35eB7dFD4c21aD199BF2968bE252D) |
@@ -67,8 +65,6 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Bridge                            | [0x4CF326d3817558038D1DEF9e76b727202c3E8492](https://sepolia.etherscan.io/address/0x4CF326d3817558038D1DEF9e76b727202c3E8492) |
 | Fee Router                        | [0x9D45e9bE1E70735Ee78052717107d5dc59C1EaCE](https://sepolia.etherscan.io/address/0x9D45e9bE1E70735Ee78052717107d5dc59C1EaCE) |
 | Fixed Fee Handler                 | [0xDcBA3f691eF406415556C802163C265Db56208cF](https://sepolia.etherscan.io/address/0xDcBA3f691eF406415556C802163C265Db56208cF) |
-| Dynamic ERC-20 Fee Handler        | [0x90bF74Ef3ec6F747B949Cb3fC1c3Aa5cf1014583](https://sepolia.etherscan.io/address/0x90bF74Ef3ec6F747B949Cb3fC1c3Aa5cf1014583) |
-| Dynamic Generic Fee Handler       | [0xF97F5A81c77310C36EF042cf21CE8F43809B4334](https://sepolia.etherscan.io/address/0xF97F5A81c77310C36EF042cf21CE8F43809B4334) |
 | Percentage Fee Handler            | [0x2e77dEa116117eCF44a427064260D16D488ccff2](https://sepolia.etherscan.io/address/0x2e77dEa116117eCF44a427064260D16D488ccff2) |
 | ERC-20 Handler                    | [0xa65387feCb172ffF8A0aabA323A10c63757BBFA6](https://sepolia.etherscan.io/address/0xa65387feCb172ffF8A0aabA323A10c63757BBFA6) |
 | ERC-721 Handler                   | [0x669F52487ffA6f9aBf722082f735537A98Ec0E4b](https://sepolia.etherscan.io/address/0x669F52487ffA6f9aBf722082f735537A98Ec0E4b) |
@@ -82,8 +78,6 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Bridge                            | [0x5e2bed941Ed40251ffb8F7B3B7ab3459464A2aad](https://goerli.basescan.org/address/0x5e2bed941Ed40251ffb8F7B3B7ab3459464A2aad) |
 | Fee Router                        | [0xad3961FF8a445FF9EF4A85f450DcE1690c51Ce98](https://goerli.basescan.org/address/0xad3961FF8a445FF9EF4A85f450DcE1690c51Ce98) |
 | Fixed Fee Handler                 | [0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479](https://goerli.basescan.org/address/0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479) |
-| Dynamic ERC-20 Fee Handler        | [0xF97F5A81c77310C36EF042cf21CE8F43809B4334](https://goerli.basescan.org/address/0xF97F5A81c77310C36EF042cf21CE8F43809B4334) |
-| Dynamic Generic Fee Handler       | [0xA30Ad3e57b33149cd31EE2E9Dd37e327ad1e65C3](https://goerli.basescan.org/address/0xA30Ad3e57b33149cd31EE2E9Dd37e327ad1e65C3) |
 | Percentage Fee Handler            | [0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A](https://goerli.basescan.org/address/0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A) |
 | ERC-20 Handler                    | [0x2C0ae7Fb251ec0772793d480d31B4bc8E3b498a7](https://goerli.basescan.org/address/0x2C0ae7Fb251ec0772793d480d31B4bc8E3b498a7) |
 | ERC-721 Handler                   | [0x38218916813A0f6ca32AcA1324381C0A810b728a](https://goerli.basescan.org/address/0x38218916813A0f6ca32AcA1324381C0A810b728a) |
@@ -97,8 +91,6 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Bridge                            | [0x816bb9E810b6b97840F6818bF21Fa25DD7364132](https://explorer.cronos.org/testnet/address/0x816bb9E810b6b97840F6818bF21Fa25DD7364132) |
 | Fee Router                        | [0x8b8F51bB26Eb521ac33dD6DcAA97f5d052977746](https://explorer.cronos.org/testnet/address/0x8b8F51bB26Eb521ac33dD6DcAA97f5d052977746) |
 | Fixed Fee Handler                 | [0x8eDab7563C618a3F1e5021677640565468C706d8](https://explorer.cronos.org/testnet/address/0x8eDab7563C618a3F1e5021677640565468C706d8) |
-| Dynamic ERC-20 Fee Handler        | [0xa128fAd3Ea89BCdea67053164fC8D10d29f18c81](https://explorer.cronos.org/testnet/address/0xa128fAd3Ea89BCdea67053164fC8D10d29f18c81) |
-| Dynamic Generic Fee Handler       | [0x055CEe6D441f0c913D863776356C12FfA2FCDc47](https://explorer.cronos.org/testnet/address/0x055CEe6D441f0c913D863776356C12FfA2FCDc47) |
 | Percentage Fee Handler            | [0x26545905a3a63B9ffB37926e909a827bDd088512](https://explorer.cronos.org/testnet/address/0x26545905a3a63B9ffB37926e909a827bDd088512) |
 | ERC-20 Handler                    | [0x39D1Aea5F01138940F19A15049E2073D4df1dc9E](https://explorer.cronos.org/testnet/address/0x39D1Aea5F01138940F19A15049E2073D4df1dc9E) |
 | ERC-721 Handler                   | [0x52757D9c1a8f8b496cf1e688bbB8055f9F3DfC8a](https://explorer.cronos.org/testnet/address/0x52757D9c1a8f8b496cf1e688bbB8055f9F3DfC8a) |
@@ -112,8 +104,6 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Bridge                            | [0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78](https://holesky.etherscan.io/address/0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78) |
 | Fee Router                        | [0x5626A5a7b65E3d851c693AC583068e75853fE0C8](https://holesky.etherscan.io/address/0x5626A5a7b65E3d851c693AC583068e75853fE0C8) |
 | Fixed Fee Handler                 | [0xEE7946aE5f7287a39Bc67207868EDD4a95f96795](https://holesky.etherscan.io/address/0xEE7946aE5f7287a39Bc67207868EDD4a95f96795) |
-| Dynamic ERC-20 Fee Handler        |                                                                                                                               |
-| Dynamic Generic Fee Handler       |                                                                                                                               |
 | Percentage Fee Handler            | [0x9535484111383531BB9D6922B309Bf316Cec9A19](https://holesky.etherscan.io/address/0x9535484111383531BB9D6922B309Bf316Cec9A19) |
 | ERC-20 Handler                    | [0xEeFBd08769Ab1e369a04a17180E91E4549938d4c](https://holesky.etherscan.io/address/0xEeFBd08769Ab1e369a04a17180E91E4549938d4c) |
 | ERC-721 Handler                   |                                                                                                                               |
@@ -127,8 +117,6 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Bridge                            | [0xeAEffbadF776Da90D8e0a94D918E1CB83c12242d](https://mumbai.polygonscan.com/address/0xeAEffbadF776Da90D8e0a94D918E1CB83c12242d) |
 | Fee Router                        | [0xa5007DF9379b88d62108b061702c1408459FFF3b](https://mumbai.polygonscan.com/address/0xa5007DF9379b88d62108b061702c1408459FFF3b) |
 | Fixed Fee Handler                 | [0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD](https://mumbai.polygonscan.com/address/0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD) |
-| Dynamic ERC-20 Fee Handler        |                                                                                                                                 |
-| Dynamic Generic Fee Handler       |                                                                                                                                 |
 | Percentage Fee Handler            | [0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4](https://mumbai.polygonscan.com/address/0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4) |
 | ERC-20 Handler                    | [0x49780Df8982ADeC1989c50c3d2A7f96037f0E937](https://mumbai.polygonscan.com/address/0x49780Df8982ADeC1989c50c3d2A7f96037f0E937) |
 | ERC-721 Handler                   |                                                                                                                                 |
@@ -139,28 +127,26 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0xFB2530Fb3f5801aD35ccd6fdA29715D9330b7F9f |
-| Fee Router                        | 0x723366b1Cfff44ebddCB1E1FE569a439363E3B80 |
-| Fixed Fee Handler                 | 0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78 |
-| Dynamic ERC-20 Fee Handler        |                                            |
-| Dynamic Generic Fee Handler       |                                            |
-| Percentage Fee Handler            | 0xEeFBd08769Ab1e369a04a17180E91E4549938d4c |
-| ERC-20 Handler                    | 0x5AF405550De00b38cAC1ED7276d0A09114831bCB |
-| ERC-721 Handler                   |                                            |
-| Permissionless Generic Handler    | 0x5ffB6Dc54221371CcBDb9850A283488e12aDf97D |
-| Storage (GMP testing contract)    | 0xd2973aca263e088bb3c9c0daf80ae2afebec1386 |
+| Bridge                            | [0xFB2530Fb3f5801aD35ccd6fdA29715D9330b7F9f](https://sepolia.arbiscan.io/address/0xFB2530Fb3f5801aD35ccd6fdA29715D9330b7F9f) |
+| Fee Router                        | [0x723366b1Cfff44ebddCB1E1FE569a439363E3B80](https://sepolia.arbiscan.io/address/0x723366b1Cfff44ebddCB1E1FE569a439363E3B80) |
+| Fixed Fee Handler                 | [0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78](https://sepolia.arbiscan.io/address/0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78) |
+| Percentage Fee Handler            | [0xEeFBd08769Ab1e369a04a17180E91E4549938d4c](https://sepolia.arbiscan.io/address/0xEeFBd08769Ab1e369a04a17180E91E4549938d4c) |
+| ERC-20 Handler                    | [0x5AF405550De00b38cAC1ED7276d0A09114831bCB](https://sepolia.arbiscan.io/address/0x5AF405550De00b38cAC1ED7276d0A09114831bCB) |
+| ERC-721 Handler                   |  |
+| Permissionless Generic Handler    | [0x5ffB6Dc54221371CcBDb9850A283488e12aDf97D](https://sepolia.arbiscan.io/address/0x5ffB6Dc54221371CcBDb9850A283488e12aDf97D) |
+| Storage (GMP testing contract)    | [0xd2973aca263e088bb3c9c0daf80ae2afebec1386](https://sepolia.arbiscan.io/address/0xd2973aca263e088bb3c9c0daf80ae2afebec1386) |
 
 **Gnosis Chiado (Domain ID: 9)**
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
-| Bridge                            | 0x668fad90DeAd0F8f04346A735875b62eF9c65f0B |
-| Fee Router                        | 0x3F22ae1e689561Fb36013e40b464482EFA8ec465 |
-| Fixed Fee Handler                 | 0x9F5efb442d6F24704dB85569876D9c0CA65aed40 |
-| Percentage Fee Handler            | 0x95735f49808502C31375F49583c4DFc26cccF0e5 |
-| ERC-20 Handler                    | 0xb947F89269F0cF54CC721BcDE298a46930f3418b |
-| Permissionless Generic Handler    | 0xe4B86b1B07bBdB0C47940b9B3bD4954A0deAdaBE |
-| Storage (GMP testing contract)    | 0x38ee9a4590035fc9506600f4d5c3f75fc8d15406 |
+| Bridge                            | [0x668fad90DeAd0F8f04346A735875b62eF9c65f0B](https://gnosis-chiado.blockscout.com/address/0x668fad90DeAd0F8f04346A735875b62eF9c65f0B) |
+| Fee Router                        | [0x3F22ae1e689561Fb36013e40b464482EFA8ec465](https://gnosis-chiado.blockscout.com/address/0x3F22ae1e689561Fb36013e40b464482EFA8ec465) |
+| Fixed Fee Handler                 | [0x9F5efb442d6F24704dB85569876D9c0CA65aed40](https://gnosis-chiado.blockscout.com/address/0x9F5efb442d6F24704dB85569876D9c0CA65aed40) |
+| Percentage Fee Handler            | [0x95735f49808502C31375F49583c4DFc26cccF0e5](https://gnosis-chiado.blockscout.com/address/0x95735f49808502C31375F49583c4DFc26cccF0e5) |
+| ERC-20 Handler                    | [0xb947F89269F0cF54CC721BcDE298a46930f3418b](https://gnosis-chiado.blockscout.com/address/0xb947F89269F0cF54CC721BcDE298a46930f3418b) |
+| Permissionless Generic Handler    | [0xe4B86b1B07bBdB0C47940b9B3bD4954A0deAdaBE](https://gnosis-chiado.blockscout.com/address/0xe4B86b1B07bBdB0C47940b9B3bD4954A0deAdaBE) |
+| Storage (GMP testing contract)    | [0x38ee9a4590035fc9506600f4d5c3f75fc8d15406](https://gnosis-chiado.blockscout.com/address/0x38ee9a4590035fc9506600f4d5c3f75fc8d15406) |
 
 ## Registered resources
 
@@ -228,21 +214,15 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 
 | Network Name                    | Handler Address                                                                                                                      | Fee Type   | Fee Percent/Amount | Gas Amount |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------------------ | ---------- |
-| Goerli Dynamic                  | [0x0c3d905C909eB5e3243b65b905c96B309266d7BB](https://goerli.etherscan.io/address/0x0c3d905C909eB5e3243b65b905c96B309266d7BB)         | Fee oracle | 3%                 | 100000     |
 | Goerli Fixed                    | N/A                                                                                                                                  | Fixed fee  | 0.001 ETH          |            |
-| Sepolia Dynamic                 | [0x0c3d905C909eB5e3243b65b905c96B309266d7BB](https://sepolia.etherscan.io/address/0x0c3d905C909eB5e3243b65b905c96B309266d7BB)        | Fee oracle | 3%                 | 100000     |
 | Sepolia Fixed                   | N/A                                                                                                                                  | Fixed fee  | 0.001 ETH          |            |
 | Sepolia Percentage-based        | [0x2e77dEa116117eCF44a427064260D16D488ccff2](https://sepolia.etherscan.io/address/0x2e77dEa116117eCF44a427064260D16D488ccff2)        | Percentage | 10 BPS (or 0.1%)   |            |
-| Base-Goerli Dynamic             | N/A                                                                                                                                  | Fee oracle | N/A                |            |
 | Base-Goerli Fixed               | [0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479](https://goerli.basescan.org/address/0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479)         | Fixed fee  | 0.001 ETH          |            |
 | Base-Goerli Percentage-based    | [0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A](https://goerli.basescan.org/address/0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A)         | Percentage | 1 BPS (or 0.01%)   |            |
-| Cronos-Testnet Dynamic          | N/A                                                                                                                                  | Fee oracle | N/A                |            |
 | Cronos-Testnet Fixed            | [0x8eDab7563C618a3F1e5021677640565468C706d8](https://explorer.cronos.org/testnet/address/0x8eDab7563C618a3F1e5021677640565468C706d8) | Fixed fee  | 0.001 ETH          |            |
 | Cronos-Testnet Percentage-based | [0x26545905a3a63B9ffB37926e909a827bDd088512](https://explorer.cronos.org/testnet/address/0x26545905a3a63B9ffB37926e909a827bDd088512) | Percentage | 1 BPS (or 0.01%)   |            |
-| Holesky Dynamic                 | N/A                                                                                                                                  | Fee oracle | N/A                |            |
 | Holesky Fixed                   | [0xEE7946aE5f7287a39Bc67207868EDD4a95f96795](https://holesky.etherscan.io/address/0xEE7946aE5f7287a39Bc67207868EDD4a95f96795)        | Fixed fee  | 0.001 ETH          |            |
 | Holesky Percentage-based        | [0x9535484111383531BB9D6922B309Bf316Cec9A19](https://holesky.etherscan.io/address/0x9535484111383531BB9D6922B309Bf316Cec9A19)        | Percentage | 1 BPS (or 0.01%)   |            |
-| Mumbai Dynamic                  | N/A                                                                                                                                  | Fee oracle | N/A                |            |
 | Mumbai Fixed                    | [0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD](https://mumbai.polygonscan.com/address/0x68812fAA580212a29Fa562ECBFf9C7cBfF1bf5AD)      | Fixed fee  | 0.001 ETH          |            |
 | Mumbai Percentage-based         | [0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4](https://mumbai.polygonscan.com/address/0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4)      | Percentage | 1 BPS (or 0.01%)   |            |
 | Arbitrum-Sepolia Fixed          | [0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78](https://sepolia.arbiscan.io/address/0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78)         | Fixed fee  | 0.001 ETH          |            |
