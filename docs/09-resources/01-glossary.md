@@ -7,7 +7,7 @@ description: The following section details important glossary terms related to S
 
 **Burn-and-mint**: A process in blockchain where tokens are 'burned' or destroyed in one network and an equivalent number of tokens are 'minted' or created in another network, commonly used in pegged token mechanisms.
 
-**Chain (ChainID)**: 
+**Chain (ChainID)**: A unique identifier for a specific EVM blockchain network, used in transactions to distinguish between different chains and ensure transactions are processed on the correct blockchain. Commonly known `ChainID`'s can be obtained from [Chainlist](https://chainlist.org/).
 
 **ChainBridge-core**: An extensible cross-chain communication protocol designed to be a framework for cross-chain applications. Sygma extends the foundational Chainbridge-core repo to build its interoperability solution.
 
@@ -15,7 +15,7 @@ description: The following section details important glossary terms related to S
 
 **Destination (target) chain**: The network to which a transaction, asset, or data is sent from another blockchain, usually in the context of cross-chain transfers or communication.
 
-**Domain (DomainID)**: 
+**Domain (DomainID)**: Serves a similar purpose to `ChainID` but is specific to the Sygma protocol. It uniquely identifies different domains or environments within Sygma's cross-chain communication framework, ensuring that messages and transactions are correctly routed and processed across different blockchains or segments of the network. `ChainID`'s and `DomainID`'s are registered together, so each `DomainID` is associated with a specific `ChainID`. This information is stored in the chain's storage and you can look up the mappings.
 
 **Ethereum Virtual Machine (EVM)**: A computation engine that acts like a decentralized computer, executing smart contracts on the Ethereum network.
 
@@ -29,7 +29,7 @@ description: The following section details important glossary terms related to S
 
 **MPC-based relayer network**: A network of nodes that relay information using multi-party computation (MPC), a cryptographic method that allows multiple parties to compute a function over their inputs while keeping them private.
 
-**Network**: 
+**Network**: Refers to the entirety of a blockchain infrastructure or ecosystem such as nodes, protocols, and technologies e.g. Ethereum Mainnet, Polygon, Base, etc. 
 
 **Pallets**: Components in the Substrate framework that encapsulate specific blockchain functionalities, easily integrated into a Substrate-based blockchain.
 
@@ -39,7 +39,7 @@ description: The following section details important glossary terms related to S
 
 **Relayers**: Entities in blockchain systems that relay information from one blockchain to another. Instead of operating full nodes, a relayer operator is listening to events on a source or target chain and sending packets of data to and from different blockchains on behalf of the blockchain’s users. 
 
-**Resource (ResourceID)**:
+**Resource (ResourceID)**: This is a unique identifier for an asset (e.g. ERC-20 or generic message) in Sygma.
 
 **Route**: The bidirectional path a transaction or message can take as it moves between networks or blockchains in a cross-chain operation.
 
