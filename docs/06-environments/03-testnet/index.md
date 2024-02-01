@@ -208,6 +208,7 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Resource ID              | 0x0000000000000000000000000000000000000000000000000000000000001100                                                            |
 | Goerli Contract Address  | [0xc00621087a20484DFB0F892ed1cE37fC2ABf72c8](https://goerli.etherscan.io/address/0xc00621087a20484DFB0F892ed1cE37fC2ABf72c8)  |
 | Sepolia Contract Address | [0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36](https://sepolia.etherscan.io/address/0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36) |
+| Base Contract Address    | [0xA56419ECdb71acE442a6FbfC8E50c5F993667938](https://basescan.org/address/0xA56419ECdb71acE442a6FbfC8E50c5F993667938) |
 
 ## Fee schemes
 
