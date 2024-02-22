@@ -4,11 +4,24 @@ description: The following details how to add Devnet (custom) tokens to MetaMask
 
 # Adding Tokens To MetaMask
 
+## Adding Tokens 
+
 ### Steps
 
 1. Choose `Import Token` at the bottom of MetaMask's asset tab
-2. Paste in: `0x3D151A97A446C9ea6893038e7C0db73466f3f3af` for the contract address; the rest of the fields will auto-populate
-3. `Add Custom Token`
+2. Paste in the contract address which is shown in the faucet when you select the desired network and token, or see [Registered Resources](../03-testnet/index.md#registered-resources "mention")
+3. Rest of the fields should auto-populate
+4. `Next`
+5. `Import`
+
+## Adding NFTs
+
+### Steps
+1. Choose `Import NFT` at the bottom of MetaMask's asset tab
+2. Paste in the contract address which is shown in the faucet when you select the desired network and token, or see [Registered Resources](../03-testnet/index.md#registered-resources "mention")
+3. Token ID of the NFT can be found on network's explorer when displaying information about the transaction. Faucet will show the needed transaction hash after minting the NFT. 
+4. `Import`
+
 
 #### Resources
 
