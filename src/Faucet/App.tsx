@@ -121,16 +121,14 @@ function App() {
   };
 
   return (
-    <div className="Faucet">
+    <div>
       <ThemeProvider theme={sygmaTheme}>
         <Container maxWidth="sm">
-          <Box
-            component="form"
-            noValidate
-            onSubmit={mint}
-            sx={{ height: sDomain && sToken.address ? "120vh" : "100vh", padding: "1.5rem" }}
-          >
-            <Paper variant="outlined" sx={{ p: 2 }}>
+          <Paper variant="outlined" sx={{ p: 2 }}>
+            <form
+              noValidate
+              onSubmit={mint}
+            >
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
                   <DomainSelect
@@ -187,8 +185,8 @@ function App() {
                   )}
                 </Grid>
               </Grid>
-            </Paper>
-          </Box>
+            </form>
+          </Paper>
           {serverError && (
             <ErrorDialog
               response={serverError.response}
