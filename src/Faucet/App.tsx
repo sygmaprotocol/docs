@@ -130,9 +130,6 @@ function App() {
             onSubmit={mint}
             sx={{ height: sDomain && sToken.address ? "120vh" : "100vh", padding: "1.5rem" }}
           >
-            <Box sx={{ padding: "1rem", marginBottom: "2rem" }}>
-              <img loading="lazy" src="../../../../img/full-logo.png" width={"100%"} alt="logo"></img>
-            </Box>
             <Paper variant="outlined" sx={{ p: 2 }}>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
