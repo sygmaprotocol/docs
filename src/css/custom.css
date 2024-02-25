@@ -48,7 +48,7 @@
 }
 
 /* Style for the domain selector */
-#domain-selector {
+#domain-selector, #resource-type-selector {
   padding: 8px;
   border-radius: 5px;
   border: 1px solid var(--ifm-color-primary);

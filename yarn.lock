@@ -9300,10 +9300,6 @@ svgo@^2.7.0, svgo@^2.8.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-"symga-sdk@link:../../../repos/symga-sdk":
-  version "0.0.0"
-  uid ""
-
 table-layout@^0.4.3:
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/table-layout/-/table-layout-0.4.5.tgz#d906de6a25fa09c0c90d1d08ecd833ecedcb7378"

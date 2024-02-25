@@ -3,6 +3,9 @@ title: Mainnet
 description: The following details a list of resources to support the Mainnet environment.
 ---
 
+import RouteTable from '../../src/components/RouteTable';
+import { Environment } from '@buildwithsygma/sygma-sdk-core';
+
 :::tip Status
 **🟢 Active**
 :::
@@ -11,7 +14,6 @@ The following section details Sygma's mainnet deployment, including the protocol
 - [Supported networks](#supported-networks)
 - [EVM contract addresses](#evm-contract-addresses)
 - [Registered resources](#registered-resources)
-- [Registered routes and associated fee schemes](#registered-routes-and-associated-fee-schemes)
 - [Sygma Explorer](#sygma-explorer)
 
 Many of the values found below will be important if you are a developer working with the [Sygma SDK](../02-sygma-sdk/01-index.md).
@@ -105,7 +107,7 @@ Many of the values found below will be important if you are a developer working 
 | Bridging Strategy  | GMP                                                                |
 | Resource ID        | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 
-## Registered routes and associated fee schemes
+<!-- ## Registered routes and associated fee schemes
 
 | Source Network Name | Destination Network Name | Resource | Fee Percent/Amount | Resource ID                                                        |
 | ------------------- | ------------------------ | -------- | ------------------ | ------------------------------------------------------------------ |
@@ -124,8 +126,10 @@ Many of the values found below will be important if you are a developer working 
 | Polygon             | Ethereum                 | GMP      | 20 MATIC           | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Polygon             | Base                     | GMP      | 2 MATIC            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 | Polygon             | Cronos                   | GMP      | 1 MATIC            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
-| Polygon             | Gnosis                   | GMP      | 1 MATIC            | 0x0000000000000000000000000000000000000000000000000000000000000000 |
+| Polygon             | Gnosis                   | GMP      | 1 MATIC            | 0x0000000000000000000000000000000000000000000000000000000000000000 | -->
 
+
+<RouteTable environment={Environment.MAINNET} />
 
 ## Sygma Explorer
 

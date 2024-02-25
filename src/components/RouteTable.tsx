@@ -1,28 +1,41 @@
 import React, { useState, useEffect } from 'react';
 import { Environment, Route, Config, getRoutes, getEnvironmentMetadata, EnvironmentMetadata } from '@buildwithsygma/sygma-sdk-core';
+import { capName } from '../utils';
 
-const RouteTable: React.FC = () => {
+const resourceTypeMap = {
+  "fungible": "Fungible",
+  "permissionlessGeneric": "GMP",
+}
+
+type RouteTableProps = {
+  environment: Environment;
+};
+
+
+const RouteTable: React.FC<RouteTableProps> = ({ environment }) => {
   const [routes, setRoutes] = useState<Route[]>([]);
   const [config, setConfig] = useState<Config | null>(null); // Store Config object instead of domains
   const [domainMetadata, setDomainMetadata] = useState<EnvironmentMetadata>({});
   const [selectedDomainId, setSelectedDomainId] = useState<number | null>(null);
-  const [selectedEnvironment, setSelectedEnvironment] = useState<Environment>(Environment.TESTNET);
+  const [selectedResourceType, setSelectedResourceType] = useState<string>("fungible");
+
 
   useEffect(() => {
     const initializeConfigAndFetchMetadata = async () => {
       try {
         const newConfig = new Config();
-        await newConfig.init(1, selectedEnvironment);
+        await newConfig.init(1, environment);
         setConfig(newConfig);
 
-        const fetchedDomainMetadata = await getEnvironmentMetadata(selectedEnvironment);
+        const fetchedDomainMetadata = await getEnvironmentMetadata(environment);
         console.log(fetchedDomainMetadata);
         setDomainMetadata(fetchedDomainMetadata);
 
         // Automatically select the first domain's ID if available
         const fetchedDomains = newConfig.getDomains();
+        console.log(fetchedDomains);
         if (fetchedDomains.length > 0) {
-          setSelectedDomainId(fetchedDomains[0].chainId); // Adjusted to chainId for initial selection
+          setSelectedDomainId(fetchedDomains[0].id); // Adjusted to chainId for initial selection
         }
       } catch (error) {
         console.error('Error initializing config or fetching metadata: ', error);
@@ -30,13 +43,13 @@ const RouteTable: React.FC = () => {
     };
 
     initializeConfigAndFetchMetadata();
-  }, [selectedEnvironment]);
+  }, []);
 
   useEffect(() => {
     if (selectedDomainId !== null && config) {
       const fetchRoutes = async () => {
         try {
-          const fetchedRoutes = await getRoutes(selectedEnvironment, config.getDomainConfig(selectedDomainId).chainId); // Ensure 'all' is passed if you want all types of routes
+          const fetchedRoutes = await getRoutes(environment, config.getDomainConfig(selectedDomainId).chainId, selectedResourceType as 'fungible' | 'gmp');
           setRoutes(fetchedRoutes);
         } catch (error) {
           console.error('Error fetching routes: ', error);
@@ -45,37 +58,41 @@ const RouteTable: React.FC = () => {
 
       fetchRoutes();
     }
-  }, [selectedEnvironment, selectedDomainId, config]);
+  }, [environment, selectedDomainId, config]);
 
   const handleDomainChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     console.log("Selecting new domain: " + event.target.value);
     setSelectedDomainId(Number(event.target.value));
   };
 
-  const handleEnvironmentChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedEnvironment(event.target.value as Environment);
+  const handleResourceTypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedResourceType(event.target.value);
   };
+  
 
   return (
     <>
     <div className="selection-container">
-      <select id="environment-selector" onChange={handleEnvironmentChange} value={selectedEnvironment}>
-        <option value={Environment.TESTNET}>Testnet</option>
-        <option value={Environment.MAINNET}>Mainnet</option>
-      </select>
-
       {config && (
         <div>
+          <img id="domain-icon" src={domainMetadata[selectedDomainId]?.url} alt="" style={{ width: '20px', height: '20px', marginRight: '5px' }} />
           <select id="domain-selector" onChange={handleDomainChange} value={selectedDomainId || undefined}>
             {config.getDomains().map((domain) => (
               <option key={domain.id} value={domain.id}>
-                {domain.name}
+                {capName(domain.name)}
               </option>
             ))}
           </select>
-          <img id="domain-icon" src={domainMetadata[selectedDomainId]?.url} alt="" style={{ width: '20px', height: '20px', marginRight: '5px' }} />
         </div>
       )}
+
+      <select id="resource-type-selector" onChange={handleResourceTypeChange} value={selectedResourceType}>
+        {Object.entries(resourceTypeMap).map(([value, label]) => (
+          <option key={value} value={value}>
+            {label}
+          </option>
+        ))}
+      </select>
     </div>
     <table>
       <thead>
@@ -89,9 +106,9 @@ const RouteTable: React.FC = () => {
       <tbody>
         {routes.map((route, index) => (
           <tr key={index}>
-            <td>{route.fromDomain.name}</td>
-            <td>{route.toDomain.name}</td>
-            <td>{route.resource.type}</td>
+            <td>{capName(route.fromDomain.name)}</td>
+            <td>{capName(route.toDomain.name)}</td>
+            <td>{resourceTypeMap[route.resource.type]}</td>
             <td>{route.resource.symbol || 'N/A'}</td>
           </tr>
         ))}
