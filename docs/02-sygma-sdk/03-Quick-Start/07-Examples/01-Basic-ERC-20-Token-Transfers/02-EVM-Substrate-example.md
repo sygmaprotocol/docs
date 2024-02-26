@@ -9,7 +9,7 @@ draft: false
 
 ### EVM-to-Substrate token transfer example
 
-In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 0.5 Goerli Phala `gPHA` tokens. The transfer will be initiated on the EVM-side via the Goerli Ethereum testnet and received on the Substrate-side via the Rococo-Phala testnet.
+In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 0.5 Sepolia sygUSD `sygUSD` tokens. The transfer will be initiated on the EVM-side via the Sepolia Ethereum testnet and received on the Substrate-side via the Rococo-Phala testnet.
 
 This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of relayers and bridge and handler contracts/pallets. The complete example can be found in this [repo](
 https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/evm-to-substrate-fungible-transfer#sygma-sdk-erc20-example).
@@ -22,9 +22,9 @@ Before running the script, ensure that you have the following:
 - Yarn (version 3.4.1 or higher)
 - The [exported private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key) of your development wallet
 - A Substrate wallet to receive tokens into (the example presets an existing wallet address already)
-- [Goerli ETH](https://goerlifaucet.com/) for gas 
+- [Sepolia ETH](https://sepoliafaucet.com/) for gas 
 - An Ethereum [provider](https://www.infura.io/) (in case the hardcoded RPC within the script does not work)
-- A development wallet funded with `gPHA` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
+- A development wallet funded with `sygUSD` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
 
 <div style={{ textAlign: 'center' }}>
     <iframe 
@@ -90,7 +90,7 @@ cd examples/evm-to-substrate-fungible-transfer
 yarn run transfer
 ```
 
-The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Goerli to Rococo-Phala with a `gPHA` token. It will be received on Rococo-Phala as the native `PHA` token.
+The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Sepolia to Rococo-Phala with a `sygUSD` token. It will be received on Rococo-Phala as the native `PHA` token.
 
 ### Script functionality
 
@@ -105,7 +105,7 @@ import { Wallet, providers } from "ethers";
 const ROCOCO_PHALA_CHAIN_ID = 5231;
 const DESTINATION_ADDRESS = "5CDQJk6kxvBcjauhrogUc9B8vhbdXhRscp1tGEUmniryF1Vt"; // replace this value for your preferred Substrate address
 const RESOURCE_ID =
-  "0x0000000000000000000000000000000000000000000000000000000000001000"; // This is the resource ID for the gPHA token according to Sygma's testnet environment 
+  "0x0000000000000000000000000000000000000000000000000000000000001100"; // This is the resource ID for the sygUSD token according to Sygma's testnet environment 
 ```
 
 - Configures the dotenv module and sets the `privateKey` as a value to be pulled from the `.env` file.
@@ -131,7 +131,7 @@ export async function erc20Transfer(): Promise<void> {
 
 ```ts
   const provider = new providers.JsonRpcProvider(
-    "https://rpc.goerli.eth.gateway.fm/" // use your own provider in case this does not work
+    "https://rpc.sepolia.eth.gateway.fm/" // use your own provider in case this does not work
   );
   const wallet = new Wallet(
     privateKey as string,
@@ -149,7 +149,7 @@ export async function erc20Transfer(): Promise<void> {
     ROCOCO_PHALA_CHAIN_ID,
     DESTINATION_ADDRESS,
     RESOURCE_ID,
-    "500000000000000000" // 18 decimal places, so in this case, 0.5 gPHA tokens
+    "500000" // 6 decimal places, so in this case, 0.5 sygUSD tokens
   );
 ```
 

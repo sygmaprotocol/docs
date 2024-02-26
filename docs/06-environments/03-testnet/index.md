@@ -152,9 +152,7 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Registered Handler                | PermissionlessGenericHandler                                       |
 | Bridging Strategy                 | GMP                                                                |
 | Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000500 |
-| Goerli Contract Address           | N/A                                                                |
 | Sepolia Contract Address          | N/A                                                                |
-| Base-Goerli Contract Address      | N/A                                                                |
 | Cronos-Testnet Contract Address   | N/A                                                                |
 | Holesky Contract Address          | N/A                                                                |
 | Mumbai Contract Address           | N/A                                                                |
