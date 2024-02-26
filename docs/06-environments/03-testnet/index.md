@@ -148,10 +148,25 @@ The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with 
 | Details                           | Information                                                        |
 | --------------------------------- | ------------------------------------------------------------------ |
 | Type                              | Generic                                                            |
-| Registered Fee Handler            | FeeHandlerWithOracle                                               |
+| Registered Fee Handler            | BasicFeeHandler                                                    |
 | Registered Handler                | PermissionlessGenericHandler                                       |
 | Bridging Strategy                 | GMP                                                                |
 | Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000500 |
+| Sepolia Contract Address          | N/A                                                                |
+| Cronos-Testnet Contract Address   | N/A                                                                |
+| Holesky Contract Address          | N/A                                                                |
+| Mumbai Contract Address           | N/A                                                                |
+| Arbitrum-Sepolia Contract Address | N/A                                                                |
+
+**Permissionless generic message**
+
+| Details                           | Information                                                        |
+| --------------------------------- | ------------------------------------------------------------------ |
+| Type                              | Generic                                                            |
+| Registered Fee Handler            | BasicFeeHandler                                                    |
+| Registered Handler                | PermissionlessGenericHandler                                       |
+| Bridging Strategy                 | GMP                                                                |
+| Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000600 |
 | Sepolia Contract Address          | N/A                                                                |
 | Cronos-Testnet Contract Address   | N/A                                                                |
 | Holesky Contract Address          | N/A                                                                |
