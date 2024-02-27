@@ -26,12 +26,10 @@ Before running the script, ensure that you have the following:
 - An Ethereum [provider](https://www.infura.io/) (in case the hardcoded RPC within the script does not work)
 - A development wallet funded with `gPHA` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/)
 
-<div style={{ textAlign: 'center' }}>
-    <iframe 
-        src="https://faucet-ui-stage.buildwithsygma.com/" 
-        style={{ width: '50%', height: '500px', margin: 'auto', display: 'block' }}
-    ></iframe>
-</div>
+import App from '../../../../../src/Faucet/App'; 
+
+<App />
+<br/>
 
 :::danger
 We make use of the dotenv module to manage exported private keys with environment variables. Please note that accidentally committing a .env file containing private keys to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
