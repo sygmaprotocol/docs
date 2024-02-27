@@ -3,6 +3,9 @@ title: Mainnet
 description: The following details a list of resources to support the Mainnet environment.
 ---
 
+import SupportedDomains from '../../src/components/SupportedDomains';
+import { Environment } from '@buildwithsygma/sygma-sdk-core';
+
 :::tip Status
 **🟢 Active**
 :::
@@ -18,15 +21,7 @@ Many of the values found below will be important if you are a developer working 
 
 ## Supported networks
 
-| Network Name     | Domain ID | Chain ID |
-| ---------------- | --------- | -------- |
-| Ethereum Mainnet | 1         | 1        |
-| Khala            | 2         | 5232     |
-| Phala            | 3         | 5233     |
-| Cronos           | 4         | 25       |
-| Base             | 5         | 8453     |
-| Gnosis           | 6         | 100      |
-| Polygon          | 7         | 137      |
+<SupportedDomains environment={Environment.MAINNET} />
 
 ## EVM contract addresses
 

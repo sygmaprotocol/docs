@@ -9,7 +9,7 @@ draft: false
 
 ### EVM-to-Substrate token transfer example
 
-In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 0.5 Goerli Phala `gPHA` tokens. The transfer will be initiated on the Substrate-side via the Rococo-Phala testnet and received on the EVM-side via the Goerli Ethereum testnet.
+In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 0.5 sygUSD `sygUSD` tokens. The transfer will be initiated on the Substrate-side via the Rococo-Phala testnet and received on the EVM-side via the Sepolia Ethereum testnet.
 
 This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of relayers and bridge and handler contracts/pallets. The complete example can be found in this [repo](https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/substrate-to-evm-fungible-transfer).
 
@@ -22,7 +22,7 @@ Before running the script, ensure that you have the following:
 - The 12-word mnemonic for your Substrate development wallet
 - An Ethereum wallet to receive tokens into (the example presets an existing wallet address already)
 - A Substrate provider (in case the hardcoded WSS within the script does not work)
-- A Substrate development wallet funded with `PHA` tokens; you will need to run the [EVM-to-Substrate example](02-EVM-Substrate-example.md) first to preload `PHA` tokens into a Substrate wallet
+- A Substrate development wallet funded with `sygUSD` tokens; you will need to run the [EVM-to-Substrate example](02-EVM-Substrate-example.md) first to preload `sygUSD` tokens into a Substrate wallet
 
 :::danger
 We make use of the dotenv module to manage Substrate's private mnemonics with environment variables. Please note that accidentally committing a .env file containing private mnemonics to a wallet with real funds, onto GitHub, could result in the complete loss of your funds. **Never expose your private keys.**
@@ -81,7 +81,7 @@ cd examples/substrate-to-evm-fungible-transfer
 yarn run transfer
 ```
 
-The example will use `@polkadot/keyring` in conjunction with the sygma-sdk to create a transfer from Rococo-Phala to Goerli with the `PHA` token. It will be received on Goerli as a `gPHA` token.
+The example will use `@polkadot/keyring` in conjunction with the sygma-sdk to create a transfer from Rococo-Phala to Sepolia with the `sygUSD` token. It will be received on Sepolia as a `sygUSD` token.
 
 ### Script functionality
 
@@ -96,8 +96,8 @@ import { cryptoWaitReady } from "@polkadot/util-crypto";
 import { Environment, Substrate, getTransferStatusData } from "@buildwithsygma/sygma-sdk-core";
 
 const { SubstrateAssetTransfer } = Substrate;
-const GOERLI_CHAIN_ID = 5;
-const RESOURCE_ID = "0x0000000000000000000000000000000000000000000000000000000000001000"; // This is the resource ID for the gPHA token according to Sygma's testnet environment 
+const SEPOLIA_CHAIN_ID = 11155111;
+const RESOURCE_ID = "0x0000000000000000000000000000000000000000000000000000000000001100"; // This is the resource ID for the sygUSD token according to Sygma's testnet environment 
 const recipient = "0xD31E89feccCf6f2DE10EaC92ADffF48D802b695C"; // replace this value for your preferred EVM address 
 ```
 
@@ -174,10 +174,10 @@ const getStatus = async (
 ```ts
 const transfer = assetTransfer.createFungibleTransfer(
   account.address,
-  GOERLI_CHAIN_ID,
+  SEPOLIA_CHAIN_ID,
   recipient,
   RESOURCE_ID,
-   "500000000000" // 12 decimal places, so in this case 0.5 gPHA tokens
+   "500000000000000000" // 18 decimal places, so in this case 0.5 sygUSD tokens
 );
 const fee = await assetTransfer.getFee(transfer);
 const transferTx = assetTransfer.buildTransferTransaction(transfer, fee);

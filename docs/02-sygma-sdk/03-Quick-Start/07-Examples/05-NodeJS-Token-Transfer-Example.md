@@ -8,15 +8,15 @@ draft: true
 ---
 
 :::info
-In the following example, we will setup and demonstrate a cross-chain ERC-20 token transfer between the same address from Goerli to Sepolia. This will be shown through the command line in a backend Node.js environment using the Sygma SDK.
+In the following example, we will setup and demonstrate a cross-chain ERC-20 token transfer between the same address from Mumbai to Sepolia. This will be shown through the command line in a backend Node.js environment using the Sygma SDK.
 :::
 
 #### Prerequisites
 
 - Install [Node.js](https://nodejs.org/en/about)(version 16 or above) for the backend JavaScript runtime environment.
-- Obtain an API key for the Ethereum `Goerli` testnet. An `API_KEY` will be required to initialize the `JsonRpcProvider` object with which blockchain interactions run through. You can sign up to obtain one for free with either [Infura](https://app.infura.io/) or [Alchemy](https://dashboard.alchemy.com/).
+- Obtain an API key for the Ethereum `Mumbai` testnet. An `API_KEY` will be required to initialize the `JsonRpcProvider` object with which blockchain interactions run through. You can sign up to obtain one for free with either [Infura](https://app.infura.io/) or [Alchemy](https://dashboard.alchemy.com/).
 - [MetaMask](https://metamask.io/) should be installed, and an account **used only for development purposes** should be created. [Export the `private key` from MetaMask](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key).
-- Obtain some `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/). You will also need [Goerli ETH](https://goerlifaucet.com/) for gas.
+- Obtain some `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/). You will also need [MATIC](https://maticfaucet.com/) for gas.
 
 :::info
 The following example is written in `TypeScript`. You can use `CommonJS` with our SDK if you prefer to use standard `Node.js` for the script.
@@ -83,7 +83,7 @@ PROVIDER_API_KEY=your_provider_api_key_here
 PRIVATE_KEY=your_private_key_here
 ```
 
-Copy and paste (in quotations) the `Goerli` API key obtained from Infura or Alchemy, as well as the exported private key from MetaMask.
+Copy and paste (in quotations) the `Matic` API key obtained from Infura or Alchemy, as well as the exported private key from MetaMask.
 
 :::danger
 Remember that your private key should **never** be exposed. Hence, **DO NOT** commit the `.env` file to any repository and add it to your `.gitignore` file. Exposing the private key could result in complete loss of your funds. **_For this example, please only paste in the exported private keys of a wallet that is designated for testing/development purposes_**.
@@ -113,7 +113,7 @@ if (!providerApiKey || !privateKey) {
 
 #### Set up testnets and token symbol variables
 
-Next, we setup some variables used for the rest of the script, including the two Ethereum testnets this example will conduct the token transfer on (`Goerli` and `Sepolia`) and the symbol of the test token (`ERC20LRTest`) we will be using. Paste in the following snippet into the same `transfer.ts` file:
+Next, we setup some variables used for the rest of the script, including the two Ethereum testnets this example will conduct the token transfer on (`Matic` and `Sepolia`) and the symbol of the test token (`ERC20LRTest`) we will be using. Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -124,7 +124,7 @@ const RESOURCE_ID =
 
 #### Create `assetTransfer` object
 
-Now, we create a function that will return an `assetTransfer` object. This is the object that we are going to use to make the transfer between `Goerli` and `Sepolia`. Paste in the following snippet into the same `transfer.ts` file:
+Now, we create a function that will return an `assetTransfer` object. This is the object that we are going to use to make the transfer between `Matic` and `Sepolia`. Paste in the following snippet into the same `transfer.ts` file:
 
 ```ts
 // transfer.ts
@@ -218,7 +218,7 @@ Run this example in the command line with:
 npx ts-node ./src/index.ts
 ```
 
-If done correctly, the console log should return a `Transfer complete` message along with a transaction hash. The `Deposit` event for the `ERC20LRTest` token should appear shortly on `Goerli`, and the transferred tokens should appear shortly in the same address on `Sepolia`!
+If done correctly, the console log should return a `Transfer complete` message along with a transaction hash. The `Deposit` event for the `ERC20LRTest` token should appear shortly on `Matic`, and the transferred tokens should appear shortly in the same address on `Sepolia`!
 
 Congratulations on successfully performing a cross-chain token transfer using the Sygma SDK!
 
