@@ -90,7 +90,7 @@ cd examples/evm-to-substrate-fungible-transfer
 yarn run transfer
 ```
 
-The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Sepolia to Rococo-Phala with a `sygUSD` token. It will be received on Rococo-Phala as the native `PHA` token.
+The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Sepolia to Rococo-Phala with a `sygUSD` token. It will be received on Rococo-Phala as the `sygUSD` token.
 
 ### Script functionality
 
