@@ -4,6 +4,9 @@ id: testnet-index
 description: The following details a list of resources that support the Testnet environment.
 ---
 
+import SupportedDomains from '../../../src/components/SupportedDomains';
+import { Environment } from '@buildwithsygma/sygma-sdk-core';
+
 :::tip Status
 **🟢 Active**
 :::
@@ -29,36 +32,12 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 
 ## Supported networks
 
-| Network Name     | Framework | Domain ID |
-| ---------------- | --------- | --------- |
-| Goerli           | EVM       | 1         |
-| Sepolia          | EVM       | 2         |
-| Rhala            | Substrate | 3         |
-| Base-Goerli      | EVM       | 4         |
-| Cronos-Testnet   | EVM       | 5         |
-| Holesky          | EVM       | 6         |
-| Mumbai           | EVM       | 7         |
-| Arbitrum-Sepolia | EVM       | 8         |
-| Gnosis-Chiado    | EVM       | 9         |
+<SupportedDomains environment={Environment.TESTNET} />
 
 
 ## EVM contract addresses
 
-**Goerli (Domain ID: 1)**
-
-| Contract                          | Address                                    |
-| --------------------------------- | ------------------------------------------ |
-| Bridge                            | [0xf9a3618bC7Dd11d715cC45D6038F821F13290d8E](https://goerli.etherscan.io/address/0xf9a3618bC7Dd11d715cC45D6038F821F13290d8E) |
-| Fee Router                        | [0xB6F9764Ee1d6B6b3211785C3EAFBAd3F8358D205](https://goerli.etherscan.io/address/0xB6F9764Ee1d6B6b3211785C3EAFBAd3F8358D205) |
-| Fixed Fee Handler                 | [0x4e4Ef31C98f1C2Cf581098Abc0b2d0e456426aE7](https://goerli.etherscan.io/address/0x4e4Ef31C98f1C2Cf581098Abc0b2d0e456426aE7) |
-| Percentage Fee Handler            | [0x2CCD04E702E8Fa321876268E763a2e579F27188B](https://goerli.etherscan.io/address/0x2CCD04E702E8Fa321876268E763a2e579F27188B) |
-| ERC-20 Handler                    | [0x41c105C70ABF590d67dc8fD7708F9E52BB44CeF2](https://goerli.etherscan.io/address/0x41c105C70ABF590d67dc8fD7708F9E52BB44CeF2) |
-| ERC-721 Handler                   | [0x042291E023a35eB7dFD4c21aD199BF2968bE252D](https://goerli.etherscan.io/address/0x042291E023a35eB7dFD4c21aD199BF2968bE252D) |
-| Permissionless Generic Handler    | [0x318EFd751B60730786D29376A6785bb02C923733](https://goerli.etherscan.io/address/0x318EFd751B60730786D29376A6785bb02C923733) |
-| Storage (GMP testing contract)    | [0xdFA5621F95675D37248bAc9e536Aab4D86766663](https://goerli.etherscan.io/address/0xdFA5621F95675D37248bAc9e536Aab4D86766663) |
-
 **Sepolia (Domain ID: 2)**
-
 
 | Contract                          | Address                                    |
 | --------------------------------- | ------------------------------------------ |
@@ -71,18 +50,6 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Permissionless Generic Handler    | [0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479](https://sepolia.etherscan.io/address/0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479) |
 | Storage (GMP testing contract)    | [0x0e963aEe445EDC19034e9938570E5E7BE4Ee19Cd](https://sepolia.etherscan.io/address/0x0e963aEe445EDC19034e9938570E5E7BE4Ee19Cd) |
 
-**Base-Goerli (Domain ID: 4)**
-
-| Contract                          | Address                                    |
-| --------------------------------- | ------------------------------------------ |
-| Bridge                            | [0x5e2bed941Ed40251ffb8F7B3B7ab3459464A2aad](https://goerli.basescan.org/address/0x5e2bed941Ed40251ffb8F7B3B7ab3459464A2aad) |
-| Fee Router                        | [0xad3961FF8a445FF9EF4A85f450DcE1690c51Ce98](https://goerli.basescan.org/address/0xad3961FF8a445FF9EF4A85f450DcE1690c51Ce98) |
-| Fixed Fee Handler                 | [0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479](https://goerli.basescan.org/address/0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479) |
-| Percentage Fee Handler            | [0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A](https://goerli.basescan.org/address/0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A) |
-| ERC-20 Handler                    | [0x2C0ae7Fb251ec0772793d480d31B4bc8E3b498a7](https://goerli.basescan.org/address/0x2C0ae7Fb251ec0772793d480d31B4bc8E3b498a7) |
-| ERC-721 Handler                   | [0x38218916813A0f6ca32AcA1324381C0A810b728a](https://goerli.basescan.org/address/0x38218916813A0f6ca32AcA1324381C0A810b728a) |
-| Permissionless Generic Handler    | [0x14d1cA88277E13B5615C2C727415a1B94E90264F](https://goerli.basescan.org/address/0x14d1cA88277E13B5615C2C727415a1B94E90264F) |
-| Storage (GMP testing contract)    | [0xde600d7e927528491ef77a3f1d361e6a8a1df233](https://goerli.basescan.org/address/0xde600d7e927528491ef77a3f1d361e6a8a1df233) |
 
 **Cronos Testnet (Domain ID: 5)**
 
@@ -160,9 +127,7 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Registered Handler       | ERC20Handler                                                                                                                         |
 | Bridging Strategy        | Lock/Release                                                                                                                         |
 | Resource ID              | 0x0000000000000000000000000000000000000000000000000000000000000300                                                                   |
-| Goerli Contract Address  | [0x3F9A68fF29B3d86a6928C44dF171A984F6180009](https://goerli.etherscan.io/address/0x3F9A68fF29B3d86a6928C44dF171A984F6180009)         |
 | Sepolia Contract Address | [0x7d58589b6C1Ba455c4060a3563b9a0d447Bef9af](https://sepolia.etherscan.io/address/0x7d58589b6C1Ba455c4060a3563b9a0d447Bef9af)        |
-| Base Contract Address    | [0xA5278861d2352fd8eD59b985a29ad46E40930F12](https://goerli.basescan.org/address/0xA5278861d2352fd8eD59b985a29ad46E40930F12)         |
 | Cronos Contract Address  | [0x2938ed97ef9d897dac7b21c48e045f34a3a02846](https://explorer.cronos.org/testnet/address/0x2938ed97ef9d897dac7b21c48e045f34a3a02846) |
 | Mumbai Contract Address  | [0x75811b960c7acB255f9091bBAC401700E407CDB6](https://mumbai.polygonscan.com/address/0x75811b960c7acB255f9091bBAC401700E407CDB6)      |
 
@@ -176,7 +141,6 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Registered Handler       | ERC20Handler                                                                                                                 |
 | Bridging Strategy        | Lock/Release                                                                                                                 |
 | Resource ID              | 0x0000000000000000000000000000000000000000000000000000000000001000                                                           |
-| Goerli Contract Address  | [0xB376b0Ee6d8202721838e76376e81eEc0e2FE864](https://goerli.etherscan.io/address/0xB376b0Ee6d8202721838e76376e81eEc0e2FE864) |
 | Sepolia Contract Address | N/A                                                                                                                          |
 
 **Permissionless generic message**
@@ -184,13 +148,26 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Details                           | Information                                                        |
 | --------------------------------- | ------------------------------------------------------------------ |
 | Type                              | Generic                                                            |
-| Registered Fee Handler            | FeeHandlerWithOracle                                               |
+| Registered Fee Handler            | BasicFeeHandler                                                    |
 | Registered Handler                | PermissionlessGenericHandler                                       |
 | Bridging Strategy                 | GMP                                                                |
 | Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000500 |
-| Goerli Contract Address           | N/A                                                                |
 | Sepolia Contract Address          | N/A                                                                |
-| Base-Goerli Contract Address      | N/A                                                                |
+| Cronos-Testnet Contract Address   | N/A                                                                |
+| Holesky Contract Address          | N/A                                                                |
+| Mumbai Contract Address           | N/A                                                                |
+| Arbitrum-Sepolia Contract Address | N/A                                                                |
+
+**Permissionless generic message**
+
+| Details                           | Information                                                        |
+| --------------------------------- | ------------------------------------------------------------------ |
+| Type                              | Generic                                                            |
+| Registered Fee Handler            | BasicFeeHandler                                                    |
+| Registered Handler                | PermissionlessGenericHandler                                       |
+| Bridging Strategy                 | GMP                                                                |
+| Resource ID                       | 0x0000000000000000000000000000000000000000000000000000000000000600 |
+| Sepolia Contract Address          | N/A                                                                |
 | Cronos-Testnet Contract Address   | N/A                                                                |
 | Holesky Contract Address          | N/A                                                                |
 | Mumbai Contract Address           | N/A                                                                |
@@ -206,20 +183,15 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Registered Handler       | ERC20Handler                                                                                                                  |
 | Bridging Strategy        | Lock/Release                                                                                                                  |
 | Resource ID              | 0x0000000000000000000000000000000000000000000000000000000000001100                                                            |
-| Goerli Contract Address  | [0xc00621087a20484DFB0F892ed1cE37fC2ABf72c8](https://goerli.etherscan.io/address/0xc00621087a20484DFB0F892ed1cE37fC2ABf72c8)  |
 | Sepolia Contract Address | [0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36](https://sepolia.etherscan.io/address/0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36) |
-| Base Contract Address    | [0xA56419ECdb71acE442a6FbfC8E50c5F993667938](https://basescan.org/address/0xA56419ECdb71acE442a6FbfC8E50c5F993667938) |
 
 ## Fee schemes
 
 
 | Network Name                    | Handler Address                                                                                                                      | Fee Type   | Fee Percent/Amount | Gas Amount |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ------------------ | ---------- |
-| Goerli Fixed                    | N/A                                                                                                                                  | Fixed fee  | 0.001 ETH          |            |
 | Sepolia Fixed                   | N/A                                                                                                                                  | Fixed fee  | 0.001 ETH          |            |
 | Sepolia Percentage-based        | [0x2e77dEa116117eCF44a427064260D16D488ccff2](https://sepolia.etherscan.io/address/0x2e77dEa116117eCF44a427064260D16D488ccff2)        | Percentage | 10 BPS (or 0.1%)   |            |
-| Base-Goerli Fixed               | [0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479](https://goerli.basescan.org/address/0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479)         | Fixed fee  | 0.001 ETH          |            |
-| Base-Goerli Percentage-based    | [0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A](https://goerli.basescan.org/address/0x117689D3BD6b5Cf32cE1d971Dd879eF17209193A)         | Percentage | 1 BPS (or 0.01%)   |            |
 | Cronos-Testnet Fixed            | [0x8eDab7563C618a3F1e5021677640565468C706d8](https://explorer.cronos.org/testnet/address/0x8eDab7563C618a3F1e5021677640565468C706d8) | Fixed fee  | 0.001 ETH          |            |
 | Cronos-Testnet Percentage-based | [0x26545905a3a63B9ffB37926e909a827bDd088512](https://explorer.cronos.org/testnet/address/0x26545905a3a63B9ffB37926e909a827bDd088512) | Percentage | 1 BPS (or 0.01%)   |            |
 | Holesky Fixed                   | [0xEE7946aE5f7287a39Bc67207868EDD4a95f96795](https://holesky.etherscan.io/address/0xEE7946aE5f7287a39Bc67207868EDD4a95f96795)        | Fixed fee  | 0.001 ETH          |            |

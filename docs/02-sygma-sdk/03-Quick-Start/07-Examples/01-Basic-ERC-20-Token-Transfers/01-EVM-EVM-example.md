@@ -9,7 +9,7 @@ draft: false
 
 ### EVM-to-EVM token transfer example
 
-In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 5 `ERC20LRTST` tokens. The transfer will be initiated on the EVM-side via the Goerli Ethereum testnet and received on the EVM-side via the Sepolia Ethereum testnet.
+In the following example, we will use the `TESTNET` environment to perform a cross-chain ERC-20 transfer with 5 `ERC20LRTST` tokens. The transfer will be initiated on the EVM-side via the Mumbai testnet and received on the EVM-side via the Sepolia Ethereum testnet.
 
 This is an example script that demonstrates the functionality of the Sygma SDK and the wider Sygma ecosystem of relayers and bridge and handler contracts. The complete example can be found in this [repo](
 https://github.com/sygmaprotocol/sygma-sdk/tree/main/examples/evm-to-evm-fungible-transfer).
@@ -21,7 +21,7 @@ Before running the script, ensure that you have the following:
 - Node.js v18
 - Yarn (version 3.4.1 or higher)
 - The [exported private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key) of your development wallet
-- [Goerli ETH](https://goerlifaucet.com/) for gas 
+- [Mumbai](https://mumbaifaucet.com/) for gas 
 - An Ethereum [provider](https://www.infura.io/) (in case the hardcoded RPC within the script does not work)
 - A development wallet funded with `ERC20LRTest` tokens from the [Sygma faucet](https://faucet-ui-stage.buildwithsygma.com/) (you can use the UI below; please allow some time for minting as testnet may be congested)
 
@@ -85,7 +85,7 @@ cd examples/evm-to-evm-fungible-transfer
 yarn run transfer
 ```
 
-The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Goerli to Sepolia with the `ERC20LRTST` token. It will be received on Sepolia as the `ERC20LRTST` token.
+The example will use `ethers` in conjunction with the sygma-sdk to create a transfer from Mumbai to Sepolia with the `ERC20LRTST` token. It will be received on Sepolia as the `ERC20LRTST` token.
 
 ### Script functionality
 
@@ -125,7 +125,7 @@ export async function erc20Transfer(): Promise<void> {
 
 ```ts
   const provider = new providers.JsonRpcProvider(
-    "https://rpc.goerli.eth.gateway.fm/" // use your own provider in case this does not work 
+    "https://polygon-mumbai-pokt.nodies.app" // use your own provider in case this does not work 
   );
  const wallet = new Wallet(
     privateKey as string,
