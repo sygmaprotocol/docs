@@ -28,7 +28,7 @@ The [transfer UI](https://transfer-ui.test.buildwithsygma.com) provides users wi
 
 ## Testnet faucet
 
-The [faucet UI](https://faucet-ui-stage.buildwithsygma.com) provides users with a visual interface to mint tokens.
+The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a visual interface to mint tokens.
 
 ## Supported networks
 
