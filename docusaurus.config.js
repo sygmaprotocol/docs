@@ -10,8 +10,8 @@ const config = {
   tagline: '',
   url: 'https://docs.buildwithsygma.com',
   baseUrl: '/',
-  onBrokenLinks: 'warn', // throw
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
