@@ -362,3 +362,8 @@ Explainers
 Chainlist
 SupportedDomains
 src
+ERC-1155
+Base-sepolia
+ERC1155TST
+sepolia
+ERC1155Handler

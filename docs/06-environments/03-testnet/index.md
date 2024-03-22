@@ -47,6 +47,7 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Percentage Fee Handler            | [0x2e77dEa116117eCF44a427064260D16D488ccff2](https://sepolia.etherscan.io/address/0x2e77dEa116117eCF44a427064260D16D488ccff2) |
 | ERC-20 Handler                    | [0xa65387feCb172ffF8A0aabA323A10c63757BBFA6](https://sepolia.etherscan.io/address/0xa65387feCb172ffF8A0aabA323A10c63757BBFA6) |
 | ERC-721 Handler                   | [0x669F52487ffA6f9aBf722082f735537A98Ec0E4b](https://sepolia.etherscan.io/address/0x669F52487ffA6f9aBf722082f735537A98Ec0E4b) |
+| ERC-1155 Handler                  | [0x65903772866e538e6ffc001dd0c7665e356eb6d8](https://sepolia.etherscan.io/address/0x65903772866e538e6ffc001dd0c7665e356eb6d8) |
 | Permissionless Generic Handler    | [0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479](https://sepolia.etherscan.io/address/0x7dCBdb9cBA0Bb1871EECafAB290E5a2e45077479) |
 | Storage (GMP testing contract)    | [0x0e963aEe445EDC19034e9938570E5E7BE4Ee19Cd](https://sepolia.etherscan.io/address/0x0e963aEe445EDC19034e9938570E5E7BE4Ee19Cd) |
 
@@ -61,6 +62,7 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Percentage Fee Handler            | [0x26545905a3a63B9ffB37926e909a827bDd088512](https://explorer.cronos.org/testnet/address/0x26545905a3a63B9ffB37926e909a827bDd088512) |
 | ERC-20 Handler                    | [0x39D1Aea5F01138940F19A15049E2073D4df1dc9E](https://explorer.cronos.org/testnet/address/0x39D1Aea5F01138940F19A15049E2073D4df1dc9E) |
 | ERC-721 Handler                   | [0x52757D9c1a8f8b496cf1e688bbB8055f9F3DfC8a](https://explorer.cronos.org/testnet/address/0x52757D9c1a8f8b496cf1e688bbB8055f9F3DfC8a) |
+| ERC-1155 Handler                  | [0x2d92a0aa3ea19da735514ea542438345ef09cb60](https://explorer.cronos.org/testnet/address/0x2d92a0aa3ea19da735514ea542438345ef09cb60) |
 | Permissionless Generic Handler    | [0x3CBbC542d10CD037cafb1632B29B5B0F59B08A48](https://explorer.cronos.org/testnet/address/0x3CBbC542d10CD037cafb1632B29B5B0F59B08A48) |
 | Storage (GMP testing contract)    | [0xcb9eb2b2abbd51945a82f77e789c26720b3835bf](https://explorer.cronos.org/testnet/address/0xcb9eb2b2abbd51945a82f77e789c26720b3835bf) |
 
@@ -115,6 +117,19 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Permissionless Generic Handler    | [0xe4B86b1B07bBdB0C47940b9B3bD4954A0deAdaBE](https://gnosis-chiado.blockscout.com/address/0xe4B86b1B07bBdB0C47940b9B3bD4954A0deAdaBE) |
 | Storage (GMP testing contract)    | [0x38ee9a4590035fc9506600f4d5c3f75fc8d15406](https://gnosis-chiado.blockscout.com/address/0x38ee9a4590035fc9506600f4d5c3f75fc8d15406) |
 
+**Base Sepolia (Domain ID: 10)**
+
+| Contract                          | Address                                    |
+| --------------------------------- | ------------------------------------------ |
+| Bridge                            | [0x9D5C332Ebe0DaE36e07a4eD552Ad4d8c5067A61F](https://sepolia.basescan.org/address/0x9D5C332Ebe0DaE36e07a4eD552Ad4d8c5067A61F) |
+| Fee Router                        | [0x772e242e6c312f6eF6255d8F35921e7A30D018BA](https://sepolia.basescan.org/address/0x772e242e6c312f6eF6255d8F35921e7A30D018BA) |
+| Fixed Fee Handler                 | [0xde937016D67811f08D93ee54093ea686C21d211C](https://sepolia.basescan.org/address/0xde937016D67811f08D93ee54093ea686C21d211C) |
+| Percentage Fee Handler            | [0x4430E5D4447Df0FC25adCafEb8b5E49d38B56e21](https://sepolia.basescan.org/address/0x4430E5D4447Df0FC25adCafEb8b5E49d38B56e21) |
+| ERC-20 Handler                    | [0x72a588B76025d552B239532C31fB7D5Cc80A3e41](https://sepolia.basescan.org/address/0x72a588B76025d552B239532C31fB7D5Cc80A3e41) |
+| Permissionless Generic Handler    | [0x7f4e1E62A0Abd4A381254335CeF5770F74b3E22E](https://sepolia.basescan.org/address/0x7f4e1E62A0Abd4A381254335CeF5770F74b3E22E) |
+| Permissionless Generic Handler    | [0xfd69bbfcCbfc832C56Ca1490df48B4baF3DfD376](https://sepolia.basescan.org/address/0xfd69bbfcCbfc832C56Ca1490df48B4baF3DfD376) |
+| Storage (GMP testing contract)    | [0x669f52487ffa6f9abf722082f735537a98ec0e4b](https://sepolia.basescan.org/address/0x669f52487ffa6f9abf722082f735537a98ec0e4b) |
+
 ## Registered resources
 
 **ERC20LRTest**
@@ -157,6 +172,7 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Holesky Contract Address          | N/A                                                                |
 | Mumbai Contract Address           | N/A                                                                |
 | Arbitrum-Sepolia Contract Address | N/A                                                                |
+| Base-sepolia Contract Address     | N/A                                                                |
 
 **Permissionless generic message**
 
@@ -172,19 +188,33 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Holesky Contract Address          | N/A                                                                |
 | Mumbai Contract Address           | N/A                                                                |
 | Arbitrum-Sepolia Contract Address | N/A                                                                |
+| Base-sepolia Contract Address     | N/A                                                                |
 
 **SygmaUSD**
 
-| Details                  | Information                                                                                                                   |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------  |
-| Symbol                   | sygUSD                                                                                                                        |
-| Type                     | ERC-20                                                                                                                        |
-| Registered Fee Handler   | PercentageFeeHandler                                                                                                          |
-| Registered Handler       | ERC20Handler                                                                                                                  |
-| Bridging Strategy        | Lock/Release                                                                                                                  |
-| Resource ID              | 0x0000000000000000000000000000000000000000000000000000000000001100                                                            |
-| Sepolia Contract Address | [0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36](https://sepolia.etherscan.io/address/0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36) |
+| Details                       | Information                                                                                                                   |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------|
+| Symbol                        | sygUSD                                                                                                                        |
+| Type                          | ERC-20                                                                                                                        |
+| Registered Fee Handler        | PercentageFeeHandler                                                                                                          |
+| Registered Handler            | ERC20Handler                                                                                                                  |
+| Bridging Strategy             | Lock/Release                                                                                                                  |
+| Resource ID                   | 0x0000000000000000000000000000000000000000000000000000000000001100                                                            |
+| Sepolia Contract Address      | [0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36](https://sepolia.etherscan.io/address/0xA9F30c6B5E7996D1bAd51D213277c30750bcBB36) |
+| Base sepolia Contract Address | [0xb947F89269F0cF54CC721BcDE298a46930f3418b](https://sepolia.basescan.org/address/0xb947f89269f0cf54cc721bcde298a46930f3418b) |
 
+**ERC1155TST**
+
+| Details                       | Information                                                                                                                          |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------|
+| Symbol                        | ERC1155TST                                                                                                                           |
+| Type                          | ERC-1155                                                                                                                             |
+| Registered Fee Handler        | BasicFeeHandler                                                                                                                      |
+| Registered Handler            | ERC1155Handler                                                                                                                       |
+| Bridging Strategy             | Mint/Burn                                                                                                                            |
+| Resource ID                   | 0x0000000000000000000000000000000000000000000000000000000000000400                                                                   |
+| Sepolia Contract Address      | [0xc6DE9aa04eF369540A6A4Fa2864342732bC99d06](https://sepolia.etherscan.io/address/0xc6DE9aa04eF369540A6A4Fa2864342732bC99d06)        |
+| Cronos Contract Address       | [0x0d3ce33038a3e9bf940eca6f5eadf355d47d36b3](https://explorer.cronos.org/testnet/address/0x0d3ce33038a3e9bf940eca6f5eadf355d47d36b3) |
 ## Fee schemes
 
 
@@ -200,6 +230,8 @@ The [faucet UI](./01-obtain-testnet-tokens.md "mention") provides users with a v
 | Mumbai Percentage-based         | [0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4](https://mumbai.polygonscan.com/address/0x850c0Dfaf1E8489b6699F7D490f8B5693B226De4)      | Percentage | 1 BPS (or 0.01%)   |            |
 | Arbitrum-Sepolia Fixed          | [0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78](https://sepolia.arbiscan.io/address/0xE366E0B707FBF59CF9A3068af34dC519D5fa6e78)         | Fixed fee  | 0.001 ETH          |            |
 | Gnosis-Chiado Fixed             | [0x9F5efb442d6F24704dB85569876D9c0CA65aed40](https://gnosis-chiado.blockscout.com/address/0x9F5efb442d6F24704dB85569876D9c0CA65aed40)| Fixed fee  | 0.001 xDAI         |            |
+| Base sepolia Fixed              | [0xde937016D67811f08D93ee54093ea686C21d211C](https://sepolia.basescan.org/address/0xde937016D67811f08D93ee54093ea686C21d211C)        | Fixed fee  | 0.001 ETH          |            |
+| Base sepolia Percentage-based   | [0x9535484111383531BB9D6922B309Bf316Cec9A19](https://sepolia.basescan.org/address/0x4430E5D4447Df0FC25adCafEb8b5E49d38B56e21)        | Percentage | 1 BPS (or 0.01%)   |            |
 
 ## Sygma Explorer
 
